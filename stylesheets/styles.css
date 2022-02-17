@@ -1,7 +1,8 @@
 .hello {
-	letter-spacing: 0.5px;
+	letter-spacing: 0px;
 	font-size: larger;
-	line-height: 30px;
+	line-height: 35px;
+	font-family: Verdana;
 }
 #body {
 	background-color: rgb(25, 25, 25);
@@ -19,4 +20,7 @@
 	font-weight: bold;
 	font-style: italic;
 	background-color: blue;
+}
+#voiceover2 {
+	text-transform: uppercase;
 }
