@@ -48,3 +48,8 @@
 #textchinese {
 	font-size: small;
 }
+#dottedhr  {
+    border: 1px dotted;
+    border-style: none none dotted;
+    width: 500px;
+}
