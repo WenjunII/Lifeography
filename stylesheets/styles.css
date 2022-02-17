@@ -1,6 +1,7 @@
-#hello {
+.hello {
 	letter-spacing: 0.5px;
 	font-size: larger;
+	line-height: 30px;
 }
 #body {
 	background-color: rgb(25, 25, 25);
@@ -8,4 +9,14 @@
 }
 #chapterone {
 	text-align: center;
+}
+.keyword {
+	text-decoration: underline;
+	text-decoration-color: yellow;
+
+}
+.voiceover {
+	font-weight: bold;
+	font-style: italic;
+	background-color: blue;
 }
