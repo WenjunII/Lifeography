@@ -2,3 +2,10 @@
 	letter-spacing: 0.5px;
 	font-size: larger;
 }
+#body {
+	background-color: rgb(25, 25, 25);
+	color: rgb(230, 230, 230);
+}
+#chapterone {
+	text-align: center;
+}
