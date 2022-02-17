@@ -23,4 +23,6 @@
 }
 #voiceover2 {
 	text-transform: uppercase;
+	border: 1px dotted;
+	padding: 5px;
 }
