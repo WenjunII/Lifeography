@@ -1,6 +1,6 @@
 .hello {
 	letter-spacing: 0px;
-	font-size: large;
+	font-size: medium;
 	line-height: 25px;
 	font-family: Verdana;
 }
@@ -25,4 +25,5 @@
 	text-transform: uppercase;
 	border: 1px dotted;
 	padding: 5px;
+	font-size: small;
 }
