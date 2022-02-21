@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .hello {
 	letter-spacing: 0.5px;
 	font-size: medium;
@@ -19,8 +22,7 @@
 }
 .keyword {
 	text-decoration: underline;
-	text-decoration-color: yellow;
-
+	text-decoration-color: rgba(255, 255, 0, 0.4);
 }
 .voiceover {
 	font-weight: bold;
@@ -42,12 +44,14 @@
 #text {
 	font-size: medium;
 	letter-spacing: 1px;
+	line-height: 18px;
 }
 #portrait {
 	text-align: center;
 }
 #textchinese {
 	font-size: small;
+	letter-spacing: 0.5px;
 }
 #dottedhr  {
     border: 1px dotted;
@@ -57,4 +61,34 @@
 .subtitle {
 	letter-spacing: 1px;
 	text-align: center;
+}
+.column {
+  float: left;
+  padding: 2px;
+}
+.left, .right {
+  width: 15%;
+}
+.middle {
+  width: 70%;
+  border-right: 1px dotted darkgrey;
+  border-left: 1px dotted darkgrey;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.breakline {
+	border-top: 1px solid darkgrey;
+	border-bottom: 1px solid darkgrey;
+	padding: 2px;
+}
+.keywordtable {
+	position: fixed;
+	text-align: center;
+	letter-spacing: 0.5px;
+	padding: 10px;
+	opacity: 20%;
+	color: rgb(255, 255, 0);
 }
