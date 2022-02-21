@@ -13,8 +13,9 @@
 	background-color: rgb(25, 25, 25);
 	color: rgb(230, 230, 230);
 }
-#chapterone {
+.title {
 	text-align: center;
+	letter-spacing: 1px;
 }
 .keyword {
 	text-decoration: underline;
@@ -52,4 +53,8 @@
     border: 1px dotted;
     border-style: none none dotted;
     width: 500px;
+}
+.subtitle {
+	letter-spacing: 1px;
+	text-align: center;
 }
