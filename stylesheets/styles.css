@@ -85,10 +85,10 @@
 	padding: 2px;
 }
 .keywordtable {
-	position: fixed;
 	text-align: center;
 	letter-spacing: 0.5px;
 	padding: 10px;
 	opacity: 20%;
 	color: rgb(255, 255, 0);
+	font-size: small;
 }
