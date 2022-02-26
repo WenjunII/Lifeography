@@ -112,3 +112,6 @@
 #sewingmachine {
 	width: 800px;
 }
+.canvas {
+  display: block;
+}
