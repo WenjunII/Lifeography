@@ -24,7 +24,4 @@ function setup() {
 
 function draw() {
   background(25, 25, 25);
-  fill(255, 204, 0);
-  line(100, 100, 200, 200);
-  triangle(50, 200, 100, 300, 200, 400);
 }
