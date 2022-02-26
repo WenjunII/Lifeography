@@ -15,6 +15,22 @@ function preload() {
 function setup() {
   let canvas = createCanvas(800, 534);
   canvas.parent('sketch-holder');
+  // showimg2 = image(img2, 0, 0);
+  // showimg2.mouseClicked(window.open("https://commons.wikimedia.org/wiki/File:Sewing_machines,_Miyagi,_Japan.jpg"));
+  // showimg = image(img, 65, 7);
+  // showimg.mouseClicked(window.open("https://commons.wikimedia.org/wiki/File:Hand_zur_Abmessung.jpg"));
+  // showimg8 = image(img8, 395, 15);
+  // showimg8.mouseClicked(window.open("https://commons.wikimedia.org/wiki/File:Hand_zur_Abmessung.jpg"));
+  // showimg5 = image(img5, 225, 267);
+  // showimg5.mouseClicked(window.open("https://commons.wikimedia.org/wiki/File:Woman_sewing_with_a_Singer_sewing_machine.png"));
+  // showimg4 = image(img4, 237, 284);
+  // showimg4.mouseClicked(window.open("https://commons.wikimedia.org/wiki/File:Sewing_machine_by_MITSUBISHI_ad_1954.jpg"));
+  // showimg3 = image(img3, 250, 300);
+  // showimg3.mouseClicked(window.open("https://commons.wikimedia.org/wiki/File:Hua_Nan_sewing_machine_-_04.jpg"));
+  // showimg7 = image(img7, 365, 98);
+  // showimg7.mouseClicked(window.open("https://commons.wikimedia.org/wiki/File:Surface_Anatomy_Hips_and_Lower_Limbs.png"));
+  // showimg6 = image(img6, 193, 70);
+  // showimg6.mouseClicked(window.open("https://commons.wikimedia.org/wiki/File:Ramsay_Girl_sleeping.jpg"));
 }
 
 function draw() {
@@ -27,20 +43,4 @@ function draw() {
   image(img3, 250, 300);
   image(img7, 365, 98);
   image(img6, 193, 70); 
-  showimg = image(img, 65, 7);
-  showimg.mouseClicked(window.open("https://commons.wikimedia.org/wiki/File:Hand_zur_Abmessung.jpg"));
-  showimg2 = image(img2, 0, 0);
-  showimg2.mouseClicked(window.open("https://commons.wikimedia.org/wiki/File:Sewing_machines,_Miyagi,_Japan.jpg"));
-  showimg3 = image(img3, 250, 300);
-  showimg3.mouseClicked(window.open("https://commons.wikimedia.org/wiki/File:Hua_Nan_sewing_machine_-_04.jpg"));
-  showimg4 = image(img4, 237, 284);
-  showimg4.mouseClicked(window.open("https://commons.wikimedia.org/wiki/File:Sewing_machine_by_MITSUBISHI_ad_1954.jpg"));
-  showimg5 = image(img5, 225, 267);
-  showimg5.mouseClicked(window.open("https://commons.wikimedia.org/wiki/File:Woman_sewing_with_a_Singer_sewing_machine.png"));
-  showimg6 = image(img6, 193, 70);
-  showimg6.mouseClicked(window.open("https://commons.wikimedia.org/wiki/File:Ramsay_Girl_sleeping.jpg"));
-  showimg7 = image(img7, 365, 98);
-  showimg7.mouseClicked(window.open("https://commons.wikimedia.org/wiki/File:Surface_Anatomy_Hips_and_Lower_Limbs.png"));
-  showimg8 = image(img8, 395, 15);
-  showimg8.mouseClicked(window.open("https://commons.wikimedia.org/wiki/File:Hand_zur_Abmessung.jpg"));
-  }
+}
