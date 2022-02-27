@@ -51,20 +51,20 @@ var dream = function( p ) { // p could be any variable name
 var myp5 = new p5(dream, 'c1');
 
 // Sketch Two
-var smiles = function( p ) { 
-  var img;
+// var smiles = function( p ) { 
+//   var img;
 
-  p.preload = function() {
-    img = p.loadImage('images/dream_of_a_world_of_smiles_and_laughter.jpg');
-  }
+//   p.preload = function() {
+//     img = p.loadImage('images/dream_of_a_world_of_smiles_and_laughter.jpg');
+//   }
 
-  p.setup = function() {
-    p.createCanvas(900, 507);
-  };
+//   p.setup = function() {
+//     p.createCanvas(900, 507);
+//   };
 
-  p.draw = function() {
-    p.background(25, 25, 25);
-    p.image(img, 0, 0);
-  };
-};
-var myp5 = new p5(smiles, 'c2');
+//   p.draw = function() {
+//     p.background(25, 25, 25);
+//     p.image(img, 0, 0);
+//   };
+// };
+// var myp5 = new p5(smiles, 'c2');
