@@ -112,3 +112,11 @@
 #sewingmachine {
 	width: 800px;
 }
+.speak {
+	font-style: italic;
+	padding: 3px;
+	color: rgba(255, 255, 0, 0.2);
+	border: 1px dotted rgba(255, 255, 0, 0.3);
+	width: 225px;
+	font-size: smaller;
+}
