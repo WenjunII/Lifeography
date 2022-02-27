@@ -45,7 +45,6 @@ function draw() {
   image(img3, 250 + positionX3, 300 + positionY3);
   image(img7, 365 + positionX7, 98 + positionY7);
   image(img6, 193 + positionX6, 70 + positionY6); 
-  filter(BLUR, 1.8);
   positionX = random(-0.4, 0.4);
   positionY = random(-0.4, 0.4);
   positionX2 = random(-0.4, 0.4);
