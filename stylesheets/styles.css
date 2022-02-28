@@ -10,9 +10,9 @@
 .hello2 {
 	width: 800px;
 	margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
 }
-#body {
+.body {
 	background-color: rgb(25, 25, 25);
 	color: rgb(230, 230, 230);
 }
@@ -29,7 +29,7 @@
 	font-style: italic;
 	background-color: blue;
 }
-#voiceover2 {
+.voiceover2 {
 	text-transform: uppercase;
 	border-top: 1px solid;
 	border-bottom: 1px solid;
@@ -41,19 +41,19 @@
 	border: 1px dotted;
 	padding: 10px;
 }
-#text {
+.text {
 	font-size: medium;
 	letter-spacing: 0.8px;
 	line-height: 18px;
 }
-#portrait {
+.portrait {
 	text-align: center;
 }
-#textchinese {
+.textchinese {
 	font-size: small;
 	letter-spacing: 0.5px;
 }
-#dottedhr  {
+.dottedhr  {
     border: 1px dotted;
     border-style: none none dotted;
     width: 500px;
@@ -109,7 +109,7 @@
 	width: 170px;
 	font-size: smaller;
 }
-#sewingmachine {
+.sewingmachine {
 	width: 800px;
 }
 .speak {
@@ -121,14 +121,16 @@
 	font-size: smaller;
 }
 
-#smiles {
-	width: 800px;
-}
-
 #c2 {
 	text-align: center;
 }
 
-#smilesroom {
+.smilesroom {
 	text-align: center;
+}
+
+.ads {
+	width: 200px;
+	position: relative;
+	top: 2300px;
 }
