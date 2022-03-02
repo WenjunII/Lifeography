@@ -130,7 +130,8 @@
 }
 
 .ads {
-	width: 200px;
+	width: 120px;
 	position: relative;
 	top: 2300px;
+	left: 50px;
 }

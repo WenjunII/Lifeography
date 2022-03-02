@@ -22,8 +22,8 @@ var dream = function( p ) { // p could be any variable name
   p.draw = function() {
     p.background(25, 25, 25);
     p.frameRate(10);
-    // var a = p.createA('http://p5js.org/', '<img src="images/p5js/hand.png">', [_blank]);
-    // a.position(100, 100);
+    // var a = p.createA('http://p5js.org/', '<img src="images/p5js/hand.png">');
+    // a.p.position(65 + positionX, 7 + positionY);
     p.image(img2, 0 + positionX2, 0 + positionY2);
     p.image(img1, 65 + positionX, 7 + positionY);
     p.image(img8, 395 + positionX8, 15 + positionY8);
