@@ -140,8 +140,9 @@
 	padding: 3px;
 	color: rgba(255, 255, 0, 0.2);
 	border: 1px dotted rgba(255, 255, 0, 0.3);
-	width: 100px;
+	width: 60px;
 	font-size: smaller;
+	text-align: center;
 	margin-left: auto;
   margin-right: auto;
 }
