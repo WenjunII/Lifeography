@@ -130,7 +130,7 @@ var beat = function( p ) { // p could be any variable name
     p.image(bimg22, 0 + bpositionX22, 570 + bpositionY22);
     p.image(bimg23, 0 + bpositionX23, 600 + bpositionY23);
     p.image(bimg24, 0 + bpositionX24, 630 + bpositionY24);
-    p.image(bimg2, 800 + bpositionX2, 300 + bpositionY2);
+    p.image(bimg2, 800 + bpositionX2, 290 + bpositionY2);
     p.image(bimg3, 600 + bpositionX3, 200 + bpositionY3);
     bimg1.resize(100, 33);
     bimg4.resize(100, 33);
@@ -154,7 +154,7 @@ var beat = function( p ) { // p could be any variable name
     bimg22.resize(100, 33);
     bimg23.resize(100, 33);
     bimg24.resize(100, 33);
-    bimg2.resize(41, 150);
+    bimg2.resize(45, 165);
     bimg3.resize(72, 250);
     bpositionX1 = p.random(-0.4, 0.4);
     bpositionY1 = p.random(-0.4, 0.4);
