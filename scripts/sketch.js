@@ -202,9 +202,46 @@ var beat = function( p ) { // p could be any variable name
     bpositionY24 = p.random(-0.4, 0.4);
     bpositionX2 = p.random(-0.4, 0.4);
     bpositionY2 = p.random(-0.4, 0.4);
-    bpositionX3 = p.random(-0.4, 0.4);
-    bpositionY3 = p.random(-0.4, 0.4);
+    bpositionX3 = p.random(-0, 0);
+    bpositionY3 = p.random(-0, 0);
 
   };
 };
 var myp5 = new p5(beat, 'c3');
+
+//Sketch Four
+var beat2 = function( p ) { // p could be any variable name
+  var b2img1, b2img2;
+  var b2positionX1, b2positionY1, b2positionX2, b2positionY2;
+  var b2positionX3 = 1;
+  var positionmove = 0.1;
+
+  p.preload = function() {
+    b2img1 = p.loadImage('images/wenjunii7/grandma_2.png');
+    b2img2 = p.loadImage('images/wenjunii7/wenjunii7_2.png');
+  }
+
+  p.setup = function() {
+    p.createCanvas(900, 500);
+  };
+
+  p.draw = function() {
+    p.background(25, 25, 25);
+    p.image(b2img2, 665 + b2positionX2 + b2positionX3, 210 + b2positionY2);
+    p.image(b2img1, 500 + b2positionX1, 80 + b2positionY1);
+    b2img1.resize(259, 400);
+    b2img2.resize(68, 265);
+    b2positionX1 = p.random(-0, 0);
+    b2positionY1 = p.random(-0, 0);
+    b2positionX2 = p.random(-0.4, 0.4);
+    b2positionY2 = p.random(-0.4, 0.4);
+    b2positionX3 += positionmove;
+    if (b2positionX3 >12) {
+      positionmove *= -1;
+    } else if (b2positionX3 < -20) {
+      positionmove *= -1;
+    }
+    
+  };
+};
+var myp5 = new p5(beat2, 'c4');
