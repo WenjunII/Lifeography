@@ -109,7 +109,7 @@ var beat = function( p ) { // p could be any variable name
   };
 
   p.draw = function() {
-    p.background(250, 250, 250);
+    p.background(25, 25, 25);
     p.image(bimg1, 0 + bpositionX1, 0 + bpositionY1);
     p.image(bimg4, 0 + bpositionX4, 30 + bpositionY4);
     p.image(bimg5, 0 + bpositionX5, 60 + bpositionY5);
@@ -158,49 +158,49 @@ var beat = function( p ) { // p could be any variable name
     bimg24.resize(100, 33);
     bimg2.resize(45, 165);
     bimg3.resize(72, 250);
-    bpositionX1 += 3;
+    bpositionX1 += 1;
     bpositionY1 = p.map(p.noise(ynoise1), 0, 1, 0, p.height);
-    bpositionX4 += 4;
+    bpositionX4 += 2;
     bpositionY4 = p.map(p.noise(ynoise4), 0, 1, 0, p.height);
-    bpositionX5 += 5;
+    bpositionX5 += 3;
     bpositionY5 = p.map(p.noise(ynoise5), 0, 1, 0, p.height);
-    bpositionX6 += 6;
+    bpositionX6 += 4;
     bpositionY6 = p.map(p.noise(ynoise6), 0, 1, 0, p.height);
-    bpositionX7 += 4;
+    bpositionX7 += 2;
     bpositionY7 = p.map(p.noise(ynoise7), 0, 1, 0, p.height);
-    bpositionX8 += 3;
+    bpositionX8 += 1;
     bpositionY8 = p.map(p.noise(ynoise8), 0, 1, 0, p.height);
-    bpositionX9 += 5;
+    bpositionX9 += 3;
     bpositionY9 = p.map(p.noise(ynoise9), 0, 1, 0, p.height);
-    bpositionX10 += 6;
+    bpositionX10 += 4;
     bpositionY10 = p.map(p.noise(ynoise10), 0, 1, 0, p.height);
-    bpositionX11 += 4;
+    bpositionX11 += 2;
     bpositionY11 = p.map(p.noise(ynoise11), 0, 1, 0, p.height);
-    bpositionX12 += 3;
+    bpositionX12 += 1;
     bpositionY12 = p.map(p.noise(ynoise12), 0, 1, 0, p.height);
-    bpositionX13 += 5;
+    bpositionX13 += 3;
     bpositionY13 = p.map(p.noise(ynoise13), 0, 1, 0, p.height);
-    bpositionX14 += 6;
+    bpositionX14 += 4;
     bpositionY14 = p.map(p.noise(ynoise14), 0, 1, 0, p.height);
-    bpositionX15 += 4;
+    bpositionX15 += 2;
     bpositionY15 = p.map(p.noise(ynoise15), 0, 1, 0, p.height);
-    bpositionX16 += 3;
+    bpositionX16 += 1;
     bpositionY16 = p.map(p.noise(ynoise16), 0, 1, 0, p.height);
-    bpositionX17 += 5;
+    bpositionX17 += 3;
     bpositionY17 = p.map(p.noise(ynoise17), 0, 1, 0, p.height);
-    bpositionX18 += 6;
+    bpositionX18 += 4;
     bpositionY18 = p.map(p.noise(ynoise18), 0, 1, 0, p.height);
-    bpositionX19 += 5;
+    bpositionX19 += 3;
     bpositionY19 = p.map(p.noise(ynoise19), 0, 1, 0, p.height);
-    bpositionX20 += 4;
+    bpositionX20 += 2;
     bpositionY20 = p.map(p.noise(ynoise20), 0, 1, 0, p.height);
-    bpositionX21 += 6;
+    bpositionX21 += 4;
     bpositionY21 = p.map(p.noise(ynoise21), 0, 1, 0, p.height);
-    bpositionX22 += 3;
+    bpositionX22 += 1;
     bpositionY22 = p.map(p.noise(ynoise22), 0, 1, 0, p.height);
-    bpositionX23 += 4;
+    bpositionX23 += 2;
     bpositionY23 = p.map(p.noise(ynoise23), 0, 1, 0, p.height);
-    bpositionX24 += 6;
+    bpositionX24 += 4;
     bpositionY24 = p.map(p.noise(ynoise24), 0, 1, 0, p.height);
     bpositionX2 = p.random(-0.4, 0.4);
     bpositionY2 = p.map(p.noise(ynoise), 0, 1, 0, p.height);
@@ -229,12 +229,138 @@ var beat = function( p ) { // p could be any variable name
     ynoise22 += 0.05;
     ynoise23 += 0.02;
     ynoise24 += 0.04;
-    if(bpositionX1 + 100 >= bpositionX3 && bpositionY1 >= bpositionY3 && bpositionY1 <= bpositionY3 + 250) {
+    if(bpositionX1 + 100 >= 600 && bpositionY1 >= bpositionY3 && bpositionY1 <= bpositionY3 + 250) {
       bpositionX1 = 0;
-    }else if(bpositionX1 + 100 >= bpositionX2 && bpositionY1 >= bpositionY2 && bpositionY1 <= bpositionY2 + 165) {
+    }else if(bpositionX1 + 100 >= 800 && bpositionY1 >= bpositionY2 && bpositionY1 <= bpositionY2 + 165) {
       bpositionX1 = 0;
-    }else if(bpositionX1 + 100 >= width) {
+    }else if(bpositionX1 + 100 >= p.width) {
       bpositionX1 = 0;
+    }else if(bpositionX4 + 100 >= 600 && bpositionY4 >= bpositionY3 && bpositionY4 <= bpositionY3 + 250) {
+      bpositionX4 = 0;
+    }else if(bpositionX4 + 100 >= 800 && bpositionY4 >= bpositionY2 && bpositionY4 <= bpositionY2 + 165) {
+      bpositionX4 = 0;
+    }else if(bpositionX4 + 100 >= p.width) {
+      bpositionX4 = 0;
+    }else if(bpositionX5 + 100 >= 600 && bpositionY5 >= bpositionY3 && bpositionY5 <= bpositionY3 + 250) {
+      bpositionX5 = 0;
+    }else if(bpositionX5 + 100 >= 800 && bpositionY5 >= bpositionY2 && bpositionY5 <= bpositionY2 + 165) {
+      bpositionX5 = 0;
+    }else if(bpositionX5 + 100 >= p.width) {
+      bpositionX5 = 0
+    }else if(bpositionX6 + 100 >= 600 && bpositionY6 >= bpositionY3 && bpositionY6 <= bpositionY3 + 250) {
+      bpositionX6 = 0;
+    }else if(bpositionX6 + 100 >= 800 && bpositionY6 >= bpositionY2 && bpositionY6 <= bpositionY2 + 165) {
+      bpositionX6 = 0;
+    }else if(bpositionX6 + 100 >= p.width) {
+      bpositionX6 = 0;
+    }else if(bpositionX7 + 100 >= 600 && bpositionY7 >= bpositionY3 && bpositionY7 <= bpositionY3 + 250) {
+      bpositionX7 = 0;
+    }else if(bpositionX7 + 100 >= 800 && bpositionY7 >= bpositionY2 && bpositionY7 <= bpositionY2 + 165) {
+      bpositionX7 = 0;
+    }else if(bpositionX7 + 100 >= p.width) {
+      bpositionX7 = 0;
+    }else if(bpositionX8 + 100 >= 600 && bpositionY8 >= bpositionY3 && bpositionY8 <= bpositionY3 + 250) {
+      bpositionX8 = 0;
+    }else if(bpositionX8 + 100 >= 800 && bpositionY8 >= bpositionY2 && bpositionY8 <= bpositionY2 + 165) {
+      bpositionX8 = 0;
+    }else if(bpositionX8 + 100 >= p.width) {
+      bpositionX8 = 0;
+    }else if(bpositionX9 + 100 >= 600 && bpositionY9 >= bpositionY3 && bpositionY9 <= bpositionY3 + 250) {
+      bpositionX9 = 0;
+    }else if(bpositionX9 + 100 >= 800 && bpositionY9 >= bpositionY2 && bpositionY9 <= bpositionY2 + 165) {
+      bpositionX9 = 0;
+    }else if(bpositionX9 + 100 >= p.width) {
+      bpositionX9 = 0;
+    }else if(bpositionX10 + 100 >= 600 && bpositionY10 >= bpositionY3 && bpositionY10 <= bpositionY3 + 250) {
+      bpositionX10 = 0;
+    }else if(bpositionX10 + 100 >= 800 && bpositionY10 >= bpositionY2 && bpositionY10 <= bpositionY2 + 165) {
+      bpositionX10 = 0;
+    }else if(bpositionX10 + 100 >= p.width) {
+      bpositionX10 = 0;
+    }else if(bpositionX11 + 100 >= 600 && bpositionY11 >= bpositionY3 && bpositionY11 <= bpositionY3 + 250) {
+      bpositionX11 = 0;
+    }else if(bpositionX11 + 100 >= 800 && bpositionY11 >= bpositionY2 && bpositionY11 <= bpositionY2 + 165) {
+      bpositionX11 = 0;
+    }else if(bpositionX11 + 100 >= p.width) {
+      bpositionX11 = 0;
+    }else if(bpositionX12 + 100 >= 600 && bpositionY12 >= bpositionY3 && bpositionY12 <= bpositionY3 + 250) {
+      bpositionX12 = 0;
+    }else if(bpositionX12 + 100 >= 800 && bpositionY12 >= bpositionY2 && bpositionY12 <= bpositionY2 + 165) {
+      bpositionX12 = 0;
+    }else if(bpositionX12 + 100 >= p.width) {
+      bpositionX12 = 0;
+    }else if(bpositionX13 + 100 >= 600 && bpositionY13 >= bpositionY3 && bpositionY13 <= bpositionY3 + 250) {
+      bpositionX13 = 0;
+    }else if(bpositionX13 + 100 >= 800 && bpositionY13 >= bpositionY2 && bpositionY13 <= bpositionY2 + 165) {
+      bpositionX13 = 0;
+    }else if(bpositionX13 + 100 >= p.width) {
+      bpositionX13 = 0;
+    }else if(bpositionX14 + 100 >= 600 && bpositionY14 >= bpositionY3 && bpositionY14 <= bpositionY3 + 250) {
+      bpositionX14 = 0;
+    }else if(bpositionX14 + 100 >= 800 && bpositionY14 >= bpositionY2 && bpositionY14 <= bpositionY2 + 165) {
+      bpositionX14 = 0;
+    }else if(bpositionX14 + 100 >= p.width) {
+      bpositionX14 = 0;
+    }else if(bpositionX15 + 100 >= 600 && bpositionY15 >= bpositionY3 && bpositionY15 <= bpositionY3 + 250) {
+      bpositionX15 = 0;
+    }else if(bpositionX15 + 100 >= 800 && bpositionY15 >= bpositionY2 && bpositionY15 <= bpositionY2 + 165) {
+      bpositionX15 = 0;
+    }else if(bpositionX15 + 100 >= p.width) {
+      bpositionX15 = 0;
+    }else if(bpositionX16 + 100 >= 600 && bpositionY16 >= bpositionY3 && bpositionY16 <= bpositionY3 + 250) {
+      bpositionX16 = 0;
+    }else if(bpositionX16 + 100 >= 800 && bpositionY16 >= bpositionY2 && bpositionY16 <= bpositionY2 + 165) {
+      bpositionX16 = 0;
+    }else if(bpositionX16 + 100 >= p.width) {
+      bpositionX16 = 0;
+    }else if(bpositionX17 + 100 >= 600 && bpositionY17 >= bpositionY3 && bpositionY17 <= bpositionY3 + 250) {
+      bpositionX17 = 0;
+    }else if(bpositionX17 + 100 >= 800 && bpositionY17 >= bpositionY2 && bpositionY17 <= bpositionY2 + 165) {
+      bpositionX17 = 0;
+    }else if(bpositionX17 + 100 >= p.width) {
+      bpositionX17 = 0;
+    }else if(bpositionX18 + 100 >= 600 && bpositionY18 >= bpositionY3 && bpositionY18 <= bpositionY3 + 250) {
+      bpositionX18 = 0;
+    }else if(bpositionX18 + 100 >= 800 && bpositionY18 >= bpositionY2 && bpositionY18 <= bpositionY2 + 165) {
+      bpositionX18 = 0;
+    }else if(bpositionX18 + 100 >= p.width) {
+      bpositionX18 = 0;
+    }else if(bpositionX19 + 100 >= 600 && bpositionY19 >= bpositionY3 && bpositionY19 <= bpositionY3 + 250) {
+      bpositionX19 = 0;
+    }else if(bpositionX19 + 100 >= 800 && bpositionY19 >= bpositionY2 && bpositionY19 <= bpositionY2 + 165) {
+      bpositionX19 = 0;
+    }else if(bpositionX19 + 100 >= p.width) {
+      bpositionX19 = 0;
+    }else if(bpositionX20 + 100 >= 600 && bpositionY20 >= bpositionY3 && bpositionY20 <= bpositionY3 + 250) {
+      bpositionX20 = 0;
+    }else if(bpositionX20 + 100 >= 800 && bpositionY20 >= bpositionY2 && bpositionY20 <= bpositionY2 + 165) {
+      bpositionX20 = 0;
+    }else if(bpositionX20 + 100 >= p.width) {
+      bpositionX20 = 0;
+    }else if(bpositionX21 + 100 >= 600 && bpositionY21 >= bpositionY3 && bpositionY21 <= bpositionY3 + 250) {
+      bpositionX21 = 0;
+    }else if(bpositionX21 + 100 >= 800 && bpositionY21 >= bpositionY2 && bpositionY21 <= bpositionY2 + 165) {
+      bpositionX21 = 0;
+    }else if(bpositionX21 + 100 >= p.width) {
+      bpositionX21 = 0;
+    }else if(bpositionX22 + 100 >= 600 && bpositionY22 >= bpositionY3 && bpositionY22 <= bpositionY3 + 250) {
+      bpositionX22 = 0;
+    }else if(bpositionX22 + 100 >= 800 && bpositionY22 >= bpositionY2 && bpositionY22 <= bpositionY2 + 165) {
+      bpositionX22 = 0;
+    }else if(bpositionX22 + 100 >= p.width) {
+      bpositionX22 = 0;
+    }else if(bpositionX23 + 100 >= 600 && bpositionY23 >= bpositionY3 && bpositionY23 <= bpositionY3 + 250) {
+      bpositionX23 = 0;
+    }else if(bpositionX23 + 100 >= 800 && bpositionY23 >= bpositionY2 && bpositionY23 <= bpositionY2 + 165) {
+      bpositionX23 = 0;
+    }else if(bpositionX23 + 100 >= p.width) {
+      bpositionX23 = 0;
+    }else if(bpositionX24 + 100 >= 600 && bpositionY24 >= bpositionY3 && bpositionY24 <= bpositionY3 + 250) {
+      bpositionX24 = 0;
+    }else if(bpositionX24 + 100 >= 800 && bpositionY24 >= bpositionY2 && bpositionY24 <= bpositionY2 + 165) {
+      bpositionX24 = 0;
+    }else if(bpositionX24 + 100 >= p.width) {
+      bpositionX24 = 0;
     }
   };
 };
