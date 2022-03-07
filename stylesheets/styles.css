@@ -149,3 +149,23 @@
 #c4 {
 	text-align: center;
 }
+.short {
+	text-align: center;
+}
+.source {
+	font-size: x-small;
+	color: rgba(255, 255, 0, 0.15);
+	text-align: right;
+}
+a:link {
+color: rgba(255, 255, 0, 0.15);
+}
+a:visited {
+color: rgba(255, 255, 0, 0.15);
+}
+a:hover {
+color: rgba(255, 255, 0, 0.15);
+}
+a:active {
+color: rgba(255, 255, 0, 0.15);
+}

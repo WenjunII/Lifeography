@@ -402,3 +402,64 @@ var beat2 = function( p ) { // p could be any variable name
   };
 };
 var myp5 = new p5(beat2, 'c4');
+
+//Sketch Five
+// var salute = function( p ) { // p could be any variable name
+//   var wenjunii10;
+//   var eyeimg, shirtimg, browimg1, browimg2, lashesimg1, lashesimg2, skinimg, pantsimg, teethimg, tongueimg;
+//   var transcriptimg1, transcriptimg2, commentimg1, commentimg2;
+
+//   p.preload = function() {
+//     wenjunii10 = p.loadModel('models/wenjunii10/wenjunii10.obj');
+//     eyeimg = p.loadImage('models/wenjunii10/textures/brown_eye.png');
+//     shirtimg = p.loadImage('models/wenjunii10/textures/crude_male_tex.png');
+//     browimg1 = p.loadImage('models/wenjunii10/textures/eyebrow001.png');
+//     browimg2 = p.loadImage('models/wenjunii10/textures/eyebrow007.png');
+//     lashesimg1 = p.loadImage('models/wenjunii10/textures/eyelashes01.png');
+//     lashesimg2 = p.loadImage('models/wenjunii10/textures/eyelashes02.png');
+//     skinimg = p.loadImage('models/wenjunii10/textures/middleage_lightskinned_male_diffuse2.png');
+//     pantsimg = p.loadImage('models/wenjunii10/textures/simple_pants_diffuse_white.png');
+//     teethimg = p.loadImage('models/wenjunii10/textures/teeth.png');
+//     tongueimg = p.loadImage('models/wenjunii10/textures/tongue01_diffuse.png');
+//     transcriptimg1 = p.loadImage('images/wenjunii10/transcript1.jpg');
+//     transcriptimg2 = p.loadImage('images/wenjunii10/transcript2.jpg');
+//     commentimg1 = p.loadImage('images/wenjunii10/comment1.jpg');
+//     commentimg2 = p.loadImage('images/wenjunii10/comment2.png');
+//   }
+
+//   p.setup = function() {
+//     p.createCanvas(980, 500, p.WEBGL);
+//     p.ortho();
+//     p.angleMode(p.DEGREES);
+//   };
+
+//   p.draw = function() {
+//     p.background(250, 250, 250);
+//     // p.image(transcriptimg1, 0, 0);
+//     // p.image(transcriptimg2, p.width / 2, 0);
+//     // p.image(comment1, 200, 200);
+//     // p.image(comment2, 600, 200);
+//     p.push();
+//     p.orbitControl();
+//     p.translate(0, 245);
+//     p.scale(40);
+//     p.texture(eyeimg);
+//     p.texture(shirtimg);
+//     p.texture(browimg1);
+//     p.texture(browimg2);
+//     p.texture(lashesimg1);
+//     p.texture(lashesimg2);
+//     p.texture(skinimg);
+//     p.texture(pantsimg);
+//     p.texture(teethimg);
+//     p.texture(tongueimg);
+//     //p.textureMode(NORMAL);
+//     p.rotateZ(180);
+//     p.model(wenjunii10);
+//     p.pop();
+
+
+    
+//   };
+// };
+// var myp5 = new p5(salute, 'c5');
