@@ -132,7 +132,7 @@
 .ads {
 	width: 120px;
 	position: relative;
-	top: 2850px;
+	top: 2950px;
 	left: 50px;
 }
 .age {
@@ -153,7 +153,7 @@
 	text-align: center;
 }
 .source {
-	font-size: x-small;
+	font-size: smaller;
 	color: rgba(255, 255, 0, 0.15);
 	text-align: right;
 }
