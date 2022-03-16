@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js"
+		integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg=="
+		crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+	<script src="https://unpkg.com/three@0.126.0/examples/js/controls/OrbitControls.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Lifeography of Wenjun II</title>
+</head>
+
+<body class="body">
+	<div id="3d10">
+	</div>
+	<script>
+		console.log('SCRIPT LOADED');
+		const scene = new THREE.Scene();
+		const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+		const renderer = new THREE.WebGLRenderer({ alpha: true });
+		renderer.setSize(window.innerWidth / 1.5, window.innerHeight / 1.5);
+		renderer.setClearColor(0xcccccc);
+		document.getElementById('3d10').appendChild(renderer.domElement);
+
+		scene.background = new THREE.Color('black');
+
+		const loader = new THREE.GLTFLoader();
+
+		const controls = new THREE.OrbitControls(camera, renderer.domElement);
+
+		controls.target = new THREE.Vector3(0, 10, 0);
+		camera.position.set(0, 10, 5);
+
+		loader.load('../models/wenjunii102.gltf', function (gltf) {
+			// Loop over all of the child objects in the model and turn
+			// off metalness feature in material
+			// your model has metalness set too high 
+			gltf.scene.traverse(child => {
+				if (child.material) child.material.metalness = 0;
+			});
+
+			gltf.scene.traverse((object) => {
+				const encoding = THREE.sRGBEncoding;
+				if (object.isMesh) {
+					const material = object.material;
+					if (material.map) material.map.encoding = encoding;
+					if (material.emissiveMap) material.emissiveMap.encoding = encoding;
+					if (material.map || material.emissiveMap) material.needsUpdate = true;
+
+					console.log(object.material);
+				}
+			});
+
+			scene.add(gltf.scene);
+			addLights();
+			console.log('GLTF LOAD');
+		}, undefined, function (error) {
+			console.log('GLTF ERROR');
+			console.error(error);
+
+		});
+
+		function addLights() {
+			console.log('LIGHTS')
+			const hemiLight = new THREE.HemisphereLight(0xffffbb, 0x080820, 1);
+			scene.add(hemiLight);
+
+			const intensity = 1;
+			const light = new THREE.AmbientLight('#040404', 5);
+			scene.add(light);
+
+			const light2 = new THREE.DirectionalLight('#0000ff', 1);
+			light2.position.set(10, 10, 10); // ~60º
+			light2.name = 'main_light';
+			camera.add(light2);
+		}
+
+		function animate() {
+			requestAnimationFrame(animate);
+
+			// cube.rotation.x += 0.01;
+			// cube.rotation.y += 0.01;
+			controls.update();
+			renderer.render(scene, camera);
+		};
+
+		animate();
+	</script>
+</body>
+
+</html>
