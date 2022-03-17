@@ -4,9 +4,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
 	<script src="scripts/sketch.js"></script>
-	<script src="https://unpkg.com/browse/three@0.138.3/build/three.js"></script>
-	<script src="https://unpkg.com/three@0.138.3/examples/js/loaders/GLTFLoader.js"></script>
-	<script src="https://unpkg.com/three@0.138.3/examples/js/controls/OrbitControls.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
+	<script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+	<script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+	<script src="https://unpkg.com/three@0.128.0/examples/js/loaders/RGBELoader.js"></script>
 	<!-- <script src="microsoft.cognitiveservices.speech.sdk.bundle.js"></script> -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -413,49 +414,106 @@
 					<br>
 					<!-- <div id="c6"></div> -->
 					<div id="3d10">
-					<script>
-						const scene = new THREE.Scene();
-						const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+						<script>
+							console.log('SCRIPT LOADED');
+							const scene = new THREE.Scene();
+							const camera = new THREE.PerspectiveCamera(90, window.innerWidth / 1.2 / window.innerHeight, 0.01, 100);
+					
+							const renderer = new THREE.WebGLRenderer({ alpha: true });
+							renderer.setSize(window.innerWidth / 1.23 / 1.2, window.innerHeight / 1.23);
+							renderer.setClearColor(0xcccccc);
+							renderer.setPixelRatio(3);
+							document.getElementById('3d10').appendChild(renderer.domElement);
+					
+							scene.background = new THREE.Color('rgb(25, 25, 25)');
+					
+							const loader = new THREE.GLTFLoader();
 
-						const renderer = new THREE.WebGLRenderer();
-						renderer.setSize( window.innerWidth / 1.5, window.innerHeight / 1.5 );
-						document.getElementById('3d10').appendChild( renderer.domElement );
+							const rloader = new THREE.RGBELoader();
+					
+							const controls = new THREE.OrbitControls(camera, renderer.domElement);
+					
+							controls.target = new THREE.Vector3(0, 7, 0);
+							camera.position.set(-2, 9, 7);
 
-						const geometry = new THREE.BoxGeometry();
-						const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-						const cube = new THREE.Mesh( geometry, material );
-						scene.add( cube );
+							rloader.load('images/wenjunii10/graduation_photo1-Pano.png', function (texture) {
+								texture.mapping = THREE.EquirectangularReflectionMapping;
 
-						camera.position.z = 5;
-
-						// import { GLTFLoader } from 'scripts/GLTFLoader.js';
-
-						// const loader = new GLTFLoader();
-
-						// loader.load( 'models/wenjunii10.gltf', function ( gltf ) {
-
-						// 	scene.add( gltf.scene );
-
-						// }, undefined, function ( error ) {
-
-						// 	console.error( error );
-
-						// } );
-
-						function animate() {
-							requestAnimationFrame( animate );
-
-							// cube.rotation.x += 0.01;
-							// cube.rotation.y += 0.01;
-
-							renderer.render( scene, camera );
-						};
-
-						animate();
-					</script>
+								scene.background = texture;
+								scene.environment = texture;
+							});
+					
+							loader.load('models/wenjunii10.glb', function (gltf) {
+								// Loop over all of the child objects in the model and turn
+								// off metalness feature in material
+								// your model has metalness set too high 
+								gltf.scene.traverse(child => {
+									if (child.material) child.material.metalness = 0;
+								});
+					
+								gltf.scene.traverse((object) => {
+									const encoding = THREE.sRGBEncoding;
+									if (object.isMesh) {
+										const material = object.material;
+										if (material.map) material.map.encoding = encoding;
+										if (material.emissiveMap) material.emissiveMap.encoding = encoding;
+										if (material.map || material.emissiveMap) material.needsUpdate = true;
+					
+										console.log(object.material);
+									}
+								});
+					
+								scene.add(gltf.scene);
+								addLights();
+								console.log('GLTF LOAD');
+							}, undefined, function (error) {
+								console.log('GLTF ERROR');
+								console.error(error);
+					
+							});
+					
+							function addLights() {
+								console.log('LIGHTS')
+								const hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.3);
+								scene.add(hemiLight);
+					
+								const intensity = 1;
+								const light = new THREE.AmbientLight(0xffffff, 0.1);
+								scene.add(light);
+					
+								const light2 = new THREE.DirectionalLight(0xffffff, 1.5);
+								light2.position.set(10, 10, 10); // ~60º
+								light2.name = 'main_light';
+								scene.add(light2);
+							}
+					
+							function animate() {
+								requestAnimationFrame(animate);
+					
+								// gltf.rotation.x += 0.01;
+								scene.rotation.y += 0.003;
+								controls.update();
+								renderer.render(scene, camera);
+							};
+					
+							animate();
+						</script>
 					</div>
 					<div class="age">
 						Age of 10
+					</div>
+					<div class="source">
+						<p>
+							Source:
+							<br>
+							<a href="https://commons.wikimedia.org/w/index.php?search=%E4%B8%89%E5%A5%BD%E5%AD%A6%E7%94%9F&title=Special:MediaSearch&go=Go&type=image" target="_blank">Three Good Student</a>
+							<br>
+							<a href="https://commons.m.wikimedia.org/w/index.php?search=%E5%B0%91%E5%B9%B4%E5%85%88%E9%94%8B%E9%98%9F&title=Special:MediaSearch&type=image" target="_blank">Young Pioneers</a>
+							<br>
+							<a href="https://commons.wikimedia.org/w/index.php?search=Young+Pioneers&title=Special:MediaSearch&go=Go&type=image" target="_blank">Young Pioneers</a>
+							<br>
+							<a href="https://www.sohu.com/a/201695597_100047361" target="_blank">Transcript</a>
+						</p>
 					</div>
 					<br>
 					<br>
