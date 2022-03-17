@@ -433,14 +433,15 @@
 					
 							const controls = new THREE.OrbitControls(camera, renderer.domElement);
 					
-							controls.target = new THREE.Vector3(0, 7, 0);
-							camera.position.set(-2, 9, 7);
+							controls.target = new THREE.Vector3(0, 6.5, 0);
+							camera.position.set(-2, 7, 7);
 
-							rloader.load('images/wenjunii10/graduation_photo1-Pano.png', function (texture) {
+							rloader.load('images/wenjunii10/graduation_photo.hdr', function (texture) {
 								texture.mapping = THREE.EquirectangularReflectionMapping;
 
 								scene.background = texture;
 								scene.environment = texture;
+								texture.setPixelRatio(10);
 							});
 					
 							loader.load('models/wenjunii10.glb', function (gltf) {
