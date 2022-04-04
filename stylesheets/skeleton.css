@@ -41,17 +41,42 @@
   float: left;
   box-sizing: border-box; }
 
+@media (max-width: 400px) {
+  .notify {
+    text-align: center;
+    font-size: large;
+    display: inline;
+}
+  .container {
+    display: none;
+  }
+}
+
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
     width: 85%;
     padding: 0; }
+  .notify {
+      text-align: center;
+      font-size: large;
+      display: inline;
+}
+  .container {
+    display: none;
+}
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
+  .notify {
+    text-align: center;
+    font-size: large;
+    display: inline;
+}
   .container {
-    width: 95%; }
+    width: 95%; 
+    display: none;}
   .column,
   .columns {
     margin-left: 4%; }
@@ -110,6 +135,17 @@
   .offset-by-one-half.column,
   .offset-by-one-half.columns     { margin-left: 52%; }
 
+}
+
+@media (min-width: 1400px) {
+  .notify {
+    text-align: center;
+    font-size: large;
+    display: none;
+}
+  .container {
+    display: block;
+}
 }
 
 

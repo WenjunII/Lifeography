@@ -573,3 +573,8 @@ color: rgba(255, 255, 0, 0.15);
   border-right: 1px dotted rgba(169, 169, 169, 0.3);
   border-left: 1px dotted rgba(169, 169, 169, 0.3);
 }
+.notify {
+  text-align: center;
+  font-size: large;
+  display: none;
+}
