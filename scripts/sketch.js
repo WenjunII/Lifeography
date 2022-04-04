@@ -105,7 +105,7 @@ var beat = function( p ) { // p could be any variable name
   }
 
   p.setup = function() {
-    p.createCanvas(900, 675);
+    p.createCanvas(850, 675);
   };
 
   p.draw = function() {
@@ -379,7 +379,7 @@ var beat2 = function( p ) { // p could be any variable name
   }
 
   p.setup = function() {
-    p.createCanvas(900, 500);
+    p.createCanvas(850, 500);
   };
 
   p.draw = function() {
