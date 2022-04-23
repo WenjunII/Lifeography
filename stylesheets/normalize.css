@@ -581,3 +581,25 @@ color: rgba(255, 255, 0, 0.7);
   font-size: large;
   display: none;
 }
+#c5 {
+	text-align: center;
+}
+#c6 {
+	text-align: center;
+}
+.speechreconition2 {
+	font-style: italic;
+	padding: 3px;
+	color: rgba(255, 255, 0, 0.8);
+	border: 1px dotted rgba(255, 255, 0, 0.3);
+	width: 90px;
+	font-size: smaller;
+}
+.speak2 {
+	font-style: italic;
+	padding: 3px;
+	color: rgba(255, 255, 0, 0.8);
+	border: 1px dotted rgba(255, 255, 0, 0.3);
+	width: 105px;
+	font-size: smaller;
+}
