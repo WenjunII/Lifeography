@@ -603,3 +603,19 @@ color: rgba(255, 255, 0, 0.7);
 	width: 105px;
 	font-size: smaller;
 }
+.videoplay {
+  text-align: center;
+}
+.videoplay2 {
+  text-align: center;
+}
+.text2 {
+  text-align: center;
+}
+.hello3 {
+  letter-spacing: 0.2px;
+	font-size: medium;
+	line-height: 22px;
+	font-family: Verdana;
+  text-align: center;
+}
