@@ -139,8 +139,14 @@ var maze = function( p ) { // p could be any variable name
     // Play
     if(p.mouseX > 621 && p.mouseX < 731 && p.mouseY > 681 && p.mouseY < 731) {
       ready = 1;
-      endMsg = "";
+      // endMsg = "";
       p.cursor('none');
+      p.textSize(30);
+      p.stroke(1);
+      p.fill(c);
+      p.text(endMsg, p.width/2-250, p.height/2);
+      c = 'gold';
+      endMsg = "There are 14 years to go. Take your time.";
 
       // Cursor
       p.noStroke();
