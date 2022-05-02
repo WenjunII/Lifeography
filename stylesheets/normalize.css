@@ -673,7 +673,7 @@ a.source2:active {
     margin-right: auto;
   }
   .speech2 {
-    border: 1px dotted rgba(205, 150, 0, 0.7);
+    border: 1px dotted rgba(0, 0, 0, 0.3);
     padding: 10px;
     width: 800px;
     margin: 0 auto;
@@ -693,7 +693,7 @@ a.source2:active {
     font-style: italic;
     padding: 3px;
     color: rgba(205, 150, 0, 0.7);
-    border: 1px dotted rgba(205, 150, 0, 0.7);
+    border: 1px dotted rgba(0, 0, 0, 0.3);
     width: 90px;
     font-size: smaller;
   }
@@ -701,7 +701,7 @@ a.source2:active {
     font-style: italic;
     padding: 3px;
     color: rgba(205, 150, 0, 0.7);
-    border: 1px dotted rgba(205, 150, 0, 0.7);
+    border: 1px dotted rgba(0, 0, 0, 0.3);
     width: 105px;
     font-size: smaller;
   }
