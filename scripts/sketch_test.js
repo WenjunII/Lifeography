@@ -34,7 +34,7 @@ var free = function( p ) { // p could be any variable name
     // p.noStroke();
     p.fill(255, 255, 255, rectopacity);
     p.rect(0, 0, 850, 1.5 + rectmove);
-    rectmove += 5;
+    rectmove += 6;
 
       
 
