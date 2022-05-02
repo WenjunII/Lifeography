@@ -440,7 +440,8 @@ th {
   margin-right: auto;
 }
 .body {
-	background-color: rgb(25, 25, 25);
+	/* background-color: rgb(25, 25, 25); */
+  background-image: linear-gradient(black, rgb(25, 25, 25), white);
 	color: rgb(230, 230, 230);
 }
 .title {
@@ -495,7 +496,7 @@ th {
 .speechreconition {
 	font-style: italic;
 	padding: 3px;
-	color: rgba(255, 255, 0, 0.8);
+	color: rgba(205, 150, 0, 0.7);
 	border: 1px dotted rgba(255, 255, 0, 0.3);
 	width: 180px;
 	font-size: smaller;
@@ -503,7 +504,7 @@ th {
 .translation {
 	font-style: italic;
 	padding: 3px;
-	color: rgba(255, 255, 0, 0.8);
+	color: rgba(205, 150, 0, 0.7);
 	border: 1px dotted rgba(255, 255, 0, 0.3);
 	width: 140px;
 	font-size: smaller;
@@ -514,7 +515,7 @@ th {
 .speak {
 	font-style: italic;
 	padding: 3px;
-	color: rgba(255, 255, 0, 0.8);
+	color: rgba(205, 150, 0, 0.7);
 	border: 1px dotted rgba(255, 255, 0, 0.3);
 	width: 180px;
 	font-size: smaller;
@@ -538,7 +539,7 @@ th {
 .age {
 	font-style: italic;
 	padding: 3px;
-	color: rgba(255, 255, 0, 0.7);
+	color: rgba(205, 150, 0, 0.7);
 	border: 1px dotted rgba(255, 255, 0, 0.3);
 	width: 70px;
 	font-size: smaller;
@@ -557,20 +558,20 @@ th {
 }
 .source {
 	font-size: smaller;
-	color: rgba(255, 255, 0, 0.7);
+	color: rgba(205, 150, 0, 0.7);
 	text-align: right;
 }
 a:link {
-color: rgba(255, 255, 0, 0.7);
+color: rgba(205, 150, 0, 0.7);
 }
 a:visited {
-color: rgba(255, 255, 0, 0.7);
+color: rgba(205, 150, 0, 0.7);
 }
 a:hover {
-color: rgba(255, 255, 0, 0.7);
+color: rgba(205, 150, 0, 0.7);
 }
 a:active {
-color: rgba(255, 255, 0, 0.7);
+color: rgba(205, 150, 0, 0.7);
 }
 .middle {
   border-right: 1px dotted rgba(169, 169, 169, 0.3);
@@ -590,7 +591,7 @@ color: rgba(255, 255, 0, 0.7);
 .speechreconition2 {
 	font-style: italic;
 	padding: 3px;
-	color: rgba(255, 255, 0, 0.8);
+	color: rgba(205, 150, 0, 0.7);
 	border: 1px dotted rgba(255, 255, 0, 0.3);
 	width: 90px;
 	font-size: smaller;
@@ -598,7 +599,7 @@ color: rgba(255, 255, 0, 0.7);
 .speak2 {
 	font-style: italic;
 	padding: 3px;
-	color: rgba(255, 255, 0, 0.8);
+	color: rgba(205, 150, 0, 0.7);
 	border: 1px dotted rgba(255, 255, 0, 0.3);
 	width: 105px;
 	font-size: smaller;
@@ -622,3 +623,52 @@ color: rgba(255, 255, 0, 0.7);
 #c7 {
 	text-align: center;
 }
+#c8 {
+	text-align: center;
+}
+.hello4 {
+	letter-spacing: 0.2px;
+	font-size: medium;
+	line-height: 22px;
+	font-family: Verdana;
+  color: black;
+}
+.hello5 {
+	width: 850px;
+	margin-left: auto;
+  margin-right: auto;
+  color: black;
+}
+.subtitle2 {
+	letter-spacing: 1px;
+	text-align: center;
+  color: black;
+}
+.source2 {
+	font-size: smaller;
+	color: rgba(205, 150, 0, 0.7);
+	text-align: right;
+}
+a.source2:link {
+  color: rgba(205, 150, 0, 0.7);
+  }
+a.source2:visited {
+  color: rgba(205, 150, 0, 0.7);
+  }
+a.source2:hover {
+  color: rgba(205, 150, 0, 0.7);
+  }
+a.source2:active {
+  color: rgba(205, 150, 0, 0.7);
+  }
+  .age2 {
+    font-style: italic;
+    padding: 3px;
+    color: rgba(205, 150, 0, 0.7);
+    border: 1px dotted rgba(205, 150, 0, 0.7);
+    width: 70px;
+    font-size: smaller;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
