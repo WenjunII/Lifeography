@@ -801,7 +801,7 @@ var maze = function( p ) { // p could be any variable name
       // Cursor
       p.noStroke();
       p.fill(0, 0, 0, avatarplayop);
-      p.circle(p.mouseX, p.mouseY, 30);
+      p.circle(p.mouseX, p.mouseY, 20);
       avatarplayop -= avatarplayopchange;
       if (avatarplayop < 0) {
         avatarplayopchange *= -1;
@@ -816,7 +816,7 @@ var maze = function( p ) { // p could be any variable name
       // Cursor
       p.noStroke();
       p.fill(0, 0, 0, avatarplayop);
-      p.circle(p.mouseX, p.mouseY, 30);
+      p.circle(p.mouseX, p.mouseY, 20);
       avatarplayop -= avatarplayopchange;
       if (avatarplayop < 0) {
         avatarplayopchange *= -1;
@@ -864,7 +864,7 @@ var maze = function( p ) { // p could be any variable name
       }
     // // Big Walls
     // p.rect(160,600, 571, 30);
-    if(p.mouseX > 160 - 15 && p.mouseX < 731 + 15 && p.mouseY > 600 - 15 && p.mouseY < 630 + 15) {
+    if(p.mouseX > 160 - 10 && p.mouseX < 731 + 10 && p.mouseY > 600 - 10 && p.mouseY < 630 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -874,7 +874,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.rect(160,250, 30, 350);
-    if(p.mouseX > 160 - 15 && p.mouseX < 190 + 15 && p.mouseY > 250 - 15 && p.mouseY < 600 + 15) {
+    if(p.mouseX > 160 - 10 && p.mouseX < 190 + 10 && p.mouseY > 250 - 10 && p.mouseY < 600 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -884,7 +884,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.rect(69,150, 560, 30);
-    if(p.mouseX > 69 - 15 && p.mouseX < 659 + 15 && p.mouseY > 150 - 15 && p.mouseY < 180 + 15) {
+    if(p.mouseX > 69 - 10 && p.mouseX < 659 + 10 && p.mouseY > 150 - 10 && p.mouseY < 180 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -894,7 +894,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.rect(430,150, 30, 410);
-    if(p.mouseX > 430 - 15 && p.mouseX < 460 + 15 && p.mouseY > 150 - 15 && p.mouseY < 560 + 15) {
+    if(p.mouseX > 430 - 10 && p.mouseX < 460 + 10 && p.mouseY > 150 - 10 && p.mouseY < 560 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -905,7 +905,7 @@ var maze = function( p ) { // p could be any variable name
     }
     // // End Maze
     // p.rect(320,10, 60, 100);
-    if(p.mouseX > 320 - 15 && p.mouseX < 380 + 15 && p.mouseY > 10 - 15 && p.mouseY < 110 + 15) {
+    if(p.mouseX > 320 - 10 && p.mouseX < 380 + 10 && p.mouseY > 10 - 10 && p.mouseY < 110 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -915,7 +915,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.rect(190,105, 80, 10);
-    if(p.mouseX > 190 - 15 && p.mouseX < 270 + 15 && p.mouseY > 105 - 15 && p.mouseY < 115 + 15) {
+    if(p.mouseX > 190 - 10 && p.mouseX < 270 + 10 && p.mouseY > 105 - 10 && p.mouseY < 115 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -925,7 +925,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.rect(430,105, 50, 10);
-    if(p.mouseX > 430 - 15 && p.mouseX < 480 + 15 && p.mouseY > 105 - 15 && p.mouseY < 115 + 15) {
+    if(p.mouseX > 430 - 10 && p.mouseX < 480 + 10 && p.mouseY > 105 - 10 && p.mouseY < 115 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -935,7 +935,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.rect(530,105, 50, 10);
-    if(p.mouseX > 530 - 15 && p.mouseX < 580 + 15 && p.mouseY > 105 - 15 && p.mouseY < 115 + 15) {
+    if(p.mouseX > 530 - 10 && p.mouseX < 580 + 10 && p.mouseY > 105 - 10 && p.mouseY < 115 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -946,7 +946,7 @@ var maze = function( p ) { // p could be any variable name
     }
     
     // Outside the canvas
-    if(p.mouseX > p.width - 70 - 15 || p.mouseX < 0 + 15 + 70 || p.mouseY > p.height - 15 - 70 || p.mouseY < 0 + 15 + 70) {
+    if(p.mouseX > p.width - 70 - 10 || p.mouseX < 0 + 10 + 70 || p.mouseY > p.height - 10 - 70 || p.mouseY < 0 + 10 + 70) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -960,7 +960,7 @@ var maze = function( p ) { // p could be any variable name
 
     //Rect Run
     // p.rect(50,530, 70, 30);
-    if(p.mouseX > 50 - 15 && p.mouseX < 120 + 15 && p.mouseY > 530 - 15 && p.mouseY < 560 + 15) {
+    if(p.mouseX > 50 - 10 && p.mouseX < 120 + 10 && p.mouseY > 530 - 10 && p.mouseY < 560 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -970,7 +970,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.rect(110,430, 60, 30);
-    if(p.mouseX > 110 - 15 && p.mouseX < 170 + 15 && p.mouseY > 430 - 15 && p.mouseY < 460 + 15) {
+    if(p.mouseX > 110 - 10 && p.mouseX < 170 + 10 && p.mouseY > 430 - 10 && p.mouseY < 460 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -980,7 +980,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.rect(30,340, 90, 30);
-    if(p.mouseX > 30 - 15 && p.mouseX < 120 + 15 && p.mouseY > 340 - 15 && p.mouseY < 370 + 15) {
+    if(p.mouseX > 30 - 10 && p.mouseX < 120 + 10 && p.mouseY > 340 - 10 && p.mouseY < 370 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -990,7 +990,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.rect(110, 250, 60, 30);
-    if(p.mouseX > 110 - 15 && p.mouseX < 170 + 15 && p.mouseY > 250 - 15 && p.mouseY < 280 + 15) {
+    if(p.mouseX > 110 - 10 && p.mouseX < 170 + 10 && p.mouseY > 250 - 10 && p.mouseY < 280 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1003,7 +1003,7 @@ var maze = function( p ) { // p could be any variable name
   
       // // Bubble Run
     // p.ellipse(560, 680, 30);
-    if(p.dist(560, 680, p.mouseX, p.mouseY) < 15 + 15) {
+    if(p.dist(560, 680, p.mouseX, p.mouseY) < 15 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1013,7 +1013,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(460,650, 90);
-    if(p.dist(460, 650, p.mouseX, p.mouseY) < 45 + 15) {
+    if(p.dist(460, 650, p.mouseX, p.mouseY) < 45 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1023,7 +1023,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(330,740, 150);
-    if(p.dist(330, 740, p.mouseX, p.mouseY) < 75 + 15) {
+    if(p.dist(330, 740, p.mouseX, p.mouseY) < 75 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1033,7 +1033,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(150, 650, 90);
-    if(p.dist(150, 650, p.mouseX, p.mouseY) < 45 + 15) {
+    if(p.dist(150, 650, p.mouseX, p.mouseY) < 45 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1043,7 +1043,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(300, 290, 150);
-    if(p.dist(300, 290, p.mouseX, p.mouseY) < 75 + 15) {
+    if(p.dist(300, 290, p.mouseX, p.mouseY) < 75 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1053,7 +1053,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(270, 450, 90);
-    if(p.dist(270, 450, p.mouseX, p.mouseY) < 45 + 15) {
+    if(p.dist(270, 450, p.mouseX, p.mouseY) < 45 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1063,7 +1063,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(330, 560, 90);
-    if(p.dist(330, 560, p.mouseX, p.mouseY) < 45 + 15) {
+    if(p.dist(330, 560, p.mouseX, p.mouseY) < 45 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1073,7 +1073,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(400, 420, 90);
-    if(p.dist(400, 420, p.mouseX, p.mouseY) < 45 + 15) {
+    if(p.dist(400, 420, p.mouseX, p.mouseY) < 45 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1083,7 +1083,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(500, 545, 40);
-    if(p.dist(500, 545, p.mouseX, p.mouseY) < 20 + 15) {
+    if(p.dist(500, 545, p.mouseX, p.mouseY) < 20 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1093,7 +1093,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(565, 500, 40);
-    if(p.dist(565, 500, p.mouseX, p.mouseY) < 20 + 15) {
+    if(p.dist(565, 500, p.mouseX, p.mouseY) < 20 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1103,7 +1103,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(600, 590, 40);
-    if(p.dist(600, 590, p.mouseX, p.mouseY) < 20 + 15) {
+    if(p.dist(600, 590, p.mouseX, p.mouseY) < 20 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1113,7 +1113,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(670, 550, 40);
-    if(p.dist(670, 550, p.mouseX, p.mouseY) < 20 + 15) {
+    if(p.dist(670, 550, p.mouseX, p.mouseY) < 20 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1123,7 +1123,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(630, 470, 40);
-    if(p.dist(630, 470, p.mouseX, p.mouseY) < 20 + 15) {
+    if(p.dist(630, 470, p.mouseX, p.mouseY) < 20 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1133,7 +1133,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(500, 460, 40);
-    if(p.dist(500, 460, p.mouseX, p.mouseY) < 20 + 15) {
+    if(p.dist(500, 460, p.mouseX, p.mouseY) < 20 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1143,7 +1143,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(710, 480, 40);
-    if(p.dist(610, 480, p.mouseX, p.mouseY) < 20 + 15) {
+    if(p.dist(610, 480, p.mouseX, p.mouseY) < 20 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1153,7 +1153,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(480, 365, 40);
-    if(p.dist(480, 365, p.mouseX, p.mouseY) < 20 + 15) {
+    if(p.dist(480, 365, p.mouseX, p.mouseY) < 20 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1163,7 +1163,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(545, 320, 40);
-    if(p.dist(545, 320, p.mouseX, p.mouseY) < 20 + 15) {
+    if(p.dist(545, 320, p.mouseX, p.mouseY) < 20 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1173,7 +1173,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(580, 410, 40);
-    if(p.dist(580, 410, p.mouseX, p.mouseY) < 20 + 15) {
+    if(p.dist(580, 410, p.mouseX, p.mouseY) < 20 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1183,7 +1183,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(650, 370, 40);
-    if(p.dist(650, 370, p.mouseX, p.mouseY) < 20 + 15) {
+    if(p.dist(650, 370, p.mouseX, p.mouseY) < 20 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1193,7 +1193,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(610, 290, 40);
-    if(p.dist(610, 290, p.mouseX, p.mouseY) < 20 + 15) {
+    if(p.dist(610, 290, p.mouseX, p.mouseY) < 20 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1203,7 +1203,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(480, 280, 40);
-    if(p.dist(480, 280, p.mouseX, p.mouseY) < 20 + 15) {
+    if(p.dist(480, 280, p.mouseX, p.mouseY) < 20 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1213,7 +1213,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(690, 300, 40);
-    if(p.dist(690, 300, p.mouseX, p.mouseY) < 20 + 15) {
+    if(p.dist(690, 300, p.mouseX, p.mouseY) < 20 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1223,7 +1223,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(550, 200, 80);
-    if(p.dist(550, 200, p.mouseX, p.mouseY) < 40 + 15) {
+    if(p.dist(550, 200, p.mouseX, p.mouseY) < 40 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
@@ -1233,7 +1233,7 @@ var maze = function( p ) { // p could be any variable name
       c = 'red'
     }
     // p.ellipse(740, 200, 130);
-    if(p.dist(740, 200, p.mouseX, p.mouseY) < 65 + 15) {
+    if(p.dist(740, 200, p.mouseX, p.mouseY) < 65 + 10) {
       ready = 0;
       p.textSize(30);
       p.stroke(1);
