@@ -859,7 +859,7 @@ var maze = function( p ) { // p could be any variable name
         p.stroke(1);
         p.fill(c);
         p.text(endMsg, p.width/2-250, p.height/2);
-        endMsg = "Opps! Again?";
+        endMsg = "Oops! Again?";
         c = 'red'
       }
     // // Big Walls
@@ -870,7 +870,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.rect(160,250, 30, 350);
@@ -880,7 +880,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.rect(69,150, 560, 30);
@@ -890,7 +890,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.rect(430,150, 30, 410);
@@ -900,7 +900,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // // End Maze
@@ -911,7 +911,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.rect(190,105, 80, 10);
@@ -921,7 +921,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.rect(430,105, 50, 10);
@@ -931,7 +931,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.rect(530,105, 50, 10);
@@ -941,7 +941,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     
@@ -952,7 +952,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // if(p.mouseX == 0 && p.mouseY == 0)
@@ -966,7 +966,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.rect(110,430, 60, 30);
@@ -976,7 +976,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.rect(30,340, 90, 30);
@@ -986,7 +986,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.rect(110, 250, 60, 30);
@@ -996,7 +996,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
 
@@ -1009,7 +1009,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(460,650, 90);
@@ -1019,7 +1019,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(330,740, 150);
@@ -1029,7 +1029,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(150, 650, 90);
@@ -1039,7 +1039,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(300, 290, 150);
@@ -1049,7 +1049,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(270, 450, 90);
@@ -1059,7 +1059,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(330, 560, 90);
@@ -1069,7 +1069,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(400, 420, 90);
@@ -1079,7 +1079,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(500, 545, 40);
@@ -1089,7 +1089,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(565, 500, 40);
@@ -1099,7 +1099,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(600, 590, 40);
@@ -1109,7 +1109,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(670, 550, 40);
@@ -1119,7 +1119,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(630, 470, 40);
@@ -1129,7 +1129,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(500, 460, 40);
@@ -1139,7 +1139,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(710, 480, 40);
@@ -1149,7 +1149,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(480, 365, 40);
@@ -1159,7 +1159,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(545, 320, 40);
@@ -1169,7 +1169,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(580, 410, 40);
@@ -1179,7 +1179,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(650, 370, 40);
@@ -1189,7 +1189,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(610, 290, 40);
@@ -1199,7 +1199,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(480, 280, 40);
@@ -1209,7 +1209,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(690, 300, 40);
@@ -1219,7 +1219,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(550, 200, 80);
@@ -1229,7 +1229,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
     // p.ellipse(740, 200, 130);
@@ -1239,7 +1239,7 @@ var maze = function( p ) { // p could be any variable name
       p.stroke(1);
       p.fill(c);
       p.text(endMsg, p.width/2-250, p.height/2);
-      endMsg = "Opps! Again?";
+      endMsg = "Oops! Again?";
       c = 'red'
     }
 
