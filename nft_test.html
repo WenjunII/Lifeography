@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
+	<script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+	<script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+	<script src="https://unpkg.com/three@0.128.0/examples/js/loaders/RGBELoader.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+	<link rel="icon" type="image/png" href="images/icon.png">
+	<title>NFT Test</title>
+</head>
+
+<body class="body">
+	<div id="3d10">
+		<script>
+			console.log('SCRIPT LOADED');
+			const scene = new THREE.Scene();
+			const camera = new THREE.PerspectiveCamera(90, window.innerWidth / 1.2 / window.innerHeight, 0.01, 100);
+	
+			const renderer = new THREE.WebGLRenderer({ alpha: true });
+			renderer.setSize(window.innerWidth / 1.36 / 1.2, window.innerHeight / 1.36);
+			renderer.setClearColor(0xcccccc);
+			renderer.setPixelRatio(3);
+			document.getElementById('3d10').appendChild(renderer.domElement);
+	
+			scene.background = new THREE.Color('rgb(25, 25, 25)');
+	
+			const loader = new THREE.GLTFLoader();
+
+			const rloader = new THREE.RGBELoader();
+	
+			const controls = new THREE.OrbitControls(camera, renderer.domElement);
+	
+			controls.target = new THREE.Vector3(0, 6.5, 0);
+			camera.position.set(-2, 7, 8);
+
+			rloader.load('images/wenjunii5/smiles.hdr', function (texture) {
+				texture.mapping = THREE.EquirectangularReflectionMapping;
+
+				scene.background = texture;
+				scene.environment = texture;
+				texture.setPixelRatio(10);
+			});
+	
+			loader.load('models/wenjunii5dance.glb', function (gltf) {
+				// Loop over all of the child objects in the model and turn
+				// off metalness feature in material
+				// your model has metalness set too high 
+				gltf.scene.traverse(child => {
+					if (child.material) child.material.metalness = 0;
+				});
+	
+				gltf.scene.traverse((object) => {
+					const encoding = THREE.sRGBEncoding;
+					if (object.isMesh) {
+						const material = object.material;
+						if (material.map) material.map.encoding = encoding;
+						if (material.emissiveMap) material.emissiveMap.encoding = encoding;
+						if (material.map || material.emissiveMap) material.needsUpdate = true;
+	
+						console.log(object.material);
+					}
+				});
+	
+				scene.add(gltf.scene);
+				addLights();
+				console.log('GLTF LOAD');
+			}, undefined, function (error) {
+				console.log('GLTF ERROR');
+				console.error(error);
+	
+			});
+	
+			function addLights() {
+				console.log('LIGHTS')
+				const hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.3);
+				scene.add(hemiLight);
+	
+				const intensity = 1;
+				const light = new THREE.AmbientLight(0xffffff, 0.1);
+				scene.add(light);
+	
+				const light2 = new THREE.DirectionalLight(0xffffff, 1.5);
+				light2.position.set(10, 10, 10); // ~60º
+				light2.name = 'main_light';
+				scene.add(light2);
+			}
+	
+			function animate() {
+				requestAnimationFrame(animate);
+	
+				// gltf.rotation.x += 0.01;
+				scene.rotation.y += 0.003;
+				controls.update();
+				renderer.render(scene, camera);
+			};
+	
+			animate();
+		</script>
+</div>
+</body>
+
+</html>
