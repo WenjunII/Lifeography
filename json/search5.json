@@ -1,0 +1,1272 @@
+{
+  "search_metadata": {
+    "id": "6358774dd04d6d1d630e24f7",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/a65650d6141377cd/6358774dd04d6d1d630e24f7.json",
+    "created_at": "2022-10-25 23:54:53 UTC",
+    "processed_at": "2022-10-25 23:54:53 UTC",
+    "google_url": "https://www.google.com/search?q=female+lap&oq=female+lap&tbm=isch&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/a65650d6141377cd/6358774dd04d6d1d630e24f7.html",
+    "total_time_taken": 0.92
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "female lap",
+    "google_domain": "google.com",
+    "ijn": "0",
+    "device": "desktop",
+    "tbm": "isch"
+  },
+  "search_information": {
+    "image_results_state": "Results for exact spelling",
+    "query_displayed": "female lap",
+    "menu_items": [
+      {
+        "position": 1,
+        "title": "All",
+        "link": "https://www.google.com/search?q=female+lap&source=lmns&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q_AUoAHoECAEQAA"
+      },
+      {
+        "position": 2,
+        "title": "Images"
+      },
+      {
+        "position": 3,
+        "title": "Videos",
+        "link": "https://www.google.com/search?q=female+lap&source=lmns&tbm=vid&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q_AUoAnoECAEQAg",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en-US&ijn=0&q=female+lap&tbm=vid"
+      },
+      {
+        "position": 4,
+        "title": "Shopping",
+        "link": "https://www.google.com/search?q=female+lap&source=lmns&tbm=shop&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q_AUoA3oECAEQAw",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en-US&ijn=0&q=female+lap&tbm=shop"
+      },
+      {
+        "position": 5,
+        "title": "News",
+        "link": "https://www.google.com/search?q=female+lap&source=lmns&tbm=nws&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q_AUoBHoECAEQBA",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en-US&ijn=0&q=female+lap&tbm=nws"
+      }
+    ]
+  },
+  "suggested_searches": [
+    {
+      "name": "boy",
+      "link": "https://www.google.com/search?q=female+lap&tbm=isch&chips=q:female+lap,g_1:boy:XAnLTEhX4U8%3D&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q4lYoAHoECAEQIg",
+      "chips": "q:female+lap,g_1:boy:XAnLTEhX4U8%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Afemale%2Blap%2Cg_1%3Aboy%3AXAnLTEhX4U8%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=female+lap&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/4c474ad28ffabc062b76c38ab8125a657aa8def5330bf1b424dc04645c8cf181.jpeg"
+    },
+    {
+      "name": "lady",
+      "link": "https://www.google.com/search?q=female+lap&tbm=isch&chips=q:female+lap,g_1:lady:9N1BYHAGv_A%3D&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q4lYoAXoECAEQJA",
+      "chips": "q:female+lap,g_1:lady:9N1BYHAGv_A%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Afemale%2Blap%2Cg_1%3Alady%3A9N1BYHAGv_A%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=female+lap&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/4c474ad28ffabc062b76c38ab8125a65807d9d5be49b8353f96a3026681bcc4f.jpeg"
+    },
+    {
+      "name": "big",
+      "link": "https://www.google.com/search?q=female+lap&tbm=isch&chips=q:female+lap,g_1:big:ONc6QcfcClo%3D&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q4lYoAnoECAEQJg",
+      "chips": "q:female+lap,g_1:big:ONc6QcfcClo%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Afemale%2Blap%2Cg_1%3Abig%3AONc6QcfcClo%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=female+lap&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/4c474ad28ffabc062b76c38ab8125a652aa6a9b08e66f94c29b6e4dd6e294905.jpeg"
+    },
+    {
+      "name": "boy sleeping",
+      "link": "https://www.google.com/search?q=female+lap&tbm=isch&chips=q:female+lap,online_chips:boy+sleeping:SsiYUzDh4sU%3D&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q4lYoA3oECAEQKA",
+      "chips": "q:female+lap,online_chips:boy+sleeping:SsiYUzDh4sU%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Afemale%2Blap%2Conline_chips%3Aboy%2Bsleeping%3ASsiYUzDh4sU%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=female+lap&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/4c474ad28ffabc062b76c38ab8125a6575dbbc72b6a1cab6cf26e6b40625161b.jpeg"
+    },
+    {
+      "name": "lying on",
+      "link": "https://www.google.com/search?q=female+lap&tbm=isch&chips=q:female+lap,online_chips:lying+on:zf0YVI4YMwI%3D&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q4lYoBHoECAEQKg",
+      "chips": "q:female+lap,online_chips:lying+on:zf0YVI4YMwI%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Afemale%2Blap%2Conline_chips%3Alying%2Bon%3Azf0YVI4YMwI%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=female+lap&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/4c474ad28ffabc062b76c38ab8125a6556335b32f4813cf32790c636700f8306.jpeg"
+    },
+    {
+      "name": "friends lap",
+      "link": "https://www.google.com/search?q=female+lap&tbm=isch&chips=q:female+lap,online_chips:friends+lap:3Xa0wQ539MA%3D&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q4lYoBXoECAEQLA",
+      "chips": "q:female+lap,online_chips:friends+lap:3Xa0wQ539MA%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Afemale%2Blap%2Conline_chips%3Afriends%2Blap%3A3Xa0wQ539MA%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=female+lap&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/4c474ad28ffabc062b76c38ab8125a65c7381536af198fdba63ce4e501151380.jpeg"
+    },
+    {
+      "name": "swimming",
+      "link": "https://www.google.com/search?q=female+lap&tbm=isch&chips=q:female+lap,online_chips:swimming:NJiCW_KrceM%3D&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q4lYoBnoECAEQLg",
+      "chips": "q:female+lap,online_chips:swimming:NJiCW_KrceM%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Afemale%2Blap%2Conline_chips%3Aswimming%3ANJiCW_KrceM%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=female+lap&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/4c474ad28ffabc062b76c38ab8125a65701c4cadbef647371d3131a4443fa10a.jpeg"
+    },
+    {
+      "name": "head",
+      "link": "https://www.google.com/search?q=female+lap&tbm=isch&chips=q:female+lap,online_chips:head:9dJM6TcnSdE%3D&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q4lYoB3oECAEQMA",
+      "chips": "q:female+lap,online_chips:head:9dJM6TcnSdE%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Afemale%2Blap%2Conline_chips%3Ahead%3A9dJM6TcnSdE%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=female+lap&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/4c474ad28ffabc062b76c38ab8125a65df0e45c9e272ad59be329c1963647781.jpeg"
+    },
+    {
+      "name": "hands",
+      "link": "https://www.google.com/search?q=female+lap&tbm=isch&chips=q:female+lap,online_chips:hands:Tra7j5fvMPo%3D&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q4lYoCHoECAEQMg",
+      "chips": "q:female+lap,online_chips:hands:Tra7j5fvMPo%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Afemale%2Blap%2Conline_chips%3Ahands%3ATra7j5fvMPo%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=female+lap&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/4c474ad28ffabc062b76c38ab8125a6552b4d302fb4352de3edeb441501aa699.jpeg"
+    },
+    {
+      "name": "lying in",
+      "link": "https://www.google.com/search?q=female+lap&tbm=isch&chips=q:female+lap,online_chips:lying+in:-LCubK27tQE%3D&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q4lYoCXoECAEQNA",
+      "chips": "q:female+lap,online_chips:lying+in:-LCubK27tQE%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Afemale%2Blap%2Conline_chips%3Alying%2Bin%3A-LCubK27tQE%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=female+lap&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/4c474ad28ffabc062b76c38ab8125a65312a8be9056197d957d1e59798e3f510.jpeg"
+    },
+    {
+      "name": "man sitting",
+      "link": "https://www.google.com/search?q=female+lap&tbm=isch&chips=q:female+lap,online_chips:man+sitting:TXF5McAy-HQ%3D&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q4lYoCnoECAEQNg",
+      "chips": "q:female+lap,online_chips:man+sitting:TXF5McAy-HQ%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Afemale%2Blap%2Conline_chips%3Aman%2Bsitting%3ATXF5McAy-HQ%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=female+lap&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/4c474ad28ffabc062b76c38ab8125a659cd4317811471ccf6278098c39a8c0c6.jpeg"
+    },
+    {
+      "name": "stock photo",
+      "link": "https://www.google.com/search?q=female+lap&tbm=isch&chips=q:female+lap,online_chips:stock+photo:gPZo1e6Ycm8%3D&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q4lYoC3oECAEQOA",
+      "chips": "q:female+lap,online_chips:stock+photo:gPZo1e6Ycm8%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Afemale%2Blap%2Conline_chips%3Astock%2Bphoto%3AgPZo1e6Ycm8%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=female+lap&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/4c474ad28ffabc062b76c38ab8125a6543bd814ac93ed7a1d87253fa6f9497ad.jpeg"
+    },
+    {
+      "name": "swimming laps",
+      "link": "https://www.google.com/search?q=female+lap&tbm=isch&chips=q:female+lap,online_chips:swimming+laps:txmhKRQ-_yQ%3D&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q4lYoDHoECAEQOg",
+      "chips": "q:female+lap,online_chips:swimming+laps:txmhKRQ-_yQ%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Afemale%2Blap%2Conline_chips%3Aswimming%2Blaps%3AtxmhKRQ-_yQ%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=female+lap&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuYoP4qWEtrH8GbwK6yd9qMMteBecK2o6fpURHL_AuhRkNqG50&usqp=CAU"
+    },
+    {
+      "name": "resting head",
+      "link": "https://www.google.com/search?q=female+lap&tbm=isch&chips=q:female+lap,online_chips:resting+head:81TU7zb90H0%3D&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q4lYoDXoECAEQPA",
+      "chips": "q:female+lap,online_chips:resting+head:81TU7zb90H0%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Afemale%2Blap%2Conline_chips%3Aresting%2Bhead%3A81TU7zb90H0%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=female+lap&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9AY4SseeOeTDlAmGu5zeWMAHhHUE2QLvGwbAPZqxkQRELemw_&usqp=CAU"
+    },
+    {
+      "name": "beautiful",
+      "link": "https://www.google.com/search?q=female+lap&tbm=isch&chips=q:female+lap,online_chips:beautiful:R04SM6_6IlI%3D&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q4lYoDnoECAEQPg",
+      "chips": "q:female+lap,online_chips:beautiful:R04SM6_6IlI%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Afemale%2Blap%2Conline_chips%3Abeautiful%3AR04SM6_6IlI%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=female+lap&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSucEba5m2ueJvl-DK_HeqKsk8S0wWnEC1IxiCLthEBQ03w_sv_&usqp=CAU"
+    },
+    {
+      "name": "boyfriend",
+      "link": "https://www.google.com/search?q=female+lap&tbm=isch&chips=q:female+lap,online_chips:boyfriend:Pi4w4kwI6_4%3D&hl=en-US&sa=X&ved=2ahUKEwje9sSTyvz6AhXcu3IEHRC_Aq0Q4lYoD3oECAEQQA",
+      "chips": "q:female+lap,online_chips:boyfriend:Pi4w4kwI6_4%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Afemale%2Blap%2Conline_chips%3Aboyfriend%3APi4w4kwI6_4%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=female+lap&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmlj7k8LwqMivReWn1YoRTAN_xK6qL-rya-EhVHDjL4ynF6L0-&usqp=CAU"
+    }
+  ],
+  "images_results": [
+    {
+      "position": 1,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef4125ccb09b07d7476e59f8e3b130eb36c0764ae351671052b.jpeg",
+      "source": "dreamstime.com",
+      "title": "Beautiful Female Legs with Laptop Lying on Lap Stock Image - Image of  person, model: 11870975",
+      "link": "https://www.dreamstime.com/royalty-free-stock-photo-beautiful-female-legs-laptop-lying-lap-image11870975",
+      "original": "https://thumbs.dreamstime.com/z/beautiful-female-legs-laptop-lying-lap-11870975.jpg",
+      "original_width": 957,
+      "original_height": 1300,
+      "is_product": true
+    },
+    {
+      "position": 2,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef4b7a5b81707011af43c80704b0300518e8dd71f04cae31e38.jpeg",
+      "source": "stocksy.com",
+      "title": "View Of Teenage Girl's Hands On Lap Sitting On Examination Table. by Preappy",
+      "link": "https://www.stocksy.com/582344/view-of-teenage-girls-hands-on-lap-sitting-on-examination-table",
+      "original": "https://c.stocksy.com/a/eUR200/z9/582344.jpg",
+      "original_width": 1200,
+      "original_height": 800,
+      "is_product": false
+    },
+    {
+      "position": 3,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef44bd043499fc01b8ab81a3da524eb7e9f898b763b3e860cc3.jpeg",
+      "source": "gettyimages.com",
+      "title": "776 Woman With Hands On Lap Photos and Premium High Res Pictures - Getty  Images",
+      "link": "https://www.gettyimages.com/photos/woman-with-hands-on-lap",
+      "original": "https://media.gettyimages.com/photos/woman-with-hands-clasped-on-lap-closeup-picture-id578998251?s=170667a",
+      "original_width": 508,
+      "original_height": 339,
+      "is_product": true
+    },
+    {
+      "position": 4,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef42b0481df57e5587f5c0a5c7add9160e6a4cf68351469c537.jpeg",
+      "source": "shutterstock.com",
+      "title": "3,713 Woman's Lap Images, Stock Photos & Vectors | Shutterstock",
+      "link": "https://www.shutterstock.com/search/woman%27s-lap",
+      "original": "https://image.shutterstock.com/image-photo/young-man-putting-his-head-260nw-385097932.jpg",
+      "original_width": 342,
+      "original_height": 280,
+      "is_product": true
+    },
+    {
+      "position": 5,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef4dc5a57200ab0c6b2e67229b9362b31807e4ca5c6281f0fa0.jpeg",
+      "source": "dreamstime.com",
+      "title": "Woman Looking at Man Lying on Her Lap in Bed Stock Image - Image of  bedroom, multiethnic: 122230091",
+      "link": "https://www.dreamstime.com/woman-looking-man-lying-her-lap-bed-attractive-young-women-men-home-image122230091",
+      "original": "https://thumbs.dreamstime.com/z/woman-looking-man-lying-her-lap-bed-attractive-young-women-men-home-122230091.jpg",
+      "original_width": 1300,
+      "original_height": 957,
+      "is_product": true
+    },
+    {
+      "position": 6,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef41570ede896a4fc2cd37d11b39dd930b8afc8a7a5512598b5.jpeg",
+      "source": "westend61.de",
+      "title": "Woman lying on lap of female friend on hay bale during sunset stock photo",
+      "link": "https://www.westend61.de/en/imageView/TCEF02018/woman-lying-on-lap-of-female-friend-on-hay-bale-during-sunset",
+      "original": "https://www.westend61.de/images/0001591013pw/woman-lying-on-lap-of-female-friend-on-hay-bale-during-sunset-TCEF02018.jpg",
+      "original_width": 1232,
+      "original_height": 821,
+      "is_product": true
+    },
+    {
+      "position": 7,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef42451bf7518138b3456f4e7a4f136e64d462fa27c0b6c4087.jpeg",
+      "source": "dreamstime.com",
+      "title": "View of Seductive, Elegant Woman Sitting on Laps of Handsome Man in Plane  Stock Image - Image of journey, transport: 180151015",
+      "link": "https://www.dreamstime.com/cropped-view-seductive-elegant-women-sitting-laps-handsome-men-plane-view-seductive-elegant-woman-sitting-laps-image180151015",
+      "original": "https://thumbs.dreamstime.com/z/cropped-view-seductive-elegant-women-sitting-laps-handsome-men-plane-view-seductive-elegant-woman-sitting-laps-180151015.jpg",
+      "original_width": 1068,
+      "original_height": 1689,
+      "is_product": true
+    },
+    {
+      "position": 8,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef4883bc255d6815fd37d298a836f03a59486eabf87c5632599.jpeg",
+      "source": "stock.adobe.com",
+      "title": "Friendly male and female students having fun and playing fool. Young man  sitting on woman's lap, looking in camera and waiting for job interview  Stock Photo | Adobe Stock",
+      "link": "https://stock.adobe.com/images/friendly-male-and-female-students-having-fun-and-playing-fool-young-man-sitting-on-woman-s-lap-looking-in-camera-and-waiting-for-job-interview/271894566",
+      "original": "https://as2.ftcdn.net/v2/jpg/02/71/89/45/1000_F_271894566_OW5GDjKjj0uzqAoBbFaeuyMhjqwob8kq.jpg",
+      "original_width": 1000,
+      "original_height": 667,
+      "is_product": true
+    },
+    {
+      "position": 9,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef42b74b6a9aec32420a913ae615041e8ea32290ae149e3c260.jpeg",
+      "source": "alamy.com",
+      "title": "Girls lap hi-res stock photography and images - Alamy",
+      "link": "https://www.alamy.com/stock-photo/girls-lap.html",
+      "original": "https://c8.alamy.com/comp/DPWT0A/female-resting-on-friends-lap-in-the-living-room-DPWT0A.jpg",
+      "original_width": 866,
+      "original_height": 1390,
+      "is_product": true
+    },
+    {
+      "position": 10,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef46f7b56d62818a871cdcdb133c31e278cc16531e4917bf5be.jpeg",
+      "source": "dreamstime.com",
+      "title": "878 Girls Lap Stock Photos - Free & Royalty-Free Stock Photos from  Dreamstime",
+      "link": "https://www.dreamstime.com/photos-images/girls-lap.html",
+      "original": "https://thumbs.dreamstime.com/z/male-holding-head-girls-lap-girlfriend-hugging-guy-romantic-relationship-male-holding-head-girls-lap-girlfriend-hugging-guy-105858695.jpg",
+      "original_width": 1300,
+      "original_height": 820,
+      "is_product": true
+    },
+    {
+      "position": 11,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef4b7a5b81707011af40073a4b943a2e34b636b5588076c833c.jpeg",
+      "source": "offset.com",
+      "title": "woman hands in lap stock photos - OFFSET",
+      "link": "https://www.offset.com/search/woman+hands+in+lap",
+      "original": "https://ak.picdn.net/offset/photos/60133cf46f52af4409fca040/medium/offset_1085938.jpg",
+      "original_width": 650,
+      "original_height": 433,
+      "is_product": false
+    },
+    {
+      "position": 12,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef4b7a5b81707011af4adc85ed67daf75bebd13ecf331e80845.jpeg",
+      "source": "stock.adobe.com",
+      "title": "Friendly male and female coworkers having fun and playing crazy. Young man  sitting on woman's lap and looking at her and waiting for job interview  Stock Photo | Adobe Stock",
+      "link": "https://stock.adobe.com/images/friendly-male-and-female-coworkers-having-fun-and-playing-crazy-young-man-sitting-on-woman-s-lap-and-looking-at-her-and-waiting-for-job-interview/269753808",
+      "original": "https://as1.ftcdn.net/v2/jpg/02/69/75/38/500_F_269753808_XIfhae8VxAUJ8A4MMHmvXRtf5huMrYRE.jpg",
+      "original_width": 500,
+      "original_height": 299,
+      "is_product": false
+    },
+    {
+      "position": 13,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef4b7a5b81707011af4c34d7725e8ca68ddf270fb22da9c7963.jpeg",
+      "source": "123rf.com",
+      "title": "Young Woman Sitting In Boyfriend's Lap Stock Photo, Picture And Royalty  Free Image. Image 30852215.",
+      "link": "https://www.123rf.com/photo_30852215_young-woman-sitting-in-boyfriends-lap.html",
+      "original": "https://previews.123rf.com/images/rilueda/rilueda1408/rilueda140800224/30852215-young-woman-sitting-in-boyfriend-s-lap.jpg",
+      "original_width": 866,
+      "original_height": 1300,
+      "is_product": false
+    },
+    {
+      "position": 14,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef4b7a5b81707011af44d04985488b5455a2b47870485aaf7d8.jpeg",
+      "source": "dailystar.co.uk",
+      "title": "Female cop filmed giving her boss raunchy lap dance 'too embarrassed to  leave her house' - Daily Star",
+      "link": "https://www.dailystar.co.uk/news/female-cop-filmed-ging-boss-25784845",
+      "original": "https://i2-prod.dailystar.co.uk/incoming/article25784874.ece/ALTERNATES/s615/0_NYP-Female-police-officer-gives-boss-raunchy-lap-dance-at-wild-Christmas-party.jpg",
+      "original_width": 615,
+      "original_height": 409,
+      "is_product": false
+    },
+    {
+      "position": 15,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef4b7a5b81707011af421d3cc4eac3a76cc48108418c6082cd8.jpeg",
+      "source": "alamy.com",
+      "title": "Young woman sitting on mans lap hi-res stock photography and images - Alamy",
+      "link": "https://www.alamy.com/stock-photo/young-woman-sitting-on-mans-lap.html",
+      "original": "https://c8.alamy.com/comp/DWG9KA/young-woman-resting-on-mans-lap-on-couch-DWG9KA.jpg",
+      "original_width": 866,
+      "original_height": 1390,
+      "is_product": true
+    },
+    {
+      "position": 16,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef4b7a5b81707011af45ddbe147f1e0e96e8ce24461b5fca781.jpeg",
+      "source": "bodylanguagecentral.com",
+      "title": "Why would a girl sit on your lap? | Body Language Central",
+      "link": "https://bodylanguagecentral.com/why-would-a-girl-sit-on-your-lap/",
+      "original": "https://bodylanguagecentral.com/wp-content/uploads/2019/10/woman-sitting-on-mans-lap.jpg",
+      "original_width": 1170,
+      "original_height": 780,
+      "is_product": false
+    },
+    {
+      "position": 17,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef4b7a5b81707011af4cb672cd626bb91ba9be241c341377c09.jpeg",
+      "source": "dreamstime.com",
+      "title": "Man Lying in Lap of Young Woman Stock Photo - Image of girlfriend,  outdoors: 27456846",
+      "link": "https://www.dreamstime.com/royalty-free-stock-image-man-lying-lap-young-woman-image27456846",
+      "original": "https://thumbs.dreamstime.com/b/man-lying-lap-young-woman-27456846.jpg",
+      "original_width": 800,
+      "original_height": 533,
+      "is_product": false
+    },
+    {
+      "position": 18,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef4b7a5b81707011af4c09e415ae65be5a27b88253ccfca53aa.jpeg",
+      "source": "shutterstock.com",
+      "title": "Young Woman Sitting On Lap Young Stock Photo 266477285 | Shutterstock",
+      "link": "https://www.shutterstock.com/image-photo/young-woman-sitting-on-lap-man-266477285",
+      "original": "https://image.shutterstock.com/shutterstock/photos/266477285/display_1500/stock-photo-young-woman-sitting-on-the-lap-of-a-young-man-266477285.jpg",
+      "original_width": 1001,
+      "original_height": 1600,
+      "is_product": false
+    },
+    {
+      "position": 19,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef4b7a5b81707011af440edc7327330de9860917d3797af4bad.jpeg",
+      "source": "nairaland.com",
+      "title": "Ladies, Why Do We Show Off Our Laps In Pictures? - Romance - Nigeria",
+      "link": "https://www.nairaland.com/1402177/ladies-why-show-off-laps",
+      "original": "https://www.nairaland.com/attachments/1257832_pix_jpgc65c69f005e791964c7315a9bf378fe1",
+      "original_width": 206,
+      "original_height": 274,
+      "is_product": false
+    },
+    {
+      "position": 20,
+      "thumbnail": "https://serpapi.com/searches/6358774dd04d6d1d630e24f7/images/a3ae08f7fc95fef4b7a5b81707011af4b0ec0b927953b61617bf14d04e5e6dd3.jpeg",
+      "source": "depositphotos.com",
+      "title": "Woman sitting in man's lap Stock Photo by ©rilueda 92433816",
+      "link": "https://depositphotos.com/92433816/stock-photo-woman-sitting-in-mans-lap.html",
+      "original": "https://st2.depositphotos.com/3386033/9243/i/950/depositphotos_92433816-stock-photo-woman-sitting-in-mans-lap.jpg",
+      "original_width": 682,
+      "original_height": 1023,
+      "is_product": false
+    },
+    {
+      "position": 21,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRhqH_yHbvKR6gQTfmLc2dCIB-Fx6Ku_RhHw&usqp=CAU",
+      "source": "istockphoto.com",
+      "title": "Woman Sitting On Mans Lap Stock Photo - Download Image Now - Adult, Alcohol  Abuse, Arm Around - iStock",
+      "link": "https://www.istockphoto.com/photo/woman-sitting-on-mans-lap-gm525176547-52790928",
+      "original": "https://media.istockphoto.com/photos/woman-sitting-on-mans-lap-picture-id525176547",
+      "original_width": 767,
+      "original_height": 1024,
+      "is_product": true
+    },
+    {
+      "position": 22,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR21NbZVyaJTQ6MXU3nJAPm0O5AQKHbk5YBBA&usqp=CAU",
+      "source": "focusedcollection.com",
+      "title": "Mature woman sitting on man's lap in bedroom — 50s, affectionate - Stock  Photo | #527916392",
+      "link": "https://focusedcollection.com/527916392/stock-photo-mature-woman-sitting-man-lap.html",
+      "original": "https://st.focusedcollection.com/14026668/i/650/focused_527916392-stock-photo-mature-woman-sitting-man-lap.jpg",
+      "original_width": 650,
+      "original_height": 433,
+      "is_product": false
+    },
+    {
+      "position": 23,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpJOjxXdPcf71xR3ZHxmKAHU-n04OMLv8CQ&usqp=CAU",
+      "source": "texashistory.unt.edu",
+      "title": "Man lying with his head in a woman's lap and his arms crossed, looking up]  - The Portal to Texas History",
+      "link": "https://texashistory.unt.edu/ark:/67531/metapth23488/",
+      "original": "https://texashistory.unt.edu/ark:/67531/metapth23488/m1/1/med_res/",
+      "original_width": 700,
+      "original_height": 465,
+      "is_product": false
+    },
+    {
+      "position": 24,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREphzWzH_WlIYB1kevd0EuAO_J4gz1018-0Q&usqp=CAU",
+      "source": "alamy.com",
+      "title": "Female resting on friends lap in the living room Stock Photo - Alamy",
+      "link": "https://www.alamy.com/female-resting-on-friends-lap-in-the-living-room-image65721129.html",
+      "original": "https://c8.alamy.com/comp/DPWRY5/female-resting-on-friends-lap-in-the-living-room-DPWRY5.jpg",
+      "original_width": 1300,
+      "original_height": 956,
+      "is_product": true
+    },
+    {
+      "position": 25,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu0XmcSiErwPuC1g2gFEjk56D5zV5VwJN5rw&usqp=CAU",
+      "source": "shutterstock.com",
+      "title": "Woman Bikini Sitting On Mans Lap Stock Photo 17318065 | Shutterstock",
+      "link": "https://www.shutterstock.com/image-photo/woman-bikini-sitting-on-mans-lap-17318065",
+      "original": "https://image.shutterstock.com/shutterstock/photos/17318065/display_1500/stock-photo-woman-in-bikini-sitting-on-a-man-s-lap-17318065.jpg",
+      "original_width": 1001,
+      "original_height": 1600,
+      "is_product": false
+    },
+    {
+      "position": 26,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfnvONUG2dy3SeAD_bVkLysVgayvjMSuHNaQ&usqp=CAU",
+      "source": "123rf.com",
+      "title": "Woman Sitting On Man's Lap Stock Photo, Picture And Royalty Free Image.  Image 3333718.",
+      "link": "https://www.123rf.com/photo_3333718_woman-sitting-on-man-s-lap.html",
+      "original": "https://previews.123rf.com/images/sparkmom/sparkmom0807/sparkmom080700259/3333718-woman-sitting-on-man-s-lap.jpg",
+      "original_width": 866,
+      "original_height": 1300,
+      "is_product": false
+    },
+    {
+      "position": 27,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtkFpha7VNIp4NfFLK458Pcfo8wNJHuYBqKw&usqp=CAU",
+      "source": "dreamstime.com",
+      "title": "A Nice Young Woman is Sitting on Her Boys Lap Stock Image - Image of adult,  long: 169071371",
+      "link": "https://www.dreamstime.com/charming-slim-girl-sitting-lap-her-boyfriend-who-laughing-young-men-women-together-same-chair-smiling-image169071371",
+      "original": "https://thumbs.dreamstime.com/b/charming-slim-girl-sitting-lap-her-boyfriend-who-laughing-young-men-women-together-same-chair-smiling-169071371.jpg",
+      "original_width": 600,
+      "original_height": 900,
+      "is_product": false
+    },
+    {
+      "position": 28,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuWV0MWvZd4hExEnpqZpvMDT4He1w7H3D5Jg&usqp=CAU",
+      "source": "preen.ph",
+      "title": "Lap dances and outfit reveals: A look into Preen.ph's burlesque-themed party",
+      "link": "https://preen.ph/102954/lap-dances-and-outfit-reveals-a-look-into-preen-phs-burlesque-themed-party",
+      "original": "https://preen.ph/files/2019/11/preen_2019annivcover-e1574769938764.jpg",
+      "original_width": 640,
+      "original_height": 427,
+      "is_product": false
+    },
+    {
+      "position": 29,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzIZF2m8nMEdsBJzDkkn8vr1uw14RxaYCmmA&usqp=CAU",
+      "source": "depositphotos.com",
+      "title": "Woman sit lap Stock Photos, Royalty Free Woman sit lap Images |  Depositphotos",
+      "link": "https://depositphotos.com/stock-photos/woman-sit-lap.html",
+      "original": "https://st2.depositphotos.com/1712366/5212/i/450/depositphotos_52129375-stock-photo-woman-sit-on-mans-lap.jpg",
+      "original_width": 600,
+      "original_height": 400,
+      "is_product": false
+    },
+    {
+      "position": 30,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWV1N9paIU4gNo2NJtl1LRYoGZQvsJFwZ4HQ&usqp=CAU",
+      "source": "offset.com",
+      "title": "woman hands in lap stock photos - OFFSET",
+      "link": "https://www.offset.com/search/woman+hands+in+lap",
+      "original": "https://ak.picdn.net/offset/photos/600b10a26f52af4409f9cc58/medium/offset_1081223.jpg",
+      "original_width": 650,
+      "original_height": 433,
+      "is_product": false
+    },
+    {
+      "position": 31,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThBNQsrY8jwvlppRiIPrctNchYGJfqy2HmKw&usqp=CAU",
+      "source": "pond5.com",
+      "title": "Male holding head on girls lap, girlfrie... | Stock Video | Pond5",
+      "link": "https://www.pond5.com/stock-footage/item/78885934-male-holding-head-girls-lap-girlfriend-kissing-guy-romantic",
+      "original": "https://images.pond5.com/male-holding-head-girls-lap-footage-078885934_prevstill.jpeg",
+      "original_width": 3840,
+      "original_height": 2160,
+      "is_product": true
+    },
+    {
+      "position": 32,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRws-KPAtLieer9W9piDdg52Vpu8ijm3jQVEA&usqp=CAU",
+      "source": "freepik.com",
+      "title": "Girl sitting on lap Images | Free Vectors, Stock Photos & PSD | Page 2",
+      "link": "https://www.freepik.com/free-photos-vectors/girl-sitting-on-lap/2",
+      "original": "https://img.freepik.com/free-photo/modern-beautiful-girl-lying-her-female-friends-lap-outdoors_23-2148088780.jpg?w=2000",
+      "original_width": 2000,
+      "original_height": 1333,
+      "is_product": false
+    },
+    {
+      "position": 33,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZfF9R7sGmLpgfOHalNKOFGxNRittRFJ4srA&usqp=CAU",
+      "source": "agefotostock.com",
+      "title": "Young man with head on woman's lap, Stock Photo, Picture And Rights Managed  Image. Pic. CUR-IS09AH5L9 | agefotostock",
+      "link": "https://www.agefotostock.com/age/en/details-photo/young-man-with-head-on-woman-s-lap/CUR-IS09AH5L9",
+      "original": "https://t1.thpservices.com/previewimage/gallil/296a6a8ce8b40f2a9635f11cf60f7fc2/cur-is09ah5l9.jpg",
+      "original_width": 428,
+      "original_height": 680,
+      "is_product": true
+    },
+    {
+      "position": 34,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX_vYTilRZ7gIgCWJbXUpRpLa0sI5OfF5X8w&usqp=CAU",
+      "source": "pinterest.com",
+      "title": "woman sitting on man's lap kissing his forehead #5K #wallpaper #hdwallpaper  #desktop in 2022 | Man and woman silhouette, Female knight, Sit lap couple",
+      "link": "https://www.pinterest.com/pin/810085051726020401/",
+      "original": "https://i.pinimg.com/originals/dd/10/b7/dd10b794f755c74517666a1cba6b169e.jpg",
+      "original_width": 3456,
+      "original_height": 5184,
+      "is_product": false
+    },
+    {
+      "position": 35,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMX3gu5LHhdxhLhYSASXP2kJh4413_sy_Png&usqp=CAU",
+      "source": "rebelliousmagazine.com",
+      "title": "Just the Tip: How Do I Get Comfortable With Women Sexually + Should I Get  My Wife a Lap Dance? - Rebellious Magazine",
+      "link": "https://rebelliousmagazine.com/just-the-tip-comfortable-women-sexually-lap-dance/",
+      "original": "https://i2.wp.com/rebelliousmagazine.com/wp-content/uploads/2018/03/affection-black-and-white-couple-813534.jpg?fit=5734%2C3828",
+      "original_width": 5734,
+      "original_height": 3828,
+      "is_product": false
+    },
+    {
+      "position": 36,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZdO1UKiWOnTTASe1Z6urU0_2b7o2ZBwnEcA&usqp=CAU",
+      "source": "pexels.com",
+      "title": "A Woman Sitting on the Lap of a Man · Free Stock Photo",
+      "link": "https://www.pexels.com/photo/a-woman-sitting-on-the-lap-of-a-man-10597000/",
+      "original": "https://images.pexels.com/photos/10597000/pexels-photo-10597000.jpeg?cs=srgb&dl=pexels-anna-shvets-10597000.jpg&fm=jpg",
+      "original_width": 3615,
+      "original_height": 5422,
+      "is_product": false
+    },
+    {
+      "position": 37,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Owqij5Dg_bb0UoEneh_4T3MoXQ0n_s27ng&usqp=CAU",
+      "source": "masterfile.com",
+      "title": "Mature women lap sitting Stock Photos - Page 1 : Masterfile",
+      "link": "https://www.masterfile.com/search/en/mature+women+lap+sitting",
+      "original": "https://image1.masterfile.com/getImage/NjEwOC0wNjE2NjM0MWVuLjAwMDAwMDAw=AOrGsb/6108-06166341en_Masterfile.jpg",
+      "original_width": 299,
+      "original_height": 450,
+      "is_product": false
+    },
+    {
+      "position": 38,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9rpXXZ_Y6ZH711dW0eeAt7yKTI2JpbWm6mQ&usqp=CAU",
+      "source": "illuminaija.com",
+      "title": "Female secondary school student spotted giving male classmate a lap dance  (video) - illuminaija",
+      "link": "https://illuminaija.com/entertainment-news/female-secondary-school-student-spotted-giving-male-classmate-a-lap-dance-video/",
+      "original": "https://i0.wp.com/illuminaija.com/wp-content/uploads/2020/02/5e4e738ae6e09.jpg?ssl=1",
+      "original_width": 1000,
+      "original_height": 562,
+      "is_product": false
+    },
+    {
+      "position": 39,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR0uVpsFyf3fEAVsK-2fr1yPbQLJw9HhDhvw&usqp=CAU",
+      "source": "manofmany.com",
+      "title": "Let's Talk About Sex, Baby (and Female Orgasms) | Man of Many",
+      "link": "https://manofmany.com/lifestyle/sex-dating/lets-talk-about-sex-baby-and-female-orgasms-in-particular",
+      "original": "https://manofmany.com/wp-content/uploads/2020/08/Mystery-Vibe-Feature.jpg",
+      "original_width": 900,
+      "original_height": 600,
+      "is_product": false
+    },
+    {
+      "position": 40,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6_WRvqmJOW_9xXr3dveneM2Fd0CxuayD56A&usqp=CAU",
+      "source": "masterfile.com",
+      "title": "Mature Woman Sitting in Mature Man's Lap, Kissing Outdoors - Stock Photo -  Masterfile - Rights-Managed, Artist: David P. Hall, Code: 700-00068243",
+      "link": "https://www.masterfile.com/image/en/700-00068243",
+      "original": "https://image1.masterfile.com/getImage/700-00068243em-mature-woman-sitting-in-mature-mans.jpg",
+      "original_width": 300,
+      "original_height": 450,
+      "is_product": false
+    },
+    {
+      "position": 41,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjTXroGJMCZ1WS0rBO6cvMvtr3u4WB8daRrw&usqp=CAU",
+      "source": "cnbc.com",
+      "title": "Lonely? Enjoy the comforts of a (fake) lady's lap",
+      "link": "https://www.cnbc.com/id/100966902",
+      "original": "https://image.cnbcfm.com/api/v1/image/100966908-lap%20pillow.jpg?v=1529462938&w=1600&h=900",
+      "original_width": 1600,
+      "original_height": 900,
+      "is_product": false
+    },
+    {
+      "position": 42,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCsVbohLxlf7DnpMnaXbVmLbbxG1t4suT4ng&usqp=CAU",
+      "source": "pexels.com",
+      "title": "Woman Sitting on Her Friends Lap while near a Lake · Free Stock Photo",
+      "link": "https://www.pexels.com/photo/woman-sitting-on-her-friends-lap-while-near-a-lake-10556385/",
+      "original": "https://images.pexels.com/photos/10556385/pexels-photo-10556385.jpeg?cs=srgb&dl=pexels-l%E1%BB%ADng-studio-10556385.jpg&fm=jpg",
+      "original_width": 2240,
+      "original_height": 3360,
+      "is_product": false
+    },
+    {
+      "position": 43,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp5844zTqHyEMTBe5l0dCxR6D9nZ-6LrOkxA&usqp=CAU",
+      "source": "dreamstime.com",
+      "title": "Pretty Girl Sitting with White Umbrella on Lap Stock Photo - Image of  brown, black: 168019676",
+      "link": "https://www.dreamstime.com/pretty-girl-sitting-white-umbrella-lap-serious-barefoot-posing-brunette-kid-dressed-black-formal-dress-small-seat-image168019676",
+      "original": "https://thumbs.dreamstime.com/z/pretty-girl-sitting-white-umbrella-lap-serious-barefoot-posing-brunette-kid-dressed-black-formal-dress-small-seat-168019676.jpg",
+      "original_width": 1132,
+      "original_height": 1689,
+      "is_product": true
+    },
+    {
+      "position": 44,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvxS56yYujAU1sIxteCM7dOeApMPqu4SUVpw&usqp=CAU",
+      "source": "pinterest.com",
+      "title": "Download this stock image: teenage girl sitting on lap of boyfriend who is  listening to music … | Couple poses reference, Pose reference photo, Couple  poses drawing",
+      "link": "https://www.pinterest.com/pin/download-this-stock-image-teenage-girl-sitting-on-lap-of-boyfriend-who-is-listening-to-music--640285272004556687/",
+      "original": "https://i.pinimg.com/originals/a8/f6/6c/a8f66cca7bed4d0e0a28607fbe56aae6.jpg",
+      "original_width": 866,
+      "original_height": 1390,
+      "is_product": false
+    },
+    {
+      "position": 45,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9rKgkAioN4HRgEiPU3drc8V5LvTt_5tPCuQ&usqp=CAU",
+      "source": "istockphoto.com",
+      "title": "Surprised Young Woman Lying On Mans Lap Stock Photo - Download Image Now -  Couple - Relationship, Front View, People - iStock",
+      "link": "https://www.istockphoto.com/photo/surprised-young-woman-lying-on-mans-lap-gm165054692-19155659",
+      "original": "https://media.istockphoto.com/photos/surprised-young-woman-lying-on-mans-lap-picture-id165054692",
+      "original_width": 1024,
+      "original_height": 681,
+      "is_product": true
+    },
+    {
+      "position": 46,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr3GWViqjm6B78zxYYD5qlOW17FiLPBrB8bQ&usqp=CAU",
+      "source": "alamy.com",
+      "title": "Young man sleeping with his head on woman's lap Stock Photo - Alamy",
+      "link": "https://www.alamy.com/young-man-sleeping-with-his-head-on-womans-lap-image9469699.html",
+      "original": "https://c8.alamy.com/comp/AWG4G4/young-man-sleeping-with-his-head-on-womans-lap-AWG4G4.jpg",
+      "original_width": 1300,
+      "original_height": 959,
+      "is_product": true
+    },
+    {
+      "position": 47,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaAhJ0mtlJelQ_CaEIY66eXreBK2h9Oy8dJA&usqp=CAU",
+      "source": "dailystar.co.uk",
+      "title": "Female cop filmed giving her boss raunchy lap dance 'too embarrassed to  leave her house' - Daily Star",
+      "link": "https://www.dailystar.co.uk/news/female-cop-filmed-ging-boss-25784845",
+      "original": "https://i2-prod.dailystar.co.uk/incoming/article25784876.ece/ALTERNATES/s615b/0_NYP-Female-police-officer-gives-boss-raunchy-lap-dance-at-wild-Christmas-party.jpg",
+      "original_width": 615,
+      "original_height": 973,
+      "is_product": false
+    },
+    {
+      "position": 48,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK4c6D60u8TkpxdkS2F4JxLcbTB0woRKn8kA&usqp=CAU",
+      "source": "gettyimages.com",
+      "title": "Teenage Girl Sitting On Boys Lap In Computer Class High-Res Stock Photo -  Getty Images",
+      "link": "https://www.gettyimages.com/detail/photo/teenage-girl-sitting-on-boys-lap-in-computer-class-royalty-free-image/200016978-002",
+      "original": "https://media.gettyimages.com/photos/teenage-girl-sitting-on-boys-lap-in-computer-class-picture-id200016978-002?s=2048x2048",
+      "original_width": 1659,
+      "original_height": 2048,
+      "is_product": true
+    },
+    {
+      "position": 49,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWduoV7OdbaVXvsCNFXPzhKljBGRe3T5EF3w&usqp=CAU",
+      "source": "vibe.com",
+      "title": "Lapped Up! The 10 Most Provocative Lap Dances Performed By Female Singers –  VIBE.com",
+      "link": "https://www.vibe.com/gallery/lapped-10-most-provocative-lap-dances-performed-female-singers-29132/",
+      "original": "https://www.vibe.com/wp-content/uploads/images/lap-dance-1.jpg?w=448",
+      "original_width": 448,
+      "original_height": 330,
+      "is_product": false
+    },
+    {
+      "position": 50,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpjsFgXPtlJk1XhwSkYt31c4c_2pxnw4dUNQ&usqp=CAU",
+      "source": "independent.ie",
+      "title": "Cuchulainn Ladies in gear for 'Lap of Louth' - Independent.ie",
+      "link": "https://www.independent.ie/regionals/louth/news/cuchulainn-ladies-in-gear-for-lap-of-louth-41865026.html",
+      "original": "https://www.independent.ie/regionals/louth/news/c7bee/41865024.ece/AUTOCROP/w1240h700/AR%20jacqueline%20healy%20mary%20gilmore.jpg",
+      "original_width": 1240,
+      "original_height": 700,
+      "is_product": false
+    },
+    {
+      "position": 51,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIhAV0B6J3E6n55NIYbh37SgMa3CyjpjpPqg&usqp=CAU",
+      "source": "westend61.de",
+      "title": "Young woman resting head on female friend's lap in park stock photo",
+      "link": "https://www.westend61.de/en/imageView/MASF22070/young-woman-resting-head-on-female-friends-lap-in-park",
+      "original": "https://www.westend61.de/images/0001528881pw/young-woman-resting-head-on-female-friends-lap-in-park-MASF22070.jpg",
+      "original_width": 737,
+      "original_height": 1106,
+      "is_product": true
+    },
+    {
+      "position": 52,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxvNGTIRQHFTVbSJ5rAG99R3T9uYzYaim9qQ&usqp=CAU",
+      "source": "offset.com",
+      "title": "woman hands in lap stock photos - OFFSET",
+      "link": "https://www.offset.com/search/woman+hands+in+lap",
+      "original": "https://ak.picdn.net/offset/photos/600b10a06f52af4409f9cc57/medium/offset_1081222.jpg",
+      "original_width": 650,
+      "original_height": 433,
+      "is_product": false
+    },
+    {
+      "position": 53,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTWJJNRgGDMQ33yU1kt5rC7iB_EeGbbcVSvg&usqp=CAU",
+      "source": "freepik.com",
+      "title": "Girl sitting on lap Images | Free Vectors, Stock Photos & PSD | Page 2",
+      "link": "https://www.freepik.com/free-photos-vectors/girl-sitting-on-lap/2",
+      "original": "https://img.freepik.com/free-photo/smiling-girl-lying-her-friends-lap-while-having-fun_23-2148088781.jpg?w=2000",
+      "original_width": 2000,
+      "original_height": 1333,
+      "is_product": false
+    },
+    {
+      "position": 54,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBqEa3nwhFPFn9wHvf_kk2_O9SngYqQJqcPA&usqp=CAU",
+      "source": "pizzainmotion.boardingarea.com",
+      "title": "Oh, easyJet. Woman Gives Lap Dances On Flight, Brawl Ensues - Pizza In  Motion",
+      "link": "https://pizzainmotion.boardingarea.com/2018/09/01/oh-easyjet-woman-gives-lap-dances-on-flight-brawl-ensues/",
+      "original": "https://pizzainmotion.boardingarea.com/wp-content/uploads/2018/09/Screenshot-2018-09-01-08.36.33.png",
+      "original_width": 1446,
+      "original_height": 890,
+      "is_product": false
+    },
+    {
+      "position": 55,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuGr5sXw3J4JtARXkaOLwELJin_HOelSGSGA&usqp=CAU",
+      "source": "123rf.com",
+      "title": "Full Length Of Young Man Lying On Woman's Lap In Park Stock Photo, Picture  And Royalty Free Image. Image 32900960.",
+      "link": "https://www.123rf.com/photo_32900960_full-length-of-young-man-lying-on-woman-s-lap-in-park.html",
+      "original": "https://previews.123rf.com/images/moodboard/moodboard1410/moodboard141001628/32900960-full-length-of-young-man-lying-on-woman-s-lap-in-park.jpg",
+      "original_width": 1300,
+      "original_height": 866,
+      "is_product": false
+    },
+    {
+      "position": 56,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8IAw32RHxbWRU2TKjtaP1mvDrNIWSCxikTQ&usqp=CAU",
+      "source": "agefotostock.com",
+      "title": "Portrait of girl sitting in lap of father, Stock Photo, Picture And Royalty  Free Image. Pic. BIM-BLD243363 | agefotostock",
+      "link": "https://www.agefotostock.com/age/en/details-photo/portrait-of-girl-sitting-in-lap-of-father/BIM-BLD243363",
+      "original": "https://previews.agefotostock.com/previewimage/medibigoff/e8f281e4942b4061103a32a62be16667/bim-bld243363.jpg",
+      "original_width": 701,
+      "original_height": 1050,
+      "is_product": true
+    },
+    {
+      "position": 57,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR140mp7s2fkqhMgnRbd9vP65RjTZtVXrF4CA&usqp=CAU",
+      "source": "storyblocks.com",
+      "title": "Girl dancing lap dance, beautiful woman doing pole dance, female dancer,  fitness and sport Stock Video Footage 00:13 SBV-300978068 - Storyblocks",
+      "link": "https://www.storyblocks.com/video/stock/girl-dancing-lap-dance-beautiful-woman-doing-pole-dance-female-dancer-fitness-and-sport-hnos9u2",
+      "original": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/r6uQGb9/girl-dancing-lap-dance-beautiful-woman-doing-pole-dance-female-dancer-fitness-and-sport_41m8ykaf_thumbnail-1080_01.png",
+      "original_width": 1920,
+      "original_height": 1080,
+      "is_product": true
+    },
+    {
+      "position": 58,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfXduuoEFZr2Y63G-A_P8WKWKt7BrW-2UMMw&usqp=CAU",
+      "source": "masterfile.com",
+      "title": "Close-up of a young woman sitting on a young man's lap and smiling - Stock  Photo - Masterfile - Premium Royalty-Free, Code: 630-01872252",
+      "link": "https://www.masterfile.com/image/en/630-01872252",
+      "original": "https://image1.masterfile.com/getImage/630-01872252em-closeup-of-a-young-woman-sitting-on-a-young-mans-lap-and-smiling.jpg",
+      "original_width": 300,
+      "original_height": 450,
+      "is_product": false
+    },
+    {
+      "position": 59,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMfDBOVLcEpuGx8vC3-6PaQVEv8rC-ZDuUIQ&usqp=CAU",
+      "source": "hiphopdx.com",
+      "title": "Coi Leray Gives Woman Lap Dance At Hot 97 Summer Jam | HipHopDX",
+      "link": "https://hiphopdx.com/news/id.70984/title.coi-leray-gives-woman-lap-dance-on-stage-during-hot-97-summer-jam-set",
+      "original": "https://static.hiphopdx.com/2022/03/coi-leray-sexuality.jpg?v11",
+      "original_width": 1280,
+      "original_height": 720,
+      "is_product": false
+    },
+    {
+      "position": 60,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkrf6HJ2ogsHj7BsUjqJ2y78jeizTjBsjNgA&usqp=CAU",
+      "source": "stock.adobe.com",
+      "title": "Friendly male and female colleagues having fun, laughing and playing. Young  man sitting on woman's lap, looking in camera and waiting for job interview  Stock Photo | Adobe Stock",
+      "link": "https://stock.adobe.com/images/friendly-male-and-female-colleagues-having-fun-laughing-and-playing-young-man-sitting-on-woman-s-lap-looking-in-camera-and-waiting-for-job-interview/269753794",
+      "original": "https://as2.ftcdn.net/v2/jpg/02/69/75/37/500_F_269753794_iqswhUSVi0E9Zf1T4zk7MZsIQlTT39dc.jpg",
+      "original_width": 500,
+      "original_height": 350,
+      "is_product": false
+    },
+    {
+      "position": 61,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd0UFoMl541sSEZnqHz5PZNBVb0bMfbYEh0A&usqp=CAU",
+      "source": "istockphoto.com",
+      "title": "1,738 Woman Hands In Lap Stock Photos, Pictures & Royalty-Free Images -  iStock",
+      "link": "https://www.istockphoto.com/photos/woman-hands-in-lap",
+      "original": "https://media.istockphoto.com/photos/patience-is-the-path-to-peace-picture-id1271547871?k=20&m=1271547871&s=612x612&w=0&h=epQUquLA2GuVgGDAwFkKOn5vxWweBmSB7X_My7aZ2kk=",
+      "original_width": 612,
+      "original_height": 408,
+      "is_product": true
+    },
+    {
+      "position": 62,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFiu5nNsh0mc4bPKgaBNH7trf4kpG7uiB2Jg&usqp=CAU",
+      "source": "ebay.com · In stock",
+      "title": "Portrait of a young lady with her favorite lap-dog\", English chalk drawing  | eBay",
+      "link": "https://www.ebay.com/itm/275323530540",
+      "original": "https://i.ebayimg.com/thumbs/images/g/fPwAAOSwvQNijKZf/s-l1600.jpg",
+      "original_width": 800,
+      "original_height": 1000,
+      "is_product": true,
+      "in_stock": true
+    },
+    {
+      "position": 63,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIHDKBcVM5C8gA1KRmHIVFQ0YWa-SDoSDyNw&usqp=CAU",
+      "source": "digital.library.unt.edu",
+      "title": "Man lying with his head in a woman's lap and his arms crossed, talking] -  UNT Digital Library",
+      "link": "https://digital.library.unt.edu/ark:/67531/metapth23487/",
+      "original": "https://digital.library.unt.edu/ark:/67531/metapth23487/m1/1/med_res/",
+      "original_width": 700,
+      "original_height": 465,
+      "is_product": false
+    },
+    {
+      "position": 64,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHO8uZH83kNmeskUo7iw2IgEtuOFPlK5T1w&usqp=CAU",
+      "source": "gettyimages.com",
+      "title": "309 Lying With His Head On Lap Photos and Premium High Res Pictures - Getty  Images",
+      "link": "https://www.gettyimages.com/photos/lying-with-his-head-on-lap",
+      "original": "https://media.gettyimages.com/photos/man-lying-with-his-head-on-a-womans-lap-picture-id983115102?s=612x612",
+      "original_width": 612,
+      "original_height": 408,
+      "is_product": true
+    },
+    {
+      "position": 65,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdgtDFeFACga-HjE_fIVKSPX1oWsSqoYmyRA&usqp=CAU",
+      "source": "vectorstock.com",
+      "title": "Man sleeping on lap of woman sitting on cozy sofa Vector Image",
+      "link": "https://www.vectorstock.com/royalty-free-vector/man-sleeping-on-lap-of-woman-sitting-on-cozy-sofa-vector-18961851",
+      "original": "https://cdn2.vectorstock.com/i/1000x1000/18/51/man-sleeping-on-lap-of-woman-sitting-on-cozy-sofa-vector-18961851.jpg",
+      "original_width": 1000,
+      "original_height": 948,
+      "is_product": true
+    },
+    {
+      "position": 66,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaolZ1sN___8u23z8R5ffmkUiO8ewpNcCn7Q&usqp=CAU",
+      "source": "123rf.com",
+      "title": "Beautiful Girl Sitting On Lap With His Back To The Camera. Stock Photo,  Picture And Royalty Free Image. Image 66224466.",
+      "link": "https://www.123rf.com/photo_66224466_beautiful-girl-sitting-on-lap-with-his-back-to-the-camera.html",
+      "original": "https://previews.123rf.com/images/verayarochkina/verayarochkina1611/verayarochkina161100077/66224466-beautiful-girl-sitting-on-lap-with-his-back-to-the-camera-.jpg",
+      "original_width": 845,
+      "original_height": 1300,
+      "is_product": false
+    },
+    {
+      "position": 67,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKP4450hNnJAu--1P1-EI4H1_Q6QZNqfzcOg&usqp=CAU",
+      "source": "wellcomecollection.org",
+      "title": "A female patient sits on her doctor's lap. Lithograph. | Wellcome Collection",
+      "link": "https://wellcomecollection.org/works/qtbgm884",
+      "original": "https://iiif.wellcomecollection.org/image/V0011735/full/300,/0/default.jpg",
+      "original_width": 300,
+      "original_height": 304,
+      "is_product": false
+    },
+    {
+      "position": 68,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKFPJXJiZ4isqEtWSF9CO99B7spXDXBVeicg&usqp=CAU",
+      "source": "churchsuitsforless.com · In stock",
+      "title": "Women Lap scarf GMI-LS6 | Church suits for less",
+      "link": "https://www.churchsuitsforless.com/products/women-lap-scarf-gmi-ls6",
+      "original": "https://cdn.shopify.com/s/files/1/0681/8003/products/Women-lap-set-for-church-LS6.jpg?v=1642719993",
+      "original_width": 1245,
+      "original_height": 1739,
+      "is_product": true,
+      "in_stock": true
+    },
+    {
+      "position": 69,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQimHFrOYkoRSZJJfohKAWk7M6Dzu6PvkW5VA&usqp=CAU",
+      "source": "freepik.com",
+      "title": "Couple sitting on lap Images | Free Vectors, Stock Photos & PSD",
+      "link": "https://www.freepik.com/free-photos-vectors/couple-sitting-on-lap",
+      "original": "https://img.freepik.com/free-photo/man-lying-woman-lap-couch_23-2148027330.jpg?w=2000",
+      "original_width": 2000,
+      "original_height": 1334,
+      "is_product": false
+    },
+    {
+      "position": 70,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7zmfRZbBENi9XH7ohOudDVMdgC-RncqLfxQ&usqp=CAU",
+      "source": "dailystar.co.uk",
+      "title": "Female cop filmed giving her boss raunchy lap dance 'too embarrassed to  leave her house' - Daily Star",
+      "link": "https://www.dailystar.co.uk/news/female-cop-filmed-ging-boss-25784845",
+      "original": "https://i2-prod.dailystar.co.uk/incoming/article25785127.ece/ALTERNATES/s1200c/0_Female-cop-filmed-giving-her-boss-raunchy-lap-dance-too-embarrassed-to-leave-her-house.jpg",
+      "original_width": 1200,
+      "original_height": 1200,
+      "is_product": false
+    },
+    {
+      "position": 71,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXN5iRa8CoIhbdr9yJ1a8f58KRtqwyyiiQ6Q&usqp=CAU",
+      "source": "alamy.com",
+      "title": "Hands resting on lap hi-res stock photography and images - Alamy",
+      "link": "https://www.alamy.com/stock-photo/hands-resting-on-lap.html",
+      "original": "https://c8.alamy.com/comp/2EEB4DR/smiling-asian-woman-in-traditional-red-cheongsam-qipao-dress-sitting-with-hands-resting-on-lap-in-beautiful-chinese-temple-2EEB4DR.jpg",
+      "original_width": 1300,
+      "original_height": 957,
+      "is_product": true
+    },
+    {
+      "position": 72,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7UH6jr5tVzIlYON3JW8dSpFww2Q9diVhZSA&usqp=CAU",
+      "source": "nypost.com",
+      "title": "NYPD rookie sorry for giving lieutenant Christmas Party lap dance",
+      "link": "https://nypost.com/2021/12/25/nypd-rookie-sorry-for-giving-lieutenant-christmas-party-lap-dance/",
+      "original": "https://nypost.com/wp-content/uploads/sites/2/2021/12/vera-mekuli-00b.jpg?quality=75&strip=all",
+      "original_width": 2000,
+      "original_height": 1333,
+      "is_product": false
+    },
+    {
+      "position": 73,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6KC1puWBsjW6adPHFNp8MTQFtFTQzLoR2pQ&usqp=CAU",
+      "source": "offset.com",
+      "title": "woman hands in lap stock photos - OFFSET",
+      "link": "https://www.offset.com/search/woman+hands+in+lap",
+      "original": "https://ak.picdn.net/offset/photos/6259bec1169d9a4fa115fac0/medium/offset_1107901.jpg",
+      "original_width": 548,
+      "original_height": 650,
+      "is_product": false
+    },
+    {
+      "position": 74,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCQ98zv9spT9n8MO1ToFzhJfnPfdQM72uNdQ&usqp=CAU",
+      "source": "shutterstock.com",
+      "title": "Man Lying On Womans Lap Stock Photo 154216013 | Shutterstock",
+      "link": "https://www.shutterstock.com/image-photo/man-lying-on-womans-lap-154216013",
+      "original": "https://image.shutterstock.com/shutterstock/photos/154216013/display_1500/stock-photo-a-man-lying-on-a-woman-s-lap-154216013.jpg",
+      "original_width": 1500,
+      "original_height": 1264,
+      "is_product": false
+    },
+    {
+      "position": 75,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb2fCdW81dR_JbSaEt_8TiqecTrYMXdWu-1w&usqp=CAU",
+      "source": "vibe.com",
+      "title": "Lapped Up! The 10 Most Provocative Lap Dances Performed By Female Singers –  VIBE.com",
+      "link": "https://www.vibe.com/gallery/lapped-10-most-provocative-lap-dances-performed-female-singers-29132/",
+      "original": "https://www.vibe.com/wp-content/uploads/images/lap-dance-10.jpg?w=500",
+      "original_width": 500,
+      "original_height": 288,
+      "is_product": false
+    },
+    {
+      "position": 76,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuM8P0HlkpE8BYkD44JOe8NMvqGb0HomV1Mw&usqp=CAU",
+      "source": "istockphoto.com",
+      "title": "11,150 Woman Sitting On Lap Stock Photos, Pictures & Royalty-Free Images -  iStock",
+      "link": "https://www.istockphoto.com/photos/woman-sitting-on-lap",
+      "original": "https://media.istockphoto.com/photos/smiling-woman-holding-cute-small-dog-on-lap-picture-id107430016?k=20&m=107430016&s=612x612&w=0&h=qITG-VxRKmnqdPxhm0JnJLS4pn-_5fztY11ms4XmJb4=",
+      "original_width": 612,
+      "original_height": 431,
+      "is_product": true
+    },
+    {
+      "position": 77,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC743RvgNmf947ShCx8_t2VeSvhaBomYGGWQ&usqp=CAU",
+      "source": "masterfile.com",
+      "title": "Mother and son, sitting on ground, boy on woman's lap, reaching for flower  - Stock Photo - Masterfile - Premium Royalty-Free, Code: 633-01714974",
+      "link": "https://www.masterfile.com/image/en/633-01714974",
+      "original": "https://image1.masterfile.com/getImage/633-01714974em-mother-and-son-sitting-on-ground-boy-on-womans.jpg",
+      "original_width": 300,
+      "original_height": 450,
+      "is_product": false
+    },
+    {
+      "position": 78,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUkJ-V0ZCs_wRFfIWpXuESxuOFxRtgF_mZZA&usqp=CAU",
+      "source": "quora.com",
+      "title": "Why shouldn't a girl sit in a guy's lap? - Quora",
+      "link": "https://www.quora.com/Why-shouldnt-a-girl-sit-in-a-guy%E2%80%99s-lap",
+      "original": "https://qph.cf2.quoracdn.net/main-thumb-382054167-200-hocohgtpijfzlrreicmsnwtddyttnrlg.jpeg",
+      "original_width": 200,
+      "original_height": 200,
+      "is_product": false
+    },
+    {
+      "position": 79,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReA6NYboy0W_2SMnmFmxmLI2pdl3XXHzUm7w&usqp=CAU",
+      "source": "youtube.com",
+      "title": "How to Give a Lap Dance | Like a Feminine Goddess - YouTube",
+      "link": "https://www.youtube.com/watch?v=zLd5AGvxtZI",
+      "original": "https://i.ytimg.com/vi/zLd5AGvxtZI/maxresdefault.jpg",
+      "original_width": 1280,
+      "original_height": 720,
+      "is_product": true
+    },
+    {
+      "position": 80,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrQCAkTJ5ecoKpbl_REmiyRXENVZT3AoDCVA&usqp=CAU",
+      "source": "canstockphoto.com",
+      "title": "The guy put girl on his lap for a photoshoot. A young woman, 22 years old,  snuggles up to her boyfriend, sitting on his lap | CanStock",
+      "link": "https://www.canstockphoto.com/the-guy-put-girl-on-his-lap-for-a-76993591.html",
+      "original": "https://cdn.w600.comps.canstockphoto.com/the-guy-put-girl-on-his-lap-for-a-stock-photograph_csp76993591.jpg",
+      "original_width": 333,
+      "original_height": 519,
+      "is_product": true
+    },
+    {
+      "position": 81,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF57eVAN2AKdoAkNPTO39HraCjG4koRM7Vmg&usqp=CAU",
+      "source": "japantrendshop.com · In stock",
+      "title": "Hizamakura Lap Pillow Mini Skirt | Japan Trend Shop",
+      "link": "https://www.japantrendshop.com/hizamakura-lap-pillow-mini-skirt-p-64.html",
+      "original": "https://www.japantrendshop.com/img/products/64/64-hizamakura-woman-lap-pillow-2.jpg",
+      "original_width": 540,
+      "original_height": 209,
+      "is_product": true,
+      "in_stock": true
+    },
+    {
+      "position": 82,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU53odi9b_gEBMbGN8UjAcExBkpayltd_nwQ&usqp=CAU",
+      "source": "dreamstime.com",
+      "title": "4,574 Lap Women Stock Photos - Free & Royalty-Free Stock Photos from  Dreamstime",
+      "link": "https://www.dreamstime.com/photos-images/lap-women.html",
+      "original": "https://thumbs.dreamstime.com/z/young-man-lies-lap-woman-21970767.jpg",
+      "original_width": 1300,
+      "original_height": 957,
+      "is_product": true
+    },
+    {
+      "position": 83,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT1EQwris8UD8yb9Up0VBn6uU9GfJsF6Ie_Q&usqp=CAU",
+      "source": "123rf.com",
+      "title": "Woman Is Looking At His Elegant Man While He Is Sitting On Her Lap, In  Studio Stock Photo, Picture And Royalty Free Image. Image 46720152.",
+      "link": "https://www.123rf.com/photo_46720152_woman-is-looking-at-his-elegant-man-while-he-is-sitting-on-her-lap-in-studio.html",
+      "original": "https://previews.123rf.com/images/feedough/feedough1510/feedough151000233/46720152-woman-is-looking-at-his-elegant-man-while-he-is-sitting-on-her-lap-in-studio.jpg",
+      "original_width": 1300,
+      "original_height": 866,
+      "is_product": false
+    },
+    {
+      "position": 84,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFv7TGFE8UHwsrza9CR52sGTWcMkO_RxMlsA&usqp=CAU",
+      "source": "offset.com",
+      "title": "woman hands in lap stock photos - OFFSET",
+      "link": "https://www.offset.com/search/woman+hands+in+lap",
+      "original": "https://ak.picdn.net/offset/photos/5afc8d4f17fb156e48080a02/medium/offset_698904.jpg?DFghwDcb?DFghwDcb",
+      "original_width": 650,
+      "original_height": 433,
+      "is_product": false
+    },
+    {
+      "position": 85,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS58JdVH8re1SsrnpqBprt5RjmjikcPYDlIGg&usqp=CAU",
+      "source": "shutterstock.com",
+      "title": "3,626 Man Woman Lap Sit Images, Stock Photos & Vectors | Shutterstock",
+      "link": "https://www.shutterstock.com/search/man-woman-lap-sit",
+      "original": "https://image.shutterstock.com/image-photo/beautiful-woman-sitting-lap-man-260nw-1769448287.jpg",
+      "original_width": 390,
+      "original_height": 280,
+      "is_product": true
+    },
+    {
+      "position": 86,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAri_-caYo2kEVK-_P4Pg8lXtD_55HG4gccQ&usqp=CAU",
+      "source": "bolnews.com",
+      "title": "Female officer who performed a racy lap dance for her employer at a  Christmas party claimed she's 'like a good wine.'",
+      "link": "https://www.bolnews.com/trending/2022/04/female-officer-who-performed-a-racy-lap-dance-for-her-employer-at-a-christmas-party-claimed-shes-like-a-good-wine/",
+      "original": "https://cdn.bolnews.com/wp-content/uploads/2022/04/0_Female-cop-who-gave-boss-raunchy-Xmas-party-lap-dance-makes-sexy-birthday-boast.jpg",
+      "original_width": 810,
+      "original_height": 539,
+      "is_product": false
+    },
+    {
+      "position": 87,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-W4jh94mMDLEpcwfPqmk-z24KmXyfkSNdqA&usqp=CAU",
+      "source": "rap-up.com",
+      "title": "Nicki Minaj Gives Female Fan a Lap Dance",
+      "link": "https://www.rap-up.com/2015/04/08/nicki-minaj-gives-female-fan-a-lap-dance/",
+      "original": "https://www.rap-up.com/wp-content/uploads/2022/04/nicki-lap-dance-1.jpg",
+      "original_width": 700,
+      "original_height": 493,
+      "is_product": false
+    },
+    {
+      "position": 88,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb8mq_rHhDKECzJNRpk5dyA4DqNBjdiTt8fA&usqp=CAU",
+      "source": "vibe.com",
+      "title": "Lapped Up! The 10 Most Provocative Lap Dances Performed By Female Singers –  VIBE.com",
+      "link": "https://www.vibe.com/gallery/lapped-10-most-provocative-lap-dances-performed-female-singers-29132/",
+      "original": "https://www.vibe.com/wp-content/uploads/images/lap-dance-2.jpeg?w=500",
+      "original_width": 500,
+      "original_height": 749,
+      "is_product": false
+    },
+    {
+      "position": 89,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQli_s3UMrhU3p5xq1Oj9wz84Q38f2FQM9TWw&usqp=CAU",
+      "source": "vecteezy.com",
+      "title": "Continuous one line drawing romantic married female in love kissing on lap  male wearing wedding dress. Man carrying a woman in wedding celebration.  Single line draw design vector graphic illustration 8721494 Vector",
+      "link": "https://www.vecteezy.com/vector-art/8721494-continuous-one-line-drawing-romantic-married-female-in-love-kissing-on-lap-male-wearing-wedding-dress-man-carrying-a-woman-in-wedding-celebration-single-line-draw-design-vector-graphic-illustration",
+      "original": "https://static.vecteezy.com/system/resources/previews/008/721/494/original/continuous-one-line-drawing-romantic-married-female-in-love-kissing-on-lap-male-wearing-wedding-dress-man-carrying-a-woman-in-wedding-celebration-single-line-draw-design-graphic-illustration-vector.jpg",
+      "original_width": 1920,
+      "original_height": 1280,
+      "is_product": false
+    },
+    {
+      "position": 90,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHyLXbfz1NDVplI-56LuInWCgfk7CdMZh8Qg&usqp=CAU",
+      "source": "istockphoto.com",
+      "title": "140 Woman Swimming Laps Stock Photos, Pictures & Royalty-Free Images -  iStock",
+      "link": "https://www.istockphoto.com/photos/woman-swimming-laps",
+      "original": "https://media.istockphoto.com/photos/underwater-shot-of-a-female-swimmer-picture-id614027724?k=20&m=614027724&s=612x612&w=0&h=eIZjvx7lhu2sbWw9HXu8MllUia8sfOBgOjOx2asym2M=",
+      "original_width": 612,
+      "original_height": 408,
+      "is_product": true
+    },
+    {
+      "position": 91,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlH0_K1DsHZy3F50nt_sLx3YFvk8UkVfYMyg&usqp=CAU",
+      "source": "pexels.com",
+      "title": "A Girl Sitting on a Woman's Lap · Free Stock Photo",
+      "link": "https://www.pexels.com/photo/a-girl-sitting-on-a-woman-s-lap-7173503/",
+      "original": "https://images.pexels.com/photos/7173503/pexels-photo-7173503.jpeg?cs=srgb&dl=pexels-anastasia-shuraeva-7173503.jpg&fm=jpg",
+      "original_width": 4000,
+      "original_height": 6000,
+      "is_product": false
+    },
+    {
+      "position": 92,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfey970GcRpk7Q_5vjr6sDki2E8WVAzmDV9g&usqp=CAU",
+      "source": "unsplash.com",
+      "title": "woman lying on woman's lap and holding string light photo – Free Image on  Unsplash",
+      "link": "https://unsplash.com/photos/4DWzpvstcW8",
+      "original": "https://images.unsplash.com/photo-1557847734-ec58b22b6c4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHw%3D&w=1000&q=80",
+      "original_width": 1000,
+      "original_height": 655,
+      "is_product": false
+    },
+    {
+      "position": 93,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd7LENJKl0M7aMcRq6g0QZv_mRmk1gaxsCKg&usqp=CAU",
+      "source": "masterfile.com",
+      "title": "Man Lying on Woman's Lap - Stock Photo - Masterfile - Rights-Managed,  Artist: Fabio Cardoso, Code: 700-01236791",
+      "link": "https://www.masterfile.com/image/en/700-01236791",
+      "original": "https://image1.masterfile.com/getImage/700-01236791em-man-lying-on-womans-lap-stock-photo.jpg",
+      "original_width": 300,
+      "original_height": 450,
+      "is_product": false
+    },
+    {
+      "position": 94,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3qZaRuXnAeWRpUhOqhZHRAUS1mcQo8xf6eQ&usqp=CAU",
+      "source": "wikihow.com",
+      "title": "How to Give a Lap Dance (with Pictures) - wikiHow",
+      "link": "https://www.wikihow.com/Give-a-Lap-Dance",
+      "original": "https://www.wikihow.com/images/c/c1/Give-a-Lap-Dance-Step-24.jpg",
+      "original_width": 2500,
+      "original_height": 1875,
+      "is_product": false
+    },
+    {
+      "position": 95,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBa-chrkfLKRt_nE2ykf4BSn8Pwa4TDARdAw&usqp=CAU",
+      "source": "alamy.com",
+      "title": "Girls lap hi-res stock photography and images - Alamy",
+      "link": "https://www.alamy.com/stock-photo/girls-lap.html",
+      "original": "https://c8.alamy.com/comp/PNK3TF/cute-maltipoo-puppy-lying-on-girls-lap-wearing-ripped-jeans-PNK3TF.jpg",
+      "original_width": 1300,
+      "original_height": 956,
+      "is_product": true
+    },
+    {
+      "position": 96,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqGG76tUAvnh57DyNyhYUXDtLyYr3k8b_orQ&usqp=CAU",
+      "source": "artnet.com",
+      "title": "Untitled Woman sitting in mans lap by Benny Andrews on artnet",
+      "link": "http://www.artnet.com/artists/benny-andrews/untitled-woman-sitting-in-mans-lap-1s2G_r321WFJwx0mrzF5Yw2",
+      "original": "http://www.artnet.com/WebServices/images/ll00105lldtqSGFgOjECfDrCWvaHBOcxPFC/benny-andrews-untitled-(woman-sitting-in-mans-lap).jpg",
+      "original_width": 340,
+      "original_height": 470,
+      "is_product": false
+    },
+    {
+      "position": 97,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvCMhq_wvV52haYCFy7JFNPZYfeKbvTVWU-A&usqp=CAU",
+      "source": "create.vista.com",
+      "title": "Young Woman Sitting In Lap Of Smiling Free Stock Photo and Image",
+      "link": "https://create.vista.com/unlimited/stock-photos/167019410/stock-photo-happy-couple-embracing/",
+      "original": "https://cdn.create.vista.com/api/media/medium/167019410/stock-photo-happy-couple-embracing?token=",
+      "original_width": 1024,
+      "original_height": 683,
+      "is_product": false
+    },
+    {
+      "position": 98,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi0gdfgWP56s04nUd1p0jhYXCRsnIMKqb6Ag&usqp=CAU",
+      "source": "sheknows.com",
+      "title": "Women on top, men on bottom: Is your boyfriend a lap dog? – SheKnows",
+      "link": "https://www.sheknows.com/health-and-wellness/articles/972831/women-in-charge-more-acceptable-or-less-desired/",
+      "original": "https://www.sheknows.com/wp-content/uploads/2018/08/woman-with-man-begging-vert_lfenxr.jpeg",
+      "original_width": 360,
+      "original_height": 450,
+      "is_product": false
+    },
+    {
+      "position": 99,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4QaWqHcqU6lYj4N5lJfhgLccuVC8VxmmarQ&usqp=CAU",
+      "source": "aspcapetinsurance.com",
+      "title": "Burning Questions About Pet Insurance | ASPCA Pet Health Insurance",
+      "link": "https://www.aspcapetinsurance.com/resources/burning-questions-about-pet-insurance/",
+      "original": "https://d3544la1u8djza.cloudfront.net/APHI/Blog/2022/06-23/kitten+sitting+in+the+lap+of+a+female+using+a+laptop+computer+-min.jpg",
+      "original_width": 900,
+      "original_height": 600,
+      "is_product": false
+    },
+    {
+      "position": 100,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU4bsy3insBsr656N0M2o1lQ5UDZwK0U9kgQ&usqp=CAU",
+      "source": "acclaimmag.com",
+      "title": "Watch: Ciara gives a fan a lap dance, ruins him for women forever — Acclaim  Magazine",
+      "link": "https://acclaimmag.com/music/ciara-gives-fan-lap-dance-ruins-women-forever/",
+      "original": "https://acclaimmag.com/wp-content/uploads/2015/05/CIARAFEATPROPER3.jpg",
+      "original_width": 450,
+      "original_height": 450,
+      "is_product": false
+    }
+  ]
+}

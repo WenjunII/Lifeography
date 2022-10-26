@@ -1,0 +1,1382 @@
+{
+  "search_metadata": {
+    "id": "6358770334ff95c5b24706c2",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/a822059b60480196/6358770334ff95c5b24706c2.json",
+    "created_at": "2022-10-25 23:53:39 UTC",
+    "processed_at": "2022-10-25 23:53:39 UTC",
+    "google_url": "https://www.google.com/search?q=sewing+female&oq=sewing+female&tbm=isch&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/a822059b60480196/6358770334ff95c5b24706c2.html",
+    "total_time_taken": 1.66
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "sewing female",
+    "google_domain": "google.com",
+    "ijn": "0",
+    "device": "desktop",
+    "tbm": "isch"
+  },
+  "search_information": {
+    "image_results_state": "Results for exact spelling",
+    "query_displayed": "sewing female",
+    "menu_items": [
+      {
+        "position": 1,
+        "title": "All",
+        "link": "https://www.google.com/search?q=sewing+female&source=lmns&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q_AUoAHoECAEQAA"
+      },
+      {
+        "position": 2,
+        "title": "Images"
+      },
+      {
+        "position": 3,
+        "title": "Shopping",
+        "link": "https://www.google.com/search?q=sewing+female&source=lmns&tbm=shop&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q_AUoAnoECAEQAg",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en-US&ijn=0&q=sewing+female&tbm=shop"
+      },
+      {
+        "position": 4,
+        "title": "Videos",
+        "link": "https://www.google.com/search?q=sewing+female&source=lmns&tbm=vid&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q_AUoA3oECAEQAw",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en-US&ijn=0&q=sewing+female&tbm=vid"
+      },
+      {
+        "position": 5,
+        "title": "News",
+        "link": "https://www.google.com/search?q=sewing+female&source=lmns&tbm=nws&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q_AUoBHoECAEQBA",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en-US&ijn=0&q=sewing+female&tbm=nws"
+      }
+    ]
+  },
+  "suggested_searches": [
+    {
+      "name": "cute",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:cute:wT05rh72V-A%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoAHoECAEQIg",
+      "chips": "q:stitch+girl,g_1:cute:wT05rh72V-A%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Acute%3AwT05rh72V-A%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/474b92e45c4e7e59afecf45059d63feec51e0aef9780434661e11379ae5f9c90.jpeg"
+    },
+    {
+      "name": "anime",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:anime:ei1rVlDGxdI%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoAXoECAEQJA",
+      "chips": "q:stitch+girl,g_1:anime:ei1rVlDGxdI%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Aanime%3Aei1rVlDGxdI%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/474b92e45c4e7e59afecf45059d63fee50b146372c7520c588f9553703966b2e.jpeg"
+    },
+    {
+      "name": "wallpaper",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:wallpaper:G57z4wT_FiI%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoAnoECAEQJg",
+      "chips": "q:stitch+girl,g_1:wallpaper:G57z4wT_FiI%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Awallpaper%3AG57z4wT_FiI%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/474b92e45c4e7e59afecf45059d63fee82ca5959b678067dd7cc54f1c8060b4a.jpeg"
+    },
+    {
+      "name": "chibi",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:chibi:wXIn79BA8sQ%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoA3oECAEQKA",
+      "chips": "q:stitch+girl,g_1:chibi:wXIn79BA8sQ%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Achibi%3AwXIn79BA8sQ%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/474b92e45c4e7e59afecf45059d63fee4311b5f99b8be137bdcc9e18ade03aa0.jpeg"
+    },
+    {
+      "name": "pink",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:pink:S983uMd0ksc%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoBHoECAEQKg",
+      "chips": "q:stitch+girl,g_1:pink:S983uMd0ksc%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Apink%3AS983uMd0ksc%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/474b92e45c4e7e59afecf45059d63feebc8cda870ea6df4053773517630ec5fa.jpeg"
+    },
+    {
+      "name": "transparent",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:transparent:1dWJ1r9NVUs%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoBXoECAEQLA",
+      "chips": "q:stitch+girl,g_1:transparent:1dWJ1r9NVUs%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Atransparent%3A1dWJ1r9NVUs%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/474b92e45c4e7e59afecf45059d63fee9efefda27a84fa4ea84a3066e5df1afb.jpeg"
+    },
+    {
+      "name": "human",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:human:61AOo8Gn5i8%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoBnoECAEQLg",
+      "chips": "q:stitch+girl,g_1:human:61AOo8Gn5i8%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Ahuman%3A61AOo8Gn5i8%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/474b92e45c4e7e59afecf45059d63fee0b4093c555f4dda273ab630bb977a0fb.jpeg"
+    },
+    {
+      "name": "boy",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:boy:OCO1O-TqTvY%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoB3oECAEQMA",
+      "chips": "q:stitch+girl,g_1:boy:OCO1O-TqTvY%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Aboy%3AOCO1O-TqTvY%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/474b92e45c4e7e59afecf45059d63feedb64ba1c9cb23fd447d5240bd2513b04.jpeg"
+    },
+    {
+      "name": "kawaii",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:kawaii:YllNxezGDvY%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoCHoECAEQMg",
+      "chips": "q:stitch+girl,g_1:kawaii:YllNxezGDvY%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Akawaii%3AYllNxezGDvY%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/474b92e45c4e7e59afecf45059d63fee6956324b3f21bb4afef3caabdc20ee4f.jpeg"
+    },
+    {
+      "name": "little",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:little:jDs7pnT6H2c%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoCXoECAEQNA",
+      "chips": "q:stitch+girl,g_1:little:jDs7pnT6H2c%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Alittle%3AjDs7pnT6H2c%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/474b92e45c4e7e59afecf45059d63feed6ff03a0bba9d3ec1e0c54d8e654f77e.jpeg"
+    },
+    {
+      "name": "li10",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:li10:zP1D9VybYok%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoCnoECAEQNg",
+      "chips": "q:stitch+girl,g_1:li10:zP1D9VybYok%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Ali10%3AzP1D9VybYok%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/474b92e45c4e7e59afecf45059d63fee27a114ab61e22ec033e84dfc2fb79723.jpeg"
+    },
+    {
+      "name": "sad",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:sad:fkQYGkTBbhY%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoC3oECAEQOA",
+      "chips": "q:stitch+girl,g_1:sad:fkQYGkTBbhY%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Asad%3AfkQYGkTBbhY%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/474b92e45c4e7e59afecf45059d63fee2e80de89213dc6b9cd4a0778c78e4e89.jpeg"
+    },
+    {
+      "name": "toy",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:toy:KxVQiPSOWtI%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoDHoECAEQOg",
+      "chips": "q:stitch+girl,g_1:toy:KxVQiPSOWtI%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Atoy%3AKxVQiPSOWtI%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWqobhH0Cjerwdh9VL3CmR6loam73JC0tD-UclBFs&usqp=CAU"
+    },
+    {
+      "name": "color",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:color:c7qdk0S5gNw%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoDXoECAEQPA",
+      "chips": "q:stitch+girl,g_1:color:c7qdk0S5gNw%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Acolor%3Ac7qdk0S5gNw%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_cW3AOXISQSxCyWq-Op60tWsJdRxA420uteMrePzAd46GFRl3&usqp=CAU"
+    },
+    {
+      "name": "hxh",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:hxh:muBeR-vU7JY%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoDnoECAEQPg",
+      "chips": "q:stitch+girl,g_1:hxh:muBeR-vU7JY%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Ahxh%3AmuBeR-vU7JY%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGhoOdDETq6MgxR5zE46ihhqgDHBWvq9X83V300QOwAUdshnVJ&usqp=CAU"
+    },
+    {
+      "name": "friend",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:friend:LkvfJD_SjX8%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoD3oECAEQQA",
+      "chips": "q:stitch+girl,g_1:friend:LkvfJD_SjX8%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Afriend%3ALkvfJD_SjX8%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0kiHU69-yLUEqMZFXL7lbWjU41bAhtHySJ0K7ScE&usqp=CAU"
+    },
+    {
+      "name": "shirt",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:shirt:9jyeYTDRcek%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoEHoECAEQQg",
+      "chips": "q:stitch+girl,g_1:shirt:9jyeYTDRcek%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Ashirt%3A9jyeYTDRcek%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREFvF0EmfnqxKBol9ttK3VG90qTnMLrUyZoNBjc0M&usqp=CAU"
+    },
+    {
+      "name": "simple",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:simple:--9LowA4Cec%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoEXoECAEQRA",
+      "chips": "q:stitch+girl,g_1:simple:--9LowA4Cec%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Asimple%3A--9LowA4Cec%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPwZpy115yPwIT1QZjmEz9euphy0Di0XitB8yHfpcDky3QNaOj&usqp=CAU"
+    },
+    {
+      "name": "braids",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:braids:wB9qUae3wqE%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoEnoECAEQRg",
+      "chips": "q:stitch+girl,g_1:braids:wB9qUae3wqE%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Abraids%3AwB9qUae3wqE%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTIdUi5MbIqi-o6MzswB7YNDwo2FaoZ0FYsWxLht1ms-RPBOVN&usqp=CAU"
+    },
+    {
+      "name": "purple",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:purple:Rl-Ms0YTBEk%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoE3oECAEQSA",
+      "chips": "q:stitch+girl,g_1:purple:Rl-Ms0YTBEk%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Apurple%3ARl-Ms0YTBEk%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrP1xFJpK1Uh0mKw1uqoECarcSRcTkURXdhpoWgPekab_JJe91&usqp=CAU"
+    },
+    {
+      "name": "small",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:small:r6V9oK7cpBE%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoFHoECAEQSg",
+      "chips": "q:stitch+girl,g_1:small:r6V9oK7cpBE%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Asmall%3Ar6V9oK7cpBE%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ97ssyvYnPAj3U41WkxWVG8LDUTUgaPDSLSyQ6o8zh6PwubzC7&usqp=CAU"
+    },
+    {
+      "name": "halloween costume",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:halloween+costume:JVPtTTpsDDk%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoFXoECAEQTA",
+      "chips": "q:stitch+girl,g_1:halloween+costume:JVPtTTpsDDk%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Ahalloween%2Bcostume%3AJVPtTTpsDDk%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt10Nsz6CW5mMLjCjUfYKEOBuQMjf38MU-vuPn3dDQRN8cmAY7&usqp=CAU"
+    },
+    {
+      "name": "baby",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:baby:jaL_OwVABrI%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoFnoECAEQTg",
+      "chips": "q:stitch+girl,g_1:baby:jaL_OwVABrI%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Ababy%3AjaL_OwVABrI%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtcl0V8GP2KhFTg36OfmKrCOuMoBSoKe_tZMBqySg&usqp=CAU"
+    },
+    {
+      "name": "fox",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:fox:d89Q8x3HCaY%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoF3oECAEQUA",
+      "chips": "q:stitch+girl,g_1:fox:d89Q8x3HCaY%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Afox%3Ad89Q8x3HCaY%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsBLByiyNHDIMdptzBfZ0pPFXNV1YiGBJHxQ1xK6atQ2pfzz2G&usqp=CAU"
+    },
+    {
+      "name": "cake",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:cake:dF-6ENZ4TUw%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoGHoECAEQUg",
+      "chips": "q:stitch+girl,g_1:cake:dF-6ENZ4TUw%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Acake%3AdF-6ENZ4TUw%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnbUsgBsFJr5z12hNZobFhjrjSMt8Na31FnJ2eARAH5OJmS36T&usqp=CAU"
+    },
+    {
+      "name": "movie",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,g_1:movie:hSJfNM63M7s%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoGXoECAEQVA",
+      "chips": "q:stitch+girl,g_1:movie:hSJfNM63M7s%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Cg_1%3Amovie%3AhSJfNM63M7s%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp1Iy01GoUMf47ZrtK_gtPOgp8dIEfHDTm344J1uGyX6N3lpN4&usqp=CAU"
+    },
+    {
+      "name": "dress form",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,online_chips:dress+form:okWu2k5W3gs%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoGnoECAEQVg",
+      "chips": "q:stitch+girl,online_chips:dress+form:okWu2k5W3gs%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Conline_chips%3Adress%2Bform%3AokWu2k5W3gs%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPM6Qq44tsSovWjtU1aE4rEV_HPRwhcLhJIldUPWI&usqp=CAU"
+    },
+    {
+      "name": "mannequin",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,online_chips:mannequin:3OriO11cCM4%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoG3oECAEQWA",
+      "chips": "q:stitch+girl,online_chips:mannequin:3OriO11cCM4%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Conline_chips%3Amannequin%3A3OriO11cCM4%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyYeb1ShQutyqPmw-LFtv9uRrlQ2TtI9125h3j8hE8bGRg-Pp9&usqp=CAU"
+    },
+    {
+      "name": "sewing patterns",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,online_chips:sewing+patterns:B2tl3w3WPew%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoHHoECAEQWg",
+      "chips": "q:stitch+girl,online_chips:sewing+patterns:B2tl3w3WPew%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Conline_chips%3Asewing%2Bpatterns%3AB2tl3w3WPew%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7cyQCavApdOk7AHdodzQty9TrMjclsgi1FbAieCzuSrkEhPVQ&usqp=CAU"
+    },
+    {
+      "name": "fashion designer",
+      "link": "https://www.google.com/search?q=sewing+female&tbm=isch&chips=q:stitch+girl,online_chips:fashion+designer:OXCtMlgPRLs%3D&hl=en-US&sa=X&ved=2ahUKEwjIk5Dwyfz6AhWEkWoFHS9UAe4Q4lYoHXoECAEQXA",
+      "chips": "q:stitch+girl,online_chips:fashion+designer:OXCtMlgPRLs%3D",
+      "serpapi_link": "https://serpapi.com/search.json?chips=q%3Astitch%2Bgirl%2Conline_chips%3Afashion%2Bdesigner%3AOXCtMlgPRLs%253D&device=desktop&engine=google&google_domain=google.com&ijn=0&q=sewing+female&tbm=isch",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9oV72BvQa9VEDoloi17Nc0WpI7yCEzt65s4ZmLw7UroBEg0qE&usqp=CAU"
+    }
+  ],
+  "images_results": [
+    {
+      "position": 1,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb513341304864c611f87844377edba44ccc617e98caf39d77a.jpeg",
+      "source": "Depositphotos",
+      "title": "Women sewing in their fashion workshop Stock Photo by ©gstockstudio 77471558",
+      "link": "https://depositphotos.com/77471558/stock-photo-women-sewing-in-their-fashion.html",
+      "original": "https://st2.depositphotos.com/2931363/7747/i/950/depositphotos_77471558-stock-photo-women-sewing-in-their-fashion.jpg",
+      "original_width": 1023,
+      "original_height": 681,
+      "is_product": false
+    },
+    {
+      "position": 2,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb56ee1703dbfbdc361b9a62962b547a02b402866b01508eefb.jpeg",
+      "source": "Elle",
+      "title": "Why Sewing Should No Longer Be Seen As Just 'Women's Work'",
+      "link": "https://www.elle.com/uk/fashion/a35709509/sewing-crafting-feminism-sustainability/",
+      "original": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-3239404-1614871837.jpg?resize=480:*",
+      "original_width": 480,
+      "original_height": 374,
+      "is_product": false
+    },
+    {
+      "position": 3,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb55db53061f14ff6c085341b05c2c2643c554a22fdd8431182.jpeg",
+      "source": "Church of Jesus Christ",
+      "title": "Young Woman Sewing",
+      "link": "https://www.churchofjesuschrist.org/media/image/young-women-sewing-sew-machine-service-serving-f42047f?lang=eng",
+      "original": "https://assets.ldscdn.org/9b/b8/9bb85a1c05af75aca263c2d44f7e514edee9a323/young_women_sewing_sew_machine_service_serving.jpeg",
+      "original_width": 5184,
+      "original_height": 3456,
+      "is_product": false
+    },
+    {
+      "position": 4,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb56df5f3e3098830e5cab9b9f4fbba0a590c9282385aefb6d3.jpeg",
+      "source": "iStock",
+      "title": "46,884 Woman Sewing Stock Photos, Pictures & Royalty-Free Images - iStock",
+      "link": "https://www.istockphoto.com/photos/woman-sewing",
+      "original": "https://media.istockphoto.com/photos/woman-seamstress-sitting-and-sews-on-sewing-machine-dressmaker-picture-id1183317860?k=20&m=1183317860&s=612x612&w=0&h=hmcWmV7UHw89mZL2eM2CpNzLObTei3EF-3O1GiTU_iE=",
+      "original_width": 612,
+      "original_height": 408,
+      "is_product": true
+    },
+    {
+      "position": 5,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb5cc663ed898667815231ad1c6a2abc8388b03e9d3065f602a.jpeg",
+      "source": "History Today",
+      "title": "Sewing Machines: Liberation or Drudgery for Women? | History Today",
+      "link": "https://www.historytoday.com/archive/sewing-machines-liberation-or-drudgery-women",
+      "original": "https://www.historytoday.com/sites/default/files/articles/XXX293small.jpg",
+      "original_width": 750,
+      "original_height": 554,
+      "is_product": false
+    },
+    {
+      "position": 6,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb58ecdb17e0ca916b643f1bd4ab79aa75eb135d1289ccf1ea3.jpeg",
+      "source": "Dreamstime.com",
+      "title": "5,179 Girl Machine Sewing Stock Photos - Free & Royalty-Free Stock Photos  from Dreamstime",
+      "link": "https://www.dreamstime.com/photos-images/girl-machine-sewing.html",
+      "original": "https://thumbs.dreamstime.com/b/girl-sewing-machine-10196203.jpg",
+      "original_width": 800,
+      "original_height": 654,
+      "is_product": false
+    },
+    {
+      "position": 7,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb5171040c876db8045c8452f48977dcb6665efae9e4226116e.jpeg",
+      "source": "123RF",
+      "title": "Group Of Women In A Sewing Workshop Stock Photo, Picture And Royalty Free  Image. Image 50753902.",
+      "link": "https://www.123rf.com/photo_50753902_group-of-women-in-a-sewing-workshop.html",
+      "original": "https://previews.123rf.com/images/gdolgikh/gdolgikh1601/gdolgikh160100150/50753902-group-of-women-in-a-sewing-workshop.jpg",
+      "original_width": 1300,
+      "original_height": 866,
+      "is_product": false
+    },
+    {
+      "position": 8,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb53799a9cdd9f6e72a2bb35995a94f374317a60810ff50f848.jpeg",
+      "source": "Alamy",
+      "title": "Process of sewing. Female fashion designer works on the new clothes in the  workshop Stock Photo - Alamy",
+      "link": "https://www.alamy.com/process-of-sewing-female-fashion-designer-works-on-the-new-clothes-in-the-workshop-image335452100.html",
+      "original": "https://c8.alamy.com/comp/2ADN4G4/process-of-sewing-female-fashion-designer-works-on-the-new-clothes-in-the-workshop-2ADN4G4.jpg",
+      "original_width": 1300,
+      "original_height": 954,
+      "is_product": true
+    },
+    {
+      "position": 9,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb545245ff9459aa62e170c4cc6b02b6bd04e065ec33dc1fbbd.jpeg",
+      "source": "Getty Images",
+      "title": "22,103 Woman Sewing Photos and Premium High Res Pictures - Getty Images",
+      "link": "https://www.gettyimages.com/photos/woman-sewing",
+      "original": "https://media.gettyimages.com/photos/woman-working-at-the-sewing-machine-at-home-picture-id1078086874?s=612x612",
+      "original_width": 612,
+      "original_height": 408,
+      "is_product": true
+    },
+    {
+      "position": 10,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb5a56575519cd53c1fd4415c3bf394a8f07d987aa1d24faa06.jpeg",
+      "source": "Shutterstock",
+      "title": "Cropped Image Female Tailor Stitching Fine Stock Photo 1285564381 |  Shutterstock",
+      "link": "https://www.shutterstock.com/image-photo/cropped-image-female-tailor-stitching-fine-1285564381",
+      "original": "https://image.shutterstock.com/image-photo/cropped-image-female-tailor-stitching-260nw-1285564381.jpg",
+      "original_width": 390,
+      "original_height": 280,
+      "is_product": false
+    },
+    {
+      "position": 11,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb56ee1703dbfbdc361ee1406b4d65fbce86e0b1df19fb182be.jpeg",
+      "source": "123RF",
+      "title": "Group Of Women In A Sewing Workshop Stock Photo, Picture And Royalty Free  Image. Image 49637147.",
+      "link": "https://www.123rf.com/photo_49637147_group-of-women-in-a-sewing-workshop.html",
+      "original": "https://previews.123rf.com/images/gdolgikh/gdolgikh1512/gdolgikh151200163/49637147-group-of-women-in-a-sewing-workshop.jpg",
+      "original_width": 1300,
+      "original_height": 866,
+      "is_product": false
+    },
+    {
+      "position": 12,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb56ee1703dbfbdc36150ce12d1fc18627225daf6438c904a1c.jpeg",
+      "source": "GEF",
+      "title": "Fashion Forward: Women in Niger break through with unique sewing  cooperatives and improved farm marketing to support climate resilient lives  | GEF",
+      "link": "https://www.thegef.org/news/fashion-forward-women-niger-break-through-unique-sewing-cooperatives-and-improved-farm",
+      "original": "https://www.thegef.org/sites/default/files/styles/main_image_content_width/public/Fashion1_870.jpg?h=e85f6c07&itok=EIIzaFBF",
+      "original_width": 840,
+      "original_height": 472,
+      "is_product": false
+    },
+    {
+      "position": 13,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb56ee1703dbfbdc3613c73ad226e5e3565f35f17bc9ec58a84.jpeg",
+      "source": "HOUR Detroit Magazine",
+      "title": "Refuge for Nations Empowers Women Through Sewing - Hour Detroit Magazine",
+      "link": "https://www.hourdetroit.com/give-detroit/refuge-for-nations-sewing-metro-detroit/",
+      "original": "https://cdn.hourdetroit.com/wp-content/uploads/sites/20/2019/10/DSC_0306.cx_.jpg",
+      "original_width": 800,
+      "original_height": 1204,
+      "is_product": false
+    },
+    {
+      "position": 14,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb56ee1703dbfbdc3617c38edd7855ccdcdb690556ffe6bbf5e.jpeg",
+      "source": "Dreamstime.com",
+      "title": "Girl Sewing Stock Illustrations – 3,666 Girl Sewing Stock Illustrations,  Vectors & Clipart - Dreamstime",
+      "link": "https://www.dreamstime.com/illustration/girl-sewing.html",
+      "original": "https://thumbs.dreamstime.com/b/girl-sewing-machine-24976438.jpg",
+      "original_width": 800,
+      "original_height": 800,
+      "is_product": false
+    },
+    {
+      "position": 15,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb56ee1703dbfbdc3610e543e36fa6cb02037ec179a9077637c.jpeg",
+      "source": "Storyblocks",
+      "title": "Beautiful young woman sewing clothes with sewing machine. Royalty-Free  Stock Image - Storyblocks",
+      "link": "https://www.storyblocks.com/images/stock/beautiful-young-woman-sewing-clothes-with-sewing-machine-saizaxrzwj3ew4iz3",
+      "original": "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/image/rDtN98Qoishumwih/graphicstock-beautiful-young-woman-sewing-clothes-with-sewing-machine_BAbZZpxAZ-_SB_PM.jpg",
+      "original_width": 1000,
+      "original_height": 667,
+      "is_product": true
+    },
+    {
+      "position": 16,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb56ee1703dbfbdc361f93d31f815871447d9d73f8c565f9e3e.jpeg",
+      "source": "Getty Images",
+      "title": "743 Indian Women Sewing Photos and Premium High Res Pictures - Getty Images",
+      "link": "https://www.gettyimages.com/photos/indian-women-sewing",
+      "original": "https://media.gettyimages.com/photos/indian-women-stitching-cloths-by-machine-at-home-stock-image-picture-id1147299491?s=612x612",
+      "original_width": 612,
+      "original_height": 408,
+      "is_product": true
+    },
+    {
+      "position": 17,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb56ee1703dbfbdc361788e930cb7cfddebcc105e0d1fd2287c.jpeg",
+      "source": "Unity Lutheran Church",
+      "title": "Unity Lutheran Church - SEW Much Good",
+      "link": "http://www.unitylutheran.net/site/cpage.asp?cpage_id=180111323&sec_id=180019383",
+      "original": "http://www.unitylutheran.net/home/180019383/180019383/images/woman-sewing-with-machine.jpg",
+      "original_width": 405,
+      "original_height": 296,
+      "is_product": false
+    },
+    {
+      "position": 18,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb56ee1703dbfbdc361f0cdc7e02f70403e40b9afa4e428f59f.jpeg",
+      "source": "Wikiwand",
+      "title": "Sewing - Wikiwand",
+      "link": "https://www.wikiwand.com/en/Sewing",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Bangladeshi_women_sewing_clothes.jpg/220px-Bangladeshi_women_sewing_clothes.jpg",
+      "original_width": 220,
+      "original_height": 146,
+      "is_product": false
+    },
+    {
+      "position": 19,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb56ee1703dbfbdc3611faaf2274932a33f0c97172912c81b23.jpeg",
+      "source": "Pinterest",
+      "title": "Premium Photo | Dressmaker woman sews clothes on sewing machine in factory.  | Sewing women, Fashion process, Dressmaking",
+      "link": "https://www.pinterest.com/pin/premium-photo--315463148907470975/",
+      "original": "https://i.pinimg.com/736x/68/e9/c7/68e9c79a36e1220e1ad5e9db8120bbb0.jpg",
+      "original_width": 626,
+      "original_height": 417,
+      "is_product": false
+    },
+    {
+      "position": 20,
+      "thumbnail": "https://serpapi.com/searches/6358770334ff95c5b24706c2/images/c98aca4efc86abb56ee1703dbfbdc36128bf78433e3c5bb64467b4dda7c9fa32.jpeg",
+      "source": "iStock",
+      "title": "46,884 Woman Sewing Stock Photos, Pictures & Royalty-Free Images - iStock",
+      "link": "https://www.istockphoto.com/photos/woman-sewing",
+      "original": "https://media.istockphoto.com/photos/young-black-woman-stitching-fabric-using-a-sewing-machine-picture-id519321260?k=20&m=519321260&s=612x612&w=0&h=NSYzxKkH6DfUFE579n2Am6wlkrFOXTh5ZbaoSgUZoS8=",
+      "original_width": 612,
+      "original_height": 408,
+      "is_product": true
+    },
+    {
+      "position": 21,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtUdTVCeXjnz_84JTAAgbGOJtBH4eJ0lLW7Q&usqp=CAU",
+      "source": "Freepik",
+      "title": "Premium Photo | Keen african young female at retro sewing machine",
+      "link": "https://www.freepik.com/premium-photo/keen-african-young-female-retro-sewing-machine_21554850.htm",
+      "original": "https://img.freepik.com/premium-photo/keen-african-young-female-retro-sewing-machine_219728-5808.jpg?w=2000",
+      "original_width": 2000,
+      "original_height": 1333,
+      "is_product": false
+    },
+    {
+      "position": 22,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-oIalt9vsGcn8VdAhC6Ij3gGRGLUj62xDhA&usqp=CAU",
+      "source": "123RF",
+      "title": "Group Of Women In A Sewing Workshop Stock Photo, Picture And Royalty Free  Image. Image 51245096.",
+      "link": "https://www.123rf.com/photo_51245096_group-of-women-in-a-sewing-workshop.html",
+      "original": "https://previews.123rf.com/images/gdolgikh/gdolgikh1601/gdolgikh160100270/51245096-group-of-women-in-a-sewing-workshop.jpg",
+      "original_width": 1300,
+      "original_height": 866,
+      "is_product": false
+    },
+    {
+      "position": 23,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW5rkc9lY3mTl0DscL0Mp8qYo-ggg2LJNRWg&usqp=CAU",
+      "source": "Alamy",
+      "title": "Young beautiful girl sew with a sewing machine. In the background you can  see hanging garments Stock Photo - Alamy",
+      "link": "https://www.alamy.com/stock-photo-young-beautiful-girl-sew-with-a-sewing-machine-in-the-background-you-172762802.html",
+      "original": "https://c8.alamy.com/comp/M120M2/young-beautiful-girl-sew-with-a-sewing-machine-in-the-background-you-M120M2.jpg",
+      "original_width": 1300,
+      "original_height": 957,
+      "is_product": true
+    },
+    {
+      "position": 24,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9qzXWC4rvv_1mmtBRhrvfepEKEL_GrRX1fw&usqp=CAU",
+      "source": "Can Stock Photo",
+      "title": "Close up female tailor in hijab using a sewing machine while working at  garment room. | CanStock",
+      "link": "https://www.canstockphoto.com/close-up-female-tailor-in-hijab-using-a-86120269.html",
+      "original": "https://cdn.xxl.thumbs.canstockphoto.com/attentive-tailor-smiling-while-using-a-modern-convenient-sewing-machine-professional-tailor-stock-photos_csp53887836.jpg",
+      "original_width": 360,
+      "original_height": 254,
+      "is_product": false
+    },
+    {
+      "position": 25,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYbVYX8XBDqDTsvhozT_mrSm6xshWlazKe1A&usqp=CAU",
+      "source": "Storyblocks",
+      "title": "Beautiful young woman sewing clothes with sewing machine. Royalty-Free  Stock Image - Storyblocks",
+      "link": "https://www.storyblocks.com/images/stock/beautiful-young-woman-sewing-clothes-with-sewing-machine-rasgtlawbj3ew4u2q",
+      "original": "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/image/rDtN98Qoishumwih/graphicstock-beautiful-young-woman-sewing-clothes-with-sewing-machine_BC7ez6eCb-_SB_PM.jpg",
+      "original_width": 1000,
+      "original_height": 667,
+      "is_product": true
+    },
+    {
+      "position": 26,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmbCTR7ePO-kKAEO7cjZ1mxYlwhomKNRhs9A&usqp=CAU",
+      "source": "World Vision",
+      "title": "A stitch in time empowers women in India | World Vision",
+      "link": "https://www.worldvision.org/blog/stitch-time-empowers-women-india",
+      "original": "https://www.worldvision.org/wp-content/uploads/2017/08/Stitch-in-Time-Feature-850x395.jpg",
+      "original_width": 850,
+      "original_height": 395,
+      "is_product": false
+    },
+    {
+      "position": 27,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGsMmUx93EFcBVQ0B9gMnoJNBftWANIEVL0g&usqp=CAU",
+      "source": "DIY Joy",
+      "title": "36 Sewing Projects for Women",
+      "link": "https://diyjoy.com/diy-sewing-projects-for-women/",
+      "original": "https://diyjoy.com/wp-content/uploads/2016/05/diy-womens-fashion-sewing.jpg",
+      "original_width": 1200,
+      "original_height": 600,
+      "is_product": false
+    },
+    {
+      "position": 28,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTKZ-Qt-Iv-1s2sNJ3Qqqlgck0gBSqc0SrUA&usqp=CAU",
+      "source": "The Borgen Project",
+      "title": "Empowering Women in India Through Sewing - The Borgen Project",
+      "link": "https://borgenproject.org/empowering-women-in-india-with-sewing/",
+      "original": "https://borgenproject.org/wp-content/uploads/Empowering-Women-in-India-Through-Sewing-1.jpg",
+      "original_width": 864,
+      "original_height": 596,
+      "is_product": false
+    },
+    {
+      "position": 29,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA_sv9sN_PZ7B2euDfOb-Yghr32Sl2a-x6yg&usqp=CAU",
+      "source": "GeorgiaInfo",
+      "title": "Women Sewing",
+      "link": "https://georgiainfo.galileo.usg.edu/gastudiesimages/Women%20Sewing%202.htm",
+      "original": "https://georgiainfo.galileo.usg.edu/gastudiesimages/Women%20Sewing%202.jpg",
+      "original_width": 534,
+      "original_height": 401,
+      "is_product": false
+    },
+    {
+      "position": 30,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu0HT4mClnXA7dV370c1p09qD7TPR_B4MDyQ&usqp=CAU",
+      "source": "Depositphotos",
+      "title": "Sewing girl Stock Photos, Royalty Free Sewing girl Images | Depositphotos",
+      "link": "https://depositphotos.com/stock-photos/sewing-girl.html",
+      "original": "https://st.depositphotos.com/1905901/1877/i/950/depositphotos_18779995-stock-photo-beautiful-girl-sewing.jpg",
+      "original_width": 1024,
+      "original_height": 797,
+      "is_product": true
+    },
+    {
+      "position": 31,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrDo_fcbV9SWnK3pAhyu1Fl5CgzJ84zlab4A&usqp=CAU",
+      "source": "Alamy",
+      "title": "Young african american women sewing hi-res stock photography and images -  Alamy",
+      "link": "https://www.alamy.com/stock-photo/young-african-american-women-sewing.html",
+      "original": "https://c8.alamy.com/comp/CX14AJ/african-american-female-fashion-designer-sewing-fabric-over-gray-background-CX14AJ.jpg",
+      "original_width": 1300,
+      "original_height": 956,
+      "is_product": true
+    },
+    {
+      "position": 32,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Anr6QjZw-oFFYdVME7UTIDo7zzsBPdI7gg&usqp=CAU",
+      "source": "Dreamstime.com",
+      "title": "Sewing girl stock vector. Illustration of fashion, leisure - 38558692",
+      "link": "https://www.dreamstime.com/stock-photography-sewing-girl-her-machine-image38558692",
+      "original": "https://thumbs.dreamstime.com/b/sewing-girl-her-machine-38558692.jpg",
+      "original_width": 800,
+      "original_height": 800,
+      "is_product": false
+    },
+    {
+      "position": 33,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWj3tqKKSUJj_HnJiZkH8GDmM3blSJWezsfg&usqp=CAU",
+      "source": "GoGraph",
+      "title": "Vector Art - Girl sewing machine. Clipart Drawing gg85596230 - GoGraph",
+      "link": "https://www.gograph.com/clipart/girl-sewing-machine-gg85596230.html",
+      "original": "https://comps.gograph.com/girl-sewing-machine_gg85596230.jpg",
+      "original_width": 450,
+      "original_height": 461,
+      "is_product": false
+    },
+    {
+      "position": 34,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ZCGBPiGM5iUzQRd1FdayThFA0w2_PyKuJw&usqp=CAU",
+      "source": "Amazon.com · In stock",
+      "title": "Amazon.com: Simplicity Amazing Fit Women's Peg Leg Pants Sewing Patterns,  Sizes 6-14 : Arts, Crafts & Sewing",
+      "link": "https://www.amazon.com/Simplicity-US8842H5-Pattern-Amazing-6-8-10-12-14/dp/B07KQZKBVW",
+      "original": "https://m.media-amazon.com/images/I/41iYmzRpC5L._AC_.jpg",
+      "original_width": 347,
+      "original_height": 484,
+      "is_product": true,
+      "in_stock": true
+    },
+    {
+      "position": 35,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyScb-9Hm_ZZOBFF1Bg4aOoS6QbvaXGHVSeg&usqp=CAU",
+      "source": "Made Institute",
+      "title": "Sewing Classes | Made Institute",
+      "link": "https://made-institute.com/sewing-class",
+      "original": "https://images.squarespace-cdn.com/content/v1/54e7b79de4b0440df79ff12e/1651091187352-D6K2T76Q7DQFTZEXXUQE/Sewing_1_female_portrait_1FE08100_cropped%2Band%2Breduced.jpg",
+      "original_width": 500,
+      "original_height": 500,
+      "is_product": false
+    },
+    {
+      "position": 36,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREC0k2IeUbvnmwZW3jDDc4FV-ZXhvnFnc9hQ&usqp=CAU",
+      "source": "It's Always Autumn",
+      "title": "the breezy tee {free womens sewing pattern in size L} - It's Always Autumn",
+      "link": "https://www.itsalwaysautumn.com/the-breezy-tee-free-womens-sewing-pattern-in-size-l.html",
+      "original": "https://i2.wp.com/itsalwaysautumn.com/wp-content/uploads/2015/07/boxy-tee-free-pattern-sewing-women-t-shirt-easy-tutorial-4.jpg",
+      "original_width": 650,
+      "original_height": 995,
+      "is_product": false
+    },
+    {
+      "position": 37,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxKGs3pMicLNe3c6hKby2uMg6Ag_5IbEtPFQ&usqp=CAU",
+      "source": "eBay · In stock",
+      "title": "GEX 13 Dials Adjustable Dress Form Sewing Female Mannequin Torso Stand  Medium | eBay",
+      "link": "https://www.ebay.com/itm/284731887106",
+      "original": "https://i.ebayimg.com/images/g/64UAAOSw4VViQna5/s-l500.jpg",
+      "original_width": 500,
+      "original_height": 500,
+      "is_product": true,
+      "in_stock": true
+    },
+    {
+      "position": 38,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3gBReXQng7U1kJPyZbU4xrSDByDJn21WIaw&usqp=CAU",
+      "source": "Walmart · In stock",
+      "title": "GEX Black Female Fabric Adjustable Mannequin Dress Form for Sewing Women's  Mannequin Body Torso with Stand Medium - Walmart.com",
+      "link": "https://www.walmart.com/ip/GEX-Black-Female-Fabric-Adjustable-Mannequin-Dress-Form-for-Sewing-Women-s-Mannequin-Body-Torso-with-Stand-Medium/563825481",
+      "original": "https://i5.walmartimages.com/asr/a4a2647c-34ea-4007-b39a-b54886013565.3f2dbf6c8753667cb50aa7d26959d545.jpeg",
+      "original_width": 2480,
+      "original_height": 2480,
+      "is_product": true,
+      "in_stock": true
+    },
+    {
+      "position": 39,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdrdDaGbKQWLQe6g3DUwEAD4SIvuODTknPcQ&usqp=CAU",
+      "source": "Zing Display · In stock",
+      "title": "Fully Adjustable Female Sewing Dress Form - Green",
+      "link": "https://www.zingdisplay.com/Fully-Adjustable-Female-Sewing-Dress-Form-Green-p/dfh4r.htm",
+      "original": "https://cdn3.volusion.com/kcje4.qfs7o/v/vspfiles/photos/DFH4R-2.jpg",
+      "original_width": 316,
+      "original_height": 562,
+      "is_product": true,
+      "in_stock": true
+    },
+    {
+      "position": 40,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeoiEGjvc4GAgBBgFkQJt-dZlAJOu_TozA6g&usqp=CAU",
+      "source": "Amazon.com · In stock",
+      "title": "Amazon.com: Sewing Female Mannequin with Detachable Arms Ladies, Plus Size,  Fashion Women Dummy/Dressmakers Bust Dress Forms, with Wheels Stand (Color  : Black, Size : XXL-Model 92) : Arts, Crafts & Sewing",
+      "link": "https://www.amazon.com/Sewing-Mannequin-Detachable-Fashion-Dressmakers/dp/B092CDM99L",
+      "original": "https://m.media-amazon.com/images/I/51m61DLPbKL.jpg",
+      "original_width": 1601,
+      "original_height": 1601,
+      "is_product": true,
+      "in_stock": true
+    },
+    {
+      "position": 41,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbDVxIXwgWwLq_8tQ4A8B74rtTDe2ZPk5rvw&usqp=CAU",
+      "source": "Pinterest",
+      "title": "Sewing Clipart (246695) | Illustrations | Design Bundles | Sewing clipart,  Sewing machine drawing, Art and craft videos",
+      "link": "https://www.pinterest.com/pin/481111172693650911/",
+      "original": "https://i.pinimg.com/736x/dc/82/b9/dc82b90a1fc4dc48bc5339ea31d52aef.jpg",
+      "original_width": 736,
+      "original_height": 736,
+      "is_product": false
+    },
+    {
+      "position": 42,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdpyFxKP33XpQqpz6czKjzp8U5z5qCj11QlA&usqp=CAU",
+      "source": "The Spruce Crafts",
+      "title": "Free Sewing Patterns for Home and Life",
+      "link": "https://www.thesprucecrafts.com/free-sewing-patterns-1356433",
+      "original": "https://www.thesprucecrafts.com/thmb/8czIvVMtatij4UuZaaUNdmteyC0=/5123x2882/smart/filters:no_upscale()/black-woman-using-sewing-machine-606353381-5bd0ab47c9e77c00510390e8.jpg",
+      "original_width": 5123,
+      "original_height": 2882,
+      "is_product": false
+    },
+    {
+      "position": 43,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOwTS4kGARd3mGm_CXxCpeoVXFijbZGDHZKA&usqp=CAU",
+      "source": "VectorStock",
+      "title": "Woman tailor sewing using sewing machine craft Vector Image",
+      "link": "https://www.vectorstock.com/royalty-free-vector/woman-tailor-sewing-using-sewing-machine-craft-vector-26220302",
+      "original": "https://cdn3.vectorstock.com/i/1000x1000/03/02/woman-tailor-sewing-using-sewing-machine-craft-vector-26220302.jpg",
+      "original_width": 1000,
+      "original_height": 1080,
+      "is_product": true
+    },
+    {
+      "position": 44,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF5ZUGMYGu9J1q_E4jbY1uuPKVYZVYr-XOEw&usqp=CAU",
+      "source": "Myloview · In stock",
+      "title": "Female dressmaker with sewing machine silhouette vector posters for the  wall • posters eatery, dinner, shadow | myloview.com",
+      "link": "https://myloview.com/poster-female-dressmaker-with-sewing-machine-silhouette-vector-no-B2CC597",
+      "original": "https://img.myloview.com/posters/female-dressmaker-with-sewing-machine-silhouette-vector-700-187483543.jpg",
+      "original_width": 700,
+      "original_height": 700,
+      "is_product": true,
+      "in_stock": true
+    },
+    {
+      "position": 45,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5DZjvTkMx47gDF2y_zDLrcUoTre6KfSG95g&usqp=CAU",
+      "source": "Pixabay",
+      "title": "Sewing Tools Female Symbol Icons - Free vector graphic on Pixabay",
+      "link": "https://pixabay.com/vectors/sewing-tools-female-symbol-icons-6785060/",
+      "original": "https://cdn.pixabay.com/photo/2021/11/10/23/40/sewing-tools-6785060_1280.png",
+      "original_width": 737,
+      "original_height": 1280,
+      "is_product": false
+    },
+    {
+      "position": 46,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3wwFO0mBKkSZWHlqlQ0j9Z5B8Vco-hXS4uQ&usqp=CAU",
+      "source": "Dreamstime.com",
+      "title": "Teen Girl Sewing stock photo. Image of leisure, isolated - 11829432",
+      "link": "https://www.dreamstime.com/stock-photography-teen-girl-sewing-image11829432",
+      "original": "https://thumbs.dreamstime.com/z/teen-girl-sewing-11829432.jpg",
+      "original_width": 957,
+      "original_height": 1300,
+      "is_product": true
+    },
+    {
+      "position": 47,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSam1F2-kxq5jKo3wW3iSzJ_hgsxI4FiAEMXg&usqp=CAU",
+      "source": "PIXTA",
+      "title": "Cute girl seamstress sews on a sewing machine... - Stock Illustration  [60552098] - PIXTA",
+      "link": "https://www.pixtastock.com/illustration/60552098",
+      "original": "https://en.pimg.jp/060/552/098/1/60552098.jpg",
+      "original_width": 450,
+      "original_height": 468,
+      "is_product": true
+    },
+    {
+      "position": 48,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7SmvA9pSFfDc_H5WTkc1vkkq6l-egVeyCkQ&usqp=CAU",
+      "source": "Fine Craft Guild",
+      "title": "Trendy Nautical Womens Top Free Sewing Pattern",
+      "link": "https://finecraftguild.com/nautical-womens-top-free-sewing-pattern/",
+      "original": "https://finecraftguild.com/wp-content/uploads/2015/03/stripes_womens_top.jpg",
+      "original_width": 1067,
+      "original_height": 1600,
+      "is_product": false
+    },
+    {
+      "position": 49,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6o23li2sXM1vCn967FJEYrBF6hdIPLEQSuQ&usqp=CAU",
+      "source": "iStock",
+      "title": "Animated Female Friends Sewing Clothes Together Stock Photo - Download  Image Now - 20-29 Years, 25-29 Years, Adult - iStock",
+      "link": "https://www.istockphoto.com/photo/animated-female-friends-sewing-clothes-together-gm856496040-141084073",
+      "original": "https://media.istockphoto.com/photos/animated-female-friends-sewing-clothes-together-picture-id856496040",
+      "original_width": 682,
+      "original_height": 1024,
+      "is_product": true
+    },
+    {
+      "position": 50,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS09mQUdk7Wv-E1OPZqYEV6PrhRNaHEtTfgNg&usqp=CAU",
+      "source": "Walmart · In stock",
+      "title": "GEX Gray Female Fabric Adjustable Mannequin Dress Form for Sewing Women's  Mannequin Body Torso with Stand Medium - Walmart.com",
+      "link": "https://www.walmart.com/ip/GEX-Gray-Female-Fabric-Adjustable-Mannequin-Dress-Form-for-Sewing-Women-s-Mannequin-Body-Torso-with-Stand-Medium/975455547",
+      "original": "https://i5.walmartimages.com/asr/7c2e5b76-e851-4f98-ad9e-82d51af5cef2.9426f9f93bda33720eb58718ec93156f.jpeg",
+      "original_width": 1359,
+      "original_height": 1500,
+      "is_product": true,
+      "in_stock": true
+    },
+    {
+      "position": 51,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRPlGwUYfPQp86nViB6Nd9fivqUTouV0D6IQ&usqp=CAU",
+      "source": "Pinterest",
+      "title": "36 Sewing Projects for Women | Sewing clothes women, Sewing projects  clothes, Sewing women",
+      "link": "https://www.pinterest.com/pin/25121710400679896/",
+      "original": "https://i.pinimg.com/736x/97/8b/39/978b398861e97c169a677e19df4156b7--sewing-tips-sewing-ideas.jpg",
+      "original_width": 736,
+      "original_height": 2750,
+      "is_product": false
+    },
+    {
+      "position": 52,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpf8J3uRiPWj_zxr53eSOKtpACRSg82VA6Fw&usqp=CAU",
+      "source": "Getty Images",
+      "title": "22,103 Woman Sewing Photos and Premium High Res Pictures - Getty Images",
+      "link": "https://www.gettyimages.com/photos/woman-sewing",
+      "original": "https://media.gettyimages.com/photos/young-seamstress-with-sewing-machine-in-manufacturers-workshop-picture-id578186485?s=612x612",
+      "original_width": 612,
+      "original_height": 408,
+      "is_product": true
+    },
+    {
+      "position": 53,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkWS9ND-hVyJPax4_ljUGATtxBzC554UxtGw&usqp=CAU",
+      "source": "Sew What, Alicia?",
+      "title": "Girls Dress Sewing Patterns for Special Occasions - Sew What, Alicia?",
+      "link": "https://www.sewwhatalicia.com/girls-dress-sewing-patterns-for-special-occasions/",
+      "original": "https://i0.wp.com/www.sewwhatalicia.com/wp-content/uploads/2019/09/girls-dress-sewing-patterns-11.jpg?fit=3000%2C2250&ssl=1",
+      "original_width": 3000,
+      "original_height": 2250,
+      "is_product": false
+    },
+    {
+      "position": 54,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP_Yb_8vHp_fqgxGaFHH_OVSNg6AMlJ-3yBw&usqp=CAU",
+      "source": "Threads Monthly",
+      "title": "35 Gorgeous Free Sewing Patterns for Tops (Women)",
+      "link": "https://threadsmonthly.com/free-sewing-patterns-womens-tops/",
+      "original": "https://threadsmonthly.com/wp-content/uploads/2021/10/tank-top-sewing-patterns-women-creativebug.jpg",
+      "original_width": 700,
+      "original_height": 450,
+      "is_product": false
+    },
+    {
+      "position": 55,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbLCn0xgg2mwfeUVKKRcj4hsRKEoSFvGMy9Q&usqp=CAU",
+      "source": "VectorStock",
+      "title": "Pretty girl using sewing Royalty Free Vector Image",
+      "link": "https://www.vectorstock.com/royalty-free-vector/pretty-girl-using-sewing-vector-18325290",
+      "original": "https://cdn1.vectorstock.com/i/1000x1000/52/90/pretty-girl-using-sewing-vector-18325290.jpg",
+      "original_width": 1000,
+      "original_height": 1080,
+      "is_product": true
+    },
+    {
+      "position": 56,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUQpkY7ueDtk-CUMUMsHtE6GOyz82H4lhFSw&usqp=CAU",
+      "source": "Love Notions",
+      "title": "Start back to school sewing for girls today.",
+      "link": "https://www.lovenotions.com/back-to-school-sewing-for-girls",
+      "original": "https://www.lovenotions.com/wp-content/uploads/Back-to-School-Girls-683x1024.jpg",
+      "original_width": 683,
+      "original_height": 1024,
+      "is_product": false
+    },
+    {
+      "position": 57,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqYpoZbmzXgV4u9TayBBdmdLTl3p0PSFghcw&usqp=CAU",
+      "source": "Amazon.com · In stock",
+      "title": "The Sewing Circle: Hollywood's Greatest Secret―Female Stars Who Loved Other  Women: Madsen, Axel: 9781504008730: Amazon.com: Books",
+      "link": "https://www.amazon.com/Sewing-Circle-Hollywoods-Greatest-Secret_Female/dp/1504008731",
+      "original": "https://m.media-amazon.com/images/I/51KTW54nYKL._AC_SY780_.jpg",
+      "original_width": 324,
+      "original_height": 500,
+      "is_product": true,
+      "in_stock": true
+    },
+    {
+      "position": 58,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhJjTq8ENKvlfARXPWccszuB86Y7TtW2q_4A&usqp=CAU",
+      "source": "See Kate Sew",
+      "title": "10 womens sewing patterns to make - see kate sew",
+      "link": "https://seekatesew.com/10-womens-sewing-patterns-to-make/",
+      "original": "https://seekatesew.com/wp-content/uploads/2014/09/neptune6.jpg",
+      "original_width": 640,
+      "original_height": 960,
+      "is_product": false
+    },
+    {
+      "position": 59,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjbhLfD-Tt6C_lUiRsCi-PHR0YskgjukNS5g&usqp=CAU",
+      "source": "123RF",
+      "title": "Teenager Girl Working With Sewing Machine As A Tailor Stock Photo, Picture  And Royalty Free Image. Image 130975574.",
+      "link": "https://www.123rf.com/photo_130975574_teenager-girl-working-with-sewing-machine-as-a-tailor.html",
+      "original": "https://previews.123rf.com/images/gekaskr/gekaskr1909/gekaskr190900025/130975574-teenager-girl-working-with-sewing-machine-as-a-tailor.jpg",
+      "original_width": 1300,
+      "original_height": 930,
+      "is_product": false
+    },
+    {
+      "position": 60,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaBtP1oKxXsllCPn3_aUPZh9xW0zhhxsbqdg&usqp=CAU",
+      "source": "Alamy",
+      "title": "female workers operate sewing machines in a busy factory 1960s hungary  Stock Photo - Alamy",
+      "link": "https://www.alamy.com/female-workers-operate-sewing-machines-in-a-busy-factory-1960s-hungary-image242003282.html",
+      "original": "https://c8.alamy.com/zooms/6/200b3b1abe42445db79cc9784aa30272/t1m5ja.jpg",
+      "original_width": 450,
+      "original_height": 320,
+      "is_product": false
+    },
+    {
+      "position": 61,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKzGqWBCkDamvlA2nIbDqxTYSjSfG0Dv2Yug&usqp=CAU",
+      "source": "DIY Joy",
+      "title": "36 Sewing Projects for Women",
+      "link": "https://diyjoy.com/diy-sewing-projects-for-women/",
+      "original": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_625,h_938/https://diyjoy.com/wp-content/uploads/2016/05/Make-A-Kimono-Jacket.jpg",
+      "original_width": 625,
+      "original_height": 938,
+      "is_product": false
+    },
+    {
+      "position": 62,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGyxUFmyFd8IknMCNTLUxZZ9wjl2eALTv4mA&usqp=CAU",
+      "source": "PhotoDune",
+      "title": "Woman sewing dress Stock Photo by AnnaStills | PhotoDune",
+      "link": "https://photodune.net/item/woman-sewing-dress/26632809",
+      "original": "https://s3.envato.com/files/288714276/4H1A6487.jpg",
+      "original_width": 590,
+      "original_height": 393,
+      "is_product": true
+    },
+    {
+      "position": 63,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2XoSQHiar6jazeNS8yqmUNlsT0aariZ2NHQ&usqp=CAU",
+      "source": "VectorStock",
+      "title": "Cute african american girl sewing at machine Vector Image",
+      "link": "https://www.vectorstock.com/royalty-free-vector/cute-african-american-girl-sewing-at-machine-vector-11235691",
+      "original": "https://cdn2.vectorstock.com/i/1000x1000/56/91/cute-african-american-girl-sewing-at-machine-vector-11235691.jpg",
+      "original_width": 852,
+      "original_height": 1080,
+      "is_product": true
+    },
+    {
+      "position": 64,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Isx9DfQ6yBXrcjYi7-PabxplN8uV6dx2zA&usqp=CAU",
+      "source": "Sierra News Online",
+      "title": "Creative, Artistic, Functional: Mountain Sewing Club For Girls | Sierra  News Online",
+      "link": "https://sierranewsonline.com/creative-artistic-functional-mountain-sewing-club-for-girls/",
+      "original": "https://sierranewsonline.com/wp-content/uploads/2018/07/Ginger-Prentice-sews-sewing-courtesy-Lori-Prentice.jpg",
+      "original_width": 620,
+      "original_height": 330,
+      "is_product": false
+    },
+    {
+      "position": 65,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT74ADUzO0o1rSh66V3kSVQNkcA_0CghqE39Q&usqp=CAU",
+      "source": "Love To Sew Podcast",
+      "title": "Episode 160: Free Sewing – Love To Sew Podcast",
+      "link": "https://lovetosewpodcast.com/episodes/episode-160-free-sewing/",
+      "original": "https://i.ytimg.com/vi/EkBT19ygumg/maxresdefault.jpg",
+      "original_width": 1280,
+      "original_height": 720,
+      "is_product": false
+    },
+    {
+      "position": 66,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNnBsKj_c-UWugWp86WPHrB4iA7lr3g9q87A&usqp=CAU",
+      "source": "USAID",
+      "title": "USAID-Supported Skills Development Helps Rural Women Protect Local  Communities from COVID-19 | Our Stories | Sri Lanka | U.S. Agency for  International Development",
+      "link": "https://www.usaid.gov/sri-lanka/our-stories/jun-2020-usaid-supported-skills-development-helps-rural-women-protect-local-communities",
+      "original": "https://www.usaid.gov/sites/default/files/news/06-25-2020/scorestory1.jpg",
+      "original_width": 1280,
+      "original_height": 960,
+      "is_product": false
+    },
+    {
+      "position": 67,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPvUDnyft2-a7IPO3vbGZSkoUwEp_QgZ9J7Q&usqp=CAU",
+      "source": "Dreamstime.com",
+      "title": "Sewing Machine and Female Hands of Close Up View. Young Dressmaker Sew and  Working with Cloth in Design Studio Stock Image - Image of craftsmanship,  modern: 112969721",
+      "link": "https://www.dreamstime.com/sewing-machine-female-hands-close-up-view-young-dressmaker-sew-working-cloth-design-studio-sewing-machine-image112969721",
+      "original": "https://thumbs.dreamstime.com/z/sewing-machine-female-hands-close-up-view-young-dressmaker-sew-working-cloth-design-studio-sewing-machine-112969721.jpg",
+      "original_width": 1300,
+      "original_height": 957,
+      "is_product": true
+    },
+    {
+      "position": 68,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxT1BSnpeRyLZpSGBYFZvWyzTLGiYCH8dp8g&usqp=CAU",
+      "source": "Amazon.com · In stock",
+      "title": "Amazon.com: DE-LIANG Half Scale Dress Form with Soft Arms (Not Adult Full  Size) Tailor Female Mannequin for Sewing Clothes Girls, Mini dressmaker's  Dummy, 1/2 Trouser Pattern Making Model,43cm Height,Fiberglass : Clothing,  Shoes",
+      "link": "https://www.amazon.com/LIANG-Mannequin-Clothes-dressmakers-Fiberglass/dp/B08NP36KP2",
+      "original": "https://m.media-amazon.com/images/I/71JYPSaJhsL.jpg",
+      "original_width": 2560,
+      "original_height": 2560,
+      "is_product": true,
+      "in_stock": true
+    },
+    {
+      "position": 69,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6AY-W6dm6VGVngjItV0lWZXjUuA_ZY37RfQ&usqp=CAU",
+      "source": "Pinterest",
+      "title": "Women pictures Women sewing at a Naumann sewing machine - 1928 -... | Sewing  women, Sewing machine, Vintage pictures",
+      "link": "https://www.pinterest.com/pin/112378953178797547/",
+      "original": "https://i.pinimg.com/736x/dd/21/f0/dd21f0827072ba8c118117dd9e38de9b--vintage-pictures-sewing-machines.jpg",
+      "original_width": 736,
+      "original_height": 991,
+      "is_product": false
+    },
+    {
+      "position": 70,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuPcqfWBX75HmfsWs9iYhp4MTQ45PE6URNag&usqp=CAU",
+      "source": "Shutterstock",
+      "title": "123,871 Woman Sews Images, Stock Photos & Vectors | Shutterstock",
+      "link": "https://www.shutterstock.com/search/woman-sews",
+      "original": "https://image.shutterstock.com/image-photo/young-african-dressmaker-woman-sews-260nw-1558369238.jpg",
+      "original_width": 391,
+      "original_height": 280,
+      "is_product": true
+    },
+    {
+      "position": 71,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDXdunp4gDW4PW49PrJSZtlOf7qm_3ycp8dQ&usqp=CAU",
+      "source": "Wikimedia Commons",
+      "title": "File:Girl Sewing SAAM-1975.83.82 1.jpg - Wikimedia Commons",
+      "link": "https://commons.wikimedia.org/wiki/File:Girl_Sewing_SAAM-1975.83.82_1.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Girl_Sewing_SAAM-1975.83.82_1.jpg",
+      "original_width": 1587,
+      "original_height": 2000,
+      "is_product": true
+    },
+    {
+      "position": 72,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgB7etWK6vSyTVlrzXH4CAscbGBQnOMri0PQ&usqp=CAU",
+      "source": "YouTube",
+      "title": "EASY Sewing project! Women's Tee Dress Sewing Pattern Tutorial - YouTube",
+      "link": "https://www.youtube.com/watch?v=LjiQcd-M1-Q",
+      "original": "https://i.ytimg.com/vi/LjiQcd-M1-Q/maxresdefault.jpg",
+      "original_width": 1280,
+      "original_height": 720,
+      "is_product": true
+    },
+    {
+      "position": 73,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6QqDhT8cUAPIFdJXgtL8G3gRm9cIuPeIvGQ&usqp=CAU",
+      "source": "iStock",
+      "title": "152 Young Woman Sewing Illustrations & Clip Art - iStock",
+      "link": "https://www.istockphoto.com/illustrations/young-woman-sewing",
+      "original": "https://media.istockphoto.com/vectors/woman-sewing-vector-id1253103321?k=20&m=1253103321&s=612x612&w=0&h=U9u4uznva3AdszSB-XVXNmEaCK0l3dW1pOM890dwkWM=",
+      "original_width": 612,
+      "original_height": 415,
+      "is_product": true
+    },
+    {
+      "position": 74,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSRcDwSvO1KCfWToS9yRLAYG8pzYnkrcYoXQ&usqp=CAU",
+      "source": "Scottish Rite for Children",
+      "title": "FOX 4: HERE'S TO YOU - The Sewing Ladies",
+      "link": "https://scottishriteforchildren.org/press-coverage/fox-4-here-s-to-you-the-sewing-ladies",
+      "original": "https://scottishriteforchildren.org/getattachment/Press-Coverage/FOX-4-HERE-S-TO-YOU-The-Sewing-Ladies/Sewing-Ladies1.jpg?lang=en-US&width=1200&height=619&ext=.jpg",
+      "original_width": 1200,
+      "original_height": 619,
+      "is_product": false
+    },
+    {
+      "position": 75,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3g_QnTzOA7IBdU0Y6AG1QTmX8hpOnvNbsKA&usqp=CAU",
+      "source": "Columbia University Press",
+      "title": "Sewing Women | Columbia University Press",
+      "link": "http://cup.columbia.edu/book/sewing-women/9780231133098",
+      "original": "https://cup-us.imgix.net/covers/9780231133098.jpg?auto=format&w=350",
+      "original_width": 350,
+      "original_height": 527,
+      "is_product": false
+    },
+    {
+      "position": 76,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiSqzzBVtJtobncwWm93KBAl9rR-iGPyhMqg&usqp=CAU",
+      "source": "VectorStock",
+      "title": "A sewing machine with girl Royalty Free Vector Image",
+      "link": "https://www.vectorstock.com/royalty-free-vector/a-sewing-machine-with-girl-vector-1398137",
+      "original": "https://cdn3.vectorstock.com/i/1000x1000/81/37/a-sewing-machine-with-girl-vector-1398137.jpg",
+      "original_width": 1000,
+      "original_height": 1031,
+      "is_product": true
+    },
+    {
+      "position": 77,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzXwz7xZkpVpyBfoM7fj0KLhCZLUu-bgBwmA&usqp=CAU",
+      "source": "Etsy · In stock",
+      "title": "Sahara Girls Dress Patterns PDF Sewing Pattern Twirl Dress - Etsy",
+      "link": "https://www.etsy.com/listing/576834701/sahara-girls-dress-patterns-pdf-sewing",
+      "original": "https://i.etsystatic.com/5866299/r/il/ffff7d/3972796096/il_fullxfull.3972796096_ht6x.jpg",
+      "original_width": 2700,
+      "original_height": 2025,
+      "is_product": true,
+      "in_stock": true
+    },
+    {
+      "position": 78,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlvaROtCS8nvkFFUkmMMmdme1fnzurD0zpMg&usqp=CAU",
+      "source": "Alamy",
+      "title": "Illustration of a Cute Little Girl Sewing a Piece of Fabric Stock Photo -  Alamy",
+      "link": "https://www.alamy.com/stock-photo-illustration-of-a-cute-little-girl-sewing-a-piece-of-fabric-72615269.html",
+      "original": "https://c8.alamy.com/comp/E63WED/illustration-of-a-cute-little-girl-sewing-a-piece-of-fabric-E63WED.jpg",
+      "original_width": 1005,
+      "original_height": 1390,
+      "is_product": true
+    },
+    {
+      "position": 79,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQamNDJiHwfNrtwDbu1YQnqwKTI4QHPOFQ7Mg&usqp=CAU",
+      "source": "Getty Images",
+      "title": "22,103 Woman Sewing Photos and Premium High Res Pictures - Getty Images",
+      "link": "https://www.gettyimages.com/photos/woman-sewing",
+      "original": "https://media.gettyimages.com/photos/woman-sewing-at-home-picture-id1227563837?s=612x612",
+      "original_width": 612,
+      "original_height": 408,
+      "is_product": true
+    },
+    {
+      "position": 80,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZLK62aOUSwluETXkwAazA-IDqoATEAyWrNg&usqp=CAU",
+      "source": "Freepik",
+      "title": "Premium Photo | Caucasian female hands working with sewing machine making  face medical mask for preventing and stop corona virus spreading homemade  manufacturing concept focus on right hand bottom fingers",
+      "link": "https://www.freepik.com/premium-photo/caucasian-female-hands-working-with-sewing-machine-making-face-medical-mask-preventing-stop-corona-virus-spreading-homemade-manufacturing-concept-focus-right-hand-bottom-fingers_27212762.htm",
+      "original": "https://img.freepik.com/premium-photo/caucasian-female-hands-working-with-sewing-machine-making-face-medical-mask-preventing-stop-corona-virus-spreading-homemade-manufacturing-concept-focus-right-hand-bottom-fingers_646109-1025.jpg?w=2000",
+      "original_width": 2000,
+      "original_height": 1333,
+      "is_product": false
+    },
+    {
+      "position": 81,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStH1FWjuStY4K7gawQ5p2eVGKS7_wOk0wqSw&usqp=CAU",
+      "source": "Dreamstime.com",
+      "title": "Three Girls at Garment Factory Shop. they are Sitting Behind Sewing  Machines. Stock Photo - Image of fabric, industry: 113783046",
+      "link": "https://www.dreamstime.com/three-girls-garment-factory-shop-sitting-behind-sewing-machines-happy-fashionable-image113783046",
+      "original": "https://thumbs.dreamstime.com/z/three-girls-garment-factory-shop-sitting-behind-sewing-machines-happy-fashionable-113783046.jpg",
+      "original_width": 1300,
+      "original_height": 957,
+      "is_product": true
+    },
+    {
+      "position": 82,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRef0LCCkbQhEoXB4KfzwGu2UDNedwWWZRMWg&usqp=CAU",
+      "source": "Frenchie Style Store",
+      "title": "Woman Sandals Retro Wedges Summer Wedge Sandals Female Casual Sewing W –  Frenchie Style Store",
+      "link": "https://frenchie-lux.com/products/woman-sandals-retro-wedges-summer-wedge-sandals-female-casual-sewing-women-shoes-comfortable-ladies-sandalias-plus-size",
+      "original": "https://cdn.shopify.com/s/files/1/0605/4248/4719/products/product-image-1983738153_2048x2048.jpg?v=1650757385",
+      "original_width": 640,
+      "original_height": 640,
+      "is_product": false
+    },
+    {
+      "position": 83,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIlpDtmYyk7UHVVSZRmwpMLJnTFrfLxsgPiQ&usqp=CAU",
+      "source": "PIXTA",
+      "title": "Sewing women - Stock Illustration [32573040] - PIXTA",
+      "link": "https://www.pixtastock.com/illustration/32573040",
+      "original": "https://t.pimg.jp/032/573/040/5/32573040.jpg",
+      "original_width": 451,
+      "original_height": 450,
+      "is_product": false
+    },
+    {
+      "position": 84,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDtQyMLwQSpVlOGsd4HXJfAOVyw5FxH-za4Q&usqp=CAU",
+      "source": "Middle East Children's Alliance",
+      "title": "Sewing Project for Women in Gaza – Middle East Children's Alliance",
+      "link": "https://www.mecaforpeace.org/meca-projects/sewing-project-for-women-in-gaza/",
+      "original": "https://www.mecaforpeace.org/wp-content/uploads/2017/08/Trainer-with-women-sewing.jpg",
+      "original_width": 800,
+      "original_height": 600,
+      "is_product": false
+    },
+    {
+      "position": 85,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEKVxMTLwxj3jEPYp10O1PignO6shdp5m9AA&usqp=CAU",
+      "source": "Fridaystuff · In stock",
+      "title": "Sewing Poster, Sewing Girl - Once Upon A Time, There Was A Girl, Who Really  Loved Sewing - FridayStuff",
+      "link": "https://fridaystuff.com/product/sewing-poster-sewing-girl-once-upon-a-time-there-was-a-girl-who-really-loved-sewing/",
+      "original": "https://fridaystuff.com/wp-content/uploads/2021/09/Sewing-Poster-Sewing-Girl-Once-Upon-A-Time-There-Was-A-Girl-Who-Really-Loved-Sewing-That-Was-Me-The-End.jpg",
+      "original_width": 1500,
+      "original_height": 1500,
+      "is_product": true,
+      "in_stock": true
+    },
+    {
+      "position": 86,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbxZsFCcs9aDq0rt9gaWCUv4KYGndBomATaw&usqp=CAU",
+      "source": "Happily Ever Mom",
+      "title": "10 Easy Patterns to Sew a Dress for a Girl Around the World - Happily Ever  Mom",
+      "link": "https://happilyevermom.com/sew-a-dress-for-a-girl-around-the-world/",
+      "original": "https://happilyevermom.com/wp-content/uploads/2015/07/stylish-dresses-to-sew.png",
+      "original_width": 600,
+      "original_height": 600,
+      "is_product": false
+    },
+    {
+      "position": 87,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqGN62UJjLigrMXlLFVKr_O3ahPdUE6yIEXg&usqp=CAU",
+      "source": "Can Stock Photo",
+      "title": "Young woman sewing a dress for a little woman. | CanStock",
+      "link": "https://www.canstockphoto.com/woman-sewing-a-dress-35044998.html",
+      "original": "https://cdn.w600.comps.canstockphoto.com/woman-sewing-a-dress-drawing_csp35044998.jpg",
+      "original_width": 475,
+      "original_height": 519,
+      "is_product": true
+    },
+    {
+      "position": 88,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-WsvLOb4BwZrGvPJkfNJ3AoFqILV4Y__l3w&usqp=CAU",
+      "source": "Pictorem.com · In stock",
+      "title": "A young girl sewing - William-Adolphe Bouguereau",
+      "link": "https://www.pictorem.com/86616/A%20young%20girl%20sewing.html",
+      "original": "https://img.cdn-pictorem.com/uploads/collection/W/William-AdolpheBouguereau/900_A%20young%20girl%20sewing.jpg",
+      "original_width": 900,
+      "original_height": 1482,
+      "is_product": true,
+      "in_stock": true
+    },
+    {
+      "position": 89,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAIdSvy0Pnlz4CVtkAB4JvdxMmqZpVhXEOkw&usqp=CAU",
+      "source": "It's Always Autumn",
+      "title": "20 free t-shirt patterns you can print + sew at home - It's Always Autumn",
+      "link": "https://www.itsalwaysautumn.com/free-t-shirt-sewing-patterns.html",
+      "original": "https://i2.wp.com/itsalwaysautumn.com/wp-content/uploads/2015/02/free-t-shirt-tee-sewing-pattern-easy-best-women-kids-square-.jpg",
+      "original_width": 1000,
+      "original_height": 1000,
+      "is_product": false
+    },
+    {
+      "position": 90,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhAqwJmiQUlfyrsvchVMPH2VV69xX9Pk28OA&usqp=CAU",
+      "source": "AliExpress · In stock",
+      "title": "Two Style No Arm Color Sewing Female Mannequin Full Body Base Dress  Model,jewelry Flexible Women,adjustable Rack,doll D370 - Mannequins -  AliExpress",
+      "link": "https://www.aliexpress.com/item/1005002594541326.html",
+      "original": "https://ae01.alicdn.com/kf/H46d1b0267d474299b9c698083c67992aK/Two-style-No-Arm-Color-Sewing-Female-Mannequin-Full-Body-Base-Dress-Model-Jewelry-Flexible-Women.jpg",
+      "original_width": 400,
+      "original_height": 399,
+      "is_product": true,
+      "in_stock": true
+    },
+    {
+      "position": 91,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS260uDE5SHbw5jRsKe65Pe2y2lKH_Y2KGbuA&usqp=CAU",
+      "source": "Alibaba · In stock",
+      "title": "Good Quality Adjustable Tailor Sewing Female Dressmaker Hanging Full Body  Foam Mannequin Tailoring Mannequin Women For Sale - Buy Tailoring Mannequin  Women,Sewing Female Dressmaker Mannequin,Full Body Foam Mannequin Product  on Alibaba.com",
+      "link": "https://www.alibaba.com/product-detail/Good-Quality-Adjustable-Tailor-Sewing-Female_1600461028145.html",
+      "original": "http://sc04.alicdn.com/kf/H551f0b5438f74e5aa89f8b4ae45785d2C.jpg",
+      "original_width": 800,
+      "original_height": 800,
+      "is_product": true,
+      "in_stock": true
+    },
+    {
+      "position": 92,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ1arHYURl_7FDA5w2qICWNCyrISLX7OVSDg&usqp=CAU",
+      "source": "123RF",
+      "title": "Tailoring And Sewing. Female Tailor At Work Stock Photo, Picture And  Royalty Free Image. Image 115294296.",
+      "link": "https://www.123rf.com/photo_115294296_tailoring-and-sewing-female-tailor-at-work.html",
+      "original": "https://previews.123rf.com/images/kadmy/kadmy1812/kadmy181200191/115294296-tailoring-and-sewing-female-tailor-at-work.jpg",
+      "original_width": 1300,
+      "original_height": 867,
+      "is_product": false
+    },
+    {
+      "position": 93,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyUm-BHwo7CYdUyE6b3kYdsgbEEuyVxfvmvQ&usqp=CAU",
+      "source": "Mannequin Mall",
+      "title": "Seamstress & Sewing Mannequins For Sale | Mannequin Mall",
+      "link": "https://mannequinmall.com/collections/sewing-mannequins",
+      "original": "https://cdn.shopify.com/s/files/1/1265/3747/products/fh-2-2_0b63e937-07a7-4922-a6e8-a4fd74f5bb53_1600x.jpg?v=1659975624",
+      "original_width": 1600,
+      "original_height": 2389,
+      "is_product": false
+    },
+    {
+      "position": 94,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-mZHpWpgmnYHjgQa7a2TeecB_rlKIAl3oHA&usqp=CAU",
+      "source": "Pinterest",
+      "title": "Dress & Skirt Sizing Cheat Sheet: Made By Marzipan | Sewing measurements,  Trendy sewing, Sewing tutorials",
+      "link": "https://www.pinterest.com/pin/275704808412859346/",
+      "original": "https://i.pinimg.com/736x/a8/ec/80/a8ec80ce946f3a67ef694a69e3fff289--sewing-crafts-sewing-tutorials.jpg",
+      "original_width": 736,
+      "original_height": 531,
+      "is_product": false
+    },
+    {
+      "position": 95,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSro4VI9slHCG4rAQPswImK2MfG8F-f9vYMCQ&usqp=CAU",
+      "source": "eBay · In stock",
+      "title": "Adult Female Plus Size Adjustable Dress Form Sewing Fabric Mannequin Torso  | eBay",
+      "link": "https://www.ebay.com/itm/254888029338",
+      "original": "https://i.ebayimg.com/images/g/t8kAAOSwSbhgP84Y/s-l500.png",
+      "original_width": 500,
+      "original_height": 500,
+      "is_product": true,
+      "in_stock": true
+    },
+    {
+      "position": 96,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1v4m84oXkA4nDsIs4agmWzz2VoYd2ED1YKQ&usqp=CAU",
+      "source": "iStock",
+      "title": "152 Young Woman Sewing Illustrations & Clip Art - iStock",
+      "link": "https://www.istockphoto.com/illustrations/young-woman-sewing",
+      "original": "https://media.istockphoto.com/vectors/woman-sews-vector-id1133412066?k=20&m=1133412066&s=612x612&w=0&h=E4DeQwj8Hog2ZKhgBBXAKEnuJjLIlH4pexu5sxBSXL4=",
+      "original_width": 612,
+      "original_height": 556,
+      "is_product": true
+    },
+    {
+      "position": 97,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN10R9LKVrayRe7b_TKKM3pXdMfYrrb0Q4OA&usqp=CAU",
+      "source": "MutualArt",
+      "title": "Masaru Shichinohe | Sewing Girl (2014) | MutualArt",
+      "link": "https://www.mutualart.com/Artwork/Sewing-Girl/9058301C699B074A",
+      "original": "https://media.mutualart.com/Images/2020_12/03/08/084135910/bf060bcd-31e5-43b8-8717-3e0ef8f44e34_570.Jpeg",
+      "original_width": 440,
+      "original_height": 570,
+      "is_product": false
+    },
+    {
+      "position": 98,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpo4GxmOhoSgAm9RzxVxFPoJyKT5Lwpqs0ug&usqp=CAU",
+      "source": "Shutterstock",
+      "title": "Sewing Machine Male Hand Sew Pants Stock Photo 1289759818 | Shutterstock",
+      "link": "https://www.shutterstock.com/image-photo/sewing-machine-male-hand-sew-pants-1289759818",
+      "original": "https://image.shutterstock.com/image-photo/sewing-process-female-hands-industry-260nw-1340415536.jpg",
+      "original_width": 428,
+      "original_height": 280,
+      "is_product": true
+    },
+    {
+      "position": 99,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPuOQl1PtINRxd60qZmwVUyOvFtGDQTyuCBw&usqp=CAU",
+      "source": "The Metropolitan Museum of Art",
+      "title": "Adachi Ginkō | Ladies Sewing (Kijo saihō no zu) | Japan | Meiji period  (1868–1912) | The Metropolitan Museum of Art",
+      "link": "https://www.metmuseum.org/art/collection/search/55345",
+      "original": "https://images.metmuseum.org/CRDImages/as/original/DP147682_cropped.jpg",
+      "original_width": 2000,
+      "original_height": 1024,
+      "is_product": false
+    },
+    {
+      "position": 100,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgk_cwQofct384WXv71UPK-Sq1g_u24v2KQg&usqp=CAU",
+      "source": "Getty Images",
+      "title": "22,103 Woman Sewing Photos and Premium High Res Pictures - Getty Images",
+      "link": "https://www.gettyimages.com/photos/woman-sewing",
+      "original": "https://media.gettyimages.com/photos/female-clothing-designer-working-from-home-picture-id1036149302?s=612x612",
+      "original_width": 612,
+      "original_height": 408,
+      "is_product": true
+    }
+  ]
+}
