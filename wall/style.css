@@ -2,6 +2,14 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 canvas {
   display: block;
+}
+
+.hello {
+	letter-spacing: 0.2px;
+	font-size: medium;
+	line-height: 22px;
+	font-family: Verdana;
 }
