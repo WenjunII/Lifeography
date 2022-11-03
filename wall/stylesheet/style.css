@@ -13,3 +13,8 @@ canvas {
 	line-height: 22px;
 	font-family: Verdana;
 }
+
+.subtitle {
+	letter-spacing: 1px;
+	text-align: center;
+}
