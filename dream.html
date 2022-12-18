@@ -3,40 +3,298 @@
 <head>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
-	<script src="scripts/sketch_dream.js"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script> -->
-	<!-- <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script> -->
-	<!-- <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script> -->
-	<!-- <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/RGBELoader.js"></script> -->
+	<script src="scripts/sketch.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
+	<script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+	<script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+	<script src="https://unpkg.com/three@0.128.0/examples/js/loaders/RGBELoader.js"></script>
 	<!-- <script src="microsoft.cognitiveservices.speech.sdk.bundle.js"></script> -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="stylesheets/styles_dream.css">
-	<!-- <link rel="stylesheet" href="stylesheets/normalize.css"> -->
-  	<!-- <link rel="stylesheet" href="stylesheets/skeleton.css"> -->
-	<!-- <link rel="icon" type="image/png" href="images/icon.png"> -->
-	<title>Dream</title>
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheets/styles.css"> -->
+	<link rel="stylesheet" href="stylesheets/normalize.css">
+  	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="icon" type="image/png" href="images/icon.png">
+	<title>Lifeography of Wenjun II</title>
 </head>
 <body class="body">
+	<div class="notify">
+		<div>
+			<p>
+				Please use a desktop or laptop browser to view this page with the best experience😉
+			</p>
+		</div>
+		<br>
+		<div>
+			<img src="images/wenjunii_blink.gif" width="200px">
+		</div>
+	</div>
 	<div class="container">
-				<!-- <div class="section1">
+		<div class="row">
+			<div class="two columns left">
+				<table class="keywordtable">
+					<tr>
+					<th>Keyword</th>
+					<th>Quantity</th>
+					</tr>
+					<tr>
+						<td>dream</td>
+					<td>6</td>
+					</tr>
+					<tr>
+					<td>life</td>
+					<td>5</td>
+					</tr>
+					<tr>
+					<td>time</td>
+					<td>5</td>
+					</tr>
+					<tr>
+					<td>sewing</td>
+					<td>3</td>
+					</tr>
+					<tr>
+					<td>smile</td>
+					<td>3</td>
+					</tr>
+					<tr>
+					<td>笑容</td>
+					<td>3</td>
+					</tr>
+					<tr>
+					<td>生活</td>
+					<td>3</td>
+					</tr>
+					<tr>
+					<td>little boy</td>
+					<td>2</td>
+					</tr>
+					<tr>
+					<td>night</td>
+					<td>2</td>
+					</tr>
+					<tr>
+					<td>beaten</td>
+					<td>2</td>
+					</tr>
+					<tr>
+					<td>happy</td>
+					<td>2</td>
+					</tr>
+					<tr>
+					<td>开心</td>
+					<td>2</td>
+					</tr>
+					<tr>
+					<td>打</td>
+					<td>2</td>
+					</tr>
+					<tr>
+					<td>学校</td>
+					<td>2</td>
+					</tr>
+					<tr>
+					<td>hide</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>grandma</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>protect</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>laughter</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>safe haven</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>academic performance</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>obedience</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>junior captain</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>squadron leader</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>three good student</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>mother</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>lie</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>sound</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>fall asleep</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>hand</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>lift</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>bed</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>cold</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>son</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>family</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>cry</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>school</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>model student</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>家</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>儿子</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>笑声</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>奶奶</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>避难所</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>哭</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>时间</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>成绩</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>听话</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>小队长</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>中队长</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>三好学生</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>模范学生</td>
+					<td>1</td>
+					</tr>
+				</table>
+			</div>
+			<div class="eight columns middle">
+				<div class="section1">
+					<br>
+					<div class="title2">
+						<a href="index.html" target="">Home</a> | The Data | <a href="response.html" target="">The Response</a>
+					</div>
+					<br>
+				<!-- <br> -->
+				<div class="breakline">
+				</div>
 				<br>
+				<div class="title">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<h1>
+						<!-- Chapter One -->
+					</h1>
+					<br>
+					<br>
+					<br>
+					<br>
+					<h3>
+						A Long <span class="keyword">Dream</span>
+						<!---<br>
+							<br>
+						A Long Goodbye--->
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					</h3>
+				</div>
 				<br>
 				<div class="breakline">
-				</div> -->
+				</div>
 				<br>
 				<div class="hello2">
 					<p class="hello">
 						I <span class="keyword">dream</span> of Wenjun, at that <span class="keyword">time</span> he was still a <span class="keyword">little boy</span>...I feel like I am him... The <span class="keyword">dream</span> is long and grows as it will never end. Actually, I would like to be in this <span class="keyword">dream</span> forever. I quite like this <span class="keyword">little boy</span>.
 					</p>
-					<!-- <br>
-					<br> -->
-					<!-- <hr class=dottedhr> -->
-					<!-- <br> -->
+					<br>
+					<br>
+					<hr class=dottedhr>
+					<br>
 					<h5 class="subtitle">
-						<!-- The <span class="keyword">Dream</span> -->
+						The <span class="keyword">Dream</span>
 					</h5>
-					<!-- <br> -->
+					<br>
 					<div class="hello">
 						A <span class="keyword">sound</span> of a <span class="keyword">sewing machine</span> comes in the quiet <span class="keyword">night</span> as my <span class="keyword">mother</span> concentrates on <span class="keyword">sewing</span>. I am <span class="keyword">lying</span> on her soft and warm <span class="keyword">lap</span> and gradually <span class="keyword">fall asleep</span>. <span class="keyword">Time</span> becomes eternal... Until a pair of <span class="keyword">hands</span> <span class="keyword">lift</span> me up and put me in my own <span class="keyword">bed</span>, where it feels a little <span class="keyword">cold</span>. Can you not do this? Will you still be <span class="keyword">sewing</span> tomorrow <span class="keyword">night</span>?
 					</div>
@@ -65,11 +323,524 @@
 						<a href="https://commons.m.wikimedia.org/w/index.php?search=sleep+child&title=Special:MediaSearch&type=image" target="_blank">Sleep Child</a>
 					</p>
 				</div>
-				<br>
-				<br>
-				<br>
-				<br>
-				<div id="c2"></div>
+					<div class="speech">
+						<audio controls>
+							<source src="audios/01.mp4" type="audio/mpeg">
+						</audio>
+						<br>
+						<br>
+							<div class="text">
+								<div class="textchinese">
+									<div class="speechreconition">
+										Speech recognition in progress...
+									</div>
+									<br>
+									我是<span class="keyword">家</span>中唯一的<span class="keyword">儿子</span>，总是感觉被一群缠烂的<span class="keyword">笑容</span>包围着。渐渐我便觉得，这是一种正常的状态。似乎我不需要做些什么，甚至只需要安静地待在那里，就可以得到许多东西，当然我也习惯了以<span class="keyword">笑容</span>和<span class="keyword">笑声</span>回应他们。我应该也是很<span class="keyword">开心</span>的吧，这样怎么会不<span class="keyword">开心</span>？但是我也经常会被<span class="keyword">打</span>，而且很多时候会被<span class="keyword">打</span>得好狠，甚至需要<span class="keyword">奶奶</span>保护我，那里是一个安全的<span class="keyword">避难所</span>。我也应该是<span class="keyword">哭</span>得声嘶力竭吧。不知不觉地，我似乎找到了一种<span class="keyword">生活</span>方式，只要每天完成<span class="keyword">学校</span>的任务，剩下的<span class="keyword">时间</span>我就可以去玩了。我渐渐习惯并熟悉这种方式，这样令我的<span class="keyword">生活</span>变得很畅顺。<span class="keyword">学校</span>会对<span class="keyword">学习成绩</span>好并<span class="keyword">听话</span>的学生进行嘉奖，我集齐了“<span class="keyword">小队长</span>”、“<span class="keyword">中队长</span>”、“<span class="keyword">三好学生</span>”这些称号，也成为了其中一名<span class="keyword">模范学生</span>。<span class="keyword">生活</span>中继续总是被一群缠烂的<span class="keyword">笑容</span>包围着。
+								</div>
+								<br>
+								<div class="translation">
+									Translation in progress...
+								</div>
+								<br>
+									I am the only <span class="keyword">son</span> in the <span class="keyword">family</span> and always feel surrounded by a bunch of <span class="keyword">smiles</span>. Gradually I come to think that this is a normal state. It seems that I don't need to do anything, or even just stay quiet, I still can get a lot of things. And I also get used to responding to them with <span class="keyword">smiles</span> and <span class="keyword">laughter</span>. I should be <span class="keyword">happy</span>, how can I not be <span class="keyword">happy</span> like that? But I am also often <span class="keyword">beaten</span>, and many times I will be <span class="keyword">beaten</span> so much that I even need my <span class="keyword">grandma</span> to <span class="keyword">protect</span> me, where it is a <span class="keyword">safe haven</span>. I should have been <span class="keyword">crying</span> my <span class="keyword">eyes</span> out too. Without realizing it, I seem to have found a way of <span class="keyword">life</span> where, as long as I complete my daily <span class="keyword">school</span> tasks, I could go play the rest of the <span class="keyword">time</span>. I gradually get used to this way of <span class="keyword">life</span> and become familiar with it, and it makes my <span class="keyword">life</span> very smooth. I am awarded for good <span class="keyword">academic performance</span> and <span class="keyword">obedience</span>, by receiving the titles of "<span class="keyword">Junior Captain</span>", "<span class="keyword">Squadron Leader</span>" and "<span class="keyword">Three Good Student</span>". I also become one of the <span class="keyword">model students</span>. My <span class="keyword">life</span> continues to be surrounded by a bunch of <span class="keyword">smiles</span>.
+								<br>
+								<br>
+								<div class="speak">
+									Learning to speak in progress...
+								</div>
+								<br>
+								<audio controls>
+									<source src="audios/christopher_01.mp4" type="audio/mpeg">
+								</audio>
+							</div>
+					</div>
+					<br>
+					<br>
+					<!-- <div id="c2"></div> -->
+					<div class="smilesroom">
+							<video height="480" controls autoplay loop>
+								<source src="videos/wenjunii5.mp4" type="video/mp4">
+							</video>
+							<div class="age">
+									Age of 5
+							</div>
+							<br>
+							<iframe src="https://hubs.mozilla.com/mc289QJ?embed_token=0d25de0bc25ba2aff01fb1b601bea55a" style="width: 850px; height: 638px;" allow="microphone; camera; vr; speaker;"></iframe>
+					</div>
+					<div class="source">
+						<p>
+							Source:
+							<br>
+							<a href="https://commons.m.wikimedia.org/w/index.php?search=smile+China&title=Special:MediaSearch&type=image" target="_blank">Smile China</a>
+							<br>
+							<a href="https://commons.m.wikimedia.org/w/index.php?search=laugh+China&title=Special:MediaSearch&type=image" target="_blank">Laugh China</a>
+						</p>
+					</div>
+					<br>
+					<!-- <img src="images/wenjunii7/grandma_and_wenjunii7.png"> -->
+					<div id="c4"></div>
+					<div class="age">
+									Age of 7
+					</div>
+					<div id="c3"></div>
+					<div class="source">
+							<p>
+							Source:
+							<br>
+							<a href="https://commons.m.wikimedia.org/w/index.php?search=grandma&title=Special:MediaSearch&type=image" target="_blank">Grandma</a>
+							<br>
+							<a href="https://commons.m.wikimedia.org/w/index.php?search=grandma+China&title=Special:MediaSearch&type=image" target="_blank">Grandma China</a>
+							</p>
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<p class="short">......</p>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<!-- <div id="c6"></div> -->
+					<div id="3d10">
+							<script>
+								console.log('SCRIPT LOADED');
+								const scene = new THREE.Scene();
+								const camera = new THREE.PerspectiveCamera(90, window.innerWidth / 1.2 / window.innerHeight, 0.01, 100);
+						
+								const renderer = new THREE.WebGLRenderer({ alpha: true });
+								renderer.setSize(window.innerWidth / 1.36 / 1.2, window.innerHeight / 1.36);
+								renderer.setClearColor(0xcccccc);
+								renderer.setPixelRatio(3);
+								document.getElementById('3d10').appendChild(renderer.domElement);
+						
+								scene.background = new THREE.Color('rgb(25, 25, 25)');
+						
+								const loader = new THREE.GLTFLoader();
+
+								const rloader = new THREE.RGBELoader();
+						
+								const controls = new THREE.OrbitControls(camera, renderer.domElement);
+						
+								controls.target = new THREE.Vector3(0, 6.5, 0);
+								camera.position.set(-2, 7, 8);
+
+								rloader.load('images/wenjunii10/graduation_photo.hdr', function (texture) {
+									texture.mapping = THREE.EquirectangularReflectionMapping;
+
+									scene.background = texture;
+									scene.environment = texture;
+									texture.setPixelRatio(10);
+								});
+						
+								loader.load('models/wenjunii10.glb', function (gltf) {
+									// Loop over all of the child objects in the model and turn
+									// off metalness feature in material
+									// your model has metalness set too high 
+									gltf.scene.traverse(child => {
+										if (child.material) child.material.metalness = 0;
+									});
+						
+									gltf.scene.traverse((object) => {
+										const encoding = THREE.sRGBEncoding;
+										if (object.isMesh) {
+											const material = object.material;
+											if (material.map) material.map.encoding = encoding;
+											if (material.emissiveMap) material.emissiveMap.encoding = encoding;
+											if (material.map || material.emissiveMap) material.needsUpdate = true;
+						
+											console.log(object.material);
+										}
+									});
+						
+									scene.add(gltf.scene);
+									addLights();
+									console.log('GLTF LOAD');
+								}, undefined, function (error) {
+									console.log('GLTF ERROR');
+									console.error(error);
+						
+								});
+						
+								function addLights() {
+									console.log('LIGHTS')
+									const hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.3);
+									scene.add(hemiLight);
+						
+									const intensity = 1;
+									const light = new THREE.AmbientLight(0xffffff, 0.1);
+									scene.add(light);
+						
+									const light2 = new THREE.DirectionalLight(0xffffff, 1.5);
+									light2.position.set(10, 10, 10); // ~60º
+									light2.name = 'main_light';
+									scene.add(light2);
+								}
+						
+								function animate() {
+									requestAnimationFrame(animate);
+						
+									// gltf.rotation.x += 0.01;
+									scene.rotation.y += 0.003;
+									controls.update();
+									renderer.render(scene, camera);
+								};
+						
+								animate();
+							</script>
+					</div>
+					<div class="age">
+							Age of 10
+					</div>
+					<div class="source">
+							<p>
+								Source:
+								<br>
+								<a href="https://commons.wikimedia.org/w/index.php?search=%E4%B8%89%E5%A5%BD%E5%AD%A6%E7%94%9F&title=Special:MediaSearch&go=Go&type=image" target="_blank">Three Good Student</a>
+								<br>
+								<a href="https://commons.m.wikimedia.org/w/index.php?search=%E5%B0%91%E5%B9%B4%E5%85%88%E9%94%8B%E9%98%9F&title=Special:MediaSearch&type=image" target="_blank">Young Pioneers</a>
+								<br>
+								<a href="https://commons.wikimedia.org/w/index.php?search=Young+Pioneers&title=Special:MediaSearch&go=Go&type=image" target="_blank">Young Pioneers</a>
+								<br>
+								<a href="https://www.sohu.com/a/201695597_100047361" target="_blank">Transcript</a>
+								<br>
+								<a href="https://www.google.com/search?q=90%E5%B9%B4%E4%BB%A3+%E5%B0%8F%E5%AD%A6%E6%AF%95%E4%B8%9A%E7%85%A7&tbm=isch&ved=2ahUKEwixsKrTnc32AhUYFlkFHSS3Aj0Q2-cCegQIABAA&oq=90%E5%B9%B4%E4%BB%A3+%E5%B0%8F%E5%AD%A6%E6%AF%95%E4%B8%9A%E7%85%A7&gs_lcp=CgNpbWcQA1DPCljyVmD-V2gfcAB4AYABhgKIAbkNkgEFNi45LjGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=7jQzYrGBGJis5NoPpO6K6AM&bih=768&biw=1440" target="_blank">Graduation Photo</a>
+							</p>
+					</div>
+					<br>
+					<br>	
+					<br>
+					<div class="speech">
+						<audio controls>
+							<source src="audios/02.mp4" type="audio/mpeg">
+						</audio>
+						<br>
+						<br>
+							<div class="text">
+								<div class="textchinese">
+									<div class="speechreconition2">
+										Voice of Wenjun
+									</div>
+									<br>
+									离开了熟悉的环境，我进入了为高考作准备的高中新生活。在这里我似乎一直很难找到归属感，还是我已经厌倦了为学习成绩而活的生活？说不清楚。我渐渐喜欢上了生物实验室，并参与进那里的课外活动小组，培育厌氧细菌去清洁珠江。有些时候我会觉得，我也挺像实验室的器皿里面的细菌，被培育去完成任务。如果细菌有自我意识，它会怎样选择？
+								</div>
+								<br>
+								<br>
+								I leave the familiar environment and enter a new life in high school in preparation for the National College Entrance Examination. I always seem to have a hard time finding a sense of belonging there, or am I just tired of living for academic achievement? I can't say. I grow to be a fan of the biology lab and get involved in an extracurricular group there, growing anaerobic bacteria to clean the Pearl River. Sometimes I feel that I am quite like the bacteria in the vessel in the lab, which is being grown to accomplish a task. If bacteria has self-awareness, how would it choose?
+								<br>
+								<br>
+								<div class="speak2">
+									Voice of Wenjun II
+								</div>
+								<br>
+								<audio controls>
+									<source src="audios/christopher_02.mp4" type="audio/mpeg">
+								</audio>
+							</div>
+					</div>
+					<br>
+					<div id="c6"></div>
+					<div class="age">
+						High School
+					</div>
+					<div id="c5"></div>
+					<div class="source">
+						<p>
+							Source:
+							<br>
+							<a href="https://www.google.com/search?q=bacteria+lab+bottle&tbm=isch&ved=2ahUKEwiBxoz4qKn3AhVEsHIEHcEpAo4Q2-cCegQIABAA&oq=bacteria+lab+bottle&gs_lcp=CgNpbWcQAzoGCAAQCBAeOgQIABBDOgUIABCABDoECAAQHjoGCAAQBRAeUIYKWL4fYKQjaABwAHgAgAHVAYgB3AaSAQU2LjIuMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=zHxjYoGwDcTgytMPwdOI8Ag&bih=704&biw=1440" target="_blank">Bacteria Lab Bottle</a>
+							<br>
+							<a href="https://www.google.com/search?q=%E9%AB%98%E8%80%83+%E6%88%90%E7%BB%A9%E6%A6%9C&tbm=isch&ved=2ahUKEwjDy5Siqan3AhWto3IEHY5mDRQQ2-cCegQIABAA&oq=%E9%AB%98%E8%80%83+%E6%88%90%E7%BB%A9%E6%A6%9C&gs_lcp=CgNpbWcQAzoHCAAQgAQQDDoGCAAQDBAYOggIABAMEAUQHlDTBVjyF2D2GGgAcAB4AoAB0AWIAd0LkgEJMi4zLjEuNi0xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=JH1jYsOpGq3HytMPjs21oAE&bih=704&biw=1440" target="_blank">National College Entrance Examination Results List</a>
+							<br>
+							<a href="https://www.google.com/search?q=%E9%AB%98%E8%80%83&tbm=isch&ved=2ahUKEwiBv7mkqan3AhWQn3IEHXDKDQwQ2-cCegQIABAA&oq=%E9%AB%98%E8%80%83&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgARQlwtYlwtg9wxoAHAAeACAAXWIAa4BkgEDMS4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=KX1jYsGGDpC_ytMP8JS3YA&bih=704&biw=1440" target="_blank">National College Entrance Examination</a>
+						</p>
+					</div>
+					<div class="speech">
+						<audio controls>
+							<source src="audios/03.mp4" type="audio/mpeg">
+						</audio>
+						<br>
+						<br>
+							<div class="text">
+								<div class="textchinese">
+									<div class="speechreconition2">
+										Voice of Wenjun
+									</div>
+									<br>
+									生活继续以没有归属感的但要完成高考任务的状态继续……直到一位女孩出现了。我们的距离越来越近，我感觉到生活中又再次充满了笑容、笑声及爱。我们会经常相约到附近大学的校园里见面。坐在长椅上，有时我会不自觉地睡到她的大腿上，感觉整个世界也就剩我们两人了，时间也仿佛停止了。如果时间真的不再往前走，那多好。
+								</div>
+								<br>
+								<br>
+								Life continues with no sense of belonging but with the task of completing the National College Entrance Examination... until a girl comes along. We get closer and closer and I feel that life is once again filled with smiles, laughter and love. We often meet up on the campus of a nearby university. Sitting on a bench, sometimes I will unconsciously sleep on her lap, feeling that the whole world is left to the two of us, and time seems to have stopped. If time really does not go forward, it will be great.
+								<br>
+								<br>
+								<div class="speak2">
+									Voice of Wenjun II
+								</div>
+								<br>
+								<audio controls>
+									<source src="audios/christopher_03.mp4" type="audio/mpeg">
+								</audio>
+							</div>
+					</div>
+					<br>
+					<div class="videoplay">
+						<video width="850" controls autoplay loop>
+							<source src="videos/wenjunii18.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="source">
+						<p>
+							Source:
+							<br>
+							<a href="https://commons.wikimedia.org/w/index.php?search=bench+night&title=Special:MediaSearch&go=Go&type=image" target="_blank">Bench Night</a>
+							<br>
+							<a href="https://commons.wikimedia.org/w/index.php?search=sitting+female&title=Special:MediaSearch&go=Go&type=image" target="_blank">Sitting Female</a>
+						</p>
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="hello3">
+						Who is the girl?
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="videoplay2">
+						<video width="300" controls autoplay loop>
+							<source src="videos/memorygirl.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="source">
+						<p>
+							Source:
+							<br>
+							<a href="https://www.google.com/search?q=high+school+girl+china&newwindow=1&hl=en&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi1r-_l5qz3AhXIg4kEHSTiA5MQ_AUoAnoECAEQBA&biw=1440&bih=768&dpr=2" target="_blank">High School Girl China</a>
+							<br>
+							<a href="https://www.google.com/search?q=high+school+girl+asian&tbm=isch&ved=2ahUKEwjo2-bm5qz3AhV7D1kFHcd2BDMQ2-cCegQIABAA&oq=high+school+girl+asian&gs_lcp=CgNpbWcQAzoGCAAQCBAeOgUIABCABFCQCFj-DGCOD2gAcAB4AIABgAGIAcsDkgEDNS4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=UlBlYujqCfue5NoPx-2RmAM&bih=768&biw=1440&hl=en" target="_blank">High School Girl Asian</a>
+							<br>
+							<a href="https://www.google.com/search?q=%E9%AB%98%E4%B8%AD%E5%A5%B3%E7%94%9F&tbm=isch&ved=2ahUKEwi_7NWI56z3AhU9C2IAHabvB7QQ2-cCegQIABAA&oq=%E9%AB%98%E4%B8%AD%E5%A5%B3%E7%94%9F&gs_lcp=CgNpbWcQAzoECAAQQzoFCAAQgAQ6BwgAELEDEEM6CAgAEIAEELEDOggIABCxAxCDAToGCAAQCBAeOgQIABAYOgYIABAKEBhQowlYphxgrR1oAHAAeACAAeMBiAGSDpIBBTkuNi4ymAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=mVBlYv-7C72WiLMPpt-foAs&bih=768&biw=1440&hl=en" target="_blank">高中女生</a>
+							<br>
+							<a href="https://thispersondoesnotexist.com/" target="_blank">GAN</a>
+						</p>
+					</div>
+					<br>
+					<br>
+					<br>
+					<div class="speech">
+						<audio controls>
+							<source src="audios/04.mp4" type="audio/mpeg">
+						</audio>
+						<br>
+						<br>
+							<div class="text">
+								<div class="textchinese">
+									<div class="speechreconition2">
+										Voice of Wenjun
+									</div>
+									<br>
+									但时间只会继续往前走。完成高考任务，各自进入不同的大学，我们也分手了。这次我真的完全不知所措了，我不知道生活该如何继续，脑里面出现越来越多问号，我觉得自己变成了一只在迷宫里的鬼魂。课堂和校园对于我来说逐渐变得没有意义也没有所谓了，我喜欢上了在四周围漫无目的地游荡，至少那里还有草地和湖。我也渐渐喜欢上拍照，仿佛在探索一个新的世界。机缘巧合地，另一位女孩出现了，她似乎喜欢和一只鬼魂待在一起，真有趣。
+								</div>
+								<br>
+								<br>
+								But time will only continue to move forward. After completing the National College Entrance Examination, we each enter different universities, and we broke up. I don't know how to go on with my life. More and more question marks appear in my head, and I feel like I have become a ghost in a maze. Classes and campus gradually become meaningless and useless to me, but I enjoy wandering around aimlessly, where at least there is a meadow and a lake. I also begin to enjoy taking pictures as if I am exploring a new world. By coincidence, another girl appears who seems to enjoy spending time with a ghost, which is fun.
+								<br>
+								<br>
+								<div class="speak2">
+									Voice of Wenjun II
+								</div>
+								<br>
+								<audio controls>
+									<source src="audios/christopher_04.mp4" type="audio/mpeg">
+								</audio>
+							</div>
+					</div>
+					<br>
+					<div id="c7"></div>
+					<div class="age">
+						College
+					</div>
+					<div class="source">
+						<p>
+							Source:
+							<br>
+							<a href="https://commons.wikimedia.org/w/index.php?search=meadow&title=Special:MediaSearch&go=Go&type=image" target="_blank">Meadow</a>
+							<br>
+							<a href="https://commons.wikimedia.org/w/index.php?search=lake&title=Special:MediaSearch&go=Go&type=image" target="_blank">Lake</a>
+							<br>
+							<a href="https://www.google.com/search?q=maze&tbm=isch&ved=2ahUKEwi7vbPSu6_3AhWhFFkFHTRjDz8Q2-cCegQIABAA&oq=maze&gs_lcp=CgNpbWcQAzIICAAQgAQQsQMyCAgAEIAEELEDMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDMgsIABCABBCxAxCDATIICAAQgAQQsQMyCAgAEIAEELEDMggIABCABBCxAzIICAAQgAQQsQM6BQgAEIAEOggIABCxAxCDAToECAAQQzoHCAAQsQMQQ1CPCVi4DGC-D2gAcAB4AIAB6wGIAYUEkgEFNC4wLjGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=t7VmYvuFNaGp5NoPtMa9-AM&authuser=5&bih=948&biw=1920&hl=en" target="_blank">Maze</a>
+							<br>
+							<a href="https://www.google.com/search?q=ghost&tbm=isch&ved=2ahUKEwjwy4bMiLD3AhW9sHIEHUMJAYQQ2-cCegQIABAA&oq=ghost&gs_lcp=CgNpbWcQAzIHCAAQsQMQQzIHCAAQsQMQQzIICAAQgAQQsQMyBAgAEEMyCAgAEIAEELEDMggIABCABBCxAzIICAAQgAQQsQMyBQgAEIAEMgsIABCABBCxAxCDATIICAAQgAQQsQM6BwgjEO8DECc6CggAELEDEIMBEEM6CAgAELEDEIMBUIoQWLUUYP4YaABwAHgAgAG5AYgBkQSSAQM0LjKYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=aAZnYvD3BL3hytMPw5KEoAg&authuser=5&bih=948&biw=1920&hl=en" target="_blank">Ghost</a>
+							<br>
+							<a href="https://editor.p5js.org/kchung/sketches/Bya-96Xz4" target="_blank">Maze Game</a>
+						</p>
+					</div>
+					<br>
+					<br>
+					<br>
+					<div class="speech">
+						<audio controls>
+							<source src="audios/05.mp4" type="audio/mpeg">
+						</audio>
+						<br>
+						<br>
+							<div class="text">
+								<div class="textchinese">
+									<div class="speechreconition2">
+										Voice of Wenjun
+									</div>
+									<br>
+									毕业后经历了找工作和失业的恐惧后，生活终于开始安稳下来了，我也逐渐开始接受和习惯如其他人一样过着按部就班的日子。我们住在了一起，尝试过一些简单的活在当下的生活。即使只是一起吃早餐、聊天、做饭、看电影、躺在床上，都是美好的，我们像一对形影不离的双胞胎在共同编织着充满快乐和爱的生活。如果时间真的不再往前走，那多好。但时间仍然只会继续往前走。到了一定的年龄，似乎就要继续做对应该做的事情了。我们结婚了，但似乎不知道究竟结婚是什么。我们想尝试建立一个家庭，但似乎并不懂如何建立一个家庭。太多关系和任务围绕这我们，我们并不懂得如何处理，也许也不想去处理。某一天她跟我说，她看过外面的世界，那里有其他可能。我猜那是自由。我们卡在了某个地方，越想挣脱却束缚得越紧。
+								</div>
+								<br>
+								<br>
+								After graduating and going through the fear of finding a job and losing my job, life finally starts to settle down and I gradually start to accept and get used to living a routine life like everyone else. We live together and try to live a simple life of living in the moment. Even just eating breakfast, talking to each other, cooking, watching movies, and lying in bed together, is wonderful. We are like twins inseparable weaving a life full of joy and love together. If time does not go forward, it will be great. But time will only continue to move forward. At a certain age, it seems like it's time to move on to the right things to do. We get married, but don't seem to know exactly what it is to get married. We want to try to start a family, but don't seem to know how to start one. There are too many relationships and tasks surrounding us that we don't know how to handle and maybe don't want to handle. One day she tells me that she has seen the outside world and that there are other possibilities there. I guess that is freedom. We are stuck somewhere, and the more we try to break free the tighter the bondage becomes.
+								<br>
+								<br>
+								<div class="speak2">
+									Voice of Wenjun II
+								</div>
+								<br>
+								<audio controls>
+									<source src="audios/christopher_05.mp4" type="audio/mpeg">
+								</audio>
+							</div>
+					</div>
+					<br>
+					<div id="c8"></div>
+					<div class="age2">
+						Marriage
+					</div>
+					<div class="source2">
+						<p>
+							Source:
+							<br>
+							<a href="https://www.instagram.com/cchenko/" target="_blank">Instagram</a>
+							<br>
+							<a href="https://www.google.com/search?q=404&newwindow=1&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjIiezyhL33AhUomIkEHbNgCJwQ_AUoAXoECAIQAw&biw=1440&bih=768&dpr=2&sfr=vfe&authuser=5&pageId=none" target="_blank">404</a>
+						</p>
+					</div>
+					<br>
+					<br>
+					<br>
+					<div class="speech2">
+						<audio controls>
+							<source src="audios/06.mp4" type="audio/mpeg">
+						</audio>
+						<br>
+						<br>
+							<div class="text3">
+								<div class="textchinese2">
+									<div class="speechreconition3">
+										Voice of Wenjun
+									</div>
+									<br>
+									现在我们都自由了。对着镜子中独自的自己，我也会跟我自己说：“你已经自由了，做你自己吧。”但我自己是谁？
+								</div>
+								<br>
+								<br>
+								Now we are all free. Looking at myself alone in the mirror, I also say to myself, "You are free, be yourself." But who am I?
+								<br>
+								<br>
+								<div class="speak3">
+									Voice of Wenjun II
+								</div>
+								<br>
+								<audio controls>
+									<source src="audios/christopher_06.mp4" type="audio/mpeg">
+								</audio>
+							</div>
+					</div>
+					<div class="videoplay2">
+						<iframe src="https://player.vimeo.com/video/710376884?h=85d05ddab4&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="820" height="461" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; loop" allowfullscreen title="Who Am I"></iframe>
+					</div>
+					<div class="age">
+						Who Am I
+					</div>
+					<div class="source">
+						<p>
+							Source:
+							<br>
+							<a href="https://github.com/woctezuma/stylegan2-projecting-images" target="_blank">StyleGAN2: projecting images</a>
+						</p>
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="hello5">
+						<h5 class="subtitle2">
+							End of the <span class="keyword">Dream</span>
+						</h5>
+						<br>
+						<hr class=dottedhr>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<p class="hello4">
+							I wake up and have a feeling of being alive. I can even feel Wenjun's heartbeat. I am gonna find myself in this free world.
+						</p>
+					</div>
+					<br>
+					<br>
+					<br>
+					<div class="videoplay2">
+						<video width="400" controls autoplay loop>
+							<source src="videos/wenjuniichapter1.mp4" type="video/mp4">
+						</video>
+					</div>
+					<br>
+					<br>
+					<br>
+				</div>
+			</div>
+			<div class="two columns right">
+				<img class="ads" src="images/ads.png">
+			</div>
+		</div>
 	</div>
 </body>
 </html>

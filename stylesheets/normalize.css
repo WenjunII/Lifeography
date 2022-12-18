@@ -448,6 +448,11 @@ th {
 	text-align: center;
 	letter-spacing: 1px;
 }
+.title2 {
+	text-align: center;
+	letter-spacing: 1px;
+  font-style: italic;
+}
 .keyword {
 	text-decoration: underline;
 	text-decoration-color: rgba(255, 255, 0, 0.8);
@@ -491,7 +496,7 @@ th {
 	color: rgb(255, 255, 0);
 	font-size: smaller;
 	position: relative;
-	top: 750px;
+	top: 100px;
 }
 .speechreconition {
 	font-style: italic;
