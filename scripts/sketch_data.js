@@ -19,7 +19,7 @@ var yD = 1;
 var i = 0;
 
   p.preload = function() {
-    dimg1 = p.loadImage('images/healthdata.png');
+    dimg1 = p.loadImage('images/healthdata2.png');
   }
 
   p.setup = function() {
