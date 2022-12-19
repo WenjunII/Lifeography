@@ -40,6 +40,7 @@
   width: 100%;
   float: left;
   box-sizing: border-box; }
+  
 
 @media (max-width: 400px) {
   .notify {
@@ -47,7 +48,13 @@
     font-size: large;
     display: inline;
 }
-  .container {
+  .container, .container2, .container3, .container4, .container5, .container6, .container7, .container8 {
+    display: none;
+  }
+  .keywordtable {
+    display: none;
+  }
+  .containermanu2 {
     display: none;
   }
 }
@@ -62,8 +69,14 @@
       font-size: large;
       display: inline;
 }
-  .container {
+  .container, .container2, .container3, .container4, .container5, .container6, .container7, .container8 {
     display: none;
+}
+.keywordtable {
+  display: none;
+}
+.containermanu2 {
+  display: none;
 }
 }
 
@@ -83,6 +96,13 @@
   .column:first-child,
   .columns:first-child {
     margin-left: 0; }
+
+    .containermanu2 {
+      display: none;}
+
+      .keywordtable {
+        display: none;
+      }
 
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
@@ -143,10 +163,23 @@
     font-size: large;
     display: none;
 }
-  .container {
+.container, .container2, .container3, .container4, .container5, .container6, .container7, .container8 {
     display: block;
 }
+
+.containerindex {
+  display: none;}
+
+  .containermanu2 {
+    display: block;
+  }
+
+  .keywordtable {
+    display: block;
+  }
 }
+
+
 
 
 /* Base Styles
