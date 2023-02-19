@@ -66,8 +66,8 @@
 									p.createCanvas(1000, 1000);
 									p.colorMode(p.HSL);
 									p.angleMode(p.DEGREES);
-									//   addMesh();
-									addCube();
+									addMesh();
+									// addCube();
 								};
 
 								p.draw = function () {
@@ -140,20 +140,22 @@
 							};
 
 							const scene = new THREE.Scene();
-							const myCamera = new THREE.PerspectiveCamera(110, window.innerWidth / 1.2 / window.innerHeight, 0.01, 100);
+							const myCamera = new THREE.PerspectiveCamera(140, window.innerWidth / window.innerHeight, 0.01, 1000);
 
 							const renderer = new THREE.WebGLRenderer({ alpha: true });
-							renderer.setSize(window.innerWidth / 1.2, window.innerHeight / 1.2);
+							renderer.setSize(window.innerWidth, window.innerHeight);
 							renderer.setClearColor(0xcccccc);
 							renderer.setPixelRatio(3);
 							document.getElementById('3d10').appendChild(renderer.domElement);
+
+							scene.background = new THREE.Color('rgb(25, 25, 25)');
 
 							const loader = new THREE.GLTFLoader();
 
 							const controls = new THREE.OrbitControls(myCamera, renderer.domElement);
 
-							controls.target = new THREE.Vector3(0, 8, 0);
-							myCamera.position.set(0, 8, 15);
+							controls.target = new THREE.Vector3(0, 0, 0);
+							myCamera.position.set(0, 0, 15);
 
 							loader.load('models/idle.glb', function (gltf) {
 								gltf.scene.traverse(child => {
@@ -173,79 +175,67 @@
 								});
 
 								scene.add(gltf.scene);
+								scene.position.set(-70, -10, 0);
+								gltf.scene.position.set(70, 0, 0);
 								addLights();
 								console.log('GLTF LOAD');
 							}, undefined, function (error) {
 								console.log('GLTF ERROR');
 								console.error(error);
-
 							});
 
 							function addLights() {
 								console.log('LIGHTS')
 								const hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.3);
 								scene.add(hemiLight);
-
 								const intensity = 1;
 								const light = new THREE.AmbientLight(0xffffff, 0.1);
 								scene.add(light);
-
 								const light2 = new THREE.DirectionalLight(0xffffff, 1.5);
 								light2.position.set(10, 10, 10); // ~60º
 								light2.name = 'main_light';
 								scene.add(light2);
 							}
 
-
 							let myp5 = new p5(sketch);
-
 							setTimeout(() => {
 								if (myp5.canvas) {
 									myp5.canvas.style.display = 'none';
 								}
 							}, 1000);
 
-
-							// function addMesh() {
-							//   texture = new THREE.Texture();
-							//   texture.image = myp5.canvas;
-							//   texture.needsUpdate = true;
-							//   let material = new THREE.MeshBasicMaterial({ map: texture });
-							//   let geometry = new THREE.PlaneGeometry(500, 500);
-							//   mesh = new THREE.Mesh(geometry, material);
-							//   scene.add(mesh);
-							//   mesh.position.z = -80;
-							//   mesh.position.y = -100;
-							//   mesh.position.x = 30;
-							//   animate();
-							// }
-
-							function addCube() {
+							function addMesh() {
 								texture = new THREE.Texture();
 								texture.image = myp5.canvas;
 								texture.needsUpdate = true;
 								let material = new THREE.MeshBasicMaterial({ map: texture });
-								let geometry = new THREE.BoxGeometry(500, 500, 500);
-								cube = new THREE.Mesh(geometry, material);
-								scene.add(cube);
-								cube.position.z = -80;
-								cube.position.y = -100;
-								cube.position.x = 30;
+								let geometry = new THREE.PlaneGeometry(800, 800);
+								mesh = new THREE.Mesh(geometry, material);
+								scene.add(mesh);
+								mesh.position.set(-100, -200, -100);
 								animate();
 							}
 
+							// function addCube() {
+							// 	texture = new THREE.Texture();
+							// 	texture.image = myp5.canvas;
+							// 	texture.needsUpdate = true;
+							// 	let material = new THREE.MeshBasicMaterial({ map: texture });
+							// 	let geometry = new THREE.BoxGeometry(500, 500, 500);
+							// 	cube = new THREE.Mesh(geometry, material);
+							// 	scene.add(cube);
+							// 	cube.position.z = -80;
+							// 	cube.position.y = -100;
+							// 	cube.position.x = 30;
+							// 	animate();
+							// }
+
 							function animate() {
 								requestAnimationFrame(animate);
-								// 									mesh.rotation.x += 0.01;
-								//   mesh.rotation.y += 0.01;
-
 								controls.update();
 								renderer.render(scene, myCamera);
 								texture.needsUpdate = true;
-
-
 							};
-
 						</script>
 					</div>
 					<!--  -->
