@@ -158,22 +158,25 @@
 							controls.target = new THREE.Vector3(0, 0, 0);
 
 
-							loader.load('models/idle.glb', function (gltf) {
-								gltf.scene.traverse(child => {
-									if (child.material) child.material.metalness = 0;
-								});
+							loader.load('models/wenjuniinew.glb', function (gltf) {
+								// gltf.scene.traverse(child => {
+								// 	if (child.material) child.material.metalness = 0;
+								// });
 
-								gltf.scene.traverse((object) => {
-									const encoding = THREE.sRGBEncoding;
-									if (object.isMesh) {
-										const material = object.material;
-										if (material.map) material.map.encoding = encoding;
-										if (material.emissiveMap) material.emissiveMap.encoding = encoding;
-										if (material.map || material.emissiveMap) material.needsUpdate = true;
+								// gltf.scene.traverse((object) => {
+								// 	const encoding = THREE.sRGBEncoding;
+								// 	if (object.isMesh) {
+								// 		const material = object.material;
+								// 		if (material.map) material.map.encoding = encoding;
+								// 		if (material.emissiveMap) material.emissiveMap.encoding = encoding;
+								// 		if (material.map || material.emissiveMap) material.needsUpdate = true;
 
-										console.log(object.material);
-									}
-								});
+								// 		console.log(object.material);
+								// 	}
+								// });
+
+								gltf.scene.traverse(function (object) { object.frustumCulled = false; });
+
 
 								scene.add(gltf.scene);
 								scene.position.set(0, 0, 0);
