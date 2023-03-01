@@ -20,34 +20,7 @@
 </head>
 
 <body class="body">
-	<div class="notify">
-		<div>
-			<p>
-				Please use a desktop or laptop browser to view this page with the best experience😉
-			</p>
-		</div>
-		<br>
-		<div>
-			<img src="images/wenjunii_blink.gif" width="200px">
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="two columns left">
-
-			</div>
-			<div class="eight columns middle">
-				<div class="section1">
-					<br>
-					<div class="title2">
-						<a href="index.html" target="">Home</a> | The Dream | <a href="data.html" target="">The Data</a>
-						| <a href="response.html" target="">The Response</a>
-					</div>
-					<br>
-					<!-- <br> -->
-					<div class="breakline">
-					</div>
-					<br>
+	
 
 					<video id="video1" autoplay loop muted style="display:none">
 						<source src="videos/wenjuniinewrotate.mp4" type="video/mp4">
@@ -165,7 +138,7 @@
 
 							const controls = new THREE.OrbitControls(myCamera, renderer.domElement);
 
-							controls.target = new THREE.Vector3(0, 0, 0);
+							// controls.target = new THREE.Vector3(0, 0, 0);
 
 							const video1 = document.getElementById('video1');
 							const texture1 = new THREE.VideoTexture(video1);
@@ -206,7 +179,7 @@
 								const material2 = gltf.scene.getObjectByName('SuperShapesMesh004').material;
 								material2.map = texture2;
 								texture2.offset.y = -0.03;
-								texture2.offset.x = 0.03;
+								// texture2.offset.x = 0.03;
 								video2.play();
 								texture2.needsUpdate = true;
 
@@ -235,7 +208,7 @@
 								console.log('LIGHTS')
 								const directionlight = new THREE.DirectionalLight(0xffffff, 0.5);
 								scene.add(directionlight);
-								const ambientlightprobe = new THREE.AmbientLightProbe(0xffffff5, 0.83);
+								const ambientlightprobe = new THREE.AmbientLightProbe(0xffffff5, 0.8);
 								scene.add(ambientlightprobe);
 							}
 
@@ -284,45 +257,7 @@
 							};
 
 						</script>
-					</div>
-					<!--  -->
-					<br>
-					<br>
-					<br>
-				</div>
-			</div>
-			<div class="two columns right">
-
-			</div>
-		</div>
-	</div>
-	<div class="containermanu">
-		<div class="row">
-			<div class="two columns left">
-				<div class="keywordtable2">
-					Keywords
-				</div>
-			</div>
-			<div class="eight columns middle">
-				<br>
-				<br><br><br>
-				<br>
-				<br><br><br>
-				<div class="title2">
-					<a href="index.html" target="">Home</a> | The Dream | <a href="data.html" target="">The Data</a> |
-					<a href="response.html" target="">The Response</a>
-				</div>
-				<br>
-
-			</div>
-			<div class="two columns right">
-				<!-- <div class="keywordtable">
-					Keywords
-				</div> -->
-			</div>
-
-		</div>
-	</div>
+					
 </body>
 
 </html>
