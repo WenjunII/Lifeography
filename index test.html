@@ -196,14 +196,14 @@
 
 								gltf.scene.traverse(function (object) { object.frustumCulled = false; });
 
-								const material1 = gltf.scene.getObjectByName('SuperShapesMesh004_2').material;
+								const material1 = gltf.scene.getObjectByName('wenjunii').material;
 								material1.map = texture1;
 								texture1.offset.y = -0.03;
 								video1.play();
 								texture1.needsUpdate = true;
 
 
-								const material2 = gltf.scene.getObjectByName('SuperShapesMesh004_1').material;
+								const material2 = gltf.scene.getObjectByName('SuperShapesMesh004').material;
 								material2.map = texture2;
 								texture2.offset.y = -0.03;
 								texture2.offset.x = 0.03;
