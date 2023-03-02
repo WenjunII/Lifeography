@@ -3,7 +3,7 @@
 
 <head>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.js"></script>
 	<!-- <script src="scripts/sketch.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
 	<script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
@@ -44,30 +44,31 @@
 			let mesh8 = null;
 			let mesh9 = null;
 			// let cube = null;
-			let texture3, texture4, texture5, texture6, texture7, texture8, texture9;
+			// let texture3, texture4, texture5, texture6, texture7, texture8, texture9;
 			let myMixer;
+			// let object2;
 
 			let sketch = function (p) {
 				// let r = 0;
 				let loaded = false;
-				let random1, random4, random8, random11;
+				let random1, random4, random8, random11, random12;
 				let h, s, l, a, q, n;
-				let table1, table4, table8, table11;
+				let table1, table4, table8, table11, table12;
 				let columnData1 = [];
 				let columnData4 = [];
 				let columnData8 = [];
 				let columnData11 = [];
-				let env1, env4, env8, env11;
-				let osc1, osc4, osc8, osc11;
-				let randomSound1, randomSound4, randomSound8, randomSound11;
-				let textArray = [];
-				let randomText;
+				let columnData12 = [];
+				let audioContext = new AudioContext();
+				let gainNode = audioContext.createGain();
+				gainNode.connect(audioContext.destination);
 
 				p.preload = function () {
 					table1 = p.loadTable('csv/healthdata_active_calories.csv', 'csv', 'header', p.onTableLoaded);
 					table4 = p.loadTable('csv/healthdata_activity_intensity.csv', 'csv', 'header', p.onTableLoaded);
 					table8 = p.loadTable('csv/healthdata_heart_rate.csv', 'csv', 'header', p.onTableLoaded);
 					table11 = p.loadTable('csv/healthdata_stress_level.csv', 'csv', 'header', p.onTableLoaded);
+					table12 = p.loadTable('csv/keywords.csv', 'csv', 'header', p.onTableLoaded);
 				};
 
 				p.onTableLoaded = function () {
@@ -76,6 +77,7 @@
 					console.log(table4.getRowCount() + ' rows loaded');
 					console.log(table8.getRowCount() + ' rows loaded');
 					console.log(table11.getRowCount() + ' rows loaded');
+					console.log(table12.getRowCount() + ' rows loaded');
 					for (let i = 0; i < table1.getRowCount(); i++) {
 						let row1 = table1.getRow(i);
 						columnData1.push(row1.get('active_calories'));
@@ -92,10 +94,15 @@
 						let row11 = table11.getRow(m);
 						columnData11.push(row11.get('stress_level'));
 					}
+					for (let o = 0; o < table12.getRowCount(); o++) {
+						let row12 = table12.getRow(o);
+						columnData12.push(row12.get('keywords'));
+					}
 					console.log(columnData1);
 					console.log(columnData4);
 					console.log(columnData8);
 					console.log(columnData11);
+					console.log(columnData12);
 					loaded = true;
 				}
 
@@ -112,27 +119,38 @@
 					random4 = p.int(p.random(1, 938470));
 					random8 = p.int(p.random(1, 938471));
 					random11 = p.int(p.random(1, 938469));
-					randomText = p.random(textArray);
+					random12 = p.int(p.random(1, 50));
 					if (loaded) {
 						// p.background(0);
-						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0, 0.3));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0.1));
 						p.textSize(p.random(5, 15));
 						p.text(columnData1[random1], p.random(p.width), p.random(p.height));
-						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0, 0.3));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0.1));
 						p.textSize(p.random(5, 15));
 						p.text(columnData4[random4], p.random(p.width), p.random(p.height));
-						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0, 0.3));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0.1));
 						p.textSize(p.random(5, 15));
 						p.text(columnData8[random8], p.random(p.width), p.random(p.height));
-						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0, 0.3));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0.1));
 						p.textSize(p.random(5, 15));
 						p.text(columnData11[random11], p.random(p.width), p.random(p.height));
-						textArray = ["dream", "life", "time", "sewing", "smile", "笑容", "生活", "little boy", "night", "beaten", "happy", "开心", "打", "学校", "hide", "grandma", "protect", "laughter", "safe haven", "academic performance", "obedience", "junior captain", "squadron leader", "three good student", "mother", "lie", "sound", "fall asleep", "hand", "lift", "bed", "cold", "son", "family", "cry", "school", "model student", "家", "儿子", "笑声", "奶奶", "避难所", "哭", "时间", "成绩", "听话", "小队长", "中队长", "三好学生", "模范学生"];
-						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0, 0.3));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0.1));
 						p.textSize(p.random(5, 15));
-						p.text(randomText, p.random(p.width), p.random(p.height));
+						p.text(columnData12[random12], p.random(p.width), p.random(p.height), p.random(0.1));
 					}
 				}
+
+				setInterval(function () {
+					let oscillator = audioContext.createOscillator();
+					oscillator.type = "sawtooth";
+					oscillator.connect(gainNode);
+					oscillator.frequency.value = p.random(1, 10000);
+					gainNode.gain.value = 0.03;
+					oscillator.start();
+					setTimeout(function () {
+						oscillator.stop();
+					}, 100);
+				}, 1500);
 			};
 
 			const scene = new THREE.Scene();
@@ -245,75 +263,192 @@
 			}
 
 			const loader2 = new THREE.OBJLoader();
-			loader2.load('models/randomshape/randomshape1.obj', function (object2) {
-				object2.scale.set(8, 8, 8);
-				object2.position.set(-120, -300, 50);
-				object2.rotation.set(0, 180, 0);
-				scene.add(object2);
+			loader2.load('models/randomshape/randomshape1.obj', function (object) {
+				const textureLoader2 = new THREE.TextureLoader();
+				const normalMap2 = textureLoader2.load('images/gradient.jpg');
+				const material2 = new THREE.MeshStandardMaterial({
+					map: normalMap2,
+					normalMap: normalMap2,
+					roughness: 1,
+					metalness: 0
+				});
+				object.traverse(function (child) {
+					if (child instanceof THREE.Mesh) {
+						child.material = material2;
+					}
+				});
+				object.scale.set(8, 8, 8);
+				object.position.set(-120, -300, 50);
+				object.rotation.set(0, 180, 0);
+				scene.add(object);
 			});
 
 			const loader3 = new THREE.OBJLoader();
-			loader3.load('models/randomshape/randomshape2.obj', function (object3) {
-				object3.scale.set(8, 8, 8);
-				object3.position.set(200, 0, 150);
-				object3.rotation.set(0, 0, 0);
-				scene.add(object3);
+			loader3.load('models/randomshape/randomshape2.obj', function (object) {
+				const textureLoader3 = new THREE.TextureLoader();
+				const normalMap3 = textureLoader3.load('images/gradient.jpg');
+				const material3 = new THREE.MeshStandardMaterial({
+					map: normalMap3,
+					normalMap: normalMap3,
+					roughness: 1,
+					metalness: 0
+				});
+				object.traverse(function (child) {
+					if (child instanceof THREE.Mesh) {
+						child.material = material3;
+					}
+				});
+				object.scale.set(8, 8, 8);
+				object.position.set(200, 0, 150);
+				object.rotation.set(0, 0, 0);
+				scene.add(object);
 			});
 
 			const loader4 = new THREE.OBJLoader();
-			loader4.load('models/randomshape/randomshape3.obj', function (object4) {
-				object4.scale.set(8, 8, 8);
-				object4.position.set(-200, 200, 20);
-				object4.rotation.set(0, 0, 0);
-				scene.add(object4);
+			loader4.load('models/randomshape/randomshape3.obj', function (object) {
+				const textureLoader4 = new THREE.TextureLoader();
+				const normalMap4 = textureLoader4.load('images/gradient.jpg');
+				const material4 = new THREE.MeshStandardMaterial({
+					map: normalMap4,
+					normalMap: normalMap4,
+					roughness: 1,
+					metalness: 0
+				});
+				object.traverse(function (child) {
+					if (child instanceof THREE.Mesh) {
+						child.material = material4;
+					}
+				});
+				object.scale.set(8, 8, 8);
+				object.position.set(-200, 200, 20);
+				object.rotation.set(0, 0, 0);
+				scene.add(object);
 			});
 
 			const loader5 = new THREE.OBJLoader();
-			loader5.load('models/randomshape/randomshape4.obj', function (object5) {
-				object5.scale.set(8, 8, 8);
-				object5.position.set(-300, -200, 120);
-				object5.rotation.set(0, 0, 0);
-				scene.add(object5);
+			loader5.load('models/randomshape/randomshape4.obj', function (object) {
+				const textureLoader5 = new THREE.TextureLoader();
+				const normalMap5 = textureLoader5.load('images/gradient.jpg');
+				const material5 = new THREE.MeshStandardMaterial({
+					map: normalMap5,
+					normalMap: normalMap5,
+					roughness: 1,
+					metalness: 0
+				});
+				object.traverse(function (child) {
+					if (child instanceof THREE.Mesh) {
+						child.material = material5;
+					}
+				});
+				object.scale.set(8, 8, 8);
+				object.position.set(-300, -200, 120);
+				object.rotation.set(0, 0, 0);
+				scene.add(object);
 			});
 
 			const loader6 = new THREE.OBJLoader();
-			loader6.load('models/randomshape/randomshape5.obj', function (object6) {
-				object6.scale.set(8, 8, 8);
-				object6.position.set(-10, -100, -50);
-				object6.rotation.set(0, 180, 0);
-				scene.add(object6);
+			loader6.load('models/randomshape/randomshape5.obj', function (object) {
+				const textureLoader6 = new THREE.TextureLoader();
+				const normalMap6 = textureLoader6.load('images/gradient.jpg');
+				const material6 = new THREE.MeshStandardMaterial({
+					map: normalMap6,
+					normalMap: normalMap6,
+					roughness: 1,
+					metalness: 0
+				});
+				object.traverse(function (child) {
+					if (child instanceof THREE.Mesh) {
+						child.material = material6;
+					}
+				});
+				object.scale.set(8, 8, 8);
+				object.position.set(-10, -100, -50);
+				object.rotation.set(0, 180, 0);
+				scene.add(object);
 			});
 
 			const loader7 = new THREE.OBJLoader();
-			loader7.load('models/randomshape/randomshape6.obj', function (object7) {
-				object7.scale.set(8, 8, 8);
-				object7.position.set(250, 300, 200);
-				object7.rotation.set(0, 0, 0);
-				scene.add(object7);
+			loader7.load('models/randomshape/randomshape6.obj', function (object) {
+				const textureLoader7 = new THREE.TextureLoader();
+				const normalMap7 = textureLoader7.load('images/gradient.jpg');
+				const material7 = new THREE.MeshStandardMaterial({
+					map: normalMap7,
+					normalMap: normalMap7,
+					roughness: 1,
+					metalness: 0
+				});
+				object.traverse(function (child) {
+					if (child instanceof THREE.Mesh) {
+						child.material = material7;
+					}
+				});
+				object.scale.set(8, 8, 8);
+				object.position.set(250, 300, 200);
+				object.rotation.set(0, 0, 0);
+				scene.add(object);
 			});
 
 			const loader8 = new THREE.OBJLoader();
-			loader8.load('models/randomshape/randomshape7.obj', function (object8) {
-				object8.scale.set(8, 8, 8);
-				object8.position.set(280, -260, 230);
-				object8.rotation.set(0, 180, 0);
-				scene.add(object8);
+			loader8.load('models/randomshape/randomshape7.obj', function (object) {
+				const textureLoader8 = new THREE.TextureLoader();
+				const normalMap8 = textureLoader8.load('images/gradient.jpg');
+				const material8 = new THREE.MeshStandardMaterial({
+					map: normalMap8,
+					normalMap: normalMap8,
+					roughness: 1,
+					metalness: 0
+				});
+				object.traverse(function (child) {
+					if (child instanceof THREE.Mesh) {
+						child.material = material8;
+					}
+				});
+				object.scale.set(8, 8, 8);
+				object.position.set(280, -260, 230);
+				object.rotation.set(0, 180, 0);
+				scene.add(object);
 			});
 
 			const loader9 = new THREE.OBJLoader();
-			loader9.load('models/randomshape/randomshape8.obj', function (object9) {
-				object9.scale.set(8, 8, 8);
-				object9.position.set(-100, 40, 280);
-				object9.rotation.set(0, 180, 0);
-				scene.add(object9);
+			loader9.load('models/randomshape/randomshape8.obj', function (object) {
+				const textureLoader9 = new THREE.TextureLoader();
+				const normalMap9 = textureLoader9.load('images/gradient.jpg');
+				const material9 = new THREE.MeshStandardMaterial({
+					map: normalMap9,
+					normalMap: normalMap9,
+					roughness: 1,
+					metalness: 0
+				});
+				object.traverse(function (child) {
+					if (child instanceof THREE.Mesh) {
+						child.material = material9;
+					}
+				});
+				object.scale.set(8, 8, 8);
+				object.position.set(-100, 40, 280);
+				object.rotation.set(0, 180, 0);
+				scene.add(object);
 			});
 
 			const loader10 = new THREE.OBJLoader();
-			loader10.load('models/randomshape/randomshape9.obj', function (object10) {
-				object10.scale.set(8, 8, 8);
-				object10.position.set(130, -180, 340);
-				object10.rotation.set(0, 180, 0);
-				scene.add(object10);
+			loader10.load('models/randomshape/randomshape9.obj', function (object) {
+				const textureLoader10 = new THREE.TextureLoader();
+				const normalMap10 = textureLoader10.load('images/gradient.jpg');
+				const material10 = new THREE.MeshStandardMaterial({
+					map: normalMap10,
+					normalMap: normalMap10,
+					roughness: 1,
+					metalness: 0
+				});
+				object.traverse(function (child) {
+					if (child instanceof THREE.Mesh) {
+						child.material = material10;
+					}
+				});
+				object.scale.set(8, 8, 8);
+				object.position.set(130, -180, 340);
+				object.rotation.set(0, 180, 0);
+				scene.add(object);
 			});
 
 			function animate() {
@@ -325,7 +460,7 @@
 					const delta = clock.getDelta();
 					myMixer.update(delta);
 				}
-				// object2.rotation.y += 0.01;
+				// scene.rotation.y += 1;
 			};
 
 		</script>
