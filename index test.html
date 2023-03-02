@@ -20,244 +20,356 @@
 </head>
 
 <body class="body">
-	
-
-					<video id="video1" autoplay loop muted style="display:none">
-						<source src="videos/wenjuniinewrotate.mp4" type="video/mp4">
-					</video>
-
-					<video id="video2" autoplay loop muted style="display:none">
-						<source src="videos/wenjuniinew.mp4" type="video/mp4">
-					</video>
 
 
-					<div id="3d10">
-						<script>
-							console.log('SCRIPT LOADED');
+	<video id="video1" autoplay loop muted style="display:none">
+		<source src="videos/wenjuniinewrotate.mp4" type="video/mp4">
+	</video>
 
-							let mesh = null;
-							let cube = null;
-							let texture;
-							let myMixer;
-
-							let sketch = function (p) {
-								// let r = 0;
-								let randomN;
-								let h, s, l, a, q, n;
-
-								p.setup = function () {
-									p.createCanvas(1000, 1000);
-									p.colorMode(p.HSL);
-									p.angleMode(p.DEGREES);
-									addMesh();
-									// addCube();
-								};
-
-								p.draw = function () {
-									//   r += 0.01;
-									//   p.background(0);
-									//   p.noStroke();
-									//   p.fill(255, 0, 0);
-									//   p.ellipse(p.width / 2 + 100 * p.cos(r), p.height / 2 + 100 * p.sin(r), 50, 50);
-									p.loadJSON(
-										"https://random-data-api.com/api/number/random_number?size=100",
-										p.gotData
-									);
-									// console.log(randomN);
-									if (randomN) {
-										for (let i = 0; i < randomN.length; i++) {
-											p.drawLine(i);
-											p.drawArc(i);
-											p.drawDot(i);
-											p.drawCircle(i);
-										}
-									}
-								};
-
-								p.gotData = function (data) {
-									console.log(data);
-									randomN = data;
-								}
-
-								p.drawLine = function (i) {
-									h = randomN[i].id;
-									s = randomN[i].decimal;
-									l = randomN[i].normal;
-									a = randomN[i].non_zero_number;
-									p.stroke(h / 28, s, l, a / 10);
-									p.line(h / 65 + 100, s * 2 + 50, l * 2 + 100, a * 20 + 50);
-								}
-
-								p.drawCircle = function (i) {
-									h = randomN[i].id;
-									s = randomN[i].decimal;
-									l = randomN[i].normal;
-									a = randomN[i].non_zero_number;
-									p.stroke(h / 28, s, l, a / 10);
-									p.noFill();
-									p.circle(s + 500, l + 150, h / 60);
-								}
-
-								p.drawArc = function (i) {
-									h = randomN[i].id;
-									s = randomN[i].decimal;
-									l = randomN[i].normal;
-									a = randomN[i].non_zero_number;
-									q = randomN[i].positive;
-									p.noFill();
-									p.stroke(h / 28, s, l, a / 10);
-									p.arc(s + 300, l + 300, h / 300, a * 20, 0, q / 10);
-								}
-
-								p.drawDot = function (i) {
-									h = randomN[i].id;
-									s = randomN[i].decimal;
-									l = randomN[i].normal;
-									a = randomN[i].non_zero_number;
-									q = randomN[i].positive;
-									p.noFill();
-									p.stroke(h / 28, s, l, a / 10);
-									p.point(h / 10, q / 10);
-								}
-
-							};
-
-							const scene = new THREE.Scene();
-							const myCamera = new THREE.OrthographicCamera(window.innerWidth / - 3, window.innerWidth / 3, window.innerHeight / 3, window.innerHeight / - 3, 0.001, 2000);
-							myCamera.position.set(0, 0, 100);
-							// myCamera.zoom = 10;
-							const renderer = new THREE.WebGLRenderer({ alpha: true });
-							renderer.setSize(window.innerWidth, window.innerHeight);
-							renderer.setClearColor(0xcccccc);
-							renderer.setPixelRatio(3);
-							document.getElementById('3d10').appendChild(renderer.domElement);
-
-							scene.background = new THREE.Color('rgb(25, 25, 25)');
-
-							const loader = new THREE.GLTFLoader();
-
-							const controls = new THREE.OrbitControls(myCamera, renderer.domElement);
-
-							// controls.target = new THREE.Vector3(0, 0, 0);
-
-							const video1 = document.getElementById('video1');
-							const texture1 = new THREE.VideoTexture(video1);
-
-							const video2 = document.getElementById('video2');
-							const texture2 = new THREE.VideoTexture(video2);
-
-							const clock = new THREE.Clock();
+	<video id="video2" autoplay loop muted style="display:none">
+		<source src="videos/wenjuniinew.mp4" type="video/mp4">
+	</video>
 
 
+	<div id="3d10">
+		<script>
+			console.log('SCRIPT LOADED');
 
-							loader.load('models/wenjuniinew.glb', function (gltf) {
-								gltf.scene.traverse(child => {
-									if (child.material) child.material.metalness = 0;
-								});
-
-								gltf.scene.traverse((object) => {
-									const encoding = THREE.sRGBEncoding;
-									if (object.isMesh) {
-										const material = object.material;
-										if (material.map) material.map.encoding = encoding;
-										if (material.emissiveMap) material.emissiveMap.encoding = encoding;
-										if (material.map || material.emissiveMap) material.needsUpdate = true;
-
-										console.log(object.material);
-									}
-								});
-
-								gltf.scene.traverse(function (object) { object.frustumCulled = false; });
-
-								const material1 = gltf.scene.getObjectByName('wenjunii').material;
-								material1.map = texture1;
-								texture1.offset.y = -0.03;
-								video1.play();
-								texture1.needsUpdate = true;
+			let mesh3 = null;
+			let mesh4 = null;
+			let mesh5 = null;
+			let mesh6 = null;
+			let mesh7 = null;
+			let mesh8 = null;
+			let mesh9 = null;
+			// let cube = null;
+			let texture3, texture4, texture5, texture6, texture7, texture8, texture9;
+			let myMixer;
 
 
-								const material2 = gltf.scene.getObjectByName('SuperShapesMesh004').material;
-								material2.map = texture2;
-								texture2.offset.y = -0.03;
-								// texture2.offset.x = 0.03;
-								video2.play();
-								texture2.needsUpdate = true;
+			let sketch = function (p) {
+				// let r = 0;
+				let loaded = false;
+				let random1, random4, random8, random11;
+				let h, s, l, a, q, n;
+				let table1, table4, table8, table11;
+				let columnData1 = [];
+				let columnData4 = [];
+				let columnData8 = [];
+				let columnData11 = [];
+				let env1, env4, env8, env11;
+				let osc1, osc4, osc8, osc11;
+				let randomSound1, randomSound4, randomSound8, randomSound11;
+				let textArray = [];
+				let randomText;
 
-								myMixer = new THREE.AnimationMixer(gltf.scene);
-								const animations = gltf.animations;
 
-								gltf.animations.forEach(animation => {
-									myMixer.clipAction(animation).play();
-								});
+				p.preload = function () {
+					table1 = p.loadTable('csv/healthdata_active_calories.csv', 'csv', 'header', p.onTableLoaded);
+					table4 = p.loadTable('csv/healthdata_activity_intensity.csv', 'csv', 'header', p.onTableLoaded);
+					table8 = p.loadTable('csv/healthdata_heart_rate.csv', 'csv', 'header', p.onTableLoaded);
+					table11 = p.loadTable('csv/healthdata_stress_level.csv', 'csv', 'header', p.onTableLoaded);
+				};
 
-								scene.add(gltf.scene);
+				p.onTableLoaded = function () {
+					console.log('CSV file loaded successfully');
+					console.log(table1.getRowCount() + ' rows loaded');
+					console.log(table4.getRowCount() + ' rows loaded');
+					console.log(table8.getRowCount() + ' rows loaded');
+					console.log(table11.getRowCount() + ' rows loaded');
+					for (let i = 0; i < table1.getRowCount(); i++) {
+						let row1 = table1.getRow(i);
+						columnData1.push(row1.get('active_calories'));
+					};
+					for (let j = 0; j < table4.getRowCount(); j++) {
+						let row4 = table4.getRow(j);
+						columnData4.push(row4.get('activity_intensity'));
+					}
+					for (let k = 0; k < table8.getRowCount(); k++) {
+						let row8 = table8.getRow(k);
+						columnData8.push(row8.get('heart_rate'));
+					}
+					for (let m = 0; m < table11.getRowCount(); m++) {
+						let row11 = table11.getRow(m);
+						columnData11.push(row11.get('stress_level'));
+					}
+					console.log(columnData1);
+					console.log(columnData4);
+					console.log(columnData8);
+					console.log(columnData11);
+					loaded = true;
+
+				}
 
 
-								scene.add(gltf.scene);
-								scene.position.set(0, 0, 0);
-								gltf.scene.position.set(0, 0, 0);
-								gltf.scene.scale.set(10, 10, 10);
-								addLights();
-								console.log('GLTF LOAD');
-							}, undefined, function (error) {
-								console.log('GLTF ERROR');
-								console.error(error);
-							});
+				p.setup = function () {
+					p.createCanvas(800, 800);
+					p.colorMode(p.HSL);
+					p.angleMode(p.DEGREES);
+					addMesh1();
+					// addMesh2();
+					// addMesh3();
+					// addMesh4();
+					// addMesh5();
+					// addMesh6();
+					// addMesh7();
+					// addCube();
+					p.frameRate(2);
+					// env1 = new p5.Env();
+					// env1.setADSR(0.1, 0.1, 0.1, 0.1);
+					// osc1 = new p5.Oscillator();
+					// osc1.setType('sine');
+					// osc1.freq(p.random(300));
+					// osc1.amp(env1);
+					// setInterval(function () {
+					// 	osc1.start();
+					// 	osc1.stop(0.1);
+					// }, 2000);
 
-							function addLights() {
-								console.log('LIGHTS')
-								const directionlight = new THREE.DirectionalLight(0xffffff, 0.5);
-								scene.add(directionlight);
-								const ambientlightprobe = new THREE.AmbientLightProbe(0xffffff5, 0.8);
-								scene.add(ambientlightprobe);
-							}
 
-							let myp5 = new p5(sketch);
-							setTimeout(() => {
-								if (myp5.canvas) {
-									myp5.canvas.style.display = 'none';
-								}
-							}, 1000);
+				}
 
-							function addMesh() {
-								texture = new THREE.Texture();
-								texture.image = myp5.canvas;
-								texture.needsUpdate = true;
-								let material = new THREE.MeshBasicMaterial({ map: texture });
-								let geometry = new THREE.PlaneGeometry(800, 800);
-								mesh = new THREE.Mesh(geometry, material);
-								scene.add(mesh);
-								mesh.position.set(0, 0, -100);
-								animate();
-							}
+				p.draw = function () {
+					random1 = p.int(p.random(1, 938471));
+					random4 = p.int(p.random(1, 938470));
+					random8 = p.int(p.random(1, 938471));
+					random11 = p.int(p.random(1, 938469));
+					randomText = p.random(textArray);
+					if (loaded) {
+						// p.background(0);
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0, 0.3));
+						p.textSize(p.random(5, 15));
+						p.text(columnData1[random1], p.random(p.width), p.random(p.height));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0, 0.3));
+						p.textSize(p.random(5, 15));
+						p.text(columnData4[random4], p.random(p.width), p.random(p.height));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0, 0.3));
+						p.textSize(p.random(5, 15));
+						p.text(columnData8[random8], p.random(p.width), p.random(p.height));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0, 0.3));
+						p.textSize(p.random(5, 15));
+						p.text(columnData11[random11], p.random(p.width), p.random(p.height));
+						textArray = ["dream", "life", "time", "sewing", "smile", "笑容", "生活", "little boy", "night", "beaten", "happy", "开心", "打", "学校", "hide", "grandma", "protect", "laughter", "safe haven", "academic performance", "obedience", "junior captain", "squadron leader", "three good student", "mother", "lie", "sound", "fall asleep", "hand", "lift", "bed", "cold", "son", "family", "cry", "school", "model student", "家", "儿子", "笑声", "奶奶", "避难所", "哭", "时间", "成绩", "听话", "小队长", "中队长", "三好学生", "模范学生"];
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0, 0.3));
+						p.textSize(p.random(5, 15));
+						p.text(randomText, p.random(p.width), p.random(p.height));
+					}
 
-							// function addCube() {
-							// 	texture = new THREE.Texture();
-							// 	texture.image = myp5.canvas;
-							// 	texture.needsUpdate = true;
-							// 	let material = new THREE.MeshBasicMaterial({ map: texture });
-							// 	let geometry = new THREE.BoxGeometry(500, 500, 500);
-							// 	cube = new THREE.Mesh(geometry, material);
-							// 	scene.add(cube);
-							// 	cube.position.z = -80;
-							// 	cube.position.y = -100;
-							// 	cube.position.x = 30;
-							// 	animate();
-							// }
 
-							function animate() {
-								requestAnimationFrame(animate);
-								controls.update();
-								renderer.render(scene, myCamera);
-								texture.needsUpdate = true;
-								if (myMixer) {
-									const delta = clock.getDelta();
-									myMixer.update(delta);
-								}
-							};
 
-						</script>
-					
+
+				}
+
+
+
+			};
+
+			const scene = new THREE.Scene();
+			const myCamera = new THREE.OrthographicCamera(window.innerWidth / - 3, window.innerWidth / 3, window.innerHeight / 3, window.innerHeight / - 3, 0.001, 2000);
+			myCamera.position.set(0, 0, 1000);
+			// myCamera.zoom = 10;
+			const renderer = new THREE.WebGLRenderer({ alpha: true });
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			renderer.setClearColor(0xcccccc);
+			renderer.setPixelRatio(3);
+			document.getElementById('3d10').appendChild(renderer.domElement);
+
+			scene.background = new THREE.Color('rgb(25, 25, 25)');
+
+			const loader = new THREE.GLTFLoader();
+
+			const controls = new THREE.OrbitControls(myCamera, renderer.domElement);
+
+			// controls.target = new THREE.Vector3(0, 0, 0);
+
+			const video1 = document.getElementById('video1');
+			const texture1 = new THREE.VideoTexture(video1);
+
+			const video2 = document.getElementById('video2');
+			const texture2 = new THREE.VideoTexture(video2);
+
+			const clock = new THREE.Clock();
+
+
+
+			loader.load('models/wenjuniinew.glb', function (gltf) {
+				gltf.scene.traverse(child => {
+					if (child.material) child.material.metalness = 0;
+				});
+
+				gltf.scene.traverse((object) => {
+					const encoding = THREE.sRGBEncoding;
+					if (object.isMesh) {
+						const material = object.material;
+						if (material.map) material.map.encoding = encoding;
+						if (material.emissiveMap) material.emissiveMap.encoding = encoding;
+						if (material.map || material.emissiveMap) material.needsUpdate = true;
+
+						console.log(object.material);
+					}
+				});
+
+				gltf.scene.traverse(function (object) { object.frustumCulled = false; });
+
+				const material1 = gltf.scene.getObjectByName('wenjunii').material;
+				material1.map = texture1;
+				texture1.offset.y = -0.03;
+				video1.play();
+				texture1.needsUpdate = true;
+
+
+				const material2 = gltf.scene.getObjectByName('SuperShapesMesh004').material;
+				material2.map = texture2;
+				texture2.offset.y = -0.03;
+				// texture2.offset.x = 0.03;
+				video2.play();
+				texture2.needsUpdate = true;
+
+				myMixer = new THREE.AnimationMixer(gltf.scene);
+				const animations = gltf.animations;
+
+				gltf.animations.forEach(animation => {
+					myMixer.clipAction(animation).play();
+				});
+
+				scene.add(gltf.scene);
+
+
+				scene.add(gltf.scene);
+				scene.position.set(0, 0, 0);
+				gltf.scene.position.set(0, 0, 0);
+				gltf.scene.scale.set(10, 10, 10);
+				addLights();
+				console.log('GLTF LOAD');
+			}, undefined, function (error) {
+				console.log('GLTF ERROR');
+				console.error(error);
+			});
+
+			function addLights() {
+				console.log('LIGHTS')
+				const directionlight = new THREE.DirectionalLight(0xffffff, 0.5);
+				scene.add(directionlight);
+				const ambientlightprobe = new THREE.AmbientLightProbe(0xffffff5, 0.8);
+				scene.add(ambientlightprobe);
+			}
+
+			let myp5 = new p5(sketch);
+			setTimeout(() => {
+				if (myp5.canvas) {
+					myp5.canvas.style.display = 'none';
+				}
+			}, 1000);
+
+			function addMesh1() {
+				texture3 = new THREE.Texture();
+				texture3.image = myp5.canvas;
+				texture3.needsUpdate = true;
+				let material3 = new THREE.MeshBasicMaterial({ map: texture3 });
+				let geometry3 = new THREE.PlaneGeometry(800, 800);
+				mesh3 = new THREE.Mesh(geometry3, material3);
+				scene.add(mesh3);
+				mesh3.position.set(0, 0, -100);
+				animate();
+			}
+
+			// function addMesh2() {
+			// 	texture4 = new THREE.Texture();
+			// 	texture4.image = myp5.canvas;
+			// 	texture4.needsUpdate = true;
+			// 	let material4 = new THREE.MeshBasicMaterial({ map: texture4 });
+			// 	let geometry4 = new THREE.PlaneGeometry(800, 800);
+			// 	mesh4 = new THREE.Mesh(geometry4, material4);
+			// 	scene.add(mesh4);
+			// 	mesh4.position.set(-600, 0, 0);
+			// 	mesh4.rotation.set(0, 45, 0);
+			// 	animate();
+			// }
+
+			// function addMesh3() {
+			// 	texture5 = new THREE.Texture();
+			// 	texture5.image = myp5.canvas;
+			// 	texture5.needsUpdate = true;
+			// 	let material5 = new THREE.MeshBasicMaterial({ map: texture5 });
+			// 	let geometry5 = new THREE.PlaneGeometry(800, 800);
+			// 	mesh5 = new THREE.Mesh(geometry5, material5);
+			// 	scene.add(mesh5);
+			// 	mesh5.position.set(600, 0, 0);
+			// 	mesh5.rotation.set(0, -45, 0);
+			// 	animate();
+			// }
+
+			// function addMesh4() {
+			// 	texture6 = new THREE.Texture();
+			// 	texture6.image = myp5.canvas;
+			// 	texture6.needsUpdate = true;
+			// 	let material6 = new THREE.MeshBasicMaterial({ map: texture6 });
+			// 	let geometry6 = new THREE.PlaneGeometry(800, 800);
+			// 	mesh6 = new THREE.Mesh(geometry6, material6);
+			// 	scene.add(mesh6);
+			// 	mesh6.position.set(-450, 0, 500);
+			// 	mesh6.rotation.set(0, 160, 0);
+			// 	animate();
+			// }
+
+			// function addMesh5() {
+			// 	texture7 = new THREE.Texture();
+			// 	texture7.image = myp5.canvas;
+			// 	texture7.needsUpdate = true;
+			// 	let material7 = new THREE.MeshBasicMaterial({ map: texture7 });
+			// 	let geometry7 = new THREE.PlaneGeometry(800, 800);
+			// 	mesh7 = new THREE.Mesh(geometry7, material7);
+			// 	scene.add(mesh7);
+			// 	mesh7.position.set(450, 0, 500);
+			// 	mesh7.rotation.set(0, 160, 0);
+			// 	animate();
+			// }
+
+			// function addMesh6() {
+			// 	texture8 = new THREE.Texture();
+			// 	texture8.image = myp5.canvas;
+			// 	texture8.needsUpdate = true;
+			// 	let material8 = new THREE.MeshBasicMaterial({ map: texture8 });
+			// 	let geometry8 = new THREE.PlaneGeometry(800, 800);
+			// 	mesh8 = new THREE.Mesh(geometry8, material8);
+			// 	scene.add(mesh8);
+			// 	mesh8.position.set(0, -700, 200);
+			// 	mesh8.rotation.set(200, 0, 0);
+			// 	animate();
+			// }
+
+			// function addMesh7() {
+			// 	texture9 = new THREE.Texture();
+			// 	texture9.image = myp5.canvas;
+			// 	texture9.needsUpdate = true;
+			// 	let material9 = new THREE.MeshBasicMaterial({ map: texture9 });
+			// 	let geometry9 = new THREE.PlaneGeometry(800, 800);
+			// 	mesh9 = new THREE.Mesh(geometry9, material9);
+			// 	scene.add(mesh9);
+			// 	mesh9.position.set(0, 700, 200);
+			// 	mesh9.rotation.set(-200, 0, 0);
+			// 	animate();
+			// }
+
+			function animate() {
+				requestAnimationFrame(animate);
+				controls.update();
+				renderer.render(scene, myCamera);
+				texture3.needsUpdate = true;
+				// texture4.needsUpdate = true;
+				// texture5.needsUpdate = true;
+				// texture6.needsUpdate = true;
+				// texture7.needsUpdate = true;
+				// texture8.needsUpdate = true;
+				// texture9.needsUpdate = true;
+				if (myMixer) {
+					const delta = clock.getDelta();
+					myMixer.update(delta);
+				}
+			};
+
+		</script>
+
 </body>
 
 </html>
