@@ -281,6 +281,18 @@
 				object.position.set(-120, -300, 50);
 				object.rotation.set(0, 180, 0);
 				scene.add(object);
+				object.rotation.y = 0;
+				const rotationSpeed2 = 0.01;
+				const moveSpeed2 = 1;
+				function update2() {
+					object.rotation.y += rotationSpeed2;
+					object.rotation.x += rotationSpeed2;
+				}
+				function animate() {
+					requestAnimationFrame(animate);
+					update2();
+				}
+				animate();
 			});
 
 			const loader3 = new THREE.OBJLoader();
@@ -302,6 +314,17 @@
 				object.position.set(200, 0, 150);
 				object.rotation.set(0, 0, 0);
 				scene.add(object);
+				object.rotation.y = 0;
+				const rotationSpeed3 = 0.01;
+				function update3() {
+					object.rotation.y += rotationSpeed3;
+					object.rotation.z += rotationSpeed3;
+				}
+				function animate() {
+					requestAnimationFrame(animate);
+					update3();
+				}
+				animate();
 			});
 
 			const loader4 = new THREE.OBJLoader();
@@ -323,6 +346,16 @@
 				object.position.set(-200, 200, 20);
 				object.rotation.set(0, 0, 0);
 				scene.add(object);
+				object.rotation.y = 0;
+				const rotationSpeed4 = 0.01;
+				function update4() {
+					object.rotation.y += rotationSpeed4;
+				}
+				function animate() {
+					requestAnimationFrame(animate);
+					update4();
+				}
+				animate();
 			});
 
 			const loader5 = new THREE.OBJLoader();
@@ -344,6 +377,16 @@
 				object.position.set(-300, -200, 120);
 				object.rotation.set(0, 0, 0);
 				scene.add(object);
+				object.rotation.y = 0;
+				const rotationSpeed5 = 0.01;
+				function update5() {
+					object.rotation.x += rotationSpeed5;
+				}
+				function animate() {
+					requestAnimationFrame(animate);
+					update5();
+				}
+				animate();
 			});
 
 			const loader6 = new THREE.OBJLoader();
@@ -365,6 +408,17 @@
 				object.position.set(-10, -100, -50);
 				object.rotation.set(0, 180, 0);
 				scene.add(object);
+				object.rotation.y = 180;
+				const rotationSpeed6 = 0.01;
+				function update6() {
+					object.rotation.x += rotationSpeed6;
+					object.rotation.z += rotationSpeed6;
+				}
+				function animate() {
+					requestAnimationFrame(animate);
+					update6();
+				}
+				animate();
 			});
 
 			const loader7 = new THREE.OBJLoader();
@@ -386,6 +440,16 @@
 				object.position.set(250, 300, 200);
 				object.rotation.set(0, 0, 0);
 				scene.add(object);
+				object.rotation.y = 0;
+				const rotationSpeed7 = 0.01;
+				function update7() {
+					object.rotation.z += rotationSpeed7;
+				}
+				function animate() {
+					requestAnimationFrame(animate);
+					update7();
+				}
+				animate();
 			});
 
 			const loader8 = new THREE.OBJLoader();
@@ -407,6 +471,18 @@
 				object.position.set(280, -260, 230);
 				object.rotation.set(0, 180, 0);
 				scene.add(object);
+				object.rotation.y = 180;
+				const rotationSpeed8 = 0.01;
+				function update8() {
+					object.rotation.y += rotationSpeed8;
+					object.rotation.x += rotationSpeed8;
+					object.rotation.z += rotationSpeed8;
+				}
+				function animate() {
+					requestAnimationFrame(animate);
+					update8();
+				}
+				animate();
 			});
 
 			const loader9 = new THREE.OBJLoader();
@@ -428,6 +504,17 @@
 				object.position.set(-100, 40, 280);
 				object.rotation.set(0, 180, 0);
 				scene.add(object);
+				object.rotation.y = 180;
+				const rotationSpeed9 = 0.01;
+				function update9() {
+					object.rotation.y += rotationSpeed9;
+					object.rotation.x += rotationSpeed9;
+				}
+				function animate() {
+					requestAnimationFrame(animate);
+					update9();
+				}
+				animate();
 			});
 
 			const loader10 = new THREE.OBJLoader();
@@ -449,6 +536,17 @@
 				object.position.set(130, -180, 340);
 				object.rotation.set(0, 180, 0);
 				scene.add(object);
+				object.rotation.y = 180;
+				const rotationSpeed10 = 0.01;
+				function update10() {
+					object.rotation.y += rotationSpeed10;
+					object.rotation.z += rotationSpeed10;
+				}
+				function animate() {
+					requestAnimationFrame(animate);
+					update10();
+				}
+				animate();
 			});
 
 			function animate() {
@@ -460,7 +558,6 @@
 					const delta = clock.getDelta();
 					myMixer.update(delta);
 				}
-				// scene.rotation.y += 1;
 			};
 
 		</script>
