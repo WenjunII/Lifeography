@@ -31,25 +31,20 @@
 		<source src="videos/wenjuniinew.mp4" type="video/mp4">
 	</video>
 
+	<video id="video4" autoplay loop muted style="display:none">
+		<source src="videos/gradient.mp4" type="video/mp4">
+	</video>
+
+
 
 	<div id="3d10">
 		<script>
 			console.log('SCRIPT LOADED');
 
 			let mesh3 = null;
-			let mesh4 = null;
-			let mesh5 = null;
-			let mesh6 = null;
-			let mesh7 = null;
-			let mesh8 = null;
-			let mesh9 = null;
-			// let cube = null;
-			// let texture3, texture4, texture5, texture6, texture7, texture8, texture9;
 			let myMixer;
-			// let object2;
 
 			let sketch = function (p) {
-				// let r = 0;
 				let loaded = false;
 				let random1, random4, random8, random11, random12;
 				let h, s, l, a, q, n;
@@ -263,18 +258,13 @@
 			}
 
 			const loader2 = new THREE.OBJLoader();
+			const video4 = document.getElementById('video4');
+			const texture4 = new THREE.VideoTexture(video4);
+			const material4 = new THREE.MeshBasicMaterial({ map: texture4 });
 			loader2.load('models/randomshape/randomshape1.obj', function (object) {
-				const textureLoader2 = new THREE.TextureLoader();
-				const normalMap2 = textureLoader2.load('images/gradient.jpg');
-				const material2 = new THREE.MeshStandardMaterial({
-					map: normalMap2,
-					normalMap: normalMap2,
-					roughness: 1,
-					metalness: 0
-				});
-				object.traverse(function (child) {
+				object.traverse((child) => {
 					if (child instanceof THREE.Mesh) {
-						child.material = material2;
+						child.material = material4;
 					}
 				});
 				object.scale.set(8, 8, 8);
@@ -296,18 +286,13 @@
 			});
 
 			const loader3 = new THREE.OBJLoader();
+			const video5 = document.getElementById('video4');
+			const texture5 = new THREE.VideoTexture(video4);
+			const material5 = new THREE.MeshBasicMaterial({ map: texture5 });
 			loader3.load('models/randomshape/randomshape2.obj', function (object) {
-				const textureLoader3 = new THREE.TextureLoader();
-				const normalMap3 = textureLoader3.load('images/gradient.jpg');
-				const material3 = new THREE.MeshStandardMaterial({
-					map: normalMap3,
-					normalMap: normalMap3,
-					roughness: 1,
-					metalness: 0
-				});
-				object.traverse(function (child) {
+				object.traverse((child) => {
 					if (child instanceof THREE.Mesh) {
-						child.material = material3;
+						child.material = material5;
 					}
 				});
 				object.scale.set(8, 8, 8);
@@ -328,18 +313,13 @@
 			});
 
 			const loader4 = new THREE.OBJLoader();
+			const video6 = document.getElementById('video4');
+			const texture6 = new THREE.VideoTexture(video4);
+			const material6 = new THREE.MeshBasicMaterial({ map: texture6 });
 			loader4.load('models/randomshape/randomshape3.obj', function (object) {
-				const textureLoader4 = new THREE.TextureLoader();
-				const normalMap4 = textureLoader4.load('images/gradient.jpg');
-				const material4 = new THREE.MeshStandardMaterial({
-					map: normalMap4,
-					normalMap: normalMap4,
-					roughness: 1,
-					metalness: 0
-				});
-				object.traverse(function (child) {
+				object.traverse((child) => {
 					if (child instanceof THREE.Mesh) {
-						child.material = material4;
+						child.material = material6;
 					}
 				});
 				object.scale.set(8, 8, 8);
@@ -359,18 +339,13 @@
 			});
 
 			const loader5 = new THREE.OBJLoader();
+			const video7 = document.getElementById('video4');
+			const texture7 = new THREE.VideoTexture(video4);
+			const material7 = new THREE.MeshBasicMaterial({ map: texture7 });
 			loader5.load('models/randomshape/randomshape4.obj', function (object) {
-				const textureLoader5 = new THREE.TextureLoader();
-				const normalMap5 = textureLoader5.load('images/gradient.jpg');
-				const material5 = new THREE.MeshStandardMaterial({
-					map: normalMap5,
-					normalMap: normalMap5,
-					roughness: 1,
-					metalness: 0
-				});
-				object.traverse(function (child) {
+				object.traverse((child) => {
 					if (child instanceof THREE.Mesh) {
-						child.material = material5;
+						child.material = material7;
 					}
 				});
 				object.scale.set(8, 8, 8);
@@ -390,18 +365,13 @@
 			});
 
 			const loader6 = new THREE.OBJLoader();
+			const video8 = document.getElementById('video4');
+			const texture8 = new THREE.VideoTexture(video4);
+			const material8 = new THREE.MeshBasicMaterial({ map: texture8 });
 			loader6.load('models/randomshape/randomshape5.obj', function (object) {
-				const textureLoader6 = new THREE.TextureLoader();
-				const normalMap6 = textureLoader6.load('images/gradient.jpg');
-				const material6 = new THREE.MeshStandardMaterial({
-					map: normalMap6,
-					normalMap: normalMap6,
-					roughness: 1,
-					metalness: 0
-				});
-				object.traverse(function (child) {
+				object.traverse((child) => {
 					if (child instanceof THREE.Mesh) {
-						child.material = material6;
+						child.material = material8;
 					}
 				});
 				object.scale.set(8, 8, 8);
@@ -422,18 +392,13 @@
 			});
 
 			const loader7 = new THREE.OBJLoader();
+			const video9 = document.getElementById('video4');
+			const texture9 = new THREE.VideoTexture(video4);
+			const material9 = new THREE.MeshBasicMaterial({ map: texture9 });
 			loader7.load('models/randomshape/randomshape6.obj', function (object) {
-				const textureLoader7 = new THREE.TextureLoader();
-				const normalMap7 = textureLoader7.load('images/gradient.jpg');
-				const material7 = new THREE.MeshStandardMaterial({
-					map: normalMap7,
-					normalMap: normalMap7,
-					roughness: 1,
-					metalness: 0
-				});
-				object.traverse(function (child) {
+				object.traverse((child) => {
 					if (child instanceof THREE.Mesh) {
-						child.material = material7;
+						child.material = material9;
 					}
 				});
 				object.scale.set(8, 8, 8);
@@ -453,18 +418,13 @@
 			});
 
 			const loader8 = new THREE.OBJLoader();
+			const video10 = document.getElementById('video4');
+			const texture10 = new THREE.VideoTexture(video4);
+			const material10 = new THREE.MeshBasicMaterial({ map: texture10 });
 			loader8.load('models/randomshape/randomshape7.obj', function (object) {
-				const textureLoader8 = new THREE.TextureLoader();
-				const normalMap8 = textureLoader8.load('images/gradient.jpg');
-				const material8 = new THREE.MeshStandardMaterial({
-					map: normalMap8,
-					normalMap: normalMap8,
-					roughness: 1,
-					metalness: 0
-				});
-				object.traverse(function (child) {
+				object.traverse((child) => {
 					if (child instanceof THREE.Mesh) {
-						child.material = material8;
+						child.material = material10;
 					}
 				});
 				object.scale.set(8, 8, 8);
@@ -486,18 +446,13 @@
 			});
 
 			const loader9 = new THREE.OBJLoader();
+			const video11 = document.getElementById('video4');
+			const texture11 = new THREE.VideoTexture(video4);
+			const material11 = new THREE.MeshBasicMaterial({ map: texture11 });
 			loader9.load('models/randomshape/randomshape8.obj', function (object) {
-				const textureLoader9 = new THREE.TextureLoader();
-				const normalMap9 = textureLoader9.load('images/gradient.jpg');
-				const material9 = new THREE.MeshStandardMaterial({
-					map: normalMap9,
-					normalMap: normalMap9,
-					roughness: 1,
-					metalness: 0
-				});
-				object.traverse(function (child) {
+				object.traverse((child) => {
 					if (child instanceof THREE.Mesh) {
-						child.material = material9;
+						child.material = material11;
 					}
 				});
 				object.scale.set(8, 8, 8);
@@ -518,18 +473,13 @@
 			});
 
 			const loader10 = new THREE.OBJLoader();
+			const video12 = document.getElementById('video4');
+			const texture12 = new THREE.VideoTexture(video4);
+			const material12 = new THREE.MeshBasicMaterial({ map: texture12 });
 			loader10.load('models/randomshape/randomshape9.obj', function (object) {
-				const textureLoader10 = new THREE.TextureLoader();
-				const normalMap10 = textureLoader10.load('images/gradient.jpg');
-				const material10 = new THREE.MeshStandardMaterial({
-					map: normalMap10,
-					normalMap: normalMap10,
-					roughness: 1,
-					metalness: 0
-				});
-				object.traverse(function (child) {
+				object.traverse((child) => {
 					if (child instanceof THREE.Mesh) {
-						child.material = material10;
+						child.material = material12;
 					}
 				});
 				object.scale.set(8, 8, 8);
