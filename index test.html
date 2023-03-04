@@ -105,7 +105,7 @@
 
 				p.setup = function () {
 					p.createCanvas(800, 800);
-					p.colorMode(p.HSL);
+					p.colorMode(p.HSL, 360, 100, 100, 1);
 					p.angleMode(p.DEGREES);
 					addMesh1();
 					p.frameRate(2);
@@ -119,21 +119,21 @@
 					random12 = p.int(p.random(1, 241));
 					if (loaded) {
 						// p.background(0);
-						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0.1));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), 0.05);
 						p.textSize(p.random(5, 15));
 						p.text(columnData1[random1], p.random(p.width), p.random(p.height));
-						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0.1));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), 0.05);
 						p.textSize(p.random(5, 15));
 						p.text(columnData4[random4], p.random(p.width), p.random(p.height));
-						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0.1));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), 0.05);
 						p.textSize(p.random(5, 15));
 						p.text(columnData8[random8], p.random(p.width), p.random(p.height));
-						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0.1));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), 0.05);
 						p.textSize(p.random(5, 15));
 						p.text(columnData11[random11], p.random(p.width), p.random(p.height));
-						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), p.random(0.1));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), 0.05);
 						p.textSize(p.random(5, 15));
-						p.text(columnData12[random12], p.random(p.width), p.random(p.height), p.random(0.1));
+						p.text(columnData12[random12], p.random(p.width), p.random(p.height));
 					}
 				}
 
