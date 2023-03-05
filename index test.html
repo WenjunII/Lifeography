@@ -48,12 +48,19 @@
 
 			let sketch = function (p) {
 				let loaded = false;
-				let random1, random4, random8, random11, random12, random13;
+				let random1, random2, random3, random4, random5, random6, random7, random8, random9, random10, random11, random12, random13;
 				// let h, s, l, a, q, n;
-				let table1, table4, table8, table11, table12, table13;
+				let table1, table2, table3, table4, table5, table6, table7, table8, table9, table10, table11, table12, table13;
 				let columnData1 = [];
+				let columnData2 = [];
+				let columnData3 = [];
 				let columnData4 = [];
+				let columnData5 = [];
+				let columnData6 = [];
+				let columnData7 = [];
 				let columnData8 = [];
+				let columnData9 = [];
+				let columnData10 = [];
 				let columnData11 = [];
 				let columnData12 = [];
 				let columnData13 = [];
@@ -65,8 +72,15 @@
 
 				p.preload = function () {
 					table1 = p.loadTable('csv/healthdata_active_calories.csv', 'csv', 'header', p.onTableLoaded);
+					table2 = p.loadTable('csv/healthdata_active_time.csv', 'csv', 'header', p.onTableLoaded);
+					table3 = p.loadTable('csv/healthdata_ascent.csv', 'csv', 'header', p.onTableLoaded);
 					table4 = p.loadTable('csv/healthdata_activity_intensity.csv', 'csv', 'header', p.onTableLoaded);
+					table5 = p.loadTable('csv/healthdata_cycles.csv', 'csv', 'header', p.onTableLoaded);
+					table6 = p.loadTable('csv/healthdata_descent.csv', 'csv', 'header', p.onTableLoaded);
+					table7 = p.loadTable('csv/healthdata_distance.csv', 'csv', 'header', p.onTableLoaded);
 					table8 = p.loadTable('csv/healthdata_heart_rate.csv', 'csv', 'header', p.onTableLoaded);
+					table9 = p.loadTable('csv/healthdata_intensity.csv', 'csv', 'header', p.onTableLoaded);
+					table10 = p.loadTable('csv/healthdata_steps.csv', 'csv', 'header', p.onTableLoaded);
 					table11 = p.loadTable('csv/healthdata_stress_level.csv', 'csv', 'header', p.onTableLoaded);
 					table12 = p.loadTable('csv/keywords.csv', 'csv', 'header', p.onTableLoaded);
 					table13 = p.loadTable('csv/healthdata_heart_rate_with_values.csv', 'csv', 'header', p.onTableLoaded);
@@ -75,8 +89,15 @@
 				p.onTableLoaded = function () {
 					console.log('CSV file loaded successfully');
 					console.log(table1.getRowCount() + ' rows loaded');
+					console.log(table2.getRowCount() + ' rows loaded');
+					console.log(table3.getRowCount() + ' rows loaded');
 					console.log(table4.getRowCount() + ' rows loaded');
+					console.log(table5.getRowCount() + ' rows loaded');
+					console.log(table6.getRowCount() + ' rows loaded');
+					console.log(table7.getRowCount() + ' rows loaded');
 					console.log(table8.getRowCount() + ' rows loaded');
+					console.log(table9.getRowCount() + ' rows loaded');
+					console.log(table10.getRowCount() + ' rows loaded');
 					console.log(table11.getRowCount() + ' rows loaded');
 					console.log(table12.getRowCount() + ' rows loaded');
 					console.log(table13.getRowCount() + ' rows loaded');
@@ -84,29 +105,64 @@
 						let row1 = table1.getRow(i);
 						columnData1.push(row1.get('active_calories'));
 					};
-					for (let j = 0; j < table4.getRowCount(); j++) {
-						let row4 = table4.getRow(j);
+					for (let j = 0; j < table2.getRowCount(); j++) {
+						let row2 = table2.getRow(j);
+						columnData2.push(row2.get('active_time'));
+					};
+					for (let k = 0; k < table3.getRowCount(); k++) {
+						let row3 = table3.getRow(k);
+						columnData3.push(row3.get('ascent'));
+					};
+					for (let l = 0; l < table4.getRowCount(); l++) {
+						let row4 = table4.getRow(l);
 						columnData4.push(row4.get('activity_intensity'));
 					}
-					for (let k = 0; k < table8.getRowCount(); k++) {
-						let row8 = table8.getRow(k);
+					for (let m = 0; m < table5.getRowCount(); m++) {
+						let row5 = table5.getRow(m);
+						columnData5.push(row5.get('cycles'));
+					}
+					for (let n = 0; n < table6.getRowCount(); n++) {
+						let row6 = table6.getRow(n);
+						columnData6.push(row6.get('descent'));
+					}
+					for (let o = 0; o < table7.getRowCount(); o++) {
+						let row7 = table7.getRow(o);
+						columnData7.push(row7.get('distance'));
+					}
+					for (let q = 0; q < table8.getRowCount(); q++) {
+						let row8 = table8.getRow(q);
 						columnData8.push(row8.get('heart_rate'));
 					}
-					for (let m = 0; m < table11.getRowCount(); m++) {
-						let row11 = table11.getRow(m);
+					for (let r = 0; r < table9.getRowCount(); r++) {
+						let row9 = table9.getRow(r);
+						columnData9.push(row9.get('intensity'));
+					}
+					for (let s = 0; s < table10.getRowCount(); s++) {
+						let row10 = table10.getRow(s);
+						columnData10.push(row10.get('steps'));
+					}
+					for (let t = 0; t < table11.getRowCount(); t++) {
+						let row11 = table11.getRow(t);
 						columnData11.push(row11.get('stress_level'));
 					}
-					for (let o = 0; o < table12.getRowCount(); o++) {
-						let row12 = table12.getRow(o);
+					for (let u = 0; u < table12.getRowCount(); u++) {
+						let row12 = table12.getRow(u);
 						columnData12.push(row12.get('keywords'));
 					}
-					for (let p = 0; p < table13.getRowCount(); p++) {
-						let row13 = table13.getRow(p);
+					for (let v = 0; v < table13.getRowCount(); v++) {
+						let row13 = table13.getRow(v);
 						columnData13.push(row13.get('heart_rate'));
 					}
 					console.log(columnData1);
+					console.log(columnData2);
+					console.log(columnData3);
 					console.log(columnData4);
+					console.log(columnData5);
+					console.log(columnData6);
+					console.log(columnData7);
 					console.log(columnData8);
+					console.log(columnData9);
+					console.log(columnData10);
 					console.log(columnData11);
 					console.log(columnData12);
 					console.log(columnData13);
@@ -123,8 +179,15 @@
 
 				p.draw = function () {
 					random1 = p.int(p.random(1, 938471));
+					random2 = p.int(p.random(1, 938471));
+					random3 = p.int(p.random(1, 938455));
 					random4 = p.int(p.random(1, 938470));
+					random5 = p.int(p.random(1, 937680));
+					random6 = p.int(p.random(1, 938094));
+					random7 = p.int(p.random(1, 938471));
 					random8 = p.int(p.random(1, 938471));
+					random9 = p.int(p.random(1, 938471));
+					random10 = p.int(p.random(1, 938471));
 					random11 = p.int(p.random(1, 938469));
 					random12 = p.int(p.random(1, 241));
 					random13 = p.int(p.random(1, 227985));
@@ -135,10 +198,31 @@
 						p.text(columnData1[random1], p.random(p.width), p.random(p.height));
 						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), 0.05);
 						p.textSize(p.random(5, 15));
+						p.text(columnData2[random2], p.random(p.width), p.random(p.height));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), 0.05);
+						p.textSize(p.random(5, 15));
+						p.text(columnData3[random3], p.random(p.width), p.random(p.height));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), 0.05);
+						p.textSize(p.random(5, 15));
 						p.text(columnData4[random4], p.random(p.width), p.random(p.height));
 						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), 0.05);
 						p.textSize(p.random(5, 15));
+						p.text(columnData5[random5], p.random(p.width), p.random(p.height));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), 0.05);
+						p.textSize(p.random(5, 15));
+						p.text(columnData6[random6], p.random(p.width), p.random(p.height));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), 0.05);
+						p.textSize(p.random(5, 15));
+						p.text(columnData7[random7], p.random(p.width), p.random(p.height));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), 0.05);
+						p.textSize(p.random(5, 15));
 						p.text(columnData8[random8], p.random(p.width), p.random(p.height));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), 0.05);
+						p.textSize(p.random(5, 15));
+						p.text(columnData9[random9], p.random(p.width), p.random(p.height));
+						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), 0.05);
+						p.textSize(p.random(5, 15));
+						p.text(columnData10[random10], p.random(p.width), p.random(p.height));
 						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), 0.05);
 						p.textSize(p.random(5, 15));
 						p.text(columnData11[random11], p.random(p.width), p.random(p.height));
