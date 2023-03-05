@@ -70,6 +70,10 @@
   .containermanu2 {
     display: none;
   }
+
+  .container3d {
+    display: none;
+  }
 }
 
 /* For devices larger than 400px */
@@ -103,6 +107,10 @@
   .containermanu2 {
     display: none;
   }
+
+  .container3d {
+    display: none;
+  }
 }
 
 /* For devices larger than 550px */
@@ -115,6 +123,10 @@
 
   .container {
     width: 95%;
+    display: none;
+  }
+
+  .container3d {
     display: none;
   }
 
@@ -298,6 +310,10 @@
   }
 
   .keywordtable {
+    display: block;
+  }
+
+  .container3d {
     display: block;
   }
 }

@@ -48,17 +48,20 @@
 
 			let sketch = function (p) {
 				let loaded = false;
-				let random1, random4, random8, random11, random12;
+				let random1, random4, random8, random11, random12, random13;
 				// let h, s, l, a, q, n;
-				let table1, table4, table8, table11, table12;
+				let table1, table4, table8, table11, table12, table13;
 				let columnData1 = [];
 				let columnData4 = [];
 				let columnData8 = [];
 				let columnData11 = [];
 				let columnData12 = [];
+				let columnData13 = [];
 				let audioContext = new AudioContext();
 				let gainNode = audioContext.createGain();
 				gainNode.connect(audioContext.destination);
+				let heartrateValue;
+				let heartRate;
 
 				p.preload = function () {
 					table1 = p.loadTable('csv/healthdata_active_calories.csv', 'csv', 'header', p.onTableLoaded);
@@ -66,6 +69,7 @@
 					table8 = p.loadTable('csv/healthdata_heart_rate.csv', 'csv', 'header', p.onTableLoaded);
 					table11 = p.loadTable('csv/healthdata_stress_level.csv', 'csv', 'header', p.onTableLoaded);
 					table12 = p.loadTable('csv/keywords.csv', 'csv', 'header', p.onTableLoaded);
+					table13 = p.loadTable('csv/healthdata_heart_rate_with_values.csv', 'csv', 'header', p.onTableLoaded);
 				};
 
 				p.onTableLoaded = function () {
@@ -75,6 +79,7 @@
 					console.log(table8.getRowCount() + ' rows loaded');
 					console.log(table11.getRowCount() + ' rows loaded');
 					console.log(table12.getRowCount() + ' rows loaded');
+					console.log(table13.getRowCount() + ' rows loaded');
 					for (let i = 0; i < table1.getRowCount(); i++) {
 						let row1 = table1.getRow(i);
 						columnData1.push(row1.get('active_calories'));
@@ -95,11 +100,16 @@
 						let row12 = table12.getRow(o);
 						columnData12.push(row12.get('keywords'));
 					}
+					for (let p = 0; p < table13.getRowCount(); p++) {
+						let row13 = table13.getRow(p);
+						columnData13.push(row13.get('heart_rate'));
+					}
 					console.log(columnData1);
 					console.log(columnData4);
 					console.log(columnData8);
 					console.log(columnData11);
 					console.log(columnData12);
+					console.log(columnData13);
 					loaded = true;
 				}
 
@@ -117,6 +127,7 @@
 					random8 = p.int(p.random(1, 938471));
 					random11 = p.int(p.random(1, 938469));
 					random12 = p.int(p.random(1, 241));
+					random13 = p.int(p.random(1, 227985));
 					if (loaded) {
 						// p.background(0);
 						p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), 0.05);
@@ -136,18 +147,19 @@
 						p.text(columnData12[random12], p.random(p.width), p.random(p.height));
 					}
 				}
-
 				setInterval(function () {
+							heartRate = columnData13[random13];
+							heartrateValue = p.map(heartRate, 0, 200, 3000, 5000);
 					let oscillator = audioContext.createOscillator();
 					oscillator.type = "sawtooth";
 					oscillator.connect(gainNode);
-					oscillator.frequency.value = p.random(1, 10000);
+					oscillator.frequency.value = heartrateValue;
 					gainNode.gain.value = 0.03;
 					oscillator.start();
 					setTimeout(function () {
 						oscillator.stop();
 					}, 100);
-				}, 1500);
+				}, 2000);
 			};
 
 			const scene = new THREE.Scene();
