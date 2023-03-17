@@ -57,7 +57,7 @@
 		function setupVideos() {
 			for (let i = 0; i < myVideos.length; i++) {
 				myVideos[i].size(800, 534);
-				myVideos[i].play();
+				// myVideos[i].play();
 				myVideos[i].loop();
 				myVideos[i].volume(0);
 				myVideos[i].hide();
@@ -82,15 +82,7 @@ function playAllVideos() {
         if (myVideos[i].loadedmetadata) {
             if (myVideos[i].paused) {
                 myVideos[i].play().catch((error) => {
-                    // If the video couldn't play due to autoplay restrictions, try muting it and playing again
-                    if (error.name === 'NotAllowedError') {
-                        myVideos[i].volume(0);
-                        myVideos[i].play().catch((error) => {
-                            console.error('Error playing video after muting:', error);
-                        });
-                    } else {
-                        console.error('Error playing video:', error);
-                    }
+                    console.error('Error playing video:', error);
                 });
             }
         }
