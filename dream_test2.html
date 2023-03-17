@@ -21,6 +21,8 @@
 
 <body class="body">
 
+	<button id="startButton">Start</button>
+
 	<script>
 		// Sketch One
 
@@ -29,6 +31,7 @@
 		let getVideo1, getVideo2, getVideo3, getVideo4, getVideo5, getVideo6, getVideo7;
 		let loadedVideosCount = 0;
 		let myVideos = [];
+		const startButton = document.getElementById('startButton');
 
 		function preload() {
 			myVideos[0] = createVideo(['videos/background.mp4'], onVideoLoaded);
@@ -67,19 +70,22 @@
 			frameRate(10);
 		}
 
-		function mousePressed() {
+		startButton.addEventListener('click', () => {
+			startButton.style.display = 'none';
 			playAllVideos();
-		}
+		});
 
 		function playAllVideos() {
-  for (let i = 0; i < myVideos.length; i++) {
-    if (myVideos[i].loadedmetadata) {
-      if (myVideos[i].paused) {
-        myVideos[i].play();
-      }
-    }
-  }
-}
+			for (let i = 0; i < myVideos.length; i++) {
+				if (myVideos[i].loadedmetadata) {
+					if (myVideos[i].paused) {
+						myVideos[i].play().catch((error) => {
+							console.error('Error playing video:', error);
+						});
+					}
+				}
+			}
+		}
 
 		function draw() {
 			background(25, 25, 25);
