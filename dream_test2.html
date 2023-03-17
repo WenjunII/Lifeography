@@ -65,18 +65,20 @@
 		function setup() {
 			createCanvas(800, 534);
 			frameRate(10);
-			mousePressed(playAllVideos);
+		}
+
+		function mousePressed() {
+			playAllVideos();
 		}
 
 		function playAllVideos() {
 			for (let i = 0; i < myVideos.length; i++) {
-				if (!myVideos[i].isPlaying()) {
-					myVideos[i].play();
+				if (myVideos[i].loadedmetadata) {
+					if (!myVideos[i].isPlaying()) {
+						myVideos[i].play();
+					}
 				}
 			}
-		}
-
-		function mousePressed() {
 		}
 
 		function draw() {
