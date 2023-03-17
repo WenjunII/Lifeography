@@ -72,14 +72,14 @@
 		}
 
 		function playAllVideos() {
-			for (let i = 0; i < myVideos.length; i++) {
-				if (myVideos[i].loadedmetadata) {
-					if (!myVideos[i].isPlaying()) {
-						myVideos[i].play();
-					}
-				}
-			}
-		}
+  for (let i = 0; i < myVideos.length; i++) {
+    if (myVideos[i].loadedmetadata) {
+      if (myVideos[i].paused) {
+        myVideos[i].play();
+      }
+    }
+  }
+}
 
 		function draw() {
 			background(25, 25, 25);
