@@ -6,6 +6,7 @@ let dpositionX1 = 0, dpositionY1 = 0, dpositionX2 = 0, dpositionY2 = 0, dpositio
 		const startButton = document.getElementById('startButton');
 		let myAudio;
         let myCanvas;
+        let volumeSlider;
 
 		function preload() {
 			myVideos[0] = createVideo(['videos/background.mp4'], onVideoLoaded);
@@ -43,6 +44,8 @@ let dpositionX1 = 0, dpositionY1 = 0, dpositionX2 = 0, dpositionY2 = 0, dpositio
 		function setup() {
 			myCanvas = createCanvas(800, 534);
             myCanvas.parent('p5sewing');
+            volumeSlider = document.getElementById('volumeSlider');
+    volumeSlider.addEventListener('input', adjustVolume);
 			frameRate(10);
 			noLoop();
 		}
@@ -63,7 +66,10 @@ let dpositionX1 = 0, dpositionY1 = 0, dpositionX2 = 0, dpositionY2 = 0, dpositio
 			}
 		}
 
-
+        function adjustVolume() {
+            const normalizedVolume = volumeSlider.value / 100;
+            myAudio.setVolume(normalizedVolume);
+        }
 
 		function draw() {
 			background(25, 25, 25);

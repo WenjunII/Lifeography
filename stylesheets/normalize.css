@@ -452,6 +452,15 @@ th {
   font-family: Verdana;
 }
 
+#reminder {
+  letter-spacing: 0.2px;
+  font-size: smaller;
+  line-height: 22px;
+  font-family: Verdana;
+  color: gray;
+  
+}
+
 .hello2 {
   width: 850px;
   margin-left: auto;
