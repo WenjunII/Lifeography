@@ -68,12 +68,14 @@
 		function setup() {
 			createCanvas(800, 534);
 			frameRate(10);
+			noLoop();
 		}
 
 		startButton.addEventListener('click', () => {
-			startButton.style.display = 'none';
-			playAllVideos();
-		});
+    startButton.style.display = 'none';
+    playAllVideos();
+    loop(); // Resume the draw loop
+});
 
 		function playAllVideos() {
 			for (let i = 0; i < myVideos.length; i++) {
