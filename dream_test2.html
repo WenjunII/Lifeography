@@ -77,17 +77,25 @@
     loop(); // Resume the draw loop
 });
 
-		function playAllVideos() {
-			for (let i = 0; i < myVideos.length; i++) {
-				if (myVideos[i].loadedmetadata) {
-					if (myVideos[i].paused) {
-						myVideos[i].play().catch((error) => {
-							console.error('Error playing video:', error);
-						});
-					}
-				}
-			}
-		}
+function playAllVideos() {
+    for (let i = 0; i < myVideos.length; i++) {
+        if (myVideos[i].loadedmetadata) {
+            if (myVideos[i].paused) {
+                myVideos[i].play().catch((error) => {
+                    // If the video couldn't play due to autoplay restrictions, try muting it and playing again
+                    if (error.name === 'NotAllowedError') {
+                        myVideos[i].volume(0);
+                        myVideos[i].play().catch((error) => {
+                            console.error('Error playing video after muting:', error);
+                        });
+                    } else {
+                        console.error('Error playing video:', error);
+                    }
+                });
+            }
+        }
+    }
+}
 
 		function draw() {
 			background(25, 25, 25);
