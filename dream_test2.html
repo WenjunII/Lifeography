@@ -74,20 +74,19 @@
 		startButton.addEventListener('click', () => {
     startButton.style.display = 'none';
     playAllVideos();
-    loop(); // Resume the draw loop
+    loop();
 });
 
 function playAllVideos() {
     for (let i = 0; i < myVideos.length; i++) {
         if (myVideos[i].loadedmetadata) {
-            if (myVideos[i].paused) {
-                myVideos[i].play().catch((error) => {
-                    console.error('Error playing video:', error);
-                });
-            }
+            myVideos[i].play();
+            console.log("Video started playing.");
         }
     }
 }
+
+
 
 		function draw() {
 			background(25, 25, 25);
