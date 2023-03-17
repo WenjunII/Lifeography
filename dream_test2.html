@@ -32,6 +32,7 @@
 		let loadedVideosCount = 0;
 		let myVideos = [];
 		const startButton = document.getElementById('startButton');
+		let myAudio;
 
 		function preload() {
 			myVideos[0] = createVideo(['videos/background.mp4'], onVideoLoaded);
@@ -41,6 +42,7 @@
 			myVideos[4] = createVideo(['videos/mother.mp4'], onVideoLoaded);
 			myVideos[5] = createVideo(['videos/sewing.mp4'], onVideoLoaded);
 			myVideos[6] = createVideo(['videos/thigh.mp4'], onVideoLoaded);
+			myAudio = loadSound('audios/sewingmachinesound.mp3');
 		}
 
 		function onVideoLoaded() {
@@ -72,19 +74,20 @@
 		}
 
 		startButton.addEventListener('click', () => {
-    startButton.style.display = 'none';
-    playAllVideos();
-    loop();
-});
+			startButton.style.display = 'none';
+			playAllVideos();
+			myAudio.play();
+			loop();
+		});
 
-function playAllVideos() {
-    for (let i = 0; i < myVideos.length; i++) {
-        if (myVideos[i].loadedmetadata) {
-            myVideos[i].play();
-            console.log("Video started playing.");
-        }
-    }
-}
+		function playAllVideos() {
+			for (let i = 0; i < myVideos.length; i++) {
+				if (myVideos[i].loadedmetadata) {
+					myVideos[i].play();
+					console.log("Video started playing.");
+				}
+			}
+		}
 
 
 
