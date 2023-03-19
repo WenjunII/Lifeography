@@ -1,7 +1,7 @@
 console.log('SCRIPT LOADED');
 
 let mesh3 = null;
-let myMixer;
+let myMixer, myMixer2, myMixer3, myMixer4, myMixer5, myMixer6, myMixer7, myMixer8, myMixer9, myMixer10;
 
 let indexsketch = function (p) {
     let loaded = false;
@@ -122,6 +122,7 @@ let indexsketch = function (p) {
     }
 
     p.draw = function () {
+
         random1 = p.int(p.random(1, 938471));
         random2 = p.int(p.random(1, 938471));
         random3 = p.int(p.random(1, 938455));
@@ -246,8 +247,15 @@ const video2 = document.getElementById('video2');
 const texture2 = new THREE.VideoTexture(video2);
 
 const clock = new THREE.Clock();
-
-
+const clock2 = new THREE.Clock();
+const clock3 = new THREE.Clock();
+const clock4 = new THREE.Clock();
+const clock5 = new THREE.Clock();
+const clock6 = new THREE.Clock();
+const clock7 = new THREE.Clock();
+const clock8 = new THREE.Clock();
+const clock9 = new THREE.Clock();
+const clock10 = new THREE.Clock();
 
 loader.load('models/wenjuniinew.glb', function (gltf) {
     gltf.scene.traverse(child => {
@@ -274,7 +282,6 @@ loader.load('models/wenjuniinew.glb', function (gltf) {
     video1.play();
     texture1.needsUpdate = true;
 
-
     const material2 = gltf.scene.getObjectByName('SuperShapesMesh004').material;
     material2.map = texture2;
     texture2.offset.y = -0.03;
@@ -288,9 +295,6 @@ loader.load('models/wenjuniinew.glb', function (gltf) {
     gltf.animations.forEach(animation => {
         myMixer.clipAction(animation).play();
     });
-
-    scene.add(gltf.scene);
-
 
     scene.add(gltf.scene);
     scene.position.set(0, 0, 0);
@@ -325,28 +329,35 @@ function addMesh1() {
     animate();
 }
 
-const loader2 = new THREE.OBJLoader();
+const loader2 = new THREE.GLTFLoader();
 const video4 = document.getElementById('video4');
 const texture4 = new THREE.VideoTexture(video4);
 const material4 = new THREE.MeshBasicMaterial({ map: texture4 });
-loader2.load('models/randomshape/randomshape1.obj', function (object) {
-    object.traverse((child) => {
+loader2.load('models/randomshape/randomshape1.glb', function (gltf) {
+    gltf.scene.traverse(function (object) { object.frustumCulled = false; });
+    gltf.scene.traverse((child) => {
         if (child instanceof THREE.Mesh) {
             child.material = material4;
         }
     });
     video4.play();
     texture4.needsUpdate = true;
-    object.scale.set(8, 8, 8);
-    object.position.set(-120, -300, 50);
-    object.rotation.set(0, 180, 0);
-    scene.add(object);
-    object.rotation.y = 0;
+    myMixer2 = new THREE.AnimationMixer(gltf.scene);
+    const animations = gltf.animations;
+
+    gltf.animations.forEach(animation => {
+        myMixer2.clipAction(animation).play();
+    });
+    gltf.scene.scale.set(8, 8, 8);
+    gltf.scene.position.set(-120, -300, 50);
+    gltf.scene.rotation.set(0, 180, 0);
+    scene.add(gltf.scene);
+    gltf.scene.rotation.y = 0;
     const rotationSpeed2 = 0.01;
     const moveSpeed2 = 1;
     function update2() {
-        object.rotation.y += rotationSpeed2;
-        object.rotation.x += rotationSpeed2;
+        gltf.scene.rotation.y += rotationSpeed2;
+        gltf.scene.rotation.x += rotationSpeed2;
     }
     function animate() {
         requestAnimationFrame(animate);
@@ -355,24 +366,31 @@ loader2.load('models/randomshape/randomshape1.obj', function (object) {
     animate();
 });
 
-const loader3 = new THREE.OBJLoader();
-loader3.load('models/randomshape/randomshape2.obj', function (object) {
-    object.traverse((child) => {
+const loader3 = new THREE.GLTFLoader();
+loader3.load('models/randomshape/randomshape2.glb', function (gltf) {
+    gltf.scene.traverse(function (object) { object.frustumCulled = false; });
+    gltf.scene.traverse((child) => {
         if (child instanceof THREE.Mesh) {
             child.material = material4;
         }
     });
     video4.play();
     texture4.needsUpdate = true;
-    object.scale.set(8, 8, 8);
-    object.position.set(200, 0, 150);
-    object.rotation.set(0, 0, 0);
-    scene.add(object);
-    object.rotation.y = 0;
+    myMixer3 = new THREE.AnimationMixer(gltf.scene);
+    const animations = gltf.animations;
+
+    gltf.animations.forEach(animation => {
+        myMixer3.clipAction(animation).play();
+    });
+    gltf.scene.scale.set(8, 8, 8);
+    gltf.scene.position.set(200, 0, 150);
+    gltf.scene.rotation.set(0, 0, 0);
+    scene.add(gltf.scene);
+    gltf.scene.rotation.y = 0;
     const rotationSpeed3 = 0.01;
     function update3() {
-        object.rotation.y += rotationSpeed3;
-        object.rotation.z += rotationSpeed3;
+        gltf.scene.rotation.y += rotationSpeed3;
+        gltf.scene.rotation.z += rotationSpeed3;
     }
     function animate() {
         requestAnimationFrame(animate);
@@ -381,23 +399,30 @@ loader3.load('models/randomshape/randomshape2.obj', function (object) {
     animate();
 });
 
-const loader4 = new THREE.OBJLoader();
-loader4.load('models/randomshape/randomshape3.obj', function (object) {
-    object.traverse((child) => {
+const loader4 = new THREE.GLTFLoader();
+loader4.load('models/randomshape/randomshape3.glb', function (gltf) {
+    gltf.scene.traverse(function (object) { object.frustumCulled = false; });
+    gltf.scene.traverse((child) => {
         if (child instanceof THREE.Mesh) {
             child.material = material4;
         }
     });
     video4.play();
     texture4.needsUpdate = true;
-    object.scale.set(8, 8, 8);
-    object.position.set(-200, 200, 20);
-    object.rotation.set(0, 0, 0);
-    scene.add(object);
-    object.rotation.y = 0;
+    myMixer4 = new THREE.AnimationMixer(gltf.scene);
+    const animations = gltf.animations;
+
+    gltf.animations.forEach(animation => {
+        myMixer4.clipAction(animation).play();
+    });
+    gltf.scene.scale.set(8, 8, 8);
+    gltf.scene.position.set(-200, 200, 20);
+    gltf.scene.rotation.set(0, 0, 0);
+    scene.add(gltf.scene);
+    gltf.scene.rotation.y = 0;
     const rotationSpeed4 = 0.01;
     function update4() {
-        object.rotation.y += rotationSpeed4;
+        gltf.scene.rotation.y += rotationSpeed4;
     }
     function animate() {
         requestAnimationFrame(animate);
@@ -406,23 +431,30 @@ loader4.load('models/randomshape/randomshape3.obj', function (object) {
     animate();
 });
 
-const loader5 = new THREE.OBJLoader();
-loader5.load('models/randomshape/randomshape4.obj', function (object) {
-    object.traverse((child) => {
+const loader5 = new THREE.GLTFLoader();
+loader5.load('models/randomshape/randomshape4.glb', function (gltf) {
+    gltf.scene.traverse(function (object) { object.frustumCulled = false; });
+    gltf.scene.traverse((child) => {
         if (child instanceof THREE.Mesh) {
             child.material = material4;
         }
     });
     video4.play();
     texture4.needsUpdate = true;
-    object.scale.set(8, 8, 8);
-    object.position.set(-300, -200, 120);
-    object.rotation.set(0, 0, 0);
-    scene.add(object);
-    object.rotation.y = 0;
+    myMixer5 = new THREE.AnimationMixer(gltf.scene);
+    const animations = gltf.animations;
+
+    gltf.animations.forEach(animation => {
+        myMixer5.clipAction(animation).play();
+    });
+    gltf.scene.scale.set(8, 8, 8);
+    gltf.scene.position.set(-300, -200, 120);
+    gltf.scene.rotation.set(0, 0, 0);
+    scene.add(gltf.scene);
+    gltf.scene.rotation.y = 0;
     const rotationSpeed5 = 0.01;
     function update5() {
-        object.rotation.x += rotationSpeed5;
+        gltf.scene.rotation.x += rotationSpeed5;
     }
     function animate() {
         requestAnimationFrame(animate);
@@ -431,24 +463,31 @@ loader5.load('models/randomshape/randomshape4.obj', function (object) {
     animate();
 });
 
-const loader6 = new THREE.OBJLoader();
-loader6.load('models/randomshape/randomshape5.obj', function (object) {
-    object.traverse((child) => {
+const loader6 = new THREE.GLTFLoader();
+loader6.load('models/randomshape/randomshape5.glb', function (gltf) {
+    gltf.scene.traverse(function (object) { object.frustumCulled = false; });
+    gltf.scene.traverse((child) => {
         if (child instanceof THREE.Mesh) {
             child.material = material4;
         }
     });
     video4.play();
     texture4.needsUpdate = true;
-    object.scale.set(8, 8, 8);
-    object.position.set(-10, -100, -50);
-    object.rotation.set(0, 180, 0);
-    scene.add(object);
-    object.rotation.y = 180;
+    myMixer6 = new THREE.AnimationMixer(gltf.scene);
+    const animations = gltf.animations;
+
+    gltf.animations.forEach(animation => {
+        myMixer6.clipAction(animation).play();
+    });
+    gltf.scene.scale.set(8, 8, 8);
+    gltf.scene.position.set(-10, -100, -50);
+    gltf.scene.rotation.set(0, 180, 0);
+    scene.add(gltf.scene);
+    gltf.scene.rotation.y = 180;
     const rotationSpeed6 = 0.01;
     function update6() {
-        object.rotation.x += rotationSpeed6;
-        object.rotation.z += rotationSpeed6;
+        gltf.scene.rotation.x += rotationSpeed6;
+        gltf.scene.rotation.z += rotationSpeed6;
     }
     function animate() {
         requestAnimationFrame(animate);
@@ -457,23 +496,30 @@ loader6.load('models/randomshape/randomshape5.obj', function (object) {
     animate();
 });
 
-const loader7 = new THREE.OBJLoader();
-loader7.load('models/randomshape/randomshape6.obj', function (object) {
-    object.traverse((child) => {
+const loader7 = new THREE.GLTFLoader();
+loader7.load('models/randomshape/randomshape6.glb', function (gltf) {
+    gltf.scene.traverse(function (object) { object.frustumCulled = false; });
+    gltf.scene.traverse((child) => {
         if (child instanceof THREE.Mesh) {
             child.material = material4;
         }
     });
     video4.play();
     texture4.needsUpdate = true;
-    object.scale.set(8, 8, 8);
-    object.position.set(250, 300, 200);
-    object.rotation.set(0, 0, 0);
-    scene.add(object);
-    object.rotation.y = 0;
+    myMixer7 = new THREE.AnimationMixer(gltf.scene);
+    const animations = gltf.animations;
+
+    gltf.animations.forEach(animation => {
+        myMixer7.clipAction(animation).play();
+    });
+    gltf.scene.scale.set(8, 8, 8);
+    gltf.scene.position.set(250, 300, 200);
+    gltf.scene.rotation.set(0, 0, 0);
+    scene.add(gltf.scene);
+    gltf.scene.rotation.y = 0;
     const rotationSpeed7 = 0.01;
     function update7() {
-        object.rotation.z += rotationSpeed7;
+        gltf.scene.rotation.z += rotationSpeed7;
     }
     function animate() {
         requestAnimationFrame(animate);
@@ -482,25 +528,32 @@ loader7.load('models/randomshape/randomshape6.obj', function (object) {
     animate();
 });
 
-const loader8 = new THREE.OBJLoader();
-loader8.load('models/randomshape/randomshape7.obj', function (object) {
-    object.traverse((child) => {
+const loader8 = new THREE.GLTFLoader();
+loader8.load('models/randomshape/randomshape7.glb', function (gltf) {
+    gltf.scene.traverse(function (object) { object.frustumCulled = false; });
+    gltf.scene.traverse((child) => {
         if (child instanceof THREE.Mesh) {
             child.material = material4;
         }
     });
     video4.play();
     texture4.needsUpdate = true;
-    object.scale.set(8, 8, 8);
-    object.position.set(280, -260, 230);
-    object.rotation.set(0, 180, 0);
-    scene.add(object);
-    object.rotation.y = 180;
+    myMixer8 = new THREE.AnimationMixer(gltf.scene);
+    const animations = gltf.animations;
+
+    gltf.animations.forEach(animation => {
+        myMixer8.clipAction(animation).play();
+    });
+    gltf.scene.scale.set(8, 8, 8);
+    gltf.scene.position.set(280, -260, 230);
+    gltf.scene.rotation.set(0, 180, 0);
+    scene.add(gltf.scene);
+    gltf.scene.rotation.y = 180;
     const rotationSpeed8 = 0.01;
     function update8() {
-        object.rotation.y += rotationSpeed8;
-        object.rotation.x += rotationSpeed8;
-        object.rotation.z += rotationSpeed8;
+        gltf.scene.rotation.y += rotationSpeed8;
+        gltf.scene.rotation.x += rotationSpeed8;
+        gltf.scene.rotation.z += rotationSpeed8;
     }
     function animate() {
         requestAnimationFrame(animate);
@@ -509,24 +562,31 @@ loader8.load('models/randomshape/randomshape7.obj', function (object) {
     animate();
 });
 
-const loader9 = new THREE.OBJLoader();
-loader9.load('models/randomshape/randomshape8.obj', function (object) {
-    object.traverse((child) => {
+const loader9 = new THREE.GLTFLoader();
+loader9.load('models/randomshape/randomshape8.glb', function (gltf) {
+    gltf.scene.traverse(function (object) { object.frustumCulled = false; });
+    gltf.scene.traverse((child) => {
         if (child instanceof THREE.Mesh) {
             child.material = material4;
         }
     });
     video4.play();
     texture4.needsUpdate = true;
-    object.scale.set(8, 8, 8);
-    object.position.set(-100, 40, 280);
-    object.rotation.set(0, 180, 0);
-    scene.add(object);
-    object.rotation.y = 180;
+    myMixer9 = new THREE.AnimationMixer(gltf.scene);
+    const animations = gltf.animations;
+
+    gltf.animations.forEach(animation => {
+        myMixer9.clipAction(animation).play();
+    });
+    gltf.scene.scale.set(8, 8, 8);
+    gltf.scene.position.set(-100, 40, 280);
+    gltf.scene.rotation.set(0, 180, 0);
+    scene.add(gltf.scene);
+    gltf.scene.rotation.y = 180;
     const rotationSpeed9 = 0.01;
     function update9() {
-        object.rotation.y += rotationSpeed9;
-        object.rotation.x += rotationSpeed9;
+        gltf.scene.rotation.y += rotationSpeed9;
+        gltf.scene.rotation.x += rotationSpeed9;
     }
     function animate() {
         requestAnimationFrame(animate);
@@ -535,24 +595,31 @@ loader9.load('models/randomshape/randomshape8.obj', function (object) {
     animate();
 });
 
-const loader10 = new THREE.OBJLoader();
-loader10.load('models/randomshape/randomshape9.obj', function (object) {
-    object.traverse((child) => {
+const loader10 = new THREE.GLTFLoader();
+loader10.load('models/randomshape/randomshape9.glb', function (gltf) {
+    gltf.scene.traverse(function (object) { object.frustumCulled = false; });
+    gltf.scene.traverse((child) => {
         if (child instanceof THREE.Mesh) {
             child.material = material4;
         }
     });
     video4.play();
     texture4.needsUpdate = true;
-    object.scale.set(8, 8, 8);
-    object.position.set(130, -180, 340);
-    object.rotation.set(0, 180, 0);
-    scene.add(object);
-    object.rotation.y = 180;
+    myMixer10 = new THREE.AnimationMixer(gltf.scene);
+    const animations = gltf.animations;
+
+    gltf.animations.forEach(animation => {
+        myMixer10.clipAction(animation).play();
+    });
+    gltf.scene.scale.set(8, 8, 8);
+    gltf.scene.position.set(130, -180, 340);
+    gltf.scene.rotation.set(0, 180, 0);
+    scene.add(gltf.scene);
+    gltf.scene.rotation.y = 180;
     const rotationSpeed10 = 0.01;
     function update10() {
-        object.rotation.y += rotationSpeed10;
-        object.rotation.z += rotationSpeed10;
+        gltf.scene.rotation.y += rotationSpeed10;
+        gltf.scene.rotation.z += rotationSpeed10;
     }
     function animate() {
         requestAnimationFrame(animate);
@@ -570,4 +637,41 @@ function animate() {
         const delta = clock.getDelta();
         myMixer.update(delta);
     }
+    if (myMixer2) {
+        const delta = clock2.getDelta();
+        myMixer2.update(delta);
+    }
+    if (myMixer3) {
+        const delta = clock3.getDelta();
+        myMixer3.update(delta);
+    }
+    if (myMixer4) {
+        const delta = clock4.getDelta();
+        myMixer4.update(delta);
+    }
+    if (myMixer5) {
+        const delta = clock5.getDelta();
+        myMixer5.update(delta);
+    }
+    if (myMixer6) {
+        const delta = clock6.getDelta();
+        myMixer6.update(delta);
+    }
+    if (myMixer7) {
+        const delta = clock7.getDelta();
+        myMixer7.update(delta);
+    }
+    if (myMixer8) {
+        const delta = clock8.getDelta();
+        myMixer8.update(delta);
+    }
+    if (myMixer9) {
+        const delta = clock9.getDelta();
+        myMixer9.update(delta);
+    }
+    if (myMixer10) {
+        const delta = clock10.getDelta();
+        myMixer10.update(delta);
+    }
+
 };
