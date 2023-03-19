@@ -4,6 +4,7 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.js"></script>
+    <script src="scripts/heartratesound.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheets/normalize.css">
@@ -996,6 +997,7 @@
                 </table>
             </div>
             <div class="eight columns middle">
+                <div id="c1" style="display:none"></div>
                 <div class="section1">
                     <br>
                     <div class="title2">
@@ -1075,14 +1077,15 @@
                         <script src="scripts/sketch_dream_sewing.js"></script>
                     </div>
                     <br>
-                    <p id="reminder">Volume:</p><input type="range" id="volumeSlider" min="0" max="100" step="1" value="50" />
+                    <p id="reminder">Volume:</p><input type="range" id="volumeSlider" min="0" max="100" step="1"
+                        value="50" />
                     <br>
                     <br>
                     <button id="nextButton">Next</button>
                     <script>
-                        document.getElementById("nextButton").addEventListener("click", function() {
-    window.location.href = "https://wenjunii.github.io/Lifeography/dream_2.html";
-});
+                        document.getElementById("nextButton").addEventListener("click", function () {
+                            window.location.href = "https://wenjunii.github.io/Lifeography/dream_2.html";
+                        });
                     </script>
                     <div class="source">
                         <p>

@@ -136,17 +136,17 @@ let sketch = function (p) {
 
     p.draw = function () {
         p.fill(0, 0, 50, 1);
-            p.textSize(10);
-            p.text("click for sound", 10, 250);
-            p.fill(0, 0, 50, 1);
-            p.textSize(10);
-            p.text("heavy data loading", 10, 270);
-            p.fill(0, 0, 50, 1);
-            p.textSize(10);
-            p.text("be patient", 10, 290);
-            p.fill(0, 0, 50, 1);
-            p.textSize(10);
-            p.text("use the mouse to move around", 10, 310);
+        p.textSize(10);
+        p.text("click for sound", 10, 250);
+        p.fill(0, 0, 50, 1);
+        p.textSize(10);
+        p.text("heavy data loading", 10, 270);
+        p.fill(0, 0, 50, 1);
+        p.textSize(10);
+        p.text("be patient", 10, 290);
+        p.fill(0, 0, 50, 1);
+        p.textSize(10);
+        p.text("use the mouse to move around", 10, 310);
         random1 = p.int(p.random(1, 938471));
         random2 = p.int(p.random(1, 938471));
         random3 = p.int(p.random(1, 938455));
