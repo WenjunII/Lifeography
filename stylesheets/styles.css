@@ -1,34 +1,41 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
+
 .hello {
 	letter-spacing: 0.2px;
 	font-size: medium;
 	line-height: 22px;
 	font-family: Verdana;
 }
+
 .hello2 {
 	width: 800px;
 	margin-left: auto;
-  margin-right: auto;
+	margin-right: auto;
 }
+
 .body {
 	background-color: rgb(25, 25, 25);
 	color: rgb(230, 230, 230);
 }
+
 .title {
 	text-align: center;
 	letter-spacing: 1px;
 }
+
 .keyword {
 	text-decoration: underline;
 	text-decoration-color: rgba(255, 255, 0, 0.4);
 }
+
 .voiceover {
 	font-weight: bold;
 	font-style: italic;
 	background-color: blue;
 }
+
 .voiceover2 {
 	text-transform: uppercase;
 	border-top: 1px solid;
@@ -37,53 +44,66 @@
 	font-size: small;
 	letter-spacing: 1px;
 }
+
 .speech {
 	border: 1px dotted;
 	padding: 10px;
 }
+
 .text {
 	font-size: medium;
 	letter-spacing: 0.8px;
 	line-height: 18px;
 }
+
 .portrait {
 	text-align: center;
 }
+
 .textchinese {
 	font-size: small;
 	letter-spacing: 0.5px;
 }
-.dottedhr  {
-    border: 1px dotted;
-    border-style: none none dotted;
-    width: 500px;
+
+.dottedhr {
+	border: 1px dotted;
+	border-style: none none dotted;
+	width: 500px;
 }
+
 .subtitle {
 	letter-spacing: 1px;
 	text-align: center;
 }
+
 .column {
-  float: left;
-  padding: 2px;
+	float: left;
+	padding: 2px;
 }
-.left, .right {
-  width: 15%;
+
+.left,
+.right {
+	width: 15%;
 }
+
 .middle {
-  width: 70%;
-  border-right: 1px dotted darkgrey;
-  border-left: 1px dotted darkgrey;
+	width: 70%;
+	border-right: 1px dotted darkgrey;
+	border-left: 1px dotted darkgrey;
 }
+
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
+
 .breakline {
 	border-top: 1px solid darkgrey;
 	border-bottom: 1px solid darkgrey;
 	padding: 2px;
 }
+
 .keywordtable {
 	text-align: center;
 	letter-spacing: 0.3px;
@@ -93,6 +113,7 @@
 	position: relative;
 	top: 750px;
 }
+
 .speechreconition {
 	font-style: italic;
 	padding: 3px;
@@ -101,6 +122,7 @@
 	width: 200px;
 	font-size: small;
 }
+
 .translation {
 	font-style: italic;
 	padding: 3px;
@@ -109,9 +131,11 @@
 	width: 170px;
 	font-size: smaller;
 }
+
 .sewingmachine {
 	width: 800px;
 }
+
 .speak {
 	font-style: italic;
 	padding: 3px;
@@ -135,6 +159,7 @@
 	top: 2950px;
 	left: 50px;
 }
+
 .age {
 	font-style: italic;
 	padding: 3px;
@@ -144,28 +169,35 @@
 	font-size: smaller;
 	text-align: center;
 	margin-left: auto;
-  margin-right: auto;
+	margin-right: auto;
 }
+
 #c4 {
 	text-align: center;
 }
+
 .short {
 	text-align: center;
 }
+
 .source {
 	font-size: smaller;
 	color: rgba(255, 255, 0, 0.15);
 	text-align: right;
 }
+
 a:link {
-color: rgba(255, 255, 0, 0.15);
+	color: rgba(255, 255, 0, 0.15);
 }
+
 a:visited {
-color: rgba(255, 255, 0, 0.15);
+	color: rgba(255, 255, 0, 0.15);
 }
+
 a:hover {
-color: rgba(255, 255, 0, 0.15);
+	color: rgba(255, 255, 0, 0.15);
 }
+
 a:active {
-color: rgba(255, 255, 0, 0.15);
+	color: rgba(255, 255, 0, 0.15);
 }
