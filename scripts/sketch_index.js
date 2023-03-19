@@ -3,7 +3,7 @@ console.log('SCRIPT LOADED');
 let mesh3 = null;
 let myMixer;
 
-let sketch = function (p) {
+let indexsketch = function (p) {
     let loaded = false;
     let random1, random2, random3, random4, random5, random6, random7, random8, random9, random10, random11, random12, random13;
     // let h, s, l, a, q, n;
@@ -244,19 +244,19 @@ let sketch = function (p) {
             p.text(columnData12[random12], p.random(p.width), p.random(p.height));
         }
     }
-    setInterval(function () {
-        heartRate = columnData13[random13];
-        heartrateValue = p.map(heartRate, 0, 200, 3000, 5000);
-        let oscillator = audioContext.createOscillator();
-        oscillator.type = "sawtooth";
-        oscillator.connect(gainNode);
-        oscillator.frequency.value = heartrateValue;
-        gainNode.gain.value = 0.03;
-        oscillator.start();
-        setTimeout(function () {
-            oscillator.stop();
-        }, 100);
-    }, 2000);
+    // setInterval(function () {
+    //     heartRate = columnData13[random13];
+    //     heartrateValue = p.map(heartRate, 0, 200, 3000, 5000);
+    //     let oscillator = audioContext.createOscillator();
+    //     oscillator.type = "sawtooth";
+    //     oscillator.connect(gainNode);
+    //     oscillator.frequency.value = heartrateValue;
+    //     gainNode.gain.value = 0.03;
+    //     oscillator.start();
+    //     setTimeout(function () {
+    //         oscillator.stop();
+    //     }, 100);
+    // }, 2000);
 };
 
 const scene = new THREE.Scene();
@@ -349,16 +349,16 @@ function addLights() {
     scene.add(ambientlightprobe);
 }
 
-let myp5 = new p5(sketch);
-setTimeout(() => {
-    if (myp5.canvas) {
-        myp5.canvas.style.display = 'none';
-    }
-}, 1000);
+let myp53 = new p5(indexsketch);
+// setTimeout(() => {
+//     if (myp5.canvas) {
+//         myp5.canvas.style.display = 'none';
+//     }
+// }, 1000);
 
 function addMesh1() {
     texture3 = new THREE.Texture();
-    texture3.image = myp5.canvas;
+    texture3.image = myp53.canvas;
     texture3.needsUpdate = true;
     let material3 = new THREE.MeshBasicMaterial({ map: texture3 });
     let geometry3 = new THREE.PlaneGeometry(800, 800);

@@ -1,6 +1,6 @@
 console.log('SCRIPT LOADED');
 
-let sketch = function (p) {
+let heartratesound = function (p) {
     let loaded = false;
     let random13;
     // let h, s, l, a, q, n;
@@ -53,7 +53,7 @@ let sketch = function (p) {
     }, 2000);
 };
 
-let myp5 = new p5(sketch, 'c1');
+let myp5 = new p5(heartratesound, 'c2');
 setTimeout(() => {
     if (myp5.canvas) {
         myp5.canvas.style.display = 'none';
