@@ -5,9 +5,9 @@ let myMixer;
 
 let indexsketch = function (p) {
     let loaded = false;
-    let random1, random2, random3, random4, random5, random6, random7, random8, random9, random10, random11, random12, random13;
+    let random1, random2, random3, random4, random5, random6, random7, random8, random9, random10, random11, random12;
     // let h, s, l, a, q, n;
-    let table1, table2, table3, table4, table5, table6, table7, table8, table9, table10, table11, table12, table13;
+    let table1, table2, table3, table4, table5, table6, table7, table8, table9, table10, table11, table12;
     let columnData1 = [];
     let columnData2 = [];
     let columnData3 = [];
@@ -20,12 +20,6 @@ let indexsketch = function (p) {
     let columnData10 = [];
     let columnData11 = [];
     let columnData12 = [];
-    let columnData13 = [];
-    let audioContext = new AudioContext();
-    let gainNode = audioContext.createGain();
-    gainNode.connect(audioContext.destination);
-    let heartrateValue;
-    let heartRate;
 
     p.preload = function () {
         table1 = p.loadTable('csv/healthdata_active_calories.csv', 'csv', 'header', p.onTableLoaded);
@@ -40,7 +34,6 @@ let indexsketch = function (p) {
         table10 = p.loadTable('csv/healthdata_steps.csv', 'csv', 'header', p.onTableLoaded);
         table11 = p.loadTable('csv/healthdata_stress_level.csv', 'csv', 'header', p.onTableLoaded);
         table12 = p.loadTable('csv/keywords.csv', 'csv', 'header', p.onTableLoaded);
-        table13 = p.loadTable('csv/healthdata_heart_rate_with_values.csv', 'csv', 'header', p.onTableLoaded);
     };
 
     p.onTableLoaded = function () {
@@ -57,7 +50,6 @@ let indexsketch = function (p) {
         console.log(table10.getRowCount() + ' rows loaded');
         console.log(table11.getRowCount() + ' rows loaded');
         console.log(table12.getRowCount() + ' rows loaded');
-        console.log(table13.getRowCount() + ' rows loaded');
         for (let i = 0; i < table1.getRowCount(); i++) {
             let row1 = table1.getRow(i);
             columnData1.push(row1.get('active_calories'));
@@ -106,10 +98,6 @@ let indexsketch = function (p) {
             let row12 = table12.getRow(u);
             columnData12.push(row12.get('keywords'));
         }
-        for (let v = 0; v < table13.getRowCount(); v++) {
-            let row13 = table13.getRow(v);
-            columnData13.push(row13.get('heart_rate'));
-        }
         console.log(columnData1);
         console.log(columnData2);
         console.log(columnData3);
@@ -122,7 +110,6 @@ let indexsketch = function (p) {
         console.log(columnData10);
         console.log(columnData11);
         console.log(columnData12);
-        console.log(columnData13);
         loaded = true;
     }
 
@@ -140,13 +127,13 @@ let indexsketch = function (p) {
         p.text("click for sound", 10, 250);
         p.fill(0, 0, 50, 1);
         p.textSize(10);
-        p.text("heavy data loading", 10, 270);
+        p.text("heavy data loading at the start", 10, 270);
         p.fill(0, 0, 50, 1);
         p.textSize(10);
         p.text("be patient", 10, 290);
         p.fill(0, 0, 50, 1);
         p.textSize(10);
-        p.text("use the mouse to move around", 10, 310);
+        p.text("then use the mouse to move around", 10, 310);
         random1 = p.int(p.random(1, 938471));
         random2 = p.int(p.random(1, 938471));
         random3 = p.int(p.random(1, 938455));
@@ -159,7 +146,6 @@ let indexsketch = function (p) {
         random10 = p.int(p.random(1, 938471));
         random11 = p.int(p.random(1, 938469));
         random12 = p.int(p.random(1, 241));
-        random13 = p.int(p.random(1, 227985));
         if (loaded) {
             // p.background(0);
             let random1Value = columnData1[random1];
@@ -244,19 +230,7 @@ let indexsketch = function (p) {
             p.text(columnData12[random12], p.random(p.width), p.random(p.height));
         }
     }
-    // setInterval(function () {
-    //     heartRate = columnData13[random13];
-    //     heartrateValue = p.map(heartRate, 0, 200, 3000, 5000);
-    //     let oscillator = audioContext.createOscillator();
-    //     oscillator.type = "sawtooth";
-    //     oscillator.connect(gainNode);
-    //     oscillator.frequency.value = heartrateValue;
-    //     gainNode.gain.value = 0.03;
-    //     oscillator.start();
-    //     setTimeout(function () {
-    //         oscillator.stop();
-    //     }, 100);
-    // }, 2000);
+
 };
 
 const scene = new THREE.Scene();
@@ -350,11 +324,6 @@ function addLights() {
 }
 
 let myp53 = new p5(indexsketch);
-// setTimeout(() => {
-//     if (myp5.canvas) {
-//         myp5.canvas.style.display = 'none';
-//     }
-// }, 1000);
 
 function addMesh1() {
     texture3 = new THREE.Texture();
