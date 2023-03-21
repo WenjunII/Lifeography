@@ -1009,8 +1009,8 @@
                 <video id="video2" autoplay loop muted style="display:none">
                     <source src="videos/smilewall.mp4" type="video/mp4">
                 </video>
+                <audio id="audio1" src="audios/kidlaugh.mp3" preload="auto" autoplay loop style="display:none;"></audio>
                 <div class="section1">
-                    <br>
                     <div class="title2">
                         <a href="index.html" target="">Home</a> | The Dream | <a href="data.html" target="">The Data</a>
                         | <a href="response.html" target="">The Response</a>
@@ -1098,9 +1098,17 @@
                             </audio>
                         </div>
                     </div>
-                    
                     <div id="3d5"></div>
                     <script src="scripts/sketch_dream_5.js"></script>
+                    <br>
+                    <p id="reminder">Volume:</p><input type="range" id="volumeSlider" min="0" max="100" step="1"
+                        value="50" />
+                    <script>
+                        document.getElementById('volumeSlider').addEventListener('input', function () {
+    audio1.volume = parseFloat(volumeSlider.value / 100);
+});
+                    </script>
+                    <br>
                 </div>
             </div>
             <div class="two columns right">

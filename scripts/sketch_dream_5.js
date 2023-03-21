@@ -1,6 +1,15 @@
 console.log('SCRIPT LOADED');
 
 let myMixer;
+const audio1 = document.getElementById('audio1');
+audio1.play();
+
+// const volumeSlider = document.getElementById('volumeSlider');
+
+// volumeSlider.addEventListener('input', function () {
+//     audio1.volume = parseFloat(volumeSlider.value / 100);
+// });
+
 
 const scene = new THREE.Scene();
 const myCamera = new THREE.OrthographicCamera(800 / - 3, 800 / 3, 600 / 3, 600 / - 3, 0.001, 2000);
