@@ -4,6 +4,11 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
+	<script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+	<script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+	<script src="https://unpkg.com/three@0.128.0/examples/js/loaders/RGBELoader.js"></script>
+	<script src="https://unpkg.com/three@0.128.0/examples/js/loaders/OBJLoader.js"></script>
     <script src="scripts/heartratesound.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -998,6 +1003,12 @@
             </div>
             <div class="eight columns middle">
                 <div id="c2" style="display:none"></div>
+                <video id="video1" autoplay loop muted style="display:none">
+                    <source src="videos/wenjunii5mix.mp4" type="video/mp4">
+                </video>
+                <video id="video2" autoplay loop muted style="display:none">
+                    <source src="videos/smilewall.mp4" type="video/mp4">
+                </video>
                 <div class="section1">
                     <br>
                     <div class="title2">
@@ -1006,70 +1017,90 @@
                     </div>
                     <br>
                     <div class="speech">
-						<audio controls>
-							<source src="audios/01.mp4" type="audio/mpeg">
-						</audio>
-						<br>
-						<br>
-						<div class="text">
-							<div class="textchinese">
-								<div class="speechreconition">
-									Speech recognition in progress...
-								</div>
-								<br>
-								我是<span class="keyword">家</span>中<span class="keyword">唯一</span>的<span class="keyword">儿子</span>，总是感觉被一群缠烂的<span
-									class="keyword">笑容</span><span class="keyword">包围</span>着。渐渐我便觉得，这是一种<span class="keyword">正常</span>的状态。似乎我不需要做些<span class="keyword">什么</span>，甚至只需要<span class="keyword">安静</span>地待在那里，就可以得到许多东西，当然我也<span class="keyword">习惯</span>了以<span
-									class="keyword">笑容</span>和<span class="keyword">笑声</span><span class="keyword">回应</span>他们。我应该也是很<span
-									class="keyword">开心</span>的吧，这样怎么会不<span class="keyword">开心</span>？但是我也经常会被<span
-									class="keyword">打</span>，而且很多时候会被<span class="keyword">打</span>得好<span class="keyword">狠</span>，甚至需要<span
-									class="keyword">奶奶</span><span class="keyword">保护</span>我，那里是一个<span class="keyword">安全</span>的<span class="keyword">避难所</span>。我也应该是<span
-									class="keyword">哭</span>得声嘶力竭吧。不知不觉地，我似乎找到了一种<span
-									class="keyword">生活</span>方式，只要每天完成<span class="keyword">学校</span>的<span class="keyword">任务</span>，剩下的<span
-									class="keyword">时间</span>我就可以去<span class="keyword">玩</span>了。我渐渐<span class="keyword">习惯</span>并<span class="keyword">熟悉</span>这种方式，这样令我的<span
-									class="keyword">生活</span>变得很<span class="keyword">畅顺</span>。<span class="keyword">学校</span>会对学习<span
-									class="keyword">成绩</span>好并<span class="keyword">听话</span>的学生进行<span class="keyword">嘉奖</span>，我集齐了“<span
-									class="keyword">小队长</span>”、“<span class="keyword">中队长</span>”、“<span
-									class="keyword">三好学生</span>”这些称号，也成为了其中一名<span class="keyword">模范</span>学生。<span
-									class="keyword">生活</span>中<span class="keyword">继续</span>总是被一群缠烂的<span class="keyword">笑容</span><span class="keyword">包围</span>着。
-							</div>
-							<br>
-							<div class="translation">
-								Translation in progress...
-							</div>
-							<br>
-							I am the <span class="keyword">only</span> <span class="keyword">son</span> in the <span class="keyword">family</span>
-							and always feel <span class="keyword">surrounded</span> by a bunch of <span class="keyword">smiles</span>. Gradually, I have come to think that this is a <span class="keyword">normal</span> state. It seems that I don't need to do anything, or
-							even just stay <span class="keyword">quiet</span>, I can still get a lot of things. And I also <span class="keyword">get used to</span> <span class="keyword">responding</span> to
-							them with <span class="keyword">smiles</span> and <span class="keyword">laughter</span>. I
-							should be <span class="keyword">happy</span>, <span class="keyword">how</span> can I not be <span
-								class="keyword">happy</span> like that? But I am also often <span
-								class="keyword">beaten</span>, and many times I will be <span
-								class="keyword">beaten</span> so much that I even need my <span
-								class="keyword">grandma</span> to <span class="keyword">protect</span> me, where it is a
-							<span class="keyword">safe haven</span>. I should have been <span
-								class="keyword">crying</span> my <span class="keyword">eyes</span> out too. Without
-							realizing it, I seem to have found a way of <span class="keyword">life</span> where, as <span class="keyword">long</span>
-							as I complete my daily <span class="keyword">school</span> <span class="keyword">tasks</span>, I can go <span class="keyword">play</span> the rest
-							of the <span class="keyword">time</span>. I gradually <span class="keyword">get used to</span> this way of <span
-								class="keyword">life</span> and become <span class="keyword">familiar</span> with it, and it makes my <span
-								class="keyword">life</span> very <span class="keyword">smooth</span>. I am awarded for good <span
-								class="keyword">academic performance</span> and <span class="keyword">obedience</span> by receiving the titles of "<span class="keyword">Junior Captain</span>", "<span
-								class="keyword">Squadron Leader</span>" and "<span class="keyword">Three Good
-								Student</span>". I also become one of the <span class="keyword">model</span> students.
-							My <span class="keyword">life</span> <span class="keyword">continues</span> to be <span class="keyword">surrounded</span> by a bunch of <span
-								class="keyword">smiles</span>.
-							<br>
-							<br>
-							<div class="speak">
-								Learning to speak in progress...
-							</div>
-							<br>
-							<audio controls>
-								<source src="audios/christopher_01.mp3" type="audio/mpeg">
-							</audio>
-						</div>
-					</div>
-
+                        <audio controls>
+                            <source src="audios/01.mp4" type="audio/mpeg">
+                        </audio>
+                        <br>
+                        <br>
+                        <div class="text">
+                            <div class="textchinese">
+                                <div class="speechreconition">
+                                    Speech recognition in progress...
+                                </div>
+                                <br>
+                                我是<span class="keyword">家</span>中<span class="keyword">唯一</span>的<span
+                                    class="keyword">儿子</span>，总是感觉被一群缠烂的<span class="keyword">笑容</span><span
+                                    class="keyword">包围</span>着。渐渐我便觉得，这是一种<span
+                                    class="keyword">正常</span>的状态。似乎我不需要做些<span class="keyword">什么</span>，甚至只需要<span
+                                    class="keyword">安静</span>地待在那里，就可以得到许多东西，当然我也<span class="keyword">习惯</span>了以<span
+                                    class="keyword">笑容</span>和<span class="keyword">笑声</span><span
+                                    class="keyword">回应</span>他们。我应该也是很<span class="keyword">开心</span>的吧，这样怎么会不<span
+                                    class="keyword">开心</span>？但是我也经常会被<span class="keyword">打</span>，而且很多时候会被<span
+                                    class="keyword">打</span>得好<span class="keyword">狠</span>，甚至需要<span
+                                    class="keyword">奶奶</span><span class="keyword">保护</span>我，那里是一个<span
+                                    class="keyword">安全</span>的<span class="keyword">避难所</span>。我也应该是<span
+                                    class="keyword">哭</span>得声嘶力竭吧。不知不觉地，我似乎找到了一种<span
+                                    class="keyword">生活</span>方式，只要每天完成<span class="keyword">学校</span>的<span
+                                    class="keyword">任务</span>，剩下的<span class="keyword">时间</span>我就可以去<span
+                                    class="keyword">玩</span>了。我渐渐<span class="keyword">习惯</span>并<span
+                                    class="keyword">熟悉</span>这种方式，这样令我的<span class="keyword">生活</span>变得很<span
+                                    class="keyword">畅顺</span>。<span class="keyword">学校</span>会对学习<span
+                                    class="keyword">成绩</span>好并<span class="keyword">听话</span>的学生进行<span
+                                    class="keyword">嘉奖</span>，我集齐了“<span class="keyword">小队长</span>”、“<span
+                                    class="keyword">中队长</span>”、“<span class="keyword">三好学生</span>”这些称号，也成为了其中一名<span
+                                    class="keyword">模范</span>学生。<span class="keyword">生活</span>中<span
+                                    class="keyword">继续</span>总是被一群缠烂的<span class="keyword">笑容</span><span
+                                    class="keyword">包围</span>着。
+                            </div>
+                            <br>
+                            <div class="translation">
+                                Translation in progress...
+                            </div>
+                            <br>
+                            I am the <span class="keyword">only</span> <span class="keyword">son</span> in the <span
+                                class="keyword">family</span>
+                            and always feel <span class="keyword">surrounded</span> by a bunch of <span
+                                class="keyword">smiles</span>. Gradually, I have come to think that this is a <span
+                                class="keyword">normal</span> state. It seems that I don't need to do anything, or
+                            even just stay <span class="keyword">quiet</span>, I can still get a lot of things. And I
+                            also <span class="keyword">get used to</span> <span class="keyword">responding</span> to
+                            them with <span class="keyword">smiles</span> and <span class="keyword">laughter</span>. I
+                            should be <span class="keyword">happy</span>, <span class="keyword">how</span> can I not be
+                            <span class="keyword">happy</span> like that? But I am also often <span
+                                class="keyword">beaten</span>, and many times I will be <span
+                                class="keyword">beaten</span> so much that I even need my <span
+                                class="keyword">grandma</span> to <span class="keyword">protect</span> me, where it is a
+                            <span class="keyword">safe haven</span>. I should have been <span
+                                class="keyword">crying</span> my <span class="keyword">eyes</span> out too. Without
+                            realizing it, I seem to have found a way of <span class="keyword">life</span> where, as
+                            <span class="keyword">long</span>
+                            as I complete my daily <span class="keyword">school</span> <span
+                                class="keyword">tasks</span>, I can go <span class="keyword">play</span> the rest
+                            of the <span class="keyword">time</span>. I gradually <span class="keyword">get used
+                                to</span> this way of <span class="keyword">life</span> and become <span
+                                class="keyword">familiar</span> with it, and it makes my <span
+                                class="keyword">life</span> very <span class="keyword">smooth</span>. I am awarded for
+                            good <span class="keyword">academic performance</span> and <span
+                                class="keyword">obedience</span> by receiving the titles of "<span
+                                class="keyword">Junior Captain</span>", "<span class="keyword">Squadron Leader</span>"
+                            and "<span class="keyword">Three Good
+                                Student</span>". I also become one of the <span class="keyword">model</span> students.
+                            My <span class="keyword">life</span> <span class="keyword">continues</span> to be <span
+                                class="keyword">surrounded</span> by a bunch of <span class="keyword">smiles</span>.
+                            <br>
+                            <br>
+                            <div class="speak">
+                                Learning to speak in progress...
+                            </div>
+                            <br>
+                            <audio controls>
+                                <source src="audios/christopher_01.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div id="3d5"></div>
+                    <script src="scripts/sketch_dream_5.js"></script>
                 </div>
             </div>
             <div class="two columns right">

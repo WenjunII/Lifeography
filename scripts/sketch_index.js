@@ -278,13 +278,17 @@ loader.load('models/wenjuniinew.glb', function (gltf) {
 
     const material1 = gltf.scene.getObjectByName('wenjunii').material;
     material1.map = texture1;
-    texture1.offset.y = -0.03;
+    // texture1.offset.y = -0.03;
+    material1.map.offset.y = 1;
+    material1.map.repeat.y = -1;
     video1.play();
     texture1.needsUpdate = true;
 
     const material2 = gltf.scene.getObjectByName('SuperShapesMesh004').material;
     material2.map = texture2;
-    texture2.offset.y = -0.03;
+    // texture2.offset.y = -0.03;
+    material1.map.offset.y = 1;
+    material1.map.repeat.y = -1;
     // texture2.offset.x = 0.03;
     video2.play();
     texture2.needsUpdate = true;
