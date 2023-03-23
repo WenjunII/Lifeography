@@ -15,12 +15,16 @@ scene2.background = new THREE.Color('rgb(25, 25, 25)');
 const loader2 = new THREE.GLTFLoader();
 
 const rloader = new THREE.RGBELoader();
+const pmremGenerator = new THREE.PMREMGenerator(renderer2);
+pmremGenerator.compileEquirectangularShader();
 
 const controls2 = new THREE.OrbitControls(camera2, renderer2.domElement);
 
 controls2.target = new THREE.Vector3(0, 6.5, 0);
 camera2.position.set(-2, 7, 8);
 
+const video1 = document.getElementById('video1');
+const texture1 = new THREE.VideoTexture(video1);
 const video3 = document.getElementById('video3');
 const texture3 = new THREE.VideoTexture(video3);
 const video4 = document.getElementById('video4');
@@ -28,12 +32,14 @@ const texture4 = new THREE.VideoTexture(video4);
 
 const clock2 = new THREE.Clock();
 
+let envMap;
+
 rloader.load('images/wenjunii10/graduation_photo.hdr', function (texture) {
     texture.mapping = THREE.EquirectangularReflectionMapping;
-
-    scene2.background = texture;
-    scene2.environment = texture;
-    // texture.setPixelRatio(10);
+envMap = pmremGenerator.fromEquirectangular(texture).texture;
+    scene2.background = envMap;
+    scene2.environment = envMap;
+    pmremGenerator.dispose();
 });
 
 loader2.load('models/wenjunii102.glb', function (gltf) {
@@ -119,6 +125,9 @@ function animate2() {
     if (myMixer2) {
         const delta = clock2.getDelta();
         myMixer2.update(delta);
+    }
+    if (envMap) {
+        envMap.rotation.y += 0.003;
     }
 };
 

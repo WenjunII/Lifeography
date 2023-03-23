@@ -1,3 +1,9 @@
+const startButton = document.getElementById('startButton');
+startButton.addEventListener('click', function() {
+    startButton.style.display = 'none';
+    // window.location.href = 'dream_2.html';
+  document.getElementById('previewimage').style.display = 'none'
+
 console.log('SCRIPT LOADED');
 
 let myMixer;
@@ -113,3 +119,5 @@ function animate() {
 };
 
 animate();
+
+                             });
