@@ -1,8 +1,8 @@
 console.log('SCRIPT LOADED');
 
 let myMixer;
-const audio1 = document.getElementById('audio1');
-audio1.play();
+// const audio1 = document.getElementById('audio1');
+// audio1.play();
 
 // const volumeSlider = document.getElementById('volumeSlider');
 
