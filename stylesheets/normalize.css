@@ -804,3 +804,20 @@ a.source2:active {
 .myscript {
   text-align: center;
 }
+
+#nextButton {
+  display: block;
+  margin: 0 auto;
+}
+
+#startButton, #nextButton {
+  display: block;
+  margin: 0 auto;
+}
+
+#p5sewing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

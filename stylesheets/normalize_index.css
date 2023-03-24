@@ -810,3 +810,20 @@ a.title:hover {
 a.title:active {
   color: rgba(205, 150, 0, 0.7);
 }
+
+#nextButton {
+  display: block;
+  margin: 0 auto;
+}
+
+#startButton {
+  display: block;
+  margin: 0 auto;
+}
+
+#p5sewing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
