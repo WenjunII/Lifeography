@@ -18,11 +18,11 @@ audio1.play();
 
 
 const scene = new THREE.Scene();
-const myCamera = new THREE.OrthographicCamera(800 / - 3, 800 / 3, 600 / 3, 600 / - 3, 0.001, 2000);
+const myCamera = new THREE.OrthographicCamera(880 / - 3, 880 / 3, 600 / 3, 600 / - 3, 0.001, 2000);
 myCamera.position.set(0, 0, 1000);
 // myCamera.zoom = 10;
 const renderer = new THREE.WebGLRenderer({ alpha: true });
-renderer.setSize(800, 600);
+renderer.setSize(880, 600);
 renderer.setClearColor(0xcccccc);
 renderer.setPixelRatio(3);
 document.getElementById('3d5').appendChild(renderer.domElement);
