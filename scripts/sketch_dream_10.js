@@ -36,7 +36,7 @@ let envMap;
 
 rloader.load('images/wenjunii10/graduation_photo.hdr', function (texture) {
     texture.mapping = THREE.EquirectangularReflectionMapping;
-envMap = pmremGenerator.fromEquirectangular(texture).texture;
+    envMap = pmremGenerator.fromEquirectangular(texture).texture;
     scene2.background = envMap;
     scene2.environment = envMap;
     pmremGenerator.dispose();
