@@ -827,3 +827,11 @@ a.title:active {
   align-items: center;
   height: 100%;
 }
+
+#preview,
+    #3d5, #previewimage {
+        display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+    }
