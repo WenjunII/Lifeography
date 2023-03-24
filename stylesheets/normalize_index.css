@@ -811,12 +811,14 @@ a.title:active {
   color: rgba(205, 150, 0, 0.7);
 }
 
-#nextButton {
+#nextButton,
+#previousButton {
   display: block;
   margin: 0 auto;
 }
 
-#startButton {
+#startButton,
+#startButton2 {
   display: block;
   margin: 0 auto;
 }
@@ -829,9 +831,10 @@ a.title:active {
 }
 
 #preview,
-    #3d5, #previewimage {
-        display: flex;
+#3d5,
+#previewimage {
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-    }
+}
