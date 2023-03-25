@@ -57,6 +57,7 @@ startButton2.addEventListener('click', () => {
     myVideos2.volume(0);
     myVideos2.hide();
     myAudio2.play();
+    myAudio2.loop();
     loop();
 });
 
