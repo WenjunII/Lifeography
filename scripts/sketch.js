@@ -365,7 +365,7 @@ var beat = function( p ) { // p could be any variable name
     }
   };
 };
-var myp5 = new p5(beat, 'c3');
+var myp52 = new p5(beat, 'c3');
 
 //Sketch Four
 var beat2 = function( p ) { // p could be any variable name
@@ -402,7 +402,7 @@ var beat2 = function( p ) { // p could be any variable name
     
   };
 };
-var myp5 = new p5(beat2, 'c4');
+var myp52 = new p5(beat2, 'c4');
 
 //Sketch Five
 var petridish = function( p ) { // p could be any variable name
@@ -578,7 +578,7 @@ var petridish = function( p ) { // p could be any variable name
     }
   }
 };
-var myp5 = new p5(petridish, 'c5');
+var myp52 = new p5(petridish, 'c5');
 
 //Sketch Six
 var petridish2 = function( p ) { // p could be any variable name
@@ -648,7 +648,7 @@ for (var x = 0; x < capture.width; x += stepSize) {
 }
   }
 };
-var myp5 = new p5(petridish2, 'c6');
+var myp52 = new p5(petridish2, 'c6');
 
 //Sketch Seven
 var maze = function( p ) { // p could be any variable name
@@ -1246,7 +1246,7 @@ var maze = function( p ) { // p could be any variable name
     
   }
 };
-var myp5 = new p5(maze, 'c7');
+var myp52 = new p5(maze, 'c7');
 
 //Sketch Eight
 var free = function( p ) { // p could be any variable name
@@ -1323,4 +1323,4 @@ var free = function( p ) { // p could be any variable name
     
 
 };
-var myp5 = new p5(free, 'c8');
+var myp52 = new p5(free, 'c8');

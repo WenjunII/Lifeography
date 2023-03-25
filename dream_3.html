@@ -4,12 +4,13 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
     <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
     <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
     <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/RGBELoader.js"></script>
-    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/OBJLoader.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/OBJLoader.js"></script> -->
     <script src="scripts/heartratesound.js"></script>
+    <!-- <script src="scripts/sketch.js"></script> -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheets/normalize.css">
@@ -1003,50 +1004,65 @@
             </div>
             <div class="eight columns middle">
                 <div id="c2" style="display:none"></div>
-                <video id="video1" autoplay loop muted style="display:none">
+                <!-- <video id="video1" autoplay loop muted style="display:none">
                     <source src="videos/wenjunii5mix.mp4" type="video/mp4">
                 </video>
                 <video id="video2" autoplay loop muted style="display:none">
                     <source src="videos/smilewall.mp4" type="video/mp4">
                 </video>
-                <!-- <audio id="audio1" src="audios/kidlaugh.mp3" preload="auto" autoplay loop style="display:none;"></audio> -->
+                <video id="video3" autoplay loop muted style="display:none">
+                    <source src="videos/wenjunii101.mp4" type="video/mp4">
+                </video>
+                <video id="video4" autoplay loop muted style="display:none">
+                    <source src="videos/wenjunii102.mp4" type="video/mp4">
+                </video>
+                <audio id="audio1" src="audios/kidlaugh.mp3" preload="auto" loop style="display:none;"></audio> -->
+                <!-- <script>document.getElementById('audio1').play()</script> -->
                 <div class="section1">
                     <div class="title2">
                         <a href="index.html" target="">Home</a> | The Dream | <a href="data.html" target="">The Data</a>
                         | <a href="response.html" target="">The Response</a>
                     </div>
                     <br>
-                    <div id="3d10"></div>
-                    <script class="myscript" src="scripts/sketch_dream_10.js"></script>
-                    <br>
-                    <div class="source">
-                        <p>
-                            Source:
-                            <br>
-                            <a href="https://commons.m.wikimedia.org/w/index.php?search=smile+China&title=Special:MediaSearch&type=image"
-                                target="_blank">Smile China</a>
-                            <br>
-                            <a href="https://commons.m.wikimedia.org/w/index.php?search=laugh+China&title=Special:MediaSearch&type=image"
-                                target="_blank">Laugh China</a>
-                            <br>
-                            <a href="http://www.makehumancommunity.org/" target="_blank">MakeHuman</a>
-                            <br>
-                            <a href="https://www.mixamo.com/" target="_blank">Mixamo</a>
-                            <br>
-                            <a href="https://pixabay.com/sound-effects/search/children-laughing/" target="_blank">Kid
-                                Laughter Sound</a>
-                            <br>
-                            <a href="https://mixkit.co/free-sound-effects/laugh/" target="_blank">Kid Laughter Sound</a>
-                            <br>
-                            <a href="https://github.com/google-research/frame-interpolation" target="_blank">Frame
-                                Interpolation</a>
-                            <br>
-                            <a href="https://threejs.org/" target="_blank">three.js</a>
-                        </p>
+                    <div class="speech">
+                        <audio controls>
+                            <source src="audios/02.mp4" type="audio/mpeg">
+                        </audio>
                         <br>
-
+                        <br>
+                        <div class="text">
+                            <div class="textchinese">
+                                <div class="speechreconition2">
+                                    Voice of Wenjun
+                                </div>
+                                <br>
+                                离开了<span class="keyword">熟悉</span>的环境，我进入了为<span class="keyword">高考</span>作准备的<span class="keyword">高中</span><span class="keyword">新</span><span class="keyword">生活</span>。在这里我似乎一直很<span class="keyword">难</span>找到<span class="keyword">归属感</span>，还是我已经<span class="keyword">厌倦</span>了为学习<span class="keyword">成绩</span>而活的<span class="keyword">生活</span>？说不清楚。我渐渐<span class="keyword">喜欢</span>上了<span class="keyword">生物</span><span class="keyword">实验室</span>，并参与进那里的课外活动小组，<span class="keyword">培育</span>厌氧<span class="keyword">细菌</span>去清洁珠江。有些时候我会觉得，我也挺像<span class="keyword">实验室</span>的<span class="keyword">器皿</span>里面的<span class="keyword">细菌</span>，被<span class="keyword">培育</span>去完成<span class="keyword">任务</span>。如果<span class="keyword">细菌</span>有<span class="keyword">自我意识</span>，它会怎样<span class="keyword">选择</span>？
+                            </div>
+                            <br>
+                            <br>
+                            I leave the <span class="keyword">familiar</span> environment and enter a <span class="keyword">new</span> <span class="keyword">life</span> in <span class="keyword">high school</span> in preparation for the
+                            <span class="keyword">National College Entrance Examination</span>. I always seem to have a <span class="keyword">hard</span> <span class="keyword">time</span> finding a sense of
+                            <span class="keyword">belonging</span> there, or am I just <span class="keyword">tired</span> of living for <span class="keyword">academic achievement</span>? I can't say. I <span class="keyword">grow</span>
+                            to be a fan of the <span class="keyword">biology</span> <span class="keyword">lab</span> and get involved in an extracurricular group there, <span class="keyword">growing</span>
+                            anaerobic <span class="keyword">bacteria</span> to clean the Pearl River. Sometimes I feel that I am quite like the
+                            <span class="keyword">bacteria</span> in the <span class="keyword">vessel</span> in the <span class="keyword">lab</span>, which is being <span class="keyword">grown</span> to accomplish a <span class="keyword">task</span>. If <span class="keyword">bacteria</span>
+                            have <span class="keyword">self-awareness</span>, <span class="keyword">how</span> would they <span class="keyword">choose</span>?
+                            <br>
+                            <br>
+                            <div class="speak2">
+                                Voice of Wenjun II
+                            </div>
+                            <br>
+                            <audio controls>
+                                <source src="audios/christopher_02.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
                     </div>
+                    <br>
+                    <div id="phighschool"></div>
+                    <script class="myscript" src="scripts/sketch_dream_highshcool1.js"></script>
                 </div>
+                <!-- <div id="c6"></div> -->
             </div>
             <div class="two columns right">
                 <img class="ads" src="images/ads.png">
@@ -1075,7 +1091,7 @@
             </div>
             <div class="two columns right">
             </div>
-
+            
         </div>
     </div>
 </body>
