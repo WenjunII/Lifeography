@@ -1036,17 +1036,38 @@
                                     Voice of Wenjun
                                 </div>
                                 <br>
-                                离开了<span class="keyword">熟悉</span>的环境，我进入了为<span class="keyword">高考</span>作准备的<span class="keyword">高中</span><span class="keyword">新</span><span class="keyword">生活</span>。在这里我似乎一直很<span class="keyword">难</span>找到<span class="keyword">归属感</span>，还是我已经<span class="keyword">厌倦</span>了为学习<span class="keyword">成绩</span>而活的<span class="keyword">生活</span>？说不清楚。我渐渐<span class="keyword">喜欢</span>上了<span class="keyword">生物</span><span class="keyword">实验室</span>，并参与进那里的课外活动小组，<span class="keyword">培育</span>厌氧<span class="keyword">细菌</span>去清洁珠江。有些时候我会觉得，我也挺像<span class="keyword">实验室</span>的<span class="keyword">器皿</span>里面的<span class="keyword">细菌</span>，被<span class="keyword">培育</span>去完成<span class="keyword">任务</span>。如果<span class="keyword">细菌</span>有<span class="keyword">自我意识</span>，它会怎样<span class="keyword">选择</span>？
+                                离开了<span class="keyword">熟悉</span>的环境，我进入了为<span class="keyword">高考</span>作准备的<span
+                                    class="keyword">高中</span><span class="keyword">新</span><span
+                                    class="keyword">生活</span>。在这里我似乎一直很<span class="keyword">难</span>找到<span
+                                    class="keyword">归属感</span>，还是我已经<span class="keyword">厌倦</span>了为学习<span
+                                    class="keyword">成绩</span>而活的<span class="keyword">生活</span>？说不清楚。我渐渐<span
+                                    class="keyword">喜欢</span>上了<span class="keyword">生物</span><span
+                                    class="keyword">实验室</span>，并参与进那里的课外活动小组，<span class="keyword">培育</span>厌氧<span
+                                    class="keyword">细菌</span>去清洁珠江。有些时候我会觉得，我也挺像<span class="keyword">实验室</span>的<span
+                                    class="keyword">器皿</span>里面的<span class="keyword">细菌</span>，被<span
+                                    class="keyword">培育</span>去完成<span class="keyword">任务</span>。如果<span
+                                    class="keyword">细菌</span>有<span class="keyword">自我意识</span>，它会怎样<span
+                                    class="keyword">选择</span>？
                             </div>
                             <br>
                             <br>
-                            I leave the <span class="keyword">familiar</span> environment and enter a <span class="keyword">new</span> <span class="keyword">life</span> in <span class="keyword">high school</span> in preparation for the
-                            <span class="keyword">National College Entrance Examination</span>. I always seem to have a <span class="keyword">hard</span> <span class="keyword">time</span> finding a sense of
-                            <span class="keyword">belonging</span> there, or am I just <span class="keyword">tired</span> of living for <span class="keyword">academic achievement</span>? I can't say. I <span class="keyword">grow</span>
-                            to be a fan of the <span class="keyword">biology</span> <span class="keyword">lab</span> and get involved in an extracurricular group there, <span class="keyword">growing</span>
-                            anaerobic <span class="keyword">bacteria</span> to clean the Pearl River. Sometimes I feel that I am quite like the
-                            <span class="keyword">bacteria</span> in the <span class="keyword">vessel</span> in the <span class="keyword">lab</span>, which is being <span class="keyword">grown</span> to accomplish a <span class="keyword">task</span>. If <span class="keyword">bacteria</span>
-                            have <span class="keyword">self-awareness</span>, <span class="keyword">how</span> would they <span class="keyword">choose</span>?
+                            I leave the <span class="keyword">familiar</span> environment and enter a <span
+                                class="keyword">new</span> <span class="keyword">life</span> in <span
+                                class="keyword">high school</span> in preparation for the
+                            <span class="keyword">National College Entrance Examination</span>. I always seem to have a
+                            <span class="keyword">hard</span> <span class="keyword">time</span> finding a sense of
+                            <span class="keyword">belonging</span> there, or am I just <span
+                                class="keyword">tired</span> of living for <span class="keyword">academic
+                                achievement</span>? I can't say. I <span class="keyword">grow</span>
+                            to be a fan of the <span class="keyword">biology</span> <span class="keyword">lab</span> and
+                            get involved in an extracurricular group there, <span class="keyword">growing</span>
+                            anaerobic <span class="keyword">bacteria</span> to clean the Pearl River. Sometimes I feel
+                            that I am quite like the
+                            <span class="keyword">bacteria</span> in the <span class="keyword">vessel</span> in the
+                            <span class="keyword">lab</span>, which is being <span class="keyword">grown</span> to
+                            accomplish a <span class="keyword">task</span>. If <span class="keyword">bacteria</span>
+                            have <span class="keyword">self-awareness</span>, <span class="keyword">how</span> would
+                            they <span class="keyword">choose</span>?
                             <br>
                             <br>
                             <div class="speak2">
@@ -1059,13 +1080,41 @@
                         </div>
                     </div>
                     <br>
+                    <button id="startButton">Start</button>
                     <div id="phighschool"></div>
                     <script class="myscript" src="scripts/sketch_dream_highshcool1.js"></script>
+                    <br>
+                    <p id="reminder">Volume:</p><input type="range" id="volumeSlider" min="0" max="100" step="1"
+                        value="50" />
+                    <script>
+                        document.getElementById('volumeSlider').addEventListener('input', function () {
+                            audio.volume = parseFloat(volumeSlider.value / 100);
+                        });
+                    </script>
+                    <div class="source">
+                        <p>
+                            Source:
+                            <br>
+                            <a href="https://www.google.com/search?q=bacteria+lab+bottle&tbm=isch&ved=2ahUKEwiBxoz4qKn3AhVEsHIEHcEpAo4Q2-cCegQIABAA&oq=bacteria+lab+bottle&gs_lcp=CgNpbWcQAzoGCAAQCBAeOgQIABBDOgUIABCABDoECAAQHjoGCAAQBRAeUIYKWL4fYKQjaABwAHgAgAHVAYgB3AaSAQU2LjIuMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=zHxjYoGwDcTgytMPwdOI8Ag&bih=704&biw=1440"
+                                target="_blank">Bacteria Lab Bottle</a>
+                            <br>
+                            <a href="https://www.google.com/search?q=%E9%AB%98%E8%80%83+%E6%88%90%E7%BB%A9%E6%A6%9C&tbm=isch&ved=2ahUKEwjDy5Siqan3AhWto3IEHY5mDRQQ2-cCegQIABAA&oq=%E9%AB%98%E8%80%83+%E6%88%90%E7%BB%A9%E6%A6%9C&gs_lcp=CgNpbWcQAzoHCAAQgAQQDDoGCAAQDBAYOggIABAMEAUQHlDTBVjyF2D2GGgAcAB4AoAB0AWIAd0LkgEJMi4zLjEuNi0xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=JH1jYsOpGq3HytMPjs21oAE&bih=704&biw=1440"
+                                target="_blank">National College Entrance Examination Results List</a>
+                            <br>
+                            <a href="https://www.google.com/search?q=%E9%AB%98%E8%80%83&tbm=isch&ved=2ahUKEwiBv7mkqan3AhWQn3IEHXDKDQwQ2-cCegQIABAA&oq=%E9%AB%98%E8%80%83&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgARQlwtYlwtg9wxoAHAAeACAAXWIAa4BkgEDMS4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=KX1jYsGGDpC_ytMP8JS3YA&bih=704&biw=1440"
+                                target="_blank">National College Entrance Examination</a>
+                            <br>
+                            <a href="https://www.youtube.com/watch?v=D30zfWuupn0" target="_blank">Mathematics
+                                Probability Theory Intensive Course</a>
+                            <br>
+                            <a href="https://p5js.org/" target="_blank">p5.js</a>
+                        </p>
+                    </div>
                 </div>
                 <!-- <div id="c6"></div> -->
             </div>
             <div class="two columns right">
-                <img class="ads" src="images/ads.png">
+                <!-- <img class="ads" src="images/ads.png"> -->
             </div>
         </div>
     </div>
@@ -1091,7 +1140,7 @@
             </div>
             <div class="two columns right">
             </div>
-            
+
         </div>
     </div>
 </body>
