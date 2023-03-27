@@ -4,7 +4,7 @@ let capture;
 let myCanvas;
 let bottleimg1, bottleimg2, bottleimg3;
 // let scaleNumbers = 0;
-let dotSize = 1;
+let dotSize = 2.5;
 let spacing = 2;
 let numWidth = dotSize * 5 + spacing * 5;
 let numHeight = dotSize * 3 + spacing * 3;
@@ -13,6 +13,7 @@ let numGroups = 1;
 const startButton = document.getElementById('startButton');
 let myAudio;
 let volumeSlide;
+let speedSlider;
 
 function preload() {
     backgroundimg2 = loadImage('images/wenjuniihighschool/bacteria3.png');
@@ -20,7 +21,7 @@ function preload() {
     bottleimg1 = loadImage('images/wenjuniihighschool/bacteria2_1_2_2.png');
     bottleimg2 = loadImage('images/wenjuniihighschool/bacteria2_2_2_2.png');
     bottleimg3 = loadImage('images/wenjuniihighschool/bacteria2_3_2_2.png');
-    myAudio = loadSound('audios/explanation.mp3');
+    // myAudio = loadSound('audios/explanation.mp3');
 }
 
 function setup() {
@@ -33,11 +34,16 @@ function setup() {
     capture = createCapture(VIDEO);
     capture.size(205, 154);
     capture.hide();
-    // scaleNumbers = int(random(30, 4000));
+    // scaleNumbers = int(random(500, 700));
     frameRate(1);
     // colorMode(HSL);
-    volumeSlider = document.getElementById('volumeSlider');
-    volumeSlider.addEventListener('input', adjustVolume);
+    volumeSlider = select('#volumeSlider');
+    speedSlider = select('#speedSlider');
+    myAudio = select('#myAudio');
+    myAudio.elt.volume = volumeSlider.value();
+    myAudio.elt.playbackRate = speedSlider.value();
+    volumeSlider.input(onVolumeChange);
+    speedSlider.input(onSpeedChange);
     noLoop();
 };
 
@@ -48,14 +54,19 @@ startButton.addEventListener('click', () => {
     loop();
 });
 
-function adjustVolume() {
-    const normalizedVolume = volumeSlider.value / 100;
-    myAudio.setVolume(normalizedVolume);
+function onVolumeChange() {
+    let volume = volumeSlider.value();
+    myAudio.elt.volume = volume;
+}
+
+function onSpeedChange() {
+    let speed = speedSlider.value();
+    myAudio.elt.playbackRate = speed;
 }
 
 function draw() {
     for (let i = 0; i < numGroups; i++) {
-        let randNumber = String(floor(random(30, 4000)));
+        let randNumber = String(floor(random(500, 700)));
 
         let x = floor(random(0, 850 - numWidth * 4));
         let y = floor(random(0, 499 - numHeight));
@@ -155,7 +166,7 @@ function drawDotNumber(num, x, y) {
                 // let h = random(0, 360);
                 // let s = random(0, 100);
                 // let l = random(0, 100);
-                fill(0, 0, 0, 10);
+                fill('RED');
                 rect(x + col * (dotSize + spacing), y + row * (dotSize + spacing), dotSize, dotSize);
             }
         }
