@@ -3,40 +3,32 @@ let backgroundimg2
 let capture;
 let myCanvas;
 let bottleimg1, bottleimg2, bottleimg3;
-// let scaleNumbers = 0;
-let dotSize = 2.5;
-let spacing = 2;
+let dotSize = 1;
+let spacing = 1.5;
 let numWidth = dotSize * 5 + spacing * 5;
 let numHeight = dotSize * 3 + spacing * 3;
-let numGroups = 1;
-// let h, s, l;
+let numGroups = 60;
 const startButton = document.getElementById('startButton');
 let myAudio;
 let volumeSlide;
 let speedSlider;
+let myVideos;
 
 function preload() {
     backgroundimg2 = loadImage('images/wenjuniihighschool/bacteria3.png');
-    // backgroundimg2.position(500, 0);
     bottleimg1 = loadImage('images/wenjuniihighschool/bacteria2_1_2_2.png');
     bottleimg2 = loadImage('images/wenjuniihighschool/bacteria2_2_2_2.png');
     bottleimg3 = loadImage('images/wenjuniihighschool/bacteria2_3_2_2.png');
-    // myAudio = loadSound('audios/explanation.mp3');
+    myVideos = createVideo('videos/score.mp4');
 }
 
 function setup() {
     myCanvas = createCanvas(850, 499);
     myCanvas.parent('phighschool');
-    image(backgroundimg2, 0, 0);
-    image(bottleimg1, 50, 25);
-    image(bottleimg2, 300, 25);
-    image(bottleimg3, 560, 25);
     capture = createCapture(VIDEO);
     capture.size(205, 154);
     capture.hide();
-    // scaleNumbers = int(random(500, 700));
     frameRate(1);
-    // colorMode(HSL);
     volumeSlider = select('#volumeSlider');
     speedSlider = select('#speedSlider');
     myAudio = select('#myAudio');
@@ -49,6 +41,10 @@ function setup() {
 
 startButton.addEventListener('click', () => {
     startButton.style.display = 'none';
+    myVideos.play();
+    myVideos.loop();
+    myVideos.volume(0);
+    myVideos.hide();
     myAudio.play();
     myAudio.loop();
     loop();
@@ -65,6 +61,11 @@ function onSpeedChange() {
 }
 
 function draw() {
+    getVideo = myVideos.get();
+    image(getVideo, 0, 0, 850, 499);
+    image(bottleimg1, 50, 25);
+    image(bottleimg2, 300, 25);
+    image(bottleimg3, 560, 25);
     for (let i = 0; i < numGroups; i++) {
         let randNumber = String(floor(random(500, 700)));
 
@@ -78,52 +79,30 @@ function draw() {
             }
         }
     }
-    // p.background(220,220,220,255);
-    // image(bottleimg1, 50, 25);
-    // image(bottleimg2, 300, 25);
-    // image(bottleimg3, 560, 25);
     capture.loadPixels();
-    // you can change the stepSize
-    //var stepSize = stepSize_slider.value();
     var stepSize = floor(map(2, 0, width, 5, 40));
     for (var x = 0; x < capture.width; x += stepSize) {
         for (var y = 0; y < capture.height; y += stepSize) {
             var index = ((y * capture.width) + x) * 4;
-            // The code for your filter will go here!
             var redVal = capture.pixels[index];
             var greenVal = capture.pixels[index + 1];
             var blueVal = capture.pixels[index + 2];
-            // you can add or remove the stroke
-            // strokeWeight(1);
-            // stroke(255,0,255,255);
             push();
             translate(55, 65);
             noStroke();
-            // you can change the colors
             fill(redVal, 2 * greenVal, blueVal, 10);
-            // you can change the shape of the 'pixels'
-            // rectMode(CENTER);
-            // rect(x, y, stepSize, stepSize);
             circle(x, y, stepSize / 1.5);
             pop();
             push();
             translate(323, 65);
             noStroke();
-            // you can change the colors
             fill(redVal, 2 * greenVal, blueVal / 2, 10);
-            // you can change the shape of the 'pixels'
-            // rectMode(CENTER);
-            // rect(x, y, stepSize, stepSize);
             circle(x, y, stepSize / 1.5);
             pop();
             push();
             translate(595, 65);
             noStroke();
-            // you can change the colors
             fill(2 * redVal, greenVal, blueVal / 2, 10);
-            // you can change the shape of the 'pixels'
-            // rectMode(CENTER);
-            // rect(x, y, stepSize, stepSize);
             circle(x, y, stepSize / 1.5);
             pop();
         }
@@ -149,9 +128,8 @@ function drawDotNumber(num, x, y) {
         return;
     }
 
-    let index = parseInt(num); // Parse the string into an integer
+    let index = parseInt(num); 
 
-    // Check if the index is within the valid range
     if (isNaN(index) || index < 0 || index >= dotMatrix.length) {
         console.error('Invalid index:', index);
         return;
@@ -163,9 +141,6 @@ function drawDotNumber(num, x, y) {
         for (let col = 0; col < 5; col++) {
             if (matrix[row] && matrix[row][col] === '1') {
                 colorMode(HSL);
-                // let h = random(0, 360);
-                // let s = random(0, 100);
-                // let l = random(0, 100);
                 fill('RED');
                 rect(x + col * (dotSize + spacing), y + row * (dotSize + spacing), dotSize, dotSize);
             }
