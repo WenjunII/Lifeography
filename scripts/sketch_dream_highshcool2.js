@@ -11,7 +11,7 @@ const highschool2 = (p) => {
     // let myVideos2;
 
     p.preload = function () {
-        backgroundimg = p.loadImage('images/wenjuniihighschool/backgroundimg3.png');
+        backgroundimg = p.loadImage('images/wenjuniihighschool/backgroundimg2.png');
         petridishimg1 = p.loadImage('images/wenjuniihighschool/petri_dish.png');
         petridishimg2 = p.loadImage('images/wenjuniihighschool/petri_dish_2.png');
         signimg1 = p.loadImage('images/wenjuniihighschool/bac1.png');
