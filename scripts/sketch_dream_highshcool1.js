@@ -24,7 +24,7 @@ function preload() {
 
 function setup() {
     myCanvas = createCanvas(850, 499);
-    myCanvas.parent('phighschool');
+    myCanvas.parent('phighschool1');
     capture = createCapture(VIDEO);
     capture.size(205, 154);
     capture.hide();
@@ -128,7 +128,7 @@ function drawDotNumber(num, x, y) {
         return;
     }
 
-    let index = parseInt(num); 
+    let index = parseInt(num);
 
     if (isNaN(index) || index < 0 || index >= dotMatrix.length) {
         console.error('Invalid index:', index);

@@ -4,13 +4,7 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
-    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
-    <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
-    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/RGBELoader.js"></script>
-    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/OBJLoader.js"></script> -->
     <script src="scripts/heartratesound.js"></script>
-    <!-- <script src="scripts/sketch.js"></script> -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheets/normalize.css">
@@ -20,6 +14,7 @@
 </head>
 
 <body class="body">
+    <div id="c2" style="display:none"></div>
     <div class="notify">
         <div>
             <p>
@@ -1066,7 +1061,7 @@
                     </div>
                     <br>
                     <button id="startButton">Start</button>
-                    <div id="phighschool"></div>
+                    <div id="phighschool1"></div>
                     <script class="myscript" src="scripts/sketch_dream_highshcool1.js"></script>
                     <br>
                     <div class="button-container">
@@ -1078,14 +1073,19 @@
                     <audio id="myAudio" controls style="display:none">
                         <source src="audios/explanation.mp3" type="audio/mpeg">
                     </audio>
+                    <button id="startButton2">Start</button>
                     <div id="phighschool2"></div>
                     <script class="myscript" src="scripts/sketch_dream_highshcool2.js"></script>
+                    <br>
                     <div class="source">
                         <p>
                             Source:
                             <br>
                             <a href="https://www.google.com/search?q=bacteria+lab+bottle&tbm=isch&ved=2ahUKEwiBxoz4qKn3AhVEsHIEHcEpAo4Q2-cCegQIABAA&oq=bacteria+lab+bottle&gs_lcp=CgNpbWcQAzoGCAAQCBAeOgQIABBDOgUIABCABDoECAAQHjoGCAAQBRAeUIYKWL4fYKQjaABwAHgAgAHVAYgB3AaSAQU2LjIuMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=zHxjYoGwDcTgytMPwdOI8Ag&bih=704&biw=1440"
                                 target="_blank">Bacteria Lab Bottle</a>
+                            <br>
+                            <a href="https://www.google.com/search?q=Petri+dish&tbm=isch&sa=X&ved=2ahUKEwjstoantfz9AhXwEVkFHThfBToQ0pQJegQIDRAB&biw=1440&bih=768&dpr=2"
+                                target="_blank">Petri Dish</a>
                             <br>
                             <a href="https://www.google.com/search?q=%E9%AB%98%E8%80%83+%E6%88%90%E7%BB%A9%E6%A6%9C&tbm=isch&ved=2ahUKEwjDy5Siqan3AhWto3IEHY5mDRQQ2-cCegQIABAA&oq=%E9%AB%98%E8%80%83+%E6%88%90%E7%BB%A9%E6%A6%9C&gs_lcp=CgNpbWcQAzoHCAAQgAQQDDoGCAAQDBAYOggIABAMEAUQHlDTBVjyF2D2GGgAcAB4AoAB0AWIAd0LkgEJMi4zLjEuNi0xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=JH1jYsOpGq3HytMPjs21oAE&bih=704&biw=1440"
                                 target="_blank">National College Entrance Examination Results List</a>
@@ -1098,6 +1098,22 @@
                             <br>
                             <a href="https://p5js.org/" target="_blank">p5.js</a>
                         </p>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="button-container">
+                        <button id="previousButton">Back</button>
+                        <script>
+                            document.getElementById("previousButton").addEventListener("click", function () {
+                                window.location.href = "https://wenjunii.github.io/Lifeography/dream_2.html";
+                            });
+                        </script>
+                        <button id="nextButton">Next</button>
+                        <script>
+                            document.getElementById("nextButton").addEventListener("click", function () {
+                                window.location.href = "https://wenjunii.github.io/Lifeography/dream_4.html";
+                            });
+                        </script>
                     </div>
                 </div>
                 <!-- <div id="c6"></div> -->
