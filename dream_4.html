@@ -5,6 +5,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.js"></script>
     <script src="scripts/heartratesound.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/RGBELoader.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/OBJLoader.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheets/normalize.css">
@@ -999,46 +1004,193 @@
             </div>
             <div class="eight columns middle">
                 <div class="section1">
+                    <video id="video1" preload="auto" autoplay loop muted style="display:none">
+                        <source src="videos/sequence1.mp4" type="video/mp4">
+                    </video>
+                    <video id="video2" preload="auto" autoplay loop muted style="display:none">
+                        <source src="videos/sequence2.mp4" type="video/mp4">
+                    </video>
+                    <video id="video3" preload="auto" autoplay loop muted style="display:none">
+                        <source src="videos/sequence3.mp4" type="video/mp4">
+                    </video>
+                    <video id="video4" preload="auto" autoplay loop muted style="display:none">
+                        <source src="videos/sequence4.mp4" type="video/mp4">
+                    </video>
+                    <video id="video5" preload="auto" autoplay loop muted style="display:none">
+                        <source src="videos/sequence5.mp4" type="video/mp4">
+                    </video>
+                    <video id="video6" preload="auto" autoplay loop muted style="display:none">
+                        <source src="videos/sequence6.mp4" type="video/mp4">
+                    </video>
+                    <audio id="audio1" src="audios/night.mp3" preload="auto" loop style="display:none;"></audio>
                     <div class="title2">
                         <a href="index.html" target="">Home</a> | The Dream | <a href="data.html" target="">The Data</a>
                         | <a href="response.html" target="">The Response</a>
                     </div>
                     <br>
                     <div class="speech">
-						<audio controls>
-							<source src="audios/03.mp4" type="audio/mpeg">
-						</audio>
-						<br>
-						<br>
-						<div class="text">
-							<div class="textchinese">
-								<div class="speechreconition2">
-									Voice of Wenjun
-								</div>
-								<br>
-								<span class="keyword">生活</span><span class="keyword">继续</span>以没有<span class="keyword">归属感</span>的但要完成<span class="keyword">高考</span><span class="keyword">任务</span>的状态</span><span class="keyword">继续</span>……直到一位<span class="keyword">女孩</span>出现了。我们的<span class="keyword">距离</span>越来越<span class="keyword">近</span>，我感觉到<span class="keyword">生活</span>中又再次充满了<span class="keyword">笑容</span>、<span class="keyword">笑声</span>及<span class="keyword">爱</span>。我们会经常相约到附近<span class="keyword">大学</span>的<span class="keyword">校园</span>里见面。坐在<span class="keyword">长椅</span>上，有时我会不自觉地<span class="keyword">睡</span>到她的<span class="keyword">大腿</span>上，感觉整个<span class="keyword">世界</span>也就剩我们<span class="keyword">两人</span>了，<span class="keyword">时间</span>也仿佛<span class="keyword">停止</span>了。如果<span class="keyword">时间</span>真的不再<span class="keyword">往前走</span>，那多好。
-							</div>
-							<br>
-							<br>
-							<span class="keyword">Life</span> <span class="keyword">continues</span> with no sense of <span class="keyword">belonging</span> but with the <span class="keyword">task</span> of completing the <span class="keyword">National
-							College Entrance Examination</span>... until a <span class="keyword">girl</span> comes along. We get <span class="keyword">closer</span> and <span class="keyword">closer</span> and I
-							feel that <span class="keyword">life</span> is once again filled with <span class="keyword">smiles</span>, <span class="keyword">laughter</span> and <span class="keyword">love</span>. We often meet up on the
-							<span class="keyword">campus</span> of a nearby <span class="keyword">university</span>. Sitting on a <span class="keyword">bench</span>, sometimes I will unconsciously <span class="keyword">sleep</span> on
-							her <span class="keyword">lap</span>, feeling that the whole <span class="keyword">world</span> is left to the <span class="keyword">two</span> of us, and <span class="keyword">time</span> seems to have
-							<span class="keyword">stopped</span>. If <span class="keyword">time</span> really does not <span class="keyword">go forward</span>, it will be great.
-							<br>
-							<br>
-							<div class="speak2">
-								Voice of Wenjun II
-							</div>
-							<br>
-							<audio controls>
-								<source src="audios/christopher_03.mp3" type="audio/mpeg">
-							</audio>
-						</div>
-					</div>
+                        <audio controls>
+                            <source src="audios/03.mp4" type="audio/mpeg">
+                        </audio>
+                        <br>
+                        <br>
+                        <div class="text">
+                            <div class="textchinese">
+                                <div class="speechreconition2">
+                                    Voice of Wenjun
+                                </div>
+                                <br>
+                                <span class="keyword">生活</span><span class="keyword">继续</span>以没有<span
+                                    class="keyword">归属感</span>的但要完成<span class="keyword">高考</span><span
+                                    class="keyword">任务</span>的状态</span><span class="keyword">继续</span>……直到一位<span
+                                    class="keyword">女孩</span>出现了。我们的<span class="keyword">距离</span>越来越<span
+                                    class="keyword">近</span>，我感觉到<span class="keyword">生活</span>中又再次充满了<span
+                                    class="keyword">笑容</span>、<span class="keyword">笑声</span>及<span
+                                    class="keyword">爱</span>。我们会经常相约到附近<span class="keyword">大学</span>的<span
+                                    class="keyword">校园</span>里见面。坐在<span class="keyword">长椅</span>上，有时我会不自觉地<span
+                                    class="keyword">睡</span>到她的<span class="keyword">大腿</span>上，感觉整个<span
+                                    class="keyword">世界</span>也就剩我们<span class="keyword">两人</span>了，<span
+                                    class="keyword">时间</span>也仿佛<span class="keyword">停止</span>了。如果<span
+                                    class="keyword">时间</span>真的不再<span class="keyword">往前走</span>，那多好。
+                            </div>
+                            <br>
+                            <br>
+                            <span class="keyword">Life</span> <span class="keyword">continues</span> with no sense of
+                            <span class="keyword">belonging</span> but with the <span class="keyword">task</span> of
+                            completing the <span class="keyword">National
+                                College Entrance Examination</span>... until a <span class="keyword">girl</span> comes
+                            along. We get <span class="keyword">closer</span> and <span class="keyword">closer</span>
+                            and I
+                            feel that <span class="keyword">life</span> is once again filled with <span
+                                class="keyword">smiles</span>, <span class="keyword">laughter</span> and <span
+                                class="keyword">love</span>. We often meet up on the
+                            <span class="keyword">campus</span> of a nearby <span class="keyword">university</span>.
+                            Sitting on a <span class="keyword">bench</span>, sometimes I will unconsciously <span
+                                class="keyword">sleep</span> on
+                            her <span class="keyword">lap</span>, feeling that the whole <span
+                                class="keyword">world</span> is left to the <span class="keyword">two</span> of us, and
+                            <span class="keyword">time</span> seems to have
+                            <span class="keyword">stopped</span>. If <span class="keyword">time</span> really does not
+                            <span class="keyword">go forward</span>, it will be great.
+                            <br>
+                            <br>
+                            <div class="speak2">
+                                Voice of Wenjun II
+                            </div>
+                            <br>
+                            <audio controls>
+                                <source src="audios/christopher_03.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
                     <br>
-                    
+                    <div id="preview">
+                        <button id="startButton">Start</button>
+                        <br>
+                        <img id="previewimage" src="images/preview2.png" alt="Preview Image" width="880" height="587">
+                    </div>
+                    <div id="highschool3"></div>
+                    <script class="myscript" src="scripts/sketch_dream_highshcool3.js"></script>
+                    <p id="reminder">Volume:</p><input type="range" id="volumeSlider" min="0" max="100" step="1"
+                        value="50" />
+                    <script>
+                        document.getElementById('volumeSlider').addEventListener('input', function () {
+                            audio1.volume = parseFloat(volumeSlider.value / 100);
+                        });
+                    </script>
+                    <div class="source">
+                        <p>
+                            Source:
+                            <br>
+                            <a href="https://commons.wikimedia.org/w/index.php?search=bench+night&title=Special:MediaSearch&go=Go&type=image"
+                                target="_blank">Bench Night</a>
+                            <br>
+                            <a href="https://commons.wikimedia.org/w/index.php?search=campus+night&title=Special:MediaSearch&go=Go&type=image"
+                                target="_blank">Campus Night</a>
+                            <br>
+                            <a href="https://commons.wikimedia.org/w/index.php?search=campus+night+china&title=Special:MediaSearch&go=Go&type=image"
+                                target="_blank">Campus Night China</a>
+                            <br>
+                            <a href="https://commons.wikimedia.org/w/index.php?search=sitting+female&title=Special:MediaSearch&go=Go&type=image"
+                                target="_blank">Sitting Female</a>
+                            <br>
+                            <a href="https://pixabay.com/sound-effects/search/night/" target="_blank">Night Sound</a>
+                            <br>
+                            <a href="http://www.makehumancommunity.org/" target="_blank">MakeHuman</a>
+                            <br>
+                            <a href="https://www.mixamo.com/" target="_blank">Mixamo</a>
+                            <br>
+                            <a href="https://stablediffusionweb.com/" target="_blank">Stable Diffusion</a>
+                            <br>
+                            <a href="https://github.com/google-research/frame-interpolation" target="_blank">Frame
+                                Interpolation</a>
+                            <br>
+                            <a href="https://threejs.org/" target="_blank">three.js</a>
+                        </p>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="hello3">
+                        Who is the <span class="keyword">girl</span>?
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="videoplay2">
+                        <video id="videoplay2" width="300" controls loop>
+                            <source src="videos/girl2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <script>
+                        const video = document.getElementById('videoplay2');
+                        video.addEventListener('loadedmetadata', () => {
+                            video.volume = 0.3;
+                        });
+                    </script>
+                    <br>
+                    <div class="source">
+                        <p>
+                            Source:
+                            <br>
+                            <a href="https://www.google.com/search?q=high+school+girl+china&newwindow=1&hl=en&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi1r-_l5qz3AhXIg4kEHSTiA5MQ_AUoAnoECAEQBA&biw=1440&bih=768&dpr=2"
+                                target="_blank">High School Girl China</a>
+                            <br>
+                            <a href="https://www.google.com/search?q=high+school+girl+asian&tbm=isch&ved=2ahUKEwjo2-bm5qz3AhV7D1kFHcd2BDMQ2-cCegQIABAA&oq=high+school+girl+asian&gs_lcp=CgNpbWcQAzoGCAAQCBAeOgUIABCABFCQCFj-DGCOD2gAcAB4AIABgAGIAcsDkgEDNS4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=UlBlYujqCfue5NoPx-2RmAM&bih=768&biw=1440&hl=en"
+                                target="_blank">High School Girl Asian</a>
+                            <br>
+                            <a href="https://www.google.com/search?q=%E9%AB%98%E4%B8%AD%E5%A5%B3%E7%94%9F&tbm=isch&ved=2ahUKEwi_7NWI56z3AhU9C2IAHabvB7QQ2-cCegQIABAA&oq=%E9%AB%98%E4%B8%AD%E5%A5%B3%E7%94%9F&gs_lcp=CgNpbWcQAzoECAAQQzoFCAAQgAQ6BwgAELEDEEM6CAgAEIAEELEDOggIABCxAxCDAToGCAAQCBAeOgQIABAYOgYIABAKEBhQowlYphxgrR1oAHAAeACAAeMBiAGSDpIBBTkuNi4ymAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=mVBlYv-7C72WiLMPpt-foAs&bih=768&biw=1440&hl=en"
+                                target="_blank">高中女生</a>
+                            <br>
+                            <a href="https://pixabay.com/sound-effects/search/girl/?manual_search=1&order=None"
+                                target="_blank">Girl Sound</a>
+                            <br>
+                            <a href="https://github.com/NVlabs/stylegan" target="_blank">GAN</a>
+                        </p>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="button-container">
+                        <button id="previousButton">Back</button>
+                        <script>
+                            document.getElementById("previousButton").addEventListener("click", function () {
+                                window.location.href = "https://wenjunii.github.io/Lifeography/dream_3.html";
+                            });
+                        </script>
+                        <button id="nextButton">Next</button>
+                        <script>
+                            document.getElementById("nextButton").addEventListener("click", function () {
+                                window.location.href = "https://wenjunii.github.io/Lifeography/dream_5.html";
+                            });
+                        </script>
+                    </div>
                 </div>
                 <!-- <div id="c6"></div> -->
             </div>
