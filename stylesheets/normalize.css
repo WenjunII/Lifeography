@@ -473,6 +473,54 @@ th {
   color: rgb(230, 230, 230);
 }
 
+.body1 {
+  /* background-color: rgb(25, 25, 25); */
+  background-color:black;
+  color: rgb(230, 230, 230);
+}
+
+.body2 {
+  /* background-color: rgb(25, 25, 25); */
+  background-color:rgb(10, 10, 10);
+  color: rgb(230, 230, 230);
+}
+
+.body3 {
+  /* background-color: rgb(25, 25, 25); */
+  background-color:rgb(20, 20, 20);
+  color: rgb(230, 230, 230);
+}
+
+.body4 {
+  /* background-color: rgb(25, 25, 25); */
+  background-color:rgb(30, 30, 30);
+  color: rgb(230, 230, 230);
+}
+
+.body5 {
+  /* background-color: rgb(25, 25, 25); */
+  background-color:rgb(40, 40, 40);
+  color: rgb(230, 230, 230);
+}
+
+.body6 {
+  /* background-color: rgb(25, 25, 25); */
+  background-color:rgb(50, 50, 50);
+  color: rgb(230, 230, 230);
+}
+
+.body7 {
+  /* background-color: rgb(25, 25, 25); */
+  background-color:rgb(100, 100, 100);
+  color: rgb(230, 230, 230);
+}
+
+.body8 {
+  /* background-color: rgb(25, 25, 25); */
+  background-color:rgb(200, 200, 200);
+  color: rgb(230, 230, 230);
+}
+
 .title {
   text-align: center;
   letter-spacing: 1px;
@@ -713,20 +761,20 @@ a:active {
   font-size: medium;
   line-height: 22px;
   font-family: Verdana;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .hello5 {
   width: 850px;
   margin-left: auto;
   margin-right: auto;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .subtitle2 {
   letter-spacing: 1px;
   text-align: center;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .source2 {
@@ -834,7 +882,7 @@ a.source2:active {
   height: 100%;
 }
 
-#p57, #phighschool1, #phighschool2 {
+#p57, #phighschool1, #phighschool2, #p5college, #p5marriage {
   display: flex;
   justify-content: center;
   align-items: center;

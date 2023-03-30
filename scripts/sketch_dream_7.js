@@ -68,7 +68,7 @@ function adjustVolume2() {
 
 function draw() {
     background(25, 25, 25);
-    getVideo = myVideos2.get();
+    let getVideo = myVideos2.get();
     image(getVideo, 0, 0, 800, 667);
     image(bimg1, 0 + bpositionX1, 50 + bpositionY1);
     image(bimg4, 0 + bpositionX4, 80 + bpositionY4);

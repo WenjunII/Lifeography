@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.js"></script>
+    <script src="scripts/heartratesound.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/RGBELoader.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/OBJLoader.js"></script> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/skeleton.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <title>Lifeography of Wenjun II</title>
+</head>
+
+<body class="body">
+    <div id="c2" style="display:none"></div>
+    <div class="notify">
+        <div>
+            <p>
+                Please use a desktop or laptop browser to view this page with the best experience😉
+            </p>
+        </div>
+        <br>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="two columns left">
+                <table class="keywordtable">
+                    <tr>
+                        <th>Keyword</th>
+                        <th>Quantity</th>
+                    </tr>
+                    <tr>
+                        <td>time</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>life</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>生活</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>继续</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>dream</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>时间</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>how</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>任务</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>自己</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>grow</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>smile</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>task</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>continue</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>girl</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>world</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>don't know</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>笑容</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>喜欢</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>往前走</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>long</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>only</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>surround</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>get used to</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>bacteria</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>enjoy</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>together</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>try</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>free</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>myself</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>习惯</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>一起</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>高考</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>细菌</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>世界</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>如何</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>自由</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>sewing</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>little boy</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>end</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>night</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>beaten</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>happy</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>quiet</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>lyinge</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>lap</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>bed</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>family</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>laughter</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>school</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>familiar</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>new</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>National College Entrance Examination</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>belonging</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>lab</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>close</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>love</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>campus</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>go forward</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>move forward</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>university</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>ghost</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>job</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>get married</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>handle</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>开心</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>打</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>学校</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>包围</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>笑声</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>熟悉</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>成绩</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>新</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>归属感</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>实验室</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>培育</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>女孩</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>爱</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>大学</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>校园</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>不知道</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>鬼魂</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>结婚</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>什么</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>尝试</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>家庭</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>不懂</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>处理</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>hide</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>grandma</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>protect</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>safe haven</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>academic performance</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>obedience</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>junior captain</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>squadron leader</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>three good student</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>mother</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>sound</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>fall asleep</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>hand</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>lift up</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>cold</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>son</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>cry</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>model student</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>like</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>never</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>forever</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>sewing machine</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>soft</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>warm</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>eternal</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>eye</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>play</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>smooth</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>high school</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>hard</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>tired</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>academic achievement</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>biology</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>vessel</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>self-awareness</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>choose</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>bench</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>sleep</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>two</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>broke up</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>stop</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>go on</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>question</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>maze</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>class</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>meaningless</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>useless</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>wondering</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>aimless</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>meadow</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>lake</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>taking picture</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>explore</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>fun</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>fear</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>settle down</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>accept</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>routine</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>simple</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>in the moment</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>wonderful</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>inseparable</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>twins</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>joy</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>move on</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>right thing</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>what</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>relationship</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>outside</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>possibility</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>freedom</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>stuck</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>break free</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>bondage</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>tight</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>alone</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>mirror</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>yourself</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>who am I</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>wake up</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>alive</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>heartbeat</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>家</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>儿子</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>奶奶</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>避难所</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>哭</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>听话</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>小队长</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>中队长</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>三好学生</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>模范</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>唯一</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>正常</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>安静</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>按部就班</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>回应</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>保护</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>安全</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>畅顺</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>嘉奖</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>高中</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>难</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>厌倦</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>生物</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>器皿</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>自我意识</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>选择</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>距离</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>近</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>长椅</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>大腿</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>两人</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>停止</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>分手</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>不知所措</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>问号</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>迷宫</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>课堂</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>没有意义</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>没有所谓</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>漫无目的</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>游荡</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>草地</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>湖</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>拍照</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>探索</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>有趣</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>工作</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>恐惧</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>安稳</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>接受</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>按部就班</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>简单</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>活在当下</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>美好</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>形影不离</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>双胞胎</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>共同</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>快乐</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>年龄</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>该做的事情</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>关系</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>围绕</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>不想</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>外面</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>可能</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>卡</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>挣脱</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>束缚</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>紧</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>镜子</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>独自</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>谁</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="eight columns middle">
+                <div class="section1">
+                    <div class="title2">
+                        <a href="index.html" target="">Home</a> | The Dream | <a href="data.html" target="">The Data</a>
+                        | <a href="response.html" target="">The Response</a>
+                    </div>
+                    <br>
+                    <div class="speech">
+                        <audio controls>
+                            <source src="audios/05.mp4" type="audio/mpeg">
+                        </audio>
+                        <br>
+                        <br>
+                        <div class="text">
+                            <div class="textchinese">
+                                <div class="speechreconition2">
+                                    Voice of Wenjun
+                                </div>
+                                <br>
+                                毕业后经历了找<span class="keyword">工作</span>和失业的<span class="keyword">恐惧</span>后，<span
+                                    class="keyword">生活</span>终于开始<span class="keyword">安稳</span>下来了，我也逐渐开始<span
+                                    class="keyword">接受</span>和<span class="keyword">习惯</span>如其他人一样过着<span
+                                    class="keyword">按部就班</span>的日子。我们住在了<span class="keyword">一起</span>，<span
+                                    class="keyword">尝试</span>过一些<span class="keyword">简单</span>的<span
+                                    class="keyword">活在当下</span>的<span class="keyword">生活</span>。即使只是<span
+                                    class="keyword">一起</span>吃早餐、聊天、做饭、看电影、躺在床上，都是<span
+                                    class="keyword">美好</span>的，我们像一对<span class="keyword">形影不离</span>的<span
+                                    class="keyword">双胞胎</span>在<span class="keyword">共同</span>编织着充满<span
+                                    class="keyword">快乐</span>和<span class="keyword">爱</span>的<span
+                                    class="keyword">生活</span>。如果<span class="keyword">时间</span>真的不再<span
+                                    class="keyword">往前走</span>，那多好。但<span class="keyword">时间</span>仍然只会<span
+                                    class="keyword">继续</span><span class="keyword">往前走</span>。到了一定的<span
+                                    class="keyword">年龄</span>，似乎就要<span class="keyword">继续</span>做对应<span
+                                    class="keyword">该做的事情</span>了。我们<span class="keyword">结婚</span>了，但似乎<span
+                                    class="keyword">不知道</span>究竟<span class="keyword">结婚</span>是<span
+                                    class="keyword">什么</span>。我们想<span class="keyword">尝试</span>建立一个<span
+                                    class="keyword">家庭</span>，但似乎并<span class="keyword">不懂</span><span
+                                    class="keyword">如何</span>建立一个<span class="keyword">家庭</span>。太多<span
+                                    class="keyword">关系</span>和<span class="keyword">任务</span><span
+                                    class="keyword">围绕</span>这我们，我们并<span class="keyword">不懂</span>得<span
+                                    class="keyword">如何</span><span class="keyword">处理</span>，也许也<span
+                                    class="keyword">不想</span>去<span class="keyword">处理</span>。某一天她跟我说，她看过<span
+                                    class="keyword">外面</span>的<span class="keyword">世界</span>，那里有其他<span
+                                    class="keyword">可能</span>。我猜那是<span class="keyword">自由</span>。我们<span
+                                    class="keyword">卡</span>在了某个地方，越想<span class="keyword">挣脱</span>却<span
+                                    class="keyword">束缚</span>得越<span class="keyword">紧</span>。
+                            </div>
+                            <br>
+                            <br>
+                            After graduating and going through the <span class="keyword">fear</span> of finding a <span
+                                class="keyword">job</span> and losing my <span class="keyword">job</span>, <span
+                                class="keyword">life</span> finally
+                            starts to <span class="keyword">settle down</span>, and I gradually start to <span
+                                class="keyword">accept</span> and <span class="keyword">get used to</span> living a
+                            <span class="keyword">routine</span> <span class="keyword">life</span>
+                            like everyone else. We live <span class="keyword">together</span> and <span
+                                class="keyword">try</span> to live a <span class="keyword">simple</span> <span
+                                class="keyword">life</span> of living <span class="keyword">in the moment</span>.
+                            Even just eating breakfast, talking to each other, cooking, watching movies, and <span
+                                class="keyword">lying</span> in
+                            <span class="keyword">bed</span> <span class="keyword">together</span>, is <span
+                                class="keyword">wonderful</span>. We are like <span class="keyword">inseparable</span>
+                            <span class="keyword">twins</span> weaving a <span class="keyword">life</span> full of <span
+                                class="keyword">joy</span> and
+                            <span class="keyword">love</span> <span class="keyword">together</span>. If <span
+                                class="keyword">time</span> does not <span class="keyword">go forward</span>, it will be
+                            great. But <span class="keyword">time</span> will <span class="keyword">only</span> <span
+                                class="keyword">continue</span> to
+                            <span class="keyword">move forward</span>. At a certain <span class="keyword">age</span>, it
+                            seems like it's <span class="keyword">time</span> to <span class="keyword">move on</span> to
+                            the <span class="keyword">right things</span> to
+                            do. We <span class="keyword">get married</span>, but <span class="keyword">don't</span> seem
+                            to <span class="keyword">know</span> exactly <span class="keyword">what</span> it is to
+                            <span class="keyword">get married</span>. We want to <span class="keyword">try</span>
+                            to start a <span class="keyword">family</span>, but <span class="keyword">don't</span> seem
+                            to <span class="keyword">know</span> <span class="keyword">how</span> to start one. There
+                            are too many <span class="keyword">relationships</span>
+                            and <span class="keyword">tasks</span> <span class="keyword">surrounding</span> us that we
+                            <span class="keyword">don't know</span> <span class="keyword">how</span> to <span
+                                class="keyword">handle</span> and maybe don't want to <span
+                                class="keyword">handle</span>.
+                            One day, she tells me that she has seen the <span class="keyword">outside</span> <span
+                                class="keyword">world</span> and that there are other
+                            <span class="keyword">possibilities</span> there. I guess that is <span
+                                class="keyword">freedom</span>. We are <span class="keyword">stuck</span> somewhere, and
+                            the more we <span class="keyword">try</span> to
+                            <span class="keyword">break free</span>, the <span class="keyword">tighter</span> the <span
+                                class="keyword">bondage</span> becomes.
+                            <br>
+                            <br>
+                            <div class="speak2">
+                                Voice of Wenjun II
+                            </div>
+                            <br>
+                            <audio controls>
+                                <source src="audios/christopher_05.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- <button id="startButton">Start</button> -->
+                    <div id="p5marriage"></div>
+                    <script class="myscript" src="scripts/sketch_dream_marriage_test.js"></script>
+                </div>
+                <br>
+                <div class="source">
+                    <p>
+                        Source:
+                        <br>
+                        <a href="https://commons.wikimedia.org/w/index.php?search=meadow&title=Special:MediaSearch&go=Go&type=image"
+                            target="_blank">Meadow</a>
+                        <br>
+                        <a href="https://commons.wikimedia.org/w/index.php?search=lake&title=Special:MediaSearch&go=Go&type=image"
+                            target="_blank">Lake</a>
+                        <br>
+                        <a href="https://www.google.com/search?q=maze&tbm=isch&ved=2ahUKEwi7vbPSu6_3AhWhFFkFHTRjDz8Q2-cCegQIABAA&oq=maze&gs_lcp=CgNpbWcQAzIICAAQgAQQsQMyCAgAEIAEELEDMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDMgsIABCABBCxAxCDATIICAAQgAQQsQMyCAgAEIAEELEDMggIABCABBCxAzIICAAQgAQQsQM6BQgAEIAEOggIABCxAxCDAToECAAQQzoHCAAQsQMQQ1CPCVi4DGC-D2gAcAB4AIAB6wGIAYUEkgEFNC4wLjGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=t7VmYvuFNaGp5NoPtMa9-AM&authuser=5&bih=948&biw=1920&hl=en"
+                            target="_blank">Maze</a>
+                        <br>
+                        <a href="https://www.google.com/search?q=ghost&tbm=isch&ved=2ahUKEwjwy4bMiLD3AhW9sHIEHUMJAYQQ2-cCegQIABAA&oq=ghost&gs_lcp=CgNpbWcQAzIHCAAQsQMQQzIHCAAQsQMQQzIICAAQgAQQsQMyBAgAEEMyCAgAEIAEELEDMggIABCABBCxAzIICAAQgAQQsQMyBQgAEIAEMgsIABCABBCxAxCDATIICAAQgAQQsQM6BwgjEO8DECc6CggAELEDEIMBEEM6CAgAELEDEIMBUIoQWLUUYP4YaABwAHgAgAG5AYgBkQSSAQM0LjKYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=aAZnYvD3BL3hytMPw5KEoAg&authuser=5&bih=948&biw=1920&hl=en"
+                            target="_blank">Ghost</a>
+                        <br>
+                        <a href="https://editor.p5js.org/kchung/sketches/Bya-96Xz4" target="_blank">Maze Game</a>
+                        <br>
+                        <a href="https://github.com/google-research/frame-interpolation" target="_blank">Frame
+                            Interpolation</a>
+                        <br>
+                        <a href="https://p5js.org/" target="_blank">p5.js</a>
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div class="button-container">
+                    <button id="previousButton">Back</button>
+                    <script>
+                        document.getElementById("previousButton").addEventListener("click", function () {
+                            window.location.href = "https://wenjunii.github.io/Lifeography/dream_4.html";
+                        });
+                    </script>
+                    <button id="nextButton">Next</button>
+                    <script>
+                        document.getElementById("nextButton").addEventListener("click", function () {
+                            window.location.href = "https://wenjunii.github.io/Lifeography/dream_6.html";
+                        });
+                    </script>
+                </div>
+                <!-- <div id="c6"></div> -->
+            </div>
+            <div class="two columns right">
+                <!-- <img class="ads" src="images/ads.png"> -->
+            </div>
+        </div>
+    </div>
+    <div class="containermanu">
+        <div class="row">
+            <div class="two columns left">
+                <div class="keywordtable2">
+                    Keywords
+                </div>
+            </div>
+            <div class="eight columns middle">
+                <br>
+                <br><br><br>
+                <br>
+                <br><br><br>
+                <div class="title2">
+                    <a href="index.html" target="">Home</a> | The Dream | <a href="data.html" target="">The Data</a>
+                    |
+                    <a href="response.html" target="">The Response</a>
+                </div>
+                <br>
+
+            </div>
+            <div class="two columns right">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
