@@ -14,6 +14,7 @@ function setup() {
     myCanvas = createCanvas(850, 10630);
     myCanvas.parent('p5marriage');
     // p.background(255, 255, 255, 0.5);
+    // frameRate(60);
     noLoop();
 };
 
@@ -42,5 +43,5 @@ function draw() {
     // p.noStroke();
     fill(255, 255, 255, rectopacity);
     rect(0, 0, 850, 1.5 + rectmove);
-    rectmove += 5;
+    rectmove += 50;
 }
