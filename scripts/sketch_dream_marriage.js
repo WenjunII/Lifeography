@@ -9,12 +9,18 @@ var rectmove = 0;
 var toggle_loop = false;
 let myCanvas;
 const startButton = document.getElementById('startButton');
+let myAudio;
+let volumeSlide;
 
 function setup() {
     myCanvas = createCanvas(850, 10630);
     myCanvas.parent('p5marriage');
     // p.background(255, 255, 255, 0.5);
     // frameRate(60);
+    volumeSlider = select('#volumeSlider');
+    myAudio = select('#myAudio');
+    myAudio.elt.volume = volumeSlider.value();
+    volumeSlider.input(onVolumeChange);
     noLoop();
 };
 
@@ -29,8 +35,15 @@ startButton.addEventListener('click', async () => {
     await loadImages();
     startButton.style.display = 'none';
     document.getElementById('previewimage').style.display = 'none';
+    myAudio.play();
+    myAudio.loop();
     loop();
 });
+
+function onVolumeChange() {
+    let volume = volumeSlider.value();
+    myAudio.elt.volume = volume;
+}
 
 function draw() {
     // p.frameRate(5);

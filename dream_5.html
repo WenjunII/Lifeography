@@ -1080,6 +1080,12 @@
                     <button id="startButton">Start</button>
                     <div id="p5college"></div>
                     <script class="myscript" src="scripts/sketch_dream_college.js"></script>
+                    <br>
+                    <p id="reminder" for="volumeSlider">Volume:</p><input type="range" id="volumeSlider" min="0" max="1"
+                        step="0.01" value="0.5">
+                    <audio id="myAudio" preload="auto" loop controls style="display:none">
+                        <source src="audios/time.mp3" type="audio/mpeg">
+                    </audio>
                 </div>
                 <br>
                 <div class="source">
@@ -1100,6 +1106,10 @@
                         <br>
                         <a href="https://editor.p5js.org/kchung/sketches/Bya-96Xz4" target="_blank">Maze Game</a>
                         <br>
+                        <a href="https://www.avatarsinpixels.com/" target="_blank">Avatars In Pixels</a>
+                        <br>
+                        <a href="https://pixabay.com/sound-effects/search/time/" target="_blank">Time Sound</a>
+                        <br>
                         <a href="https://github.com/google-research/frame-interpolation" target="_blank">Frame
                             Interpolation</a>
                         <br>
@@ -1107,21 +1117,21 @@
                     </p>
                 </div>
                 <br>
-                    <br>
-                    <div class="button-container">
-                        <button id="previousButton">Back</button>
-                        <script>
-                            document.getElementById("previousButton").addEventListener("click", function () {
-                                window.location.href = "dream_4.html";
-                            });
-                        </script>
-                        <button id="nextButton">Next</button>
-                        <script>
-                            document.getElementById("nextButton").addEventListener("click", function () {
-                                window.location.href = "dream_6.html";
-                            });
-                        </script>
-                    </div>
+                <br>
+                <div class="button-container">
+                    <button id="previousButton">Back</button>
+                    <script>
+                        document.getElementById("previousButton").addEventListener("click", function () {
+                            window.location.href = "dream_4.html";
+                        });
+                    </script>
+                    <button id="nextButton">Next</button>
+                    <script>
+                        document.getElementById("nextButton").addEventListener("click", function () {
+                            window.location.href = "dream_6.html";
+                        });
+                    </script>
+                </div>
                 <!-- <div id="c6"></div> -->
             </div>
             <div class="two columns right">

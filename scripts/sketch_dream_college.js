@@ -14,6 +14,8 @@ var c;
 let myCanvas;
 let myVideo;
 const startButton = document.getElementById('startButton');
+let myAudio;
+let volumeSlide;
 
 function preload() {
     // backgroundimg3 = loadImage('images/wenjuniicollege/newworld.png');
@@ -26,6 +28,10 @@ function setup() {
     myCanvas = createCanvas(800, 800);
     myCanvas.parent('p5college');
     c = 'blue';
+    volumeSlider = select('#volumeSlider');
+    myAudio = select('#myAudio');
+    myAudio.elt.volume = volumeSlider.value();
+    volumeSlider.input(onVolumeChange);
     noLoop();
 };
 
@@ -35,10 +41,17 @@ startButton.addEventListener('click', () => {
     myVideo.loop();
     myVideo.volume(0);
     myVideo.hide();
+    myAudio.play();
+    myAudio.loop();
     // myAudio2.play();
     // myAudio2.loop();
     loop();
 });
+
+function onVolumeChange() {
+    let volume = volumeSlider.value();
+    myAudio.elt.volume = volume;
+}
 
 function draw() {
     background(50, 50, 50);
