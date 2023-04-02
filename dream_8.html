@@ -5,11 +5,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.js"></script>
     <script src="scripts/heartratesound.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
+    <!-- <script src="scripts/randomsound2.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
     <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
     <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
     <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/RGBELoader.js"></script>
-    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/OBJLoader.js"></script> -->
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/OBJLoader.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheets/normalize.css">
@@ -19,7 +20,7 @@
 </head>
 
 <body class="body8">
-    <div id="c2" style="display:none"></div>
+    <!-- <div id="c2" style="display:none"></div> -->
     <div class="notify">
         <div>
             <p>
@@ -1004,6 +1005,22 @@
             </div>
             <div class="eight columns middle">
                 <div class="section1">
+                    <div class="videoreference">
+                        <video id="video1" preload="auto" autoplay loop muted style="display:none">
+                            <source src="videos/wenjuniinewrotate.mp4" type="video/mp4">
+                        </video>
+
+                        <video id="video2" preload="auto" autoplay loop muted style="display:none">
+                            <source src="videos/wenjuniinew.mp4" type="video/mp4">
+                        </video>
+
+                        <video id="video4" preload="auto" autoplay loop muted style="display:none">
+                            <source src="videos/gradient.mp4" type="video/mp4">
+                        </video>
+                        <audio id="audio1" src="audios/glitch.mp3" preload="auto" loop style="display:none;"></audio>
+                        <!-- <div id="c1" style="display:none"></div> -->
+                        <div id="c2" style="display:none"></div>
+                    </div>
                     <div class="title2">
                         <a href="index.html" target="">Home</a> | The Dream | <a href="data.html" target="">The Data</a>
                         | <a href="response.html" target="">The Response</a>
@@ -1036,14 +1053,49 @@
                         </p>
                     </div>
                     <br>
-					<br>
-					<br>
-					<div class="videoplay2">
-						<video width="400" controls autoplay loop>
-							<source src="videos/wenjuniichapter1.mp4" type="video/mp4">
-						</video>
-					</div>
                     <br>
+                    <br>
+                    <div class="videoplay2">
+                        <video width="400" controls autoplay loop>
+                            <source src="videos/wenjuniichapter1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <br>
+                    <!-- <button id="startButton">Start</button> -->
+                    <div id="3dawake"></div>
+                    <div id="preview">
+                        <button id="startButton">Start</button>
+                        <br>
+                        <img id="previewimage" src="images/preview3.png" alt="Preview Image" width="880" height="600">
+                    </div>
+                    <script class="myscript" src="scripts/sketch_dream_awake.js"></script>
+                    <p id="reminder">Volume:</p><input type="range" id="volumeSlider" min="0" max="100" step="1"
+                        value="50" />
+                    <script>
+                        document.getElementById('volumeSlider').addEventListener('input', function () {
+                            audio1.volume = parseFloat(volumeSlider.value / 100);
+                        });
+                    </script>
+                    <div class="source">
+                        <p>
+                            Source:
+                            <br>
+                            <a href="https://www.garmin.com/en-US/health/" target="_blank">Health Data from the
+                                Tracker</a>
+                            <br>
+                            <a href="https://en.wikipedia.org/wiki/Computer_programming" target="_blank">Coding</a>
+                            <br>
+                            <a href="http://www.makehumancommunity.org/" target="_blank">MakeHuman</a>
+                            <br>
+                            <a href="https://drajmarsh.bitbucket.io/supershapes.html" target="_blank">SuperShapes
+                                Generator</a>
+                            <br>
+                            <a href="https://pixabay.com/sound-effects/search/glitch/?manual_search=1&order=None"
+                                target="_blank">Glitch Sound</a>
+                            <br>
+                            <a href="https://threejs.org/" target="_blank">three.js</a>
+                        </p>
+                    </div>
                     <br>
                     <br>
                     <br>

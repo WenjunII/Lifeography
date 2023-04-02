@@ -875,7 +875,7 @@ a.source2:active {
 
 #preview,
 #3d5,
-#previewimage {
+#previewimage, #3dawake {
   display: flex;
   justify-content: center;
   align-items: center;
