@@ -15,17 +15,28 @@ startButton.addEventListener('click', function () {
         let ecgData = [];
         let myPosition = 100;
         let mySpeed = 1;
+        let myVideos;
+
+        p.preload = function () {
+            myVideos = p.createVideo('videos/wenjuniichapter1.mp4');
+        }
 
         p.setup = function () {
-            p.createCanvas(880, 600);
+            p.createCanvas(2000, 1364);
             for (let i = 0; i < p.width; i++) {
                 ecgData[i] = 0;
             }
+            myVideos.play();
+            myVideos.loop();
+            myVideos.volume(0);
+            myVideos.hide();
             // addMesh1();
         }
 
         p.draw = function () {
-            p.background(150, 150, 150);
+            p.background(255, 255, 255);
+            getVideo = myVideos.get();
+            p.image(getVideo, 0, 0);
             p.updateECGData();
             p.drawECGWaveform();
         }
@@ -76,6 +87,9 @@ startButton.addEventListener('click', function () {
 
     const video2 = document.getElementById('video2');
     const texture2 = new THREE.VideoTexture(video2);
+
+    const video5 = document.getElementById('video5');
+    const texture5 = new THREE.VideoTexture(video5);
 
     const clock = new THREE.Clock();
     const clock2 = new THREE.Clock();
@@ -252,7 +266,7 @@ startButton.addEventListener('click', function () {
             myMixer4.clipAction(animation).play();
         });
         gltf.scene.scale.set(6, 6, 6);
-        gltf.scene.position.set(-160, 140, 20);
+        gltf.scene.position.set(-160, 100, 20);
         gltf.scene.rotation.set(0, 0, 0);
         scene.add(gltf.scene);
         gltf.scene.rotation.y = 0;
@@ -349,7 +363,7 @@ startButton.addEventListener('click', function () {
             myMixer7.clipAction(animation).play();
         });
         gltf.scene.scale.set(6, 6, 6);
-        gltf.scene.position.set(150, 110, 200);
+        gltf.scene.position.set(150, 130, 200);
         gltf.scene.rotation.set(0, 0, 0);
         scene.add(gltf.scene);
         gltf.scene.rotation.y = 0;
@@ -381,7 +395,7 @@ startButton.addEventListener('click', function () {
             myMixer8.clipAction(animation).play();
         });
         gltf.scene.scale.set(6, 6, 6);
-        gltf.scene.position.set(140, -110, 230);
+        gltf.scene.position.set(140, -120, 230);
         gltf.scene.rotation.set(0, 180, 0);
         scene.add(gltf.scene);
         gltf.scene.rotation.y = 180;
