@@ -648,7 +648,7 @@ th {
 .ad1 {
   width: 120px;
   position: relative;
-  top: 1100px;
+  top: 800px;
 }
 
 .ad2 {
@@ -667,6 +667,30 @@ th {
   width: 120px;
   position: relative;
   top: 200px;
+}
+
+.ad5 {
+  width: 120px;
+  position: relative;
+  top: 200px;
+}
+
+.ad6 {
+  width: 120px;
+  position: relative;
+  top: 200px;
+}
+
+.ad7 {
+  width: 120px;
+  position: relative;
+  top: 200px;
+}
+
+.ad8 {
+  width: 120px;
+  position: relative;
+  top: 500px;
 }
 
 .age {
