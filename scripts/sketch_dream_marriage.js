@@ -56,5 +56,5 @@ function draw() {
     // p.noStroke();
     fill(255, 255, 255, rectopacity);
     rect(0, 0, 850, 1.5 + rectmove);
-    rectmove += 50;
+    rectmove += 5;
 }
