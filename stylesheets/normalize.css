@@ -923,7 +923,7 @@ a.source2:active {
 
 #preview,
 #3d5,
-#previewimage, #3dawake {
+#previewimage, #3dawake, #previewimage2 {
   display: flex;
   justify-content: center;
   align-items: center;
