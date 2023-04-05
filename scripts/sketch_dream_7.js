@@ -52,7 +52,7 @@ function setup() {
 
 startButton2.addEventListener('click', () => {
     startButton2.style.display = 'none';
-    document.getElementById('previewimage2').style.display = 'none';
+    // document.getElementById('previewimage2').style.display = 'none';
     myVideos2.play();
     myVideos2.loop();
     myVideos2.volume(0);
