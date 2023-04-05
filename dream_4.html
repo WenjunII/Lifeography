@@ -1091,14 +1091,16 @@
                     </div>
                     <div id="highschool3"></div>
                     <script class="myscript" src="scripts/sketch_dream_highshcool3.js"></script>
-                    <p id="reminder">Volume:</p><input type="range" id="volumeSlider" min="0" max="100" step="1"
-                        value="50" />
-                    <script>
-                        document.getElementById('volumeSlider').addEventListener('input', function () {
-                            audio1.volume = parseFloat(volumeSlider.value / 100);
-                        });
-                    </script>
-                    <div class="source">
+                    <div id="volume">
+                        <p id="reminder">Volume:</p><input type="range" id="volumeSlider" min="0" max="100" step="1"
+                            value="50" />
+                        <script>
+                            document.getElementById('volumeSlider').addEventListener('input', function () {
+                                audio1.volume = parseFloat(volumeSlider.value / 100);
+                            });
+                        </script>
+                    </div>
+                    <div id="source" class="source">
                         <p>
                             Source:
                             <br>
@@ -1156,7 +1158,7 @@
                         });
                     </script>
                     <br>
-                    <div class="source">
+                    <div id="source" class="source">
                         <p>
                             Source:
                             <br>
@@ -1177,13 +1179,14 @@
                     </div>
                     <br>
                     <br>
-                    <div class="button-container">
+                    <div id="button-container">
                         <button id="previousButton">Back</button>
                         <script>
                             document.getElementById("previousButton").addEventListener("click", function () {
                                 window.location.href = "dream_3.html";
                             });
                         </script>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                         <button id="nextButton">Next</button>
                         <script>
                             document.getElementById("nextButton").addEventListener("click", function () {

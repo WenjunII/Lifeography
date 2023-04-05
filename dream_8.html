@@ -1072,14 +1072,16 @@
                         <img id="previewimage" src="images/preview3.png" alt="Preview Image" width="880" height="600">
                     </div>
                     <script class="myscript" src="scripts/sketch_dream_awake.js"></script>
-                    <p id="reminder">Volume:</p><input type="range" id="volumeSlider" min="0" max="100" step="1"
-                        value="50" />
-                    <script>
-                        document.getElementById('volumeSlider').addEventListener('input', function () {
-                            audio1.volume = parseFloat(volumeSlider.value / 100);
-                        });
-                    </script>
-                    <div class="source">
+                    <div id="volume">
+                        <p id="reminder">Volume:</p><input type="range" id="volumeSlider" min="0" max="100" step="1"
+                            value="50" />
+                        <script>
+                            document.getElementById('volumeSlider').addEventListener('input', function () {
+                                audio1.volume = parseFloat(volumeSlider.value / 100);
+                            });
+                        </script>
+                    </div>
+                    <div id="source" class="source">
                         <p>
                             Source:
                             <br>
@@ -1105,13 +1107,14 @@
                     <br>
                     <br>
                     <br>
-                    <div class="button-container">
+                    <div id="button-container">
                         <button id="previousButton">Back</button>
                         <script>
                             document.getElementById("previousButton").addEventListener("click", function () {
                                 window.location.href = "dream_7.html";
                             });
                         </script>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                         <button id="nextButton">To The Data</button>
                         <script>
                             document.getElementById("nextButton").addEventListener("click", function () {

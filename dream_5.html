@@ -1081,11 +1081,13 @@
                     <div id="p5college"></div>
                     <script class="myscript" src="scripts/sketch_dream_college.js"></script>
                     <br>
-                    <p id="reminder" for="volumeSlider">Volume:</p><input type="range" id="volumeSlider" min="0" max="1"
-                        step="0.01" value="0.5">
-                    <audio id="myAudio" preload="auto" loop controls style="display:none">
-                        <source src="audios/time.mp3" type="audio/mpeg">
-                    </audio>
+                    <div id="volume">
+                        <p id="reminder" for="volumeSlider">Volume:</p><input type="range" id="volumeSlider" min="0"
+                            max="1" step="0.01" value="0.5">
+                        <audio id="myAudio" preload="auto" loop controls style="display:none">
+                            <source src="audios/time.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
                 </div>
                 <br>
                 <div class="source">
@@ -1118,7 +1120,7 @@
                 </div>
                 <br>
                 <br>
-                <div class="button-container">
+                <div id="button-container">
                     <button id="previousButton">Back</button>
                     <script>
                         document.getElementById("previousButton").addEventListener("click", function () {

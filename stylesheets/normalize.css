@@ -475,49 +475,49 @@ th {
 
 .body1 {
   /* background-color: rgb(25, 25, 25); */
-  background-color:black;
+  background-color: black;
   color: rgb(230, 230, 230);
 }
 
 .body2 {
   /* background-color: rgb(25, 25, 25); */
-  background-color:rgb(10, 10, 10);
+  background-color: rgb(10, 10, 10);
   color: rgb(230, 230, 230);
 }
 
 .body3 {
   /* background-color: rgb(25, 25, 25); */
-  background-color:rgb(20, 20, 20);
+  background-color: rgb(20, 20, 20);
   color: rgb(230, 230, 230);
 }
 
 .body4 {
   /* background-color: rgb(25, 25, 25); */
-  background-color:rgb(30, 30, 30);
+  background-color: rgb(30, 30, 30);
   color: rgb(230, 230, 230);
 }
 
 .body5 {
   /* background-color: rgb(25, 25, 25); */
-  background-color:rgb(40, 40, 40);
+  background-color: rgb(40, 40, 40);
   color: rgb(230, 230, 230);
 }
 
 .body6 {
   /* background-color: rgb(25, 25, 25); */
-  background-color:rgb(50, 50, 50);
+  background-color: rgb(50, 50, 50);
   color: rgb(230, 230, 230);
 }
 
 .body7 {
   /* background-color: rgb(25, 25, 25); */
-  background-color:rgb(100, 100, 100);
+  background-color: rgb(100, 100, 100);
   color: rgb(230, 230, 230);
 }
 
 .body8 {
   /* background-color: rgb(25, 25, 25); */
-  background-color:rgb(150, 150, 150);
+  background-color: rgb(150, 150, 150);
   color: rgb(230, 230, 230);
 }
 
@@ -570,7 +570,7 @@ th {
   text-align: center;
 }
 
-.breakline {
+#breakline {
   border-top: 1px solid darkgrey;
   border-bottom: 1px solid darkgrey;
   padding: 2px;
@@ -829,6 +829,7 @@ a:active {
   font-size: smaller;
   color: rgba(205, 150, 0, 0.7);
   text-align: right;
+  width: 100%;
 }
 
 a.source2:link {
@@ -923,21 +924,50 @@ a.source2:active {
 
 #preview,
 #3d5,
-#previewimage, #3dawake, #previewimage2 {
+#previewimage,
+#3dawake,
+#previewimage2 {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-#p57, #phighschool1, #phighschool2, #p5college, #p5marriage, #highschool3 {
+#p57,
+#phighschool1,
+#phighschool2,
+#p5college,
+#p5marriage,
+#highschool3 {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-.button-container {
+#button-container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#volume {
+  text-align: left;
+  width: 100%;
+}
+
+#source {
+  text-align: right;
+  width: 100%;
+}
+
+#audios {
+  text-align: left;
+  width: 100%;
 }
