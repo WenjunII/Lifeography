@@ -16,51 +16,51 @@ startButton.addEventListener('click', function () {
         let myPosition = 100;
         let mySpeed = 1;
         let myVideos;
+        let offset = 0;
+        let centerLineY;
+        let colors;
 
         p.preload = function () {
             myVideos = p.createVideo('videos/wenjuniichapter1.mp4');
+            myVideos.attribute('width', '500');
+            myVideos.attribute('height', '225');
         }
 
         p.setup = function () {
-            p.createCanvas(2000, 1364);
-            for (let i = 0; i < p.width; i++) {
-                ecgData[i] = 0;
-            }
-            myVideos.play();
-            myVideos.loop();
-            myVideos.volume(0);
+            p.createCanvas(800, 400);
+            centerLineY = p.height - 140;
             myVideos.hide();
-            // addMesh1();
+            myVideos.loop();
+            colors = [
+                p.color(255, 0, 0, 150),
+                p.color(0, 255, 0, 150),
+                p.color(0, 0, 255, 150)
+            ];
+            p.angleMode(p.DEGREES);
         }
 
         p.draw = function () {
             p.background(255, 255, 255);
             getVideo = myVideos.get();
-            p.image(getVideo, 0, 0);
-            p.updateECGData();
-            p.drawECGWaveform();
-        }
-
-        p.updateECGData = function () {
-            myPosition = (myPosition + mySpeed) % p.width;
-            let randomValue = p.random(-10, 10);
-            let isPeak = p.random(1) < 0.01;
-            ecgData[myPosition] = isPeak ? p.random(30, 50) : randomValue;
-        }
-
-        p.drawECGWaveform = function () {
-            p.stroke(0, 255, 0);
-            p.strokeWeight(2);
-            p.noFill();
-            p.beginShape();
-            for (let i = 0; i < p.width; i++) {
-                let x = i;
-                let y = p.height / 1.5 - ecgData[(myPosition + i) % p.width];
-                p.vertex(x, y);
+            p.image(getVideo, 10, -8);
+            for (let i = 0; i < 3; i++) {
+                p.drawWrappedGradientLine(colors[i], centerLineY - 20 + i * 20, 15, offset + i * 120);
             }
-            p.endShape();
+            offset -= 5;
         }
-    };
+
+        p.drawWrappedGradientLine = function (col, centerY, lineHeight, angleOffset) {
+            p.push();
+            for (let x = -p.width; x < p.width; x++) {
+                let angle = p.map(x, -p.width, p.width, 0, 360);
+                let y = p.sin(angle + angleOffset) * lineHeight;
+                let z = p.cos(angle + angleOffset) * lineHeight;
+                p.stroke(col);
+                p.line(x - 1, centerLineY + y, x, centerLineY + y);
+            }
+            p.pop();
+        }
+    }
 
     myp53 = new p5(indexsketch);
 
