@@ -118,7 +118,7 @@ let indexsketch = function (p) {
         p.colorMode(p.HSL, 360, 100, 100, 1);
         // p.angleMode(p.DEGREES);
         addMesh1();
-        p.frameRate(2);
+        // p.frameRate(2);
     }
 
     p.draw = function () {
