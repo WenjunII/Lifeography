@@ -223,11 +223,11 @@ let indexsketch = function (p) {
 };
 
 const scene = new THREE.Scene();
-const myCamera = new THREE.OrthographicCamera(window.innerWidth / - 3, window.innerWidth / 3, 600 / 3, 600 / - 3, 0.001, 2000);
+const myCamera = new THREE.OrthographicCamera(window.innerWidth / - 3, window.innerWidth / 3, window.innerHeight / 3, window.innerHeight / - 3, 0.001, 2000);
 myCamera.position.set(0, 0, 1000);
 // myCamera.zoom = 10;
 const renderer = new THREE.WebGLRenderer({ alpha: true });
-renderer.setSize(window.innerWidth, 600);
+renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setClearColor(0xcccccc);
 renderer.setPixelRatio(3);
 document.getElementById('3d10').appendChild(renderer.domElement);
