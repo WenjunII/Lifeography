@@ -11,6 +11,11 @@
 </head>
 
 <body style='margin : 0px; overflow: hidden;'>
+    <script>
+        document.querySelector('a-scene').addEventListener('click', function () {
+            document.querySelector('#videoTexture').play();
+        });
+    </script>
     <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
         <a-light type="ambient" color="#ffffff" intensity="0.5"></a-light>
         <a-assets>
@@ -20,7 +25,7 @@
         <a-marker type="pattern" url="markers/pattern-ar_5.patt">
             <!-- <a-anchor hit-testing> -->
             <a-entity gltf-model="models/wenjunii52.glb" scale="5 5 5" position="0 0 0" rotation="0 0 0"
-                material="src: #videoTexture" animation-mixer>
+            mixin="videoMaterial" animation-mixer>
                 <a-entity class="DefaultSkin.001" mixin="videoMaterial">
                 </a-entity>
             </a-entity>
