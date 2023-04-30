@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <script
         src="https://raw.githubusercontent.com/n5ro/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
@@ -10,28 +10,51 @@
     <title>Lifeography of Wenjun II</title>
 </head>
 
-<body style='margin : 0px; overflow: hidden;'>
-    <script>
-        document.querySelector('a-scene').addEventListener('click', function () {
-            document.querySelector('#videoTexture').play();
-        });
-    </script>
-    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+<body>
+    <a-scene webxr="optionalFeatures: hit-test, anchors;">
         <a-light type="ambient" color="#ffffff" intensity="0.5"></a-light>
         <a-assets>
             <video id="videoTexture" src="videos/wenjunii5mix.mp4" autoplay loop muted></video>
             <a-mixin id="videoMaterial" material="shader: standard; color: white; src: #videoTexture"></a-mixin>
         </a-assets>
-        <a-marker type="pattern" url="markers/pattern-ar_5.patt">
-            <!-- <a-anchor hit-testing> -->
-            <a-entity gltf-model="models/wenjunii52.glb" scale="5 5 5" position="0 0 0" rotation="0 0 0"
-            mixin="videoMaterial" animation-mixer>
-                <a-entity class="DefaultSkin.001" mixin="videoMaterial">
-                </a-entity>
-            </a-entity>
-        </a-marker>
-        <!-- </a-anchor> -->
+
+        <!-- Reticle -->
+        <a-entity id="reticle" visible="false">
+            <a-circle color="white" opacity="0.5" radius="0.1" rotation="-90 0 0"></a-circle>
+        </a-entity>
+
+        <!-- 3D Model -->
+        <a-entity id="model" gltf-model="models/wenjunii52.glb" scale="5 5 5" position="0 0 0" rotation="0 0 0"
+            mixin="videoMaterial" animation-mixer visible="false">
+        </a-entity>
     </a-scene>
+
+    <script>
+        const scene = document.querySelector('a-scene');
+        const reticle = document.querySelector('#reticle');
+        const model = document.querySelector('#model');
+
+        scene.addEventListener('click', async function (event) {
+            if (!scene.is('ar-mode')) {
+                return;
+            }
+
+            const hitTestSource = await scene.renderer.xr.getHitTestSource({ space: scene.renderer.xr.getReferenceSpace() });
+
+            if (hitTestSource) {
+                const hitTestResults = await hitTestSource.hitTest(new XRRay(event.detail.intersection.point));
+                if (hitTestResults.length > 0) {
+                    const hit = hitTestResults[0];
+                    reticle.setAttribute('position', hit.transform.position);
+                    reticle.setAttribute('visible', true);
+
+                    // Set the 3D model's position to the reticle's position and make it visible
+                    model.setAttribute('position', reticle.getAttribute('position'));
+                    model.setAttribute('visible', true);
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
