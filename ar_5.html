@@ -33,9 +33,23 @@
         const scene = document.querySelector('a-scene');
         const reticle = document.querySelector('#reticle');
         const model = document.querySelector('#model');
+        let isInARMode = false; // Add a flag to track AR mode
+
+        // Add event listener for entering AR mode
+        scene.addEventListener('enter-vr', function () {
+            if (scene.is('ar-mode')) {
+                isInARMode = true; // Set the flag to true when entering AR mode
+            }
+        });
+
+        // Add event listener for exiting AR mode
+        scene.addEventListener('exit-vr', function () {
+            isInARMode = false; // Set the flag to false when exiting AR mode
+        });
 
         scene.addEventListener('click', async function (event) {
-            if (!scene.is('ar-mode')) {
+            // Check if the scene is in AR mode using the flag
+            if (!isInARMode) {
                 console.log('Not in AR mode');
                 return;
             }
@@ -55,11 +69,7 @@
                     model.setAttribute('position', reticle.getAttribute('position'));
                     model.setAttribute('visible', true);
                     console.log('Model position and visibility updated'); // Log model position and visibility update
-                } else {
-                    console.log('No hit test results found');
                 }
-            } else {
-                console.log('Hit test source not available');
             }
         });
     </script>
