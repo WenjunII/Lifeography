@@ -36,6 +36,7 @@
 
         scene.addEventListener('click', async function (event) {
             if (!scene.is('ar-mode')) {
+                console.log('Not in AR mode');
                 return;
             }
 
@@ -43,6 +44,8 @@
 
             if (hitTestSource) {
                 const hitTestResults = await hitTestSource.hitTest(new XRRay(event.detail.intersection.point));
+                console.log('Hit test results:', hitTestResults); // Log hit test results
+
                 if (hitTestResults.length > 0) {
                     const hit = hitTestResults[0];
                     reticle.setAttribute('position', hit.transform.position);
@@ -51,7 +54,12 @@
                     // Set the 3D model's position to the reticle's position and make it visible
                     model.setAttribute('position', reticle.getAttribute('position'));
                     model.setAttribute('visible', true);
+                    console.log('Model position and visibility updated'); // Log model position and visibility update
+                } else {
+                    console.log('No hit test results found');
                 }
+            } else {
+                console.log('Hit test source not available');
             }
         });
     </script>
