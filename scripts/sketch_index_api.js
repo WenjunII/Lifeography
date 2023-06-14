@@ -8,108 +8,47 @@ let indexsketch = function (p) {
     let random1, random2, random3, random4, random5, random6, random7, random8, random9, random10, random11, random12;
     // let h, s, l, a, q, n;
     let table1, table2, table3, table4, table5, table6, table7, table8, table9, table10, table11, table12;
-    let columnData1 = [];
-    let columnData2 = [];
-    let columnData3 = [];
-    let columnData4 = [];
-    let columnData5 = [];
-    let columnData6 = [];
-    let columnData7 = [];
-    let columnData8 = [];
-    let columnData9 = [];
-    let columnData10 = [];
-    let columnData11 = [];
-    let columnData12 = [];
+    // let columnData1 = [];
+    // let columnData2 = [];
+    // let columnData3 = [];
+    // let columnData4 = [];
+    // let columnData5 = [];
+    // let columnData6 = [];
+    // let columnData7 = [];
+    // let columnData8 = [];
+    // let columnData9 = [];
+    // let columnData10 = [];
+    // let columnData11 = [];
+    // let columnData12 = [];
+    let url1 = 'https://activecalories-tor-34267.herokuapp.com/api/data';
+    let url2 = 'https://activetime-basin-50341.herokuapp.com/api/data';
+    let url3 = 'https://ascent-castle-61731.herokuapp.com/api/data';
+    let url4 = 'https://activityintensity-esct-08628.herokuapp.com/api/data';
+    let url5 = 'https://cycles-sierra-46675.herokuapp.com/api/data';
+    let url6 = 'https://descent-headland-21847.herokuapp.com/api/data';
+    let url7 = 'https://distance-wave-76653.herokuapp.com/api/data';
+    let url8 = 'https://heartrate-sea-14855.herokuapp.com/api/data';
+    let url9 = 'https://intensity-coast-96368.herokuapp.com/api/data';
+    let url10 = 'https://steps-waters-14638.herokuapp.com/api/data';
+    let url11 = 'https://stresslevel-hollows-24922.herokuapp.com/api/data';
+    let url12 = 'https://keywords-scrubland-70273.herokuapp.com/api/data';
 
     p.preload = function () {
-        table1 = p.loadTable('csv/healthdata_active_calories.csv', 'csv', 'header', p.onTableLoaded);
-        table2 = p.loadTable('csv/healthdata_active_time.csv', 'csv', 'header', p.onTableLoaded);
-        table3 = p.loadTable('csv/healthdata_ascent.csv', 'csv', 'header', p.onTableLoaded);
-        table4 = p.loadTable('csv/healthdata_activity_intensity.csv', 'csv', 'header', p.onTableLoaded);
-        table5 = p.loadTable('csv/healthdata_cycles.csv', 'csv', 'header', p.onTableLoaded);
-        table6 = p.loadTable('csv/healthdata_descent.csv', 'csv', 'header', p.onTableLoaded);
-        table7 = p.loadTable('csv/healthdata_distance.csv', 'csv', 'header', p.onTableLoaded);
-        table8 = p.loadTable('csv/healthdata_heart_rate.csv', 'csv', 'header', p.onTableLoaded);
-        table9 = p.loadTable('csv/healthdata_intensity.csv', 'csv', 'header', p.onTableLoaded);
-        table10 = p.loadTable('csv/healthdata_steps.csv', 'csv', 'header', p.onTableLoaded);
-        table11 = p.loadTable('csv/healthdata_stress_level.csv', 'csv', 'header', p.onTableLoaded);
-        table12 = p.loadTable('csv/keywords.csv', 'csv', 'header', p.onTableLoaded);
+        table1 = p.loadJSON(url1, p.onTableLoaded);
+        table2 = p.loadJSON(url2, p.onTableLoaded);
+        table3 = p.loadJSON(url3, p.onTableLoaded);
+        table4 = p.loadJSON(url4, p.onTableLoaded);
+        table5 = p.loadJSON(url5, p.onTableLoaded);
+        table6 = p.loadJSON(url6, p.onTableLoaded);
+        table7 = p.loadJSON(url7, p.onTableLoaded);
+        table8 = p.loadJSON(url8, p.onTableLoaded);
+        table9 = p.loadJSON(url9, p.onTableLoaded);
+        table10 = p.loadJSON(url10, p.onTableLoaded);
+        table11 = p.loadJSON(url11, p.onTableLoaded);
+        table12 = p.loadJSON(url12, p.onTableLoaded);
     };
 
     p.onTableLoaded = function () {
-        console.log('CSV file loaded successfully');
-        console.log(table1.getRowCount() + ' rows loaded');
-        console.log(table2.getRowCount() + ' rows loaded');
-        console.log(table3.getRowCount() + ' rows loaded');
-        console.log(table4.getRowCount() + ' rows loaded');
-        console.log(table5.getRowCount() + ' rows loaded');
-        console.log(table6.getRowCount() + ' rows loaded');
-        console.log(table7.getRowCount() + ' rows loaded');
-        console.log(table8.getRowCount() + ' rows loaded');
-        console.log(table9.getRowCount() + ' rows loaded');
-        console.log(table10.getRowCount() + ' rows loaded');
-        console.log(table11.getRowCount() + ' rows loaded');
-        console.log(table12.getRowCount() + ' rows loaded');
-        for (let i = 0; i < table1.getRowCount(); i++) {
-            let row1 = table1.getRow(i);
-            columnData1.push(row1.get('active_calories'));
-        };
-        for (let j = 0; j < table2.getRowCount(); j++) {
-            let row2 = table2.getRow(j);
-            columnData2.push(row2.get('active_time'));
-        };
-        for (let k = 0; k < table3.getRowCount(); k++) {
-            let row3 = table3.getRow(k);
-            columnData3.push(row3.get('ascent'));
-        };
-        for (let l = 0; l < table4.getRowCount(); l++) {
-            let row4 = table4.getRow(l);
-            columnData4.push(row4.get('activity_intensity'));
-        }
-        for (let m = 0; m < table5.getRowCount(); m++) {
-            let row5 = table5.getRow(m);
-            columnData5.push(row5.get('cycles'));
-        }
-        for (let n = 0; n < table6.getRowCount(); n++) {
-            let row6 = table6.getRow(n);
-            columnData6.push(row6.get('descent'));
-        }
-        for (let o = 0; o < table7.getRowCount(); o++) {
-            let row7 = table7.getRow(o);
-            columnData7.push(row7.get('distance'));
-        }
-        for (let q = 0; q < table8.getRowCount(); q++) {
-            let row8 = table8.getRow(q);
-            columnData8.push(row8.get('heart_rate'));
-        }
-        for (let r = 0; r < table9.getRowCount(); r++) {
-            let row9 = table9.getRow(r);
-            columnData9.push(row9.get('intensity'));
-        }
-        for (let s = 0; s < table10.getRowCount(); s++) {
-            let row10 = table10.getRow(s);
-            columnData10.push(row10.get('steps'));
-        }
-        for (let t = 0; t < table11.getRowCount(); t++) {
-            let row11 = table11.getRow(t);
-            columnData11.push(row11.get('stress_level'));
-        }
-        for (let u = 0; u < table12.getRowCount(); u++) {
-            let row12 = table12.getRow(u);
-            columnData12.push(row12.get('keywords'));
-        }
-        console.log(columnData1);
-        console.log(columnData2);
-        console.log(columnData3);
-        console.log(columnData4);
-        console.log(columnData5);
-        console.log(columnData6);
-        console.log(columnData7);
-        console.log(columnData8);
-        console.log(columnData9);
-        console.log(columnData10);
-        console.log(columnData11);
-        console.log(columnData12);
         loaded = true;
     }
 
@@ -123,100 +62,100 @@ let indexsketch = function (p) {
 
     p.draw = function () {
 
-        random1 = p.int(p.random(1, 938471));
-        random2 = p.int(p.random(1, 938471));
-        random3 = p.int(p.random(1, 938455));
-        random4 = p.int(p.random(1, 938470));
-        random5 = p.int(p.random(1, 937680));
-        random6 = p.int(p.random(1, 938094));
-        random7 = p.int(p.random(1, 938471));
-        random8 = p.int(p.random(1, 938471));
-        random9 = p.int(p.random(1, 938471));
-        random10 = p.int(p.random(1, 938471));
-        random11 = p.int(p.random(1, 938469));
-        random12 = p.int(p.random(1, 241));
+        random1 = p.int(p.random(0, 1405));
+        random2 = p.int(p.random(0, 5298));
+        random3 = p.int(p.random(0, 25));
+        random4 = p.int(p.random(0, 48));
+        random5 = p.int(p.random(0, 11));
+        random6 = p.int(p.random(0, 17));
+        random7 = p.int(p.random(0, 4737));
+        random8 = p.int(p.random(0, 136));
+        random9 = p.int(p.random(0, 8));
+        random10 = p.int(p.random(0, 6790));
+        random11 = p.int(p.random(0, 116));
+        random12 = p.int(p.random(0, 422));
         if (loaded) {
             // p.background(0);
-            let random1Value = columnData1[random1];
+            let random1Value = table1[random1].activecalories;
             let random1Value2 = p.map(random1Value, 0, 975, 0, 360);
             let random1Value3 = p.map(random1Value, 0, 975, 0, 100);
             let random1Value4 = p.map(random1Value, 0, 975, 5, 15);
             p.fill(random1Value2, random1Value3, random1Value3, 0.05);
             p.textSize(random1Value4);
-            p.text(columnData1[random1], p.random(p.width), p.random(p.height));
-            let random2Value = columnData2[random2];
+            p.text(table1[random1].activecalories, p.random(p.width), p.random(p.height));
+            let random2Value = table2[random2].activetime;
             let random2Value2 = p.map(random2Value, 1, 22693, 0, 360);
             let random2Value3 = p.map(random2Value, 1, 22693, 0, 100);
             let random2Value4 = p.map(random2Value, 1, 22693, 5, 15);
             p.fill(random2Value2, random2Value3, random2Value3, 0.05);
             p.textSize(random2Value4);
-            p.text(columnData2[random2], p.random(p.width), p.random(p.height));
-            let random3Value = columnData3[random3];
+            p.text(table2[random2].activetime, p.random(p.width), p.random(p.height));
+            let random3Value = table3[random3].ascent;
             let random3Value2 = p.map(random3Value, 0.002, 32.423, 0, 360);
             let random3Value3 = p.map(random3Value, 0.002, 32.423, 0, 100);
             let random3Value4 = p.map(random3Value, 0.002, 32.423, 5, 15);
             p.fill(random3Value2, random3Value3, random3Value3, 0.05);
             p.textSize(random3Value4);
-            p.text(columnData3[random3], p.random(p.width), p.random(p.height));
-            let random4Value = columnData4[random4];
+            p.text(table3[random3].ascent, p.random(p.width), p.random(p.height));
+            let random4Value = table4[random4].activityintensity;
             let random4Value2 = p.map(random4Value, -2, 232, 0, 360);
             let random4Value3 = p.map(random4Value, -2, 232, 0, 100);
             let random4Value4 = p.map(random4Value, -2, 232, 5, 15);
             p.fill(random4Value2, random4Value3, random4Value3, 0.05);
             p.textSize(random4Value4);
-            p.text(columnData4[random4], p.random(p.width), p.random(p.height));
-            let random5Value = columnData5[random5];
+            p.text(table4[random4].activityintensity, p.random(p.width), p.random(p.height));
+            let random5Value = table5[random5].cycles;
             let random5Value2 = p.map(random5Value, 0, 11.128, 0, 360);
             let random5Value3 = p.map(random5Value, 0, 11.128, 0, 100);
             let random5Value4 = p.map(random5Value, 0, 11.128, 5, 15);
             p.fill(random5Value2, random5Value3, random5Value3, 0.05);
             p.textSize(random5Value4);
-            p.text(columnData5[random5], p.random(p.width), p.random(p.height));
-            let random6Value = columnData6[random6];
+            p.text(table5[random5].cycles, p.random(p.width), p.random(p.height));
+            let random6Value = table6[random6].descent;
             let random6Value2 = p.map(random6Value, 0, 9.42, 0, 360);
             let random6Value3 = p.map(random6Value, 0, 9.42, 0, 100);
             let random6Value4 = p.map(random6Value, 0, 9.42, 5, 15);
             p.fill(random6Value2, random6Value3, random6Value3, 0.05);
             p.textSize(random6Value4);
-            p.text(columnData6[random6], p.random(p.width), p.random(p.height));
-            let random7Value = columnData7[random7];
+            p.text(table6[random6].descent, p.random(p.width), p.random(p.height));
+            let random7Value = table7[random7].distance;
             let random7Value2 = p.map(random7Value, 0, 15481.25, 0, 360);
             let random7Value3 = p.map(random7Value, 0, 15481.25, 0, 100);
             let random7Value4 = p.map(random7Value, 0, 15481.25, 5, 15);
             p.fill(random7Value2, random7Value3, random7Value3, 0.05);
             p.textSize(random7Value4);
-            p.text(columnData7[random7], p.random(p.width), p.random(p.height));
-            let random8Value = columnData8[random8];
+            p.text(table7[random7].distance, p.random(p.width), p.random(p.height));
+            let random8Value = table8[random8].heartrate;
             let random8Value2 = p.map(random8Value, 0, 232, 0, 360);
             let random8Value3 = p.map(random8Value, 0, 232, 0, 100);
             let random8Value4 = p.map(random8Value, 0, 232, 5, 15);
             p.fill(random8Value2, random8Value3, random8Value3, 0.05);
             p.textSize(random8Value4);
-            p.text(columnData8[random8], p.random(p.width), p.random(p.height));
-            let random9Value = columnData9[random9];
+            p.text(table8[random8].heartrate, p.random(p.width), p.random(p.height));
+            let random9Value = table9[random9].intensity;
             let random9Value2 = p.map(random9Value, 0, 7, 0, 360);
             let random9Value3 = p.map(random9Value, 0, 7, 0, 100);
             let random9Value4 = p.map(random9Value, 0, 7, 5, 15);
             p.fill(random9Value2, random9Value3, random9Value3, 0.05);
             p.textSize(random9Value4);
-            p.text(columnData9[random9], p.random(p.width), p.random(p.height));
-            let random10Value = columnData10[random10];
+            p.text(table9[random9].intensity, p.random(p.width), p.random(p.height));
+            let random10Value = table10[random10].steps;
             let random10Value2 = p.map(random10Value, 2, 21389, 0, 360);
             let random10Value3 = p.map(random10Value, 2, 21389, 0, 100);
             let random10Value4 = p.map(random10Value, 2, 21389, 5, 15);
             p.fill(random10Value2, random10Value3, random10Value3, 0.05);
             p.textSize(random10Value4);
-            p.text(columnData10[random10], p.random(p.width), p.random(p.height));
-            let random11Value = columnData11[random11];
+            p.text(table10[random10].steps, p.random(p.width), p.random(p.height));
+            let random11Value = table11[random11].stresslevel;
             let random11Value2 = p.map(random11Value, -2, 174, 0, 360);
             let random11Value3 = p.map(random11Value, -2, 174, 0, 100);
             let random11Value4 = p.map(random11Value, -2, 174, 5, 15);
             p.fill(random11Value2, random11Value3, random11Value3, 0.05);
             p.textSize(random11Value4);
-            p.text(columnData11[random11], p.random(p.width), p.random(p.height));
+            p.text(table11[random11].stresslevel, p.random(p.width), p.random(p.height));
             p.fill(p.random(0, 360), p.random(0, 100), p.random(0, 100), 0.05);
             p.textSize(p.random(5, 15));
-            p.text(columnData12[random12], p.random(p.width), p.random(p.height));
+            p.text(table12[random12].keywords, p.random(p.width), p.random(p.height));
         }
     }
 
