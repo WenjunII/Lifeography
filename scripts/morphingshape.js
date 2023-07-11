@@ -69,7 +69,7 @@ Papa.parse("csv/healthdata_heart_rate_with_values2.csv", {
 function startAnimationLoop() {
     renderer.setAnimationLoop(() => {
         // Get the time
-        let t = clock.getElapsedTime() / 1.5;
+        let t = clock.getElapsedTime() / 1.97;
 
         sphereGeometry.positionData.forEach((p, idx) => {
             // Use the value from your CSV data in place of the noise function
@@ -79,7 +79,7 @@ function startAnimationLoop() {
             // let setNoise = csvData[Math.floor(t) % csvData.length] / 10;
 
             if (isNaN(setNoise)) {
-              setNoise = noise(p.x * 0.5, p.y * 0.5, p.z * 0.5, t * 1);;
+              setNoise = noise(p.x * 0.5, p.y * 0.5, p.z * 0.5, t * 0.3);;
           }
 
             // Using our Vector3 function, copy the point data, and multiply it by the noise
