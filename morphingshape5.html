@@ -11,13 +11,15 @@
       background-color: #000;
     }
   </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.js"></script> -->
 
 </head>
 
 <body>
   <script id="vertex" type="text/glsl">
+    varying vec2 vUv;
+    
     #define NORMAL
 
     #if defined( FLAT_SHADED ) || defined( USE_BUMPMAP ) || defined( TANGENTSPACE_NORMALMAP )
@@ -36,6 +38,8 @@
     #include <clipping_planes_pars_vertex>
     
     void main() {
+      vUv = uv;
+  gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
     
         #include <uv_vertex>
     
@@ -64,6 +68,9 @@
 </script>
   <script id="fragment" type="text/glsl">
     uniform vec3 colorA;
+    uniform vec3 colorB;
+
+    varying vec2 vUv;
 
     #define NORMAL
 
@@ -88,7 +95,7 @@
         #include <normal_fragment_begin>
         #include <normal_fragment_maps>
     
-        gl_FragColor = vec4( normalize( normal ) * colorA + 0.5, 1.0 );
+          gl_FragColor = vec4(mix(colorA, colorB, vUv.x), 1.0);
     
         #ifdef OPAQUE
     
@@ -98,8 +105,8 @@
     
     }
 </script>
-  <script type="module" src="scripts/morphingshape.js"></script>
-  <script src="scripts/heartratesound.js"></script>
+  <script type="module" src="scripts/morphingshape5.js"></script>
+  <!-- <script src="scripts/heartratesound.js"></script> -->
 </body>
 
 </html>

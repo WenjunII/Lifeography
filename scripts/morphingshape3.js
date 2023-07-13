@@ -25,29 +25,42 @@ document.body.appendChild(renderer.domElement);
 new OrbitControls(camera, renderer.domElement);
 
 // Create our geometry
-let sphereGeometry = new THREE.SphereGeometry(2, 50, 50);
+let circleGeometry = new THREE.CircleGeometry(3, 1000, 100, 500);
 
 // This section is about accessing our geometry vertices and their locations
-sphereGeometry.positionData = [];
+circleGeometry.positionData = [];
 let v3 = new THREE.Vector3();
-for (let i = 0; i < sphereGeometry.attributes.position.count; i++) {
-  v3.fromBufferAttribute(sphereGeometry.attributes.position, i);
-  sphereGeometry.positionData.push(v3.clone());
+for (let i = 0; i < circleGeometry.attributes.position.count; i++) {
+  v3.fromBufferAttribute(circleGeometry.attributes.position, i);
+  circleGeometry.positionData.push(v3.clone());
 }
 
 // A `normal` material uses the coordinates of an object to calculate its color
-let sphereMesh = new THREE.ShaderMaterial({
-  uniforms: {
-    colorA: { type: 'vec3', value: new THREE.Vector3(0.5, 0.5, 0.5) },
+// let planeMesh = new THREE.MeshBasicMaterial({
+//   color: 0x898989,
+//   wireframe: true
+// });
 
+// let planeMesh = new THREE.MeshNormalMaterial({
+//   wireframe: true
+// });
+
+let circleMesh = new THREE.ShaderMaterial({
+  uniforms: {
+    colorA: { type: 'vec3', value: new THREE.Vector3(0.25, 0.25, 0.25) },
+    colorB: { type: 'vec3', value: new THREE.Vector3(0.25, 0.25, 0.25) },
+    colorC: { type: 'vec3', value: new THREE.Vector3(0.25, 0.25, 0.25) },
+    colorD: { type: 'vec3', value: new THREE.Vector3(0.25, 0.25, 0.25) },
   },
   vertexShader: document.getElementById('vertex').textContent,
   fragmentShader: document.getElementById('fragment').textContent,
+  // color: 0xffffff
+  wireframe: true
 });
 
 // Combine both, and add it to the scene.
-let sphere = new THREE.Line(sphereGeometry, sphereMesh);
-scene.add(sphere);
+let circle = new THREE.Line(circleGeometry, circleMesh);
+scene.add(circle);
 
 window.addEventListener("resize", () => {
   camera.aspect = innerWidth / innerHeight;
@@ -60,7 +73,7 @@ let clock = new THREE.Clock();
 
 // Load CSV data
 let csvData = [];
-Papa.parse("csv/healthdata_heart_rate_with_values2.csv", {
+Papa.parse("csv/healthdata_active_calories_with_values2.csv", {
   download: true,
   header: false,
   dynamicTyping: true,
@@ -74,41 +87,58 @@ Papa.parse("csv/healthdata_heart_rate_with_values2.csv", {
   }
 });
 
+let currentFrame = 0;
+
 function startAnimationLoop() {
   renderer.setAnimationLoop(() => {
     // Get the time
-    let currentFrame = 0;
-    let t = clock.getElapsedTime() / 2;
-    // console.log(t * 0.1);
 
-    sphereGeometry.positionData.forEach((p, idx) => {
+    let t = clock.getElapsedTime(csvData[currentFrame % csvData.length]) / 2;
+    // console.log(Math.sin(csvData[Math.floor(t) % csvData.length]));
+    currentFrame++;
+
+    circleGeometry.positionData.forEach((p, idx) => {
       // Use the value from your CSV data in place of the noise function
-
-      let setNoise = noise(p.x * 0.4 + csvData[Math.floor(t) % csvData.length] / 300, p.y * 0.4 + csvData[Math.floor(t) % csvData.length] / 300, p.z * 0.4 + csvData[Math.floor(t) % csvData.length] / 300, t * 0.3);
+      let aData = csvData[Math.floor(t) % csvData.length] / 5000;
+      // let sineWave = (Math.sin(csvData[Math.floor(t) % csvData.length]) * Math.PI);
+      let setNoise = noise(p.x * 100 + aData, p.y * 100 + aData, p.z * 100 + aData, t / 2);
 
       // let setNoise = csvData[Math.floor(t) % csvData.length] / 10;
 
       if (isNaN(setNoise)) {
-        setNoise = noise(p.x * 0.5, p.y * 0.5, p.z * 0.5, t * 0.3);
+        setNoise = noise(p.x * 100 + aData, p.y * 100 + aData, p.z * 100 + aData, t / 2);
       }
 
       // Using our Vector3 function, copy the point data, and multiply it by the noise
       // this looks confusing - but it's just multiplying noise by the position at each vertice
       v3.copy(p).addScaledVector(p, setNoise);
       // Update the positions
-      sphereGeometry.attributes.position.setXYZ(idx, v3.x, v3.y, v3.z);
+      circleGeometry.attributes.position.setXYZ(idx, v3.x, v3.y, v3.z);
     });
+    // console.log(sineWave);
     // Some housekeeping so that the sphere looks "right"
-    sphereGeometry.computeVertexNormals();
-    sphereGeometry.attributes.position.needsUpdate = true;
+    circleGeometry.computeVertexNormals();
+    circleGeometry.attributes.position.needsUpdate = true;
 
     // Calculate a new color based on the elapsed time
     // let randomNumber = THREE.MathUtils.randFloat(-100, 100);
     let color = new THREE.Color();
-    color.setHSL(t * 0.1 + csvData[Math.floor(t) % csvData.length], 0.5, 0.3);
+    color.setHSL(t * 0.1 + csvData[Math.floor(t) % csvData.length], 0.5, 0.2);
+
+    let color2 = new THREE.Color();
+    color2.setHSL(t * -0.1 + csvData[Math.floor(t) % csvData.length], 0.5, 0.2);
+
+    let color3 = new THREE.Color();
+    color3.setHSL(t * 0.2 + csvData[Math.floor(t) % csvData.length], 0.5, 0.2);
+
+    let color4 = new THREE.Color();
+    color4.setHSL(t * -0.2 + csvData[Math.floor(t) % csvData.length], 0.5, 0.2);
 
     // Update the colorA uniform with the new color
-    sphereMesh.uniforms.colorA.value = color;
+    circleMesh.uniforms.colorA.value = color;
+    circleMesh.uniforms.colorB.value = color2;
+    circleMesh.uniforms.colorC.value = color3;
+    circleMesh.uniforms.colorD.value = color4;
 
     // Render the sphere onto the page again.
     renderer.render(scene, camera);
