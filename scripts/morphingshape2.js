@@ -90,19 +90,19 @@ function startAnimationLoop() {
   renderer.setAnimationLoop(() => {
     // Get the time
 
-    let t = clock.getElapsedTime(csvData[currentFrame % csvData.length]) / 2;
+    let t = clock.getElapsedTime() / 2;
     // console.log(csvData[currentFrame]);
     currentFrame++;
 
     planeGeometry.positionData.forEach((p, idx) => {
       // Use the value from your CSV data in place of the noise function
       // let sineWave = (Math.sin(csvData[Math.floor(t) % csvData.length]) * Math.PI);
-      let setNoise = noise(p.x * 0.8, p.y * 0.8, p.z * 0.8, (Math.sin(t / 2) * Math.PI));
+      let setNoise = noise(p.x * 0.8, p.y * 0.8, p.z * 0.8, (Math.sin(t / 2 + csvData[currentFrame % csvData.length] / 4000) * Math.PI));
 
       // let setNoise = csvData[Math.floor(t) % csvData.length] / 10;
 
       if (isNaN(setNoise)) {
-        setNoise = noise(p.x * 0.8, p.y * 0.8, p.z * 0.8, (Math.sin(t / 2) * Math.PI));
+        setNoise = noise(p.x * 0.8, p.y * 0.8, p.z * 0.8, (Math.sin(t / 2 + csvData[currentFrame % csvData.length] / 4000) * Math.PI));
       }
 
       // Using our Vector3 function, copy the point data, and multiply it by the noise

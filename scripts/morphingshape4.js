@@ -135,7 +135,7 @@ function startAnimationLoop() {
   renderer.setAnimationLoop(() => {
     // Get the time
 
-    let t = clock.getElapsedTime(csvData[currentFrame % csvData.length]) / 2;
+    let t = clock.getElapsedTime() / 2;
     // console.log(Math.sin(csvData[Math.floor(t) % csvData.length]));
     currentFrame++;
 
@@ -161,7 +161,7 @@ function startAnimationLoop() {
 
       // Generate a new color for each point
       let color = new THREE.Color();
-      color.setHSL((t / 5 + aData / 25 + idx / torusGeometry.attributes.position.count) % 1, 0.5, 0.3); // Set color using hue, saturation, lightness
+      color.setHSL((t / 5 + aData / 20 + idx / torusGeometry.attributes.position.count) % 1, 0.5, 0.3); // Set color using hue, saturation, lightness
 
       // Update the color in the array
       colors[idx * 3] = color.r;
