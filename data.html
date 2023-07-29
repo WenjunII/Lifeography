@@ -4,7 +4,7 @@
 <head>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.js"></script>
-	<script src="scripts/sketch_data.js"></script>
+	<!-- <script src="scripts/sketch_data.js"></script> -->
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script> -->
 	<!-- <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script> -->
 	<!-- <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script> -->
@@ -44,7 +44,7 @@
 					<a href="index.html" target="">Home</a> | <a href="dream_1.html" target="">The Dream</a> | The Data |
 					<a href="response.html" target="">The Response</a>
 				</div>
-				<br>
+				<!-- <br>
 				<div class="breakline">
 				</div>
 				<br>
@@ -58,7 +58,7 @@
 					<br>
 					<br>
 					<h1>
-						<!-- Chapter One -->
+						Chapter One
 					</h1>
 					<br>
 					<br>
@@ -76,7 +76,7 @@
 				</div>
 				<br>
 				<div class="breakline">
-				</div>
+				</div> -->
 			</div>
 			<div class="two columns right">
 				<div class="keywordtable">
@@ -86,10 +86,456 @@
 
 		</div>
 	</div>
-	<br><br><br>
+	<br>
 
 	<div class="container">
 		<div id="d1"></div>
+		<script id="vertex3" type="text/glsl">
+			varying vec2 vUv;
+		
+			#define NORMAL
+		
+			#if defined( FLAT_SHADED ) || defined( USE_BUMPMAP ) || defined( TANGENTSPACE_NORMALMAP )
+			
+				varying vec3 vViewPosition;
+			
+			#endif
+			
+			#include <common>
+			#include <uv_pars_vertex>
+			#include <displacementmap_pars_vertex>
+			#include <normal_pars_vertex>
+			#include <morphtarget_pars_vertex>
+			#include <skinning_pars_vertex>
+			#include <logdepthbuf_pars_vertex>
+			#include <clipping_planes_pars_vertex>
+			
+			void main() {
+			  vUv = uv;
+			  gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+			
+				#include <uv_vertex>
+			
+				#include <beginnormal_vertex>
+				#include <morphnormal_vertex>
+				#include <skinbase_vertex>
+				#include <skinnormal_vertex>
+				#include <defaultnormal_vertex>
+				#include <normal_vertex>
+			
+				#include <begin_vertex>
+				#include <morphtarget_vertex>
+				#include <skinning_vertex>
+				#include <displacementmap_vertex>
+				#include <project_vertex>
+				#include <logdepthbuf_vertex>
+				#include <clipping_planes_vertex>
+			
+			#if defined( FLAT_SHADED ) || defined( USE_BUMPMAP ) || defined( TANGENTSPACE_NORMALMAP )
+			
+				vViewPosition = - mvPosition.xyz;
+			
+			#endif
+			
+			}
+		</script>
+		  <script id="fragment3" type="text/glsl">
+			uniform vec3 colorA;
+			uniform vec3 colorB;
+			uniform vec3 colorC;
+			uniform vec3 colorD;
+		
+			varying vec2 vUv;
+		
+			#define NORMAL
+		
+			#if defined( FLAT_SHADED ) || defined( USE_BUMPMAP ) || defined( TANGENTSPACE_NORMALMAP )
+			
+				varying vec3 vViewPosition;
+			
+			#endif
+			
+			#include <packing>
+			#include <uv_pars_fragment>
+			#include <normal_pars_fragment>
+			#include <bumpmap_pars_fragment>
+			#include <normalmap_pars_fragment>
+			#include <logdepthbuf_pars_fragment>
+			#include <clipping_planes_pars_fragment>
+			
+			void main() {
+			
+				#include <clipping_planes_fragment>
+				#include <logdepthbuf_fragment>
+				#include <normal_fragment_begin>
+				#include <normal_fragment_maps>
+			
+		
+				vec3 color = mix(colorA, colorB, vUv.x);
+				color = mix(color, colorC, vUv.y);
+				color = mix(color, colorD, vUv.x * vUv.y);
+				gl_FragColor = vec4(color, 1.0);
+			
+				#ifdef OPAQUE
+			
+					gl_FragColor.a = 1.0;
+			
+				#endif
+			
+			}
+		</script>
+		  <script type="module" src="scripts/morphingshape_all.js"></script>
+		  <script src="scripts/heartratesound.js"></script>
+
+		  <script id="vertex1" type="text/glsl">
+			#define NORMAL
+		
+			#if defined( FLAT_SHADED ) || defined( USE_BUMPMAP ) || defined( TANGENTSPACE_NORMALMAP )
+			
+				varying vec3 vViewPosition;
+			
+			#endif
+			
+			#include <common>
+			#include <uv_pars_vertex>
+			#include <displacementmap_pars_vertex>
+			#include <normal_pars_vertex>
+			#include <morphtarget_pars_vertex>
+			#include <skinning_pars_vertex>
+			#include <logdepthbuf_pars_vertex>
+			#include <clipping_planes_pars_vertex>
+			
+			void main() {
+			
+				#include <uv_vertex>
+			
+				#include <beginnormal_vertex>
+				#include <morphnormal_vertex>
+				#include <skinbase_vertex>
+				#include <skinnormal_vertex>
+				#include <defaultnormal_vertex>
+				#include <normal_vertex>
+			
+				#include <begin_vertex>
+				#include <morphtarget_vertex>
+				#include <skinning_vertex>
+				#include <displacementmap_vertex>
+				#include <project_vertex>
+				#include <logdepthbuf_vertex>
+				#include <clipping_planes_vertex>
+			
+			#if defined( FLAT_SHADED ) || defined( USE_BUMPMAP ) || defined( TANGENTSPACE_NORMALMAP )
+			
+				vViewPosition = - mvPosition.xyz;
+			
+			#endif
+			
+			}
+		</script>
+		  <script id="fragment1" type="text/glsl">
+			uniform vec3 colorA;
+		
+			#define NORMAL
+		
+			#if defined( FLAT_SHADED ) || defined( USE_BUMPMAP ) || defined( TANGENTSPACE_NORMALMAP )
+			
+				varying vec3 vViewPosition;
+			
+			#endif
+			
+			#include <packing>
+			#include <uv_pars_fragment>
+			#include <normal_pars_fragment>
+			#include <bumpmap_pars_fragment>
+			#include <normalmap_pars_fragment>
+			#include <logdepthbuf_pars_fragment>
+			#include <clipping_planes_pars_fragment>
+			
+			void main() {
+			
+				#include <clipping_planes_fragment>
+				#include <logdepthbuf_fragment>
+				#include <normal_fragment_begin>
+				#include <normal_fragment_maps>
+			
+				gl_FragColor = vec4( normalize( normal ) * colorA + 0.5, 1.0 );
+			
+				#ifdef OPAQUE
+			
+					gl_FragColor.a = 1.0;
+			
+				#endif
+			
+			}
+		</script>
+
+		<script id="vertex2" type="text/glsl">
+    
+			#define NORMAL
+		
+			#if defined( FLAT_SHADED ) || defined( USE_BUMPMAP ) || defined( TANGENTSPACE_NORMALMAP )
+			
+				varying vec3 vViewPosition;
+			
+			#endif
+			
+			#include <common>
+			#include <uv_pars_vertex>
+			#include <displacementmap_pars_vertex>
+			#include <normal_pars_vertex>
+			#include <morphtarget_pars_vertex>
+			#include <skinning_pars_vertex>
+			#include <logdepthbuf_pars_vertex>
+			#include <clipping_planes_pars_vertex>
+			
+			void main() {
+			
+				#include <uv_vertex>
+			
+				#include <beginnormal_vertex>
+				#include <morphnormal_vertex>
+				#include <skinbase_vertex>
+				#include <skinnormal_vertex>
+				#include <defaultnormal_vertex>
+				#include <normal_vertex>
+			
+				#include <begin_vertex>
+				#include <morphtarget_vertex>
+				#include <skinning_vertex>
+				#include <displacementmap_vertex>
+				#include <project_vertex>
+				#include <logdepthbuf_vertex>
+				#include <clipping_planes_vertex>
+			
+			#if defined( FLAT_SHADED ) || defined( USE_BUMPMAP ) || defined( TANGENTSPACE_NORMALMAP )
+			
+				vViewPosition = - mvPosition.xyz;
+			
+			#endif
+			
+			}
+		</script>
+		  <script id="fragment2" type="text/glsl">
+			uniform vec3 colorA;
+		
+			#define NORMAL
+		
+			#if defined( FLAT_SHADED ) || defined( USE_BUMPMAP ) || defined( TANGENTSPACE_NORMALMAP )
+			
+				varying vec3 vViewPosition;
+			
+			#endif
+			
+			#include <packing>
+			#include <uv_pars_fragment>
+			#include <normal_pars_fragment>
+			#include <bumpmap_pars_fragment>
+			#include <normalmap_pars_fragment>
+			#include <logdepthbuf_pars_fragment>
+			#include <clipping_planes_pars_fragment>
+			
+			void main() {
+			
+				#include <clipping_planes_fragment>
+				#include <logdepthbuf_fragment>
+				#include <normal_fragment_begin>
+				#include <normal_fragment_maps>
+			
+				gl_FragColor = vec4( normalize( normal ) * colorA + 0.5, 1.0 );
+			
+				#ifdef OPAQUE
+			
+					gl_FragColor.a = 1.0;
+			
+				#endif
+			
+			}
+		</script>
+
+		<script id="vertex4" type="text/glsl">
+			varying vec2 vUv;
+		
+			#define NORMAL
+		
+			#if defined( FLAT_SHADED ) || defined( USE_BUMPMAP ) || defined( TANGENTSPACE_NORMALMAP )
+			
+				varying vec3 vViewPosition;
+			
+			#endif
+			
+			#include <common>
+			#include <uv_pars_vertex>
+			#include <displacementmap_pars_vertex>
+			#include <normal_pars_vertex>
+			#include <morphtarget_pars_vertex>
+			#include <skinning_pars_vertex>
+			#include <logdepthbuf_pars_vertex>
+			#include <clipping_planes_pars_vertex>
+			
+			void main() {
+			  vUv = uv;
+			  gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+			
+				#include <uv_vertex>
+			
+				#include <beginnormal_vertex>
+				#include <morphnormal_vertex>
+				#include <skinbase_vertex>
+				#include <skinnormal_vertex>
+				#include <defaultnormal_vertex>
+				#include <normal_vertex>
+			
+				#include <begin_vertex>
+				#include <morphtarget_vertex>
+				#include <skinning_vertex>
+				#include <displacementmap_vertex>
+				#include <project_vertex>
+				#include <logdepthbuf_vertex>
+				#include <clipping_planes_vertex>
+			
+			#if defined( FLAT_SHADED ) || defined( USE_BUMPMAP ) || defined( TANGENTSPACE_NORMALMAP )
+			
+				vViewPosition = - mvPosition.xyz;
+			
+			#endif
+			
+			}
+		</script>
+		  <script id="fragment4" type="text/glsl">
+			uniform vec3 colorA;
+			uniform vec3 colorB;
+			uniform vec3 colorC;
+			uniform vec3 colorD;
+		
+			varying vec2 vUv;
+		
+			#define NORMAL
+		
+			#if defined( FLAT_SHADED ) || defined( USE_BUMPMAP ) || defined( TANGENTSPACE_NORMALMAP )
+			
+				varying vec3 vViewPosition;
+			
+			#endif
+			
+			#include <packing>
+			#include <uv_pars_fragment>
+			#include <normal_pars_fragment>
+			#include <bumpmap_pars_fragment>
+			#include <normalmap_pars_fragment>
+			#include <logdepthbuf_pars_fragment>
+			#include <clipping_planes_pars_fragment>
+			
+			void main() {
+			
+				#include <clipping_planes_fragment>
+				#include <logdepthbuf_fragment>
+				#include <normal_fragment_begin>
+				#include <normal_fragment_maps>
+			
+		
+				vec3 color = mix(colorA, colorB, vUv.x);
+				color = mix(color, colorC, vUv.y);
+				color = mix(color, colorD, vUv.x * vUv.y);
+				gl_FragColor = vec4(color, 1.0);
+			
+				#ifdef OPAQUE
+			
+					gl_FragColor.a = 1.0;
+			
+				#endif
+			
+			}
+		</script>
+
+		<script id="vertex5" type="text/glsl">
+			varying vec2 vUv;
+			
+			#define NORMAL
+		
+			#if defined( FLAT_SHADED ) || defined( USE_BUMPMAP ) || defined( TANGENTSPACE_NORMALMAP )
+			
+				varying vec3 vViewPosition;
+			
+			#endif
+			
+			#include <common>
+			#include <uv_pars_vertex>
+			#include <displacementmap_pars_vertex>
+			#include <normal_pars_vertex>
+			#include <morphtarget_pars_vertex>
+			#include <skinning_pars_vertex>
+			#include <logdepthbuf_pars_vertex>
+			#include <clipping_planes_pars_vertex>
+			
+			void main() {
+			  vUv = uv;
+		  gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+			
+				#include <uv_vertex>
+			
+				#include <beginnormal_vertex>
+				#include <morphnormal_vertex>
+				#include <skinbase_vertex>
+				#include <skinnormal_vertex>
+				#include <defaultnormal_vertex>
+				#include <normal_vertex>
+			
+				#include <begin_vertex>
+				#include <morphtarget_vertex>
+				#include <skinning_vertex>
+				#include <displacementmap_vertex>
+				#include <project_vertex>
+				#include <logdepthbuf_vertex>
+				#include <clipping_planes_vertex>
+			
+			#if defined( FLAT_SHADED ) || defined( USE_BUMPMAP ) || defined( TANGENTSPACE_NORMALMAP )
+			
+				vViewPosition = - mvPosition.xyz;
+			
+			#endif
+			
+			}
+		</script>
+		  <script id="fragment5" type="text/glsl">
+			uniform vec3 colorA;
+			uniform vec3 colorB;
+		
+			varying vec2 vUv;
+		
+			#define NORMAL
+		
+			#if defined( FLAT_SHADED ) || defined( USE_BUMPMAP ) || defined( TANGENTSPACE_NORMALMAP )
+			
+				varying vec3 vViewPosition;
+			
+			#endif
+			
+			#include <packing>
+			#include <uv_pars_fragment>
+			#include <normal_pars_fragment>
+			#include <bumpmap_pars_fragment>
+			#include <normalmap_pars_fragment>
+			#include <logdepthbuf_pars_fragment>
+			#include <clipping_planes_pars_fragment>
+			
+			void main() {
+			
+				#include <clipping_planes_fragment>
+				#include <logdepthbuf_fragment>
+				#include <normal_fragment_begin>
+				#include <normal_fragment_maps>
+			
+				  gl_FragColor = vec4(mix(colorA, colorB, vUv.x), 1.0);
+			
+				#ifdef OPAQUE
+			
+					gl_FragColor.a = 1.0;
+			
+				#endif
+			
+			}
+		</script>
+		  
 
 	</div>
 	<div class="containermanu">

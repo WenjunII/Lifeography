@@ -21,6 +21,7 @@ renderer.setSize(innerWidth, innerHeight);
 
 // Append our renderer to the webpage. Basically, this appends the `canvas` to our webpage.
 document.body.appendChild(renderer.domElement);
+// document.getElementById('d1').appendChild(renderer.domElement);
 
 new OrbitControls(camera, renderer.domElement);
 
