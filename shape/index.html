@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+	<title>Supershapes 3D</title>
+	<style>
+		body {
+			margin: 0;
+		}
+
+		canvas {
+			width: 100%;
+			height: 100%
+		}
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.30/Tone.js"></script>
+	<script src="js/library/dat.gui.min.js"></script>
+	<script src="js/library/controls/TrackballControls.js"></script>
+	<script src="js/library/exporters/GLTFExporter.js"></script>
+	<script src="js/QuadGeometry.js"></script>
+</head>
+
+<body>
+	<script>
+		async function loadScripts(scripts) {
+			for (var script of scripts) {
+				await new Promise(function (resolve, reject) {
+					var s = document.createElement('script');
+					s.src = script;
+					s.onload = resolve;
+					s.onerror = reject;
+					document.body.appendChild(s);
+				});
+			}
+		}
+
+		loadScripts([
+			'https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js',
+			'https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js',
+			'https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.30/Tone.js',
+			'js/library/dat.gui.min.js',
+			'js/library/controls/TrackballControls.js',
+			'js/library/exporters/GLTFExporter.js',
+			'js/QuadGeometry.js',
+			'js/normalizedNumber1.js',
+			'js/normalizedNumber2.js',
+			'js/normalizedNumber3.js',
+			'js/normalizedNumber4.js',
+			'js/normalizedNumber5.js',
+			'js/normalizedNumber6.js',
+			'js/normalizedNumber7.js',
+			'js/normalizedNumber8.js',
+			'js/normalizedNumber9.js',
+			'js/normalizedNumber10.js',
+			'js/normalizedNumber11.js',
+			'js/normalizedNumber12.js',
+			'js/normalizedNumber13.js',
+			'js/SuperGui.js',
+			'js/superformula.js',
+			'js/helpers/GLTFexport.js',
+			'js/helpers/JPGexport.js',
+			'js/tone.js'
+		]);
+	</script>
+	
+
+</body>
+
+</html>
