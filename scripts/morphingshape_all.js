@@ -377,7 +377,7 @@ let clock5 = new THREE.Clock();
 
 // Load CSV data
 let csvData5 = [];
-Papa.parse("csv/healthdata_activity_intensity_with_values2.csv", {
+Papa.parse("csv/healthdata_stress_level_with_values2.csv", {
   download: true,
   header: false,
   dynamicTyping: true,
