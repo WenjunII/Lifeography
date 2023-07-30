@@ -10,7 +10,7 @@ let scene = new THREE.Scene();
 let camera = new THREE.PerspectiveCamera(
   75,
   innerWidth / innerHeight,
-  0.1,
+  0.001,
   1000
 );
 camera.position.set(1.5, -0.5, 6);
