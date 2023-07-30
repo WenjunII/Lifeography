@@ -13,7 +13,7 @@ let camera = new THREE.PerspectiveCamera(
   0.001,
   1000
 );
-camera.position.set(1.5, -0.5, 6);
+camera.position.set(0, 0, 6);
 
 // Renderer
 let renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -41,7 +41,7 @@ const geometry = new THREE.PlaneGeometry(5, 5);
 const plane2 = new THREE.Mesh(geometry, material);
 plane2.position.set(-2, 0, -2);
 plane2.scale.set(5.5, 5.5, 5.5);
-plane2.rotation.set(0.1, 0.2 ,-0.05);
+plane2.rotation.set(0, 0, 0);
 scene.add(plane2);
 
 // Create our geometry
@@ -80,7 +80,7 @@ let circleMesh = new THREE.ShaderMaterial({
 
 // Combine both, and add it to the scene.
 let circle = new THREE.Line(circleGeometry, circleMesh);
-circle.position.set(-2, 0, 0);
+circle.position.set(-1, 0, 0);
 circle.scale.set(2, 2, 2);
 scene.add(circle);
 
@@ -132,7 +132,7 @@ let sphereMesh = new THREE.ShaderMaterial({
 
 // Combine both, and add it to the scene.
 let sphere = new THREE.Line(sphereGeometry, sphereMesh);
-sphere.position.set(-2, 0, 1);
+sphere.position.set(-1, 0, 1);
 sphere.scale.set(0.2, 0.2, 0.2);
 scene.add(sphere);
 
@@ -301,7 +301,7 @@ let torusMesh = new THREE.ShaderMaterial({
 // Combine both, and add it to the scene.
 let torus = new THREE.Points(torusGeometry, torusMesh);
 torus.scale.set(0.4, 0.4, 0.4);
-torus.position.set(-1.1, 0, 0.5);
+torus.position.set(0.1, 0, 0.5);
 scene.add(torus);
 
 window.addEventListener("resize", () => {
@@ -363,7 +363,7 @@ let torusMesh2 = new THREE.ShaderMaterial({
 // Combine both, and add it to the scene.
 let torus2 = new THREE.Mesh(torusGeometry2, torusMesh2);
 torus2.scale.set(0.02, 0.02, 0.02);
-torus2.position.set(1.5, -1.5, 2.5);
+torus2.position.set(2, -1, 2.5);
 scene.add(torus2);
 
 window.addEventListener("resize", () => {
