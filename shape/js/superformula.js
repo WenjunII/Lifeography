@@ -13,7 +13,8 @@ var renderer = new THREE.WebGLRenderer({
 var spriteMap = new THREE.TextureLoader().load("assets/circle-64.png" );
 
 renderer.setSize( window.innerWidth, window.innerHeight );
-document.body.appendChild( renderer.domElement );
+// document.body.appendChild( renderer.domElement );
+document.getElementById('1j').appendChild(renderer.domElement);
 var trackBallControls = new THREE.TrackballControls( camera, renderer.domElement );
 
 var lights = [];
