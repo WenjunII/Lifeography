@@ -29908,6 +29908,7 @@
         function deepExtend(target, source, overwrite) {
           /* eslint no-restricted-syntax: 0 */
           for (var prop in source) {
+            // Ignore inherited and prototype-mutating keys during recursive copies.
             if (!Object.prototype.hasOwnProperty.call(source, prop) || prop === '__proto__' || prop === 'constructor' || prop === 'prototype') {
               continue;
             }

@@ -261,6 +261,7 @@
 	const DEG2RAD = Math.PI / 180;
 	const RAD2DEG = 180 / Math.PI; // http://stackoverflow.com/questions/105034/how-to-create-a-guid-uuid-in-javascript/21963136#21963136
 
+	// Use browser-provided entropy so generated object identifiers are not predictable.
 	function generateUUID() {
 		const randomValues = new Uint32Array(4);
 		crypto.getRandomValues(randomValues);
