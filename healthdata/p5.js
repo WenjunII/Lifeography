@@ -29908,6 +29908,10 @@
         function deepExtend(target, source, overwrite) {
           /* eslint no-restricted-syntax: 0 */
           for (var prop in source) {
+            // Ignore inherited and prototype-mutating keys during recursive copies.
+            if (!Object.prototype.hasOwnProperty.call(source, prop) || prop === '__proto__' || prop === 'constructor' || prop === 'prototype') {
+              continue;
+            }
             if (prop in target) {
               // If we reached a leaf string in target or source then replace with source or skip depending on the 'overwrite' switch
               if (typeof target[prop] === 'string' || target[prop] instanceof String || typeof source[prop] === 'string' || source[prop] instanceof String) {
